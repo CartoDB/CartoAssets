@@ -1,4 +1,4 @@
-# CartoAssets
+# CartoAssets [![NPM version](http://img.shields.io/npm/v/cartoassets.svg)](https://www.npmjs.org/package/cartoassets)
 
 > Share frontend assets between different CartoDB repositories
 
