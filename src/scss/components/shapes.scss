@@ -1,0 +1,20 @@
+/* SG
+# Shapes/dot
+
+You may resize and change the colors of the icons with the `glyph-`-classes. Available sizes and colors listed:
+
+```
+<button class="CDB-Shape-dot CDB-Widget-dot--navigation is-selected" data-page="3"></button>
+<button class="CDB-Shape-dot CDB-Widget-dot--navigation" data-page="3"></button>
+```
+*/
+// Shapes styles
+// ----------------------------------------------
+
+.CDB-Shape-dot {
+  display: inline-block;
+  width: 8px;
+  min-width: 8px;
+  height: 8px;
+  border-radius: 8px;
+}
