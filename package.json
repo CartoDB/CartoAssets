@@ -43,6 +43,10 @@
     "library",
     "CartoDB",
     "share",
-    "assets"
+    "assets",
+    "styleguide",
+    "shared components",
+    "editor",
+    "deep-insights"
   ]
 }

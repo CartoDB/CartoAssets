@@ -1,92 +1,14 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-    concat: {
-      dist: {
-        options: {},
-        files: {
-          'dist/cartostyles.css': [
-            '.tmp/src/scss/**/*.css'
-          ]
-        }
-      }
-    },
-    connect: {
-      server: {
-        options: {
-          port: 9003,
-          livereload: 35732,
-          open: true,
-          hostname: '0.0.0.0', // to be able to access the server not only from localhost
-          base: {
-            path: '.'
-          }
-        }
-      }
-    },
-    clean: {
-      dist: {
-        files: [{
-          dot: true,
-          src: [
-            '.sass-cache',
-            '.tmp',
-            'dist',
-            '!dist/.git*'
-          ]
-        }]
-      }
-    },
-    sass: {
-      dist: {
-        options: {
-          sourceMap: false,
-          outputStyle: 'compressed'
-        },
-        files: [{
-          expand: true,
-          src: [
-            'src/scss/**/*.scss'
-          ],
-          dest: '.tmp',
-          ext: '.css'
-        }]
-      }
-    },
-    cssmin: {
-      dist: {
-        options: {
-          check: 'gzip'
-        },
-        files: {
-          'dist/cartostyles.css': [
-            'dist/cartostyles.css'
-          ]
-        }
-      }
-    },
-    shell: {
-      dist: {
-        command: 'styleguide'
-      }
-    },
-    watch: {
-      scss: {
-        files: [
-          'src/scss/**/*.scss'
-        ],
-        tasks: [
-          'sass',
-          'concat',
-          'cssmin'
-        ],
-        options: {
-          spawn: false,
-          livereload: 35732
-        }
-      }
-    }
+    concat: require('./tasks/concat'),
+    connect: require('./tasks/connect'),
+    clean: require('./tasks/clean'),
+    sass: require('./tasks/sass'),
+    cssmin: require('./tasks/cssmin'),
+    shell: require('./tasks/shell'),
+    watch: require('./tasks/watch')
   });
 
   var baseTasks = [
@@ -108,4 +30,4 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', devTasks);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
-}
+};
