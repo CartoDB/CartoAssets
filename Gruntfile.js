@@ -12,6 +12,32 @@ module.exports = function(grunt) {
         }
       }
     },
+    connect: {
+      server: {
+        options: {
+          port: 9003,
+          livereload: 35732,
+          open: true,
+          hostname: '0.0.0.0', // to be able to access the server not only from localhost
+          base: {
+            path: '.'
+          }
+        }
+      }
+    },
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '.sass-cache',
+            '.tmp',
+            'dist',
+            '!dist/.git*'
+          ]
+        }]
+      }
+    },
     sass: {
       dist: {
         options: {
@@ -40,6 +66,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    shell: {
+      dist: {
+        command: 'styleguide'
+      }
+    },
     watch: {
       scss: {
         files: [
@@ -58,8 +89,25 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'concat', 'cssmin', 'watch:scss']);
+  var baseTasks = [
+    'clean',
+    'sass',
+    'concat',
+    'cssmin'
+  ];
 
+  var devTasks = baseTasks.concat([
+    'connect',
+    'watch:scss'
+  ]);
+
+  grunt.event.on('watch', function (action, filepath) {
+    grunt.task.run('shell');
+  });
+
+  grunt.registerTask('dev', devTasks);
+  grunt.registerTask('build', baseTasks);
+  grunt.registerTask('default', baseTasks);
 };
 
 //
