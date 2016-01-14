@@ -108,21 +108,4 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', devTasks);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
-};
-
-//
-// var gulp  = require('gulp');
-// var shell = require('gulp-shell');
-// var watch = require('gulp-watch');
-//
-// gulp.task('watch', function() {
-//   gulp.watch('path/to/watch/for/changes/**/*.scss', ['makeStyleguide']);
-// });
-//
-// gulp.task('makeStyleguide',
-//   shell.task(
-//     ['styleguide']
-//   )
-// );
-//
-// gulp.task('default', ['watch']);
+}
