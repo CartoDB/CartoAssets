@@ -19,6 +19,7 @@ module.exports = function (grunt) {
   ];
 
   var devTasks = baseTasks.concat([
+    'shell',
     'connect',
     'watch:scss'
   ]);
