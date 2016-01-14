@@ -21,6 +21,6 @@ In order to publish a new version of CartoAssets you need to:
 - Change version of the package.
 - Be a collaborator of the [npm module](https://www.npmjs.com/cartoassets) (Send an email to xavijam[at]cartodb.com).
 
-If you have previous steps done:
+If you have these previous steps done:
 
 - ```npm publish```
