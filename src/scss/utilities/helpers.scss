@@ -27,3 +27,18 @@
 .u-iBlock {
   @include inline-block();
 }
+.u-showDesktop {
+  display: block !important;
+}
+.u-showMobile {
+  display: none !important;
+}
+
+@include media-query-mobile() {
+  .u-showDesktop {
+    display: none !important;
+  }
+  .u-showMobile {
+    display: block !important;
+  }
+}
