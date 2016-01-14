@@ -15,7 +15,7 @@ If you want to use any of the CartoAssets components, after the installation jus
 It will generate a UI documentation about the components in this repository:
 - ```grunt dev```
 
-### Publish a new version
+### Publish a new version in NPM
 In order to publish a new version of CartoAssets you need to:
 
 - Change version of the package.
@@ -24,3 +24,8 @@ In order to publish a new version of CartoAssets you need to:
 If you have these previous steps done:
 
 - ```npm publish```
+
+### Publish CartoAssets styleguide and documentation in GH-Pages
+Just run this command:
+
+- ```grunt publish```

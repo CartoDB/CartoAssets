@@ -8,18 +8,19 @@ module.exports = function (grunt) {
     sass: require('./tasks/sass'),
     cssmin: require('./tasks/cssmin'),
     shell: require('./tasks/shell'),
-    watch: require('./tasks/watch')
+    watch: require('./tasks/watch'),
+    'gh-pages': require('./tasks/gh-pages')
   });
 
   var baseTasks = [
     'clean',
     'sass',
     'concat',
-    'cssmin'
+    'cssmin',
+    'shell'
   ];
 
   var devTasks = baseTasks.concat([
-    'shell',
     'connect',
     'watch:scss'
   ]);
@@ -31,4 +32,5 @@ module.exports = function (grunt) {
   grunt.registerTask('dev', devTasks);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
+  grunt.registerTask('publish', ['gh-pages']);
 };

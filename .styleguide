@@ -1,7 +1,7 @@
 {
 	"sgComment": "SG",
-	"srcFolder": ".",
-	"outputFile": "./styleguide/index.html",
+	"srcFolder": "./src",
+	"outputFile": "./dist/styleguide/index.html",
 	"templateFile": "./styleguide/_template.html",
 	"themeFile": "./styleguide/theme.css",
 	"highlightFolder": "./node_modules/highlight.js/styles",
