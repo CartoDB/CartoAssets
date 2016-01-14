@@ -32,5 +32,5 @@ module.exports = function (grunt) {
   grunt.registerTask('dev', devTasks);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
-  grunt.registerTask('publish', ['gh-pages']);
+  grunt.registerTask('publish', ['build', 'gh-pages']);
 };
