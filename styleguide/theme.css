@@ -18,6 +18,7 @@
 }
 
 #styleguide .result {
+    position: relative;
     border-top: none;
 }
 
