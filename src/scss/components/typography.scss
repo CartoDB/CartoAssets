@@ -1,0 +1,51 @@
+// Shapes styles
+// ----------------------------------------------
+
+/* SG
+# Typography/
+
+```
+<p class="Text Size-huge">Open Sans<br/>
+26/34 Regular</p>
+<p class="Text Size-large">Open Sans<br/>
+16/22 Regular</p>
+<p class="Text is-semibold Size-medium">Open Sans<br/>
+12/16 Semibold</p>
+<p class="Text Size-medium">Open Sans<br/>
+12/16 Semibold</p>
+<p class="Text is-semibold Size-small">Open Sans<br/>
+10/14 Semibold</p>
+<p class="Text Size-small">Open Sans
+10/14 Regular</p>
+``` 
+*/
+
+@import '../variables/sizes';
+
+.Text {
+  font-family: 'Open Sans';
+  $sFontWeight-normal:   400;
+  &.is-semibold {
+    font-weight: $sFontWeight-semibold;
+  }
+  &.is-light {
+    font-weight: $sFontWeight-lighter;
+  }
+}
+.Size-huge {
+  font-size: $sFontSize-huge;
+  line-height: $sLineHeight-huge;
+}
+.Size-large {
+  font-size: $sFontSize-large;
+  line-height: $sLineHeight-large;
+}
+.Size-medium {
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+}
+.Size-small {
+  font-size: $sFontSize-small;
+  line-height: $sLineHeight-small;
+}
+
