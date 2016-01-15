@@ -1,4 +1,4 @@
-// Shapes styles
+// Typography styles
 // ----------------------------------------------
 
 /* SG
@@ -18,7 +18,8 @@
 
 .Text {
   font-family: 'Open Sans';
-  $sFontWeight-normal:   400;
+  $sFontWeight-normal: 400;
+
   &.is-semibold {
     font-weight: $sFontWeight-semibold;
   }
@@ -26,18 +27,22 @@
     font-weight: $sFontWeight-lighter;
   }
 }
+
 .Size-huge {
   font-size: $sFontSize-huge;
   line-height: $sLineHeight-huge;
 }
+
 .Size-large {
   font-size: $sFontSize-large;
   line-height: $sLineHeight-large;
 }
+
 .Size-medium {
   font-size: $sFontSize-medium;
   line-height: $sLineHeight-medium;
 }
+
 .Size-small {
   font-size: $sFontSize-small;
   line-height: $sLineHeight-small;
