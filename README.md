@@ -6,6 +6,7 @@
 ### Installation
 As easy as:
 - ```npm install```
+- ```npm install -g markdown-styleguide-generator``` [StyleGenerator installation](https://www.npmjs.com/package/markdown-styleguide-generator#install)
 
 ### Build
 If you want to use any of the CartoAssets components, after the installation just run:
@@ -14,6 +15,8 @@ If you want to use any of the CartoAssets components, after the installation jus
 ### Development
 It will generate a UI documentation about the components in this repository:
 - ```grunt dev```
+
+If you want to check the documenation, it is generated in the dist folder.
 
 ### Publish a new version in NPM
 In order to publish a new version of CartoAssets you need to:
