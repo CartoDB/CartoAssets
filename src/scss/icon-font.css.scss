@@ -9,6 +9,16 @@
   font-style: normal;
 }
 
+.iconFont {
+  display: inline-block;
+  font-family: 'CartoIcon';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
 
 /* SG
 # Icon font/Clock
@@ -930,13 +940,3 @@
   content: '\E05C';
 }
 
-
-.iconFont {
-  display: inline-block;
-  font-family: 'CartoIcon';
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-}

@@ -9,6 +9,16 @@
   font-style: normal;
 }
 
+.iconFont {
+  display: inline-block;
+  font-family: 'CartoIcon';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
 <% _.each(glyphs, function(glyph) { %>
 <%= '/* SG' %>
 <%= '# Icon font/' + glyph.fileName.split("_")[2]  %>
@@ -20,14 +30,4 @@
   content: '\<%= glyph.codePoint %>';
 }
 <% }); %>
-
-.iconFont {
-  display: inline-block;
-  font-family: 'CartoIcon';
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-}
 
