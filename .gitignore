@@ -5,3 +5,4 @@ npm-debug.log
 dist
 .grunt
 styleguide/index.html
+icon_font/svgs

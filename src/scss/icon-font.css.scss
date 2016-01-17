@@ -1,0 +1,947 @@
+
+// New dashboard icon font :)
+// --------------------------------------------------
+
+@font-face {
+  font-family: "CartoIcon";
+  src: url("fonts/cartoIcon.eot");
+  src: url("fonts/cartoIcon.eot?#iefix") format("embedded-opentype"),
+  url("fonts/cartoIcon.woff") format("woff"),
+  url("fonts/cartoIcon.ttf") format("truetype"),
+  url("fonts/cartoIcon.svg?ey3vsq#cartoIcon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ /* SG
+# Icon font/Clock
+```
+<i class="iconFont iconFont-Clock iconFont--size24"></i>
+```
+*/ 
+.iconFont-Clock:before {
+  content: '\E001';
+}
+
+ /* SG
+# Icon font/Stats
+```
+<i class="iconFont iconFont-Stats iconFont--size24"></i>
+```
+*/ 
+.iconFont-Stats:before {
+  content: '\E002';
+}
+
+ /* SG
+# Icon font/Heart--empty
+```
+<i class="iconFont iconFont-Heart--empty iconFont--size24"></i>
+```
+*/ 
+.iconFont-Heart--empty:before {
+  content: '\E003';
+}
+
+ /* SG
+# Icon font/Heart--fill
+```
+<i class="iconFont iconFont-Heart--fill iconFont--size24"></i>
+```
+*/ 
+.iconFont-Heart--fill:before {
+  content: '\E004';
+}
+
+ /* SG
+# Icon font/Alert
+```
+<i class="iconFont iconFont-Alert iconFont--size24"></i>
+```
+*/ 
+.iconFont-Alert:before {
+  content: '\E005';
+}
+
+ /* SG
+# Icon font/Rows
+```
+<i class="iconFont iconFont-Rows iconFont--size24"></i>
+```
+*/ 
+.iconFont-Rows:before {
+  content: '\E006';
+}
+
+ /* SG
+# Icon font/Check
+```
+<i class="iconFont iconFont-Check iconFont--size24"></i>
+```
+*/ 
+.iconFont-Check:before {
+  content: '\E007';
+}
+
+ /* SG
+# Icon font/Dribbble
+```
+<i class="iconFont iconFont-Dribbble iconFont--size24"></i>
+```
+*/ 
+.iconFont-Dribbble:before {
+  content: '\E008';
+}
+
+ /* SG
+# Icon font/Twitter
+```
+<i class="iconFont iconFont-Twitter iconFont--size24"></i>
+```
+*/ 
+.iconFont-Twitter:before {
+  content: '\E009';
+}
+
+ /* SG
+# Icon font/Wizard
+```
+<i class="iconFont iconFont-Wizard iconFont--size24"></i>
+```
+*/ 
+.iconFont-Wizard:before {
+  content: '\E00A';
+}
+
+ /* SG
+# Icon font/Info
+```
+<i class="iconFont iconFont-Info iconFont--size24"></i>
+```
+*/ 
+.iconFont-Info:before {
+  content: '\E00B';
+}
+
+ /* SG
+# Icon font/Fork
+```
+<i class="iconFont iconFont-Fork iconFont--size24"></i>
+```
+*/ 
+.iconFont-Fork:before {
+  content: '\E00C';
+}
+
+ /* SG
+# Icon font/Facebook
+```
+<i class="iconFont iconFont-Facebook iconFont--size24"></i>
+```
+*/ 
+.iconFont-Facebook:before {
+  content: '\E00D';
+}
+
+ /* SG
+# Icon font/Folder
+```
+<i class="iconFont iconFont-Folder iconFont--size24"></i>
+```
+*/ 
+.iconFont-Folder:before {
+  content: '\E00E';
+}
+
+ /* SG
+# Icon font/Dropbox
+```
+<i class="iconFont iconFont-Dropbox iconFont--size24"></i>
+```
+*/ 
+.iconFont-Dropbox:before {
+  content: '\E00F';
+}
+
+ /* SG
+# Icon font/Cloud
+```
+<i class="iconFont iconFont-Cloud iconFont--size24"></i>
+```
+*/ 
+.iconFont-Cloud:before {
+  content: '\E010';
+}
+
+ /* SG
+# Icon font/Step
+```
+<i class="iconFont iconFont-Step iconFont--size24"></i>
+```
+*/ 
+.iconFont-Step:before {
+  content: '\E011';
+}
+
+ /* SG
+# Icon font/AddDocument
+```
+<i class="iconFont iconFont-AddDocument iconFont--size24"></i>
+```
+*/ 
+.iconFont-AddDocument:before {
+  content: '\E012';
+}
+
+ /* SG
+# Icon font/ArrowNext
+```
+<i class="iconFont iconFont-ArrowNext iconFont--size24"></i>
+```
+*/ 
+.iconFont-ArrowNext:before {
+  content: '\E013';
+}
+
+ /* SG
+# Icon font/ArrowPrev
+```
+<i class="iconFont iconFont-ArrowPrev iconFont--size24"></i>
+```
+*/ 
+.iconFont-ArrowPrev:before {
+  content: '\E014';
+}
+
+ /* SG
+# Icon font/Close
+```
+<i class="iconFont iconFont-Close iconFont--size24"></i>
+```
+*/ 
+.iconFont-Close:before {
+  content: '\E015';
+}
+
+ /* SG
+# Icon font/CartoFante
+```
+<i class="iconFont iconFont-CartoFante iconFont--size24"></i>
+```
+*/ 
+.iconFont-CartoFante:before {
+  content: '\E016';
+}
+
+ /* SG
+# Icon font/Lock
+```
+<i class="iconFont iconFont-Lock iconFont--size24"></i>
+```
+*/ 
+.iconFont-Lock:before {
+  content: '\E017';
+}
+
+ /* SG
+# Icon font/CartoDB
+```
+<i class="iconFont iconFont-CartoDB iconFont--size24"></i>
+```
+*/ 
+.iconFont-CartoDB:before {
+  content: '\E018';
+}
+
+ /* SG
+# Icon font/Lens
+```
+<i class="iconFont iconFont-Lens iconFont--size24"></i>
+```
+*/ 
+.iconFont-Lens:before {
+  content: '\E019';
+}
+
+ /* SG
+# Icon font/CloseLimits
+```
+<i class="iconFont iconFont-CloseLimits iconFont--size24"></i>
+```
+*/ 
+.iconFont-CloseLimits:before {
+  content: '\E01A';
+}
+
+ /* SG
+# Icon font/DefaultUser
+```
+<i class="iconFont iconFont-DefaultUser iconFont--size24"></i>
+```
+*/ 
+.iconFont-DefaultUser:before {
+  content: '\E01B';
+}
+
+ /* SG
+# Icon font/Cockroach
+```
+<i class="iconFont iconFont-Cockroach iconFont--size24"></i>
+```
+*/ 
+.iconFont-Cockroach:before {
+  content: '\E01C';
+}
+
+ /* SG
+# Icon font/Floppy
+```
+<i class="iconFont iconFont-Floppy iconFont--size24"></i>
+```
+*/ 
+.iconFont-Floppy:before {
+  content: '\E01D';
+}
+
+ /* SG
+# Icon font/Trash
+```
+<i class="iconFont iconFont-Trash iconFont--size24"></i>
+```
+*/ 
+.iconFont-Trash:before {
+  content: '\E01E';
+}
+
+ /* SG
+# Icon font/Wifi
+```
+<i class="iconFont iconFont-Wifi iconFont--size24"></i>
+```
+*/ 
+.iconFont-Wifi:before {
+  content: '\E01F';
+}
+
+ /* SG
+# Icon font/Unlock
+```
+<i class="iconFont iconFont-Unlock iconFont--size24"></i>
+```
+*/ 
+.iconFont-Unlock:before {
+  content: '\E020';
+}
+
+ /* SG
+# Icon font/Unlock--withEllipsis
+```
+<i class="iconFont iconFont-Unlock--withEllipsis iconFont--size24"></i>
+```
+*/ 
+.iconFont-Unlock--withEllipsis:before {
+  content: '\E021';
+}
+
+ /* SG
+# Icon font/Gift
+```
+<i class="iconFont iconFont-Gift iconFont--size24"></i>
+```
+*/ 
+.iconFont-Gift:before {
+  content: '\E022';
+}
+
+ /* SG
+# Icon font/People
+```
+<i class="iconFont iconFont-People iconFont--size24"></i>
+```
+*/ 
+.iconFont-People:before {
+  content: '\E023';
+}
+
+ /* SG
+# Icon font/Play
+```
+<i class="iconFont iconFont-Play iconFont--size24"></i>
+```
+*/ 
+.iconFont-Play:before {
+  content: '\E024';
+}
+
+ /* SG
+# Icon font/Add
+```
+<i class="iconFont iconFont-Add iconFont--size24"></i>
+```
+*/ 
+.iconFont-Add:before {
+  content: '\E025';
+}
+
+ /* SG
+# Icon font/Map
+```
+<i class="iconFont iconFont-Map iconFont--size24"></i>
+```
+*/ 
+.iconFont-Map:before {
+  content: '\E026';
+}
+
+ /* SG
+# Icon font/Anchor
+```
+<i class="iconFont iconFont-Anchor iconFont--size24"></i>
+```
+*/ 
+.iconFont-Anchor:before {
+  content: '\E027';
+}
+
+ /* SG
+# Icon font/Key
+```
+<i class="iconFont iconFont-Key iconFont--size24"></i>
+```
+*/ 
+.iconFont-Key:before {
+  content: '\E028';
+}
+
+ /* SG
+# Icon font/Calendar
+```
+<i class="iconFont iconFont-Calendar iconFont--size24"></i>
+```
+*/ 
+.iconFont-Calendar:before {
+  content: '\E029';
+}
+
+ /* SG
+# Icon font/Document
+```
+<i class="iconFont iconFont-Document iconFont--size24"></i>
+```
+*/ 
+.iconFont-Document:before {
+  content: '\E02A';
+}
+
+ /* SG
+# Icon font/Eye
+```
+<i class="iconFont iconFont-Eye iconFont--size24"></i>
+```
+*/ 
+.iconFont-Eye:before {
+  content: '\E02B';
+}
+
+ /* SG
+# Icon font/Marker
+```
+<i class="iconFont iconFont-Marker iconFont--size24"></i>
+```
+*/ 
+.iconFont-Marker:before {
+  content: '\E02C';
+}
+
+ /* SG
+# Icon font/ProgressBar
+```
+<i class="iconFont iconFont-ProgressBar iconFont--size24"></i>
+```
+*/ 
+.iconFont-ProgressBar:before {
+  content: '\E02D';
+}
+
+ /* SG
+# Icon font/Book
+```
+<i class="iconFont iconFont-Book iconFont--size24"></i>
+```
+*/ 
+.iconFont-Book:before {
+  content: '\E02E';
+}
+
+ /* SG
+# Icon font/Notes
+```
+<i class="iconFont iconFont-Notes iconFont--size24"></i>
+```
+*/ 
+.iconFont-Notes:before {
+  content: '\E02F';
+}
+
+ /* SG
+# Icon font/Rectangles
+```
+<i class="iconFont iconFont-Rectangles iconFont--size24"></i>
+```
+*/ 
+.iconFont-Rectangles:before {
+  content: '\E030';
+}
+
+ /* SG
+# Icon font/Mountain
+```
+<i class="iconFont iconFont-Mountain iconFont--size24"></i>
+```
+*/ 
+.iconFont-Mountain:before {
+  content: '\E031';
+}
+
+ /* SG
+# Icon font/Points
+```
+<i class="iconFont iconFont-Points iconFont--size24"></i>
+```
+*/ 
+.iconFont-Points:before {
+  content: '\E032';
+}
+
+ /* SG
+# Icon font/Snake
+```
+<i class="iconFont iconFont-Snake iconFont--size24"></i>
+```
+*/ 
+.iconFont-Snake:before {
+  content: '\E033';
+}
+
+ /* SG
+# Icon font/Boss
+```
+<i class="iconFont iconFont-Boss iconFont--size24"></i>
+```
+*/ 
+.iconFont-Boss:before {
+  content: '\E034';
+}
+
+ /* SG
+# Icon font/Rocket
+```
+<i class="iconFont iconFont-Rocket iconFont--size24"></i>
+```
+*/ 
+.iconFont-Rocket:before {
+  content: '\E035';
+}
+
+ /* SG
+# Icon font/Barometer
+```
+<i class="iconFont iconFont-Barometer iconFont--size24"></i>
+```
+*/ 
+.iconFont-Barometer:before {
+  content: '\E036';
+}
+
+ /* SG
+# Icon font/Dollar
+```
+<i class="iconFont iconFont-Dollar iconFont--size24"></i>
+```
+*/ 
+.iconFont-Dollar:before {
+  content: '\E037';
+}
+
+ /* SG
+# Icon font/Email
+```
+<i class="iconFont iconFont-Email iconFont--size24"></i>
+```
+*/ 
+.iconFont-Email:before {
+  content: '\E038';
+}
+
+ /* SG
+# Icon font/Label
+```
+<i class="iconFont iconFont-Label iconFont--size24"></i>
+```
+*/ 
+.iconFont-Label:before {
+  content: '\E039';
+}
+
+ /* SG
+# Icon font/Outside
+```
+<i class="iconFont iconFont-Outside iconFont--size24"></i>
+```
+*/ 
+.iconFont-Outside:before {
+  content: '\E03A';
+}
+
+ /* SG
+# Icon font/Jigsaw
+```
+<i class="iconFont iconFont-Jigsaw iconFont--size24"></i>
+```
+*/ 
+.iconFont-Jigsaw:before {
+  content: '\E03B';
+}
+
+ /* SG
+# Icon font/Tools
+```
+<i class="iconFont iconFont-Tools iconFont--size24"></i>
+```
+*/ 
+.iconFont-Tools:before {
+  content: '\E03C';
+}
+
+ /* SG
+# Icon font/Question
+```
+<i class="iconFont iconFont-Question iconFont--size24"></i>
+```
+*/ 
+.iconFont-Question:before {
+  content: '\E03D';
+}
+
+ /* SG
+# Icon font/LayerStack
+```
+<i class="iconFont iconFont-LayerStack iconFont--size24"></i>
+```
+*/ 
+.iconFont-LayerStack:before {
+  content: '\E03E';
+}
+
+ /* SG
+# Icon font/Alarm
+```
+<i class="iconFont iconFont-Alarm iconFont--size24"></i>
+```
+*/ 
+.iconFont-Alarm:before {
+  content: '\E03F';
+}
+
+ /* SG
+# Icon font/CloudDownArrow
+```
+<i class="iconFont iconFont-CloudDownArrow iconFont--size24"></i>
+```
+*/ 
+.iconFont-CloudDownArrow:before {
+  content: '\E040';
+}
+
+ /* SG
+# Icon font/Pencil
+```
+<i class="iconFont iconFont-Pencil iconFont--size24"></i>
+```
+*/ 
+.iconFont-Pencil:before {
+  content: '\E041';
+}
+
+ /* SG
+# Icon font/FountainPen
+```
+<i class="iconFont iconFont-FountainPen iconFont--size24"></i>
+```
+*/ 
+.iconFont-FountainPen:before {
+  content: '\E042';
+}
+
+ /* SG
+# Icon font/EmptyDoc
+```
+<i class="iconFont iconFont-EmptyDoc iconFont--size24"></i>
+```
+*/ 
+.iconFont-EmptyDoc:before {
+  content: '\E043';
+}
+
+ /* SG
+# Icon font/MergeArrow
+```
+<i class="iconFont iconFont-MergeArrow iconFont--size24"></i>
+```
+*/ 
+.iconFont-MergeArrow:before {
+  content: '\E044';
+}
+
+ /* SG
+# Icon font/MergeColumns
+```
+<i class="iconFont iconFont-MergeColumns iconFont--size24"></i>
+```
+*/ 
+.iconFont-MergeColumns:before {
+  content: '\E045';
+}
+
+ /* SG
+# Icon font/MergeSpatial
+```
+<i class="iconFont iconFont-MergeSpatial iconFont--size24"></i>
+```
+*/ 
+.iconFont-MergeSpatial:before {
+  content: '\E046';
+}
+
+ /* SG
+# Icon font/Globe
+```
+<i class="iconFont iconFont-Globe iconFont--size24"></i>
+```
+*/ 
+.iconFont-Globe:before {
+  content: '\E047';
+}
+
+ /* SG
+# Icon font/ChevronDown
+```
+<i class="iconFont iconFont-ChevronDown iconFont--size24"></i>
+```
+*/ 
+.iconFont-ChevronDown:before {
+  content: '\E048';
+}
+
+ /* SG
+# Icon font/Streets
+```
+<i class="iconFont iconFont-Streets iconFont--size24"></i>
+```
+*/ 
+.iconFont-Streets:before {
+  content: '\E049';
+}
+
+ /* SG
+# Icon font/Keys
+```
+<i class="iconFont iconFont-Keys iconFont--size24"></i>
+```
+*/ 
+.iconFont-Keys:before {
+  content: '\E04A';
+}
+
+ /* SG
+# Icon font/FacebookSquare
+```
+<i class="iconFont iconFont-FacebookSquare iconFont--size24"></i>
+```
+*/ 
+.iconFont-FacebookSquare:before {
+  content: '\E04B';
+}
+
+ /* SG
+# Icon font/Fullscreen
+```
+<i class="iconFont iconFont-Fullscreen iconFont--size24"></i>
+```
+*/ 
+.iconFont-Fullscreen:before {
+  content: '\E04C';
+}
+
+ /* SG
+# Icon font/Rarrow
+```
+<i class="iconFont iconFont-Rarrow iconFont--size24"></i>
+```
+*/ 
+.iconFont-Rarrow:before {
+  content: '\E04D';
+}
+
+ /* SG
+# Icon font/Share
+```
+<i class="iconFont iconFont-Share iconFont--size24"></i>
+```
+*/ 
+.iconFont-Share:before {
+  content: '\E04E';
+}
+
+ /* SG
+# Icon font/Linkedin
+```
+<i class="iconFont iconFont-Linkedin iconFont--size24"></i>
+```
+*/ 
+.iconFont-Linkedin:before {
+  content: '\E04F';
+}
+
+ /* SG
+# Icon font/CalendarBlank
+```
+<i class="iconFont iconFont-CalendarBlank iconFont--size24"></i>
+```
+*/ 
+.iconFont-CalendarBlank:before {
+  content: '\E050';
+}
+
+ /* SG
+# Icon font/CreativeCommons
+```
+<i class="iconFont iconFont-CreativeCommons iconFont--size24"></i>
+```
+*/ 
+.iconFont-CreativeCommons:before {
+  content: '\E051';
+}
+
+ /* SG
+# Icon font/Bubble
+```
+<i class="iconFont iconFont-Bubble iconFont--size24"></i>
+```
+*/ 
+.iconFont-Bubble:before {
+  content: '\E052';
+}
+
+ /* SG
+# Icon font/Bars
+```
+<i class="iconFont iconFont-Bars iconFont--size24"></i>
+```
+*/ 
+.iconFont-Bars:before {
+  content: '\E053';
+}
+
+ /* SG
+# Icon font/ArrowMenu
+```
+<i class="iconFont iconFont-ArrowMenu iconFont--size24"></i>
+```
+*/ 
+.iconFont-ArrowMenu:before {
+  content: '\E054';
+}
+
+ /* SG
+# Icon font/TieFighter
+```
+<i class="iconFont iconFont-TieFighter iconFont--size24"></i>
+```
+*/ 
+.iconFont-TieFighter:before {
+  content: '\E055';
+}
+
+ /* SG
+# Icon font/Ray
+```
+<i class="iconFont iconFont-Ray iconFont--size24"></i>
+```
+*/ 
+.iconFont-Ray:before {
+  content: '\E056';
+}
+
+ /* SG
+# Icon font/Markup
+```
+<i class="iconFont iconFont-Markup iconFont--size24"></i>
+```
+*/ 
+.iconFont-Markup:before {
+  content: '\E057';
+}
+
+ /* SG
+# Icon font/Table
+```
+<i class="iconFont iconFont-Table iconFont--size24"></i>
+```
+*/ 
+.iconFont-Table:before {
+  content: '\E058';
+}
+
+ /* SG
+# Icon font/Airlock
+```
+<i class="iconFont iconFont-Airlock iconFont--size24"></i>
+```
+*/ 
+.iconFont-Airlock:before {
+  content: '\E059';
+}
+
+ /* SG
+# Icon font/Pin
+```
+<i class="iconFont iconFont-Pin iconFont--size24"></i>
+```
+*/ 
+.iconFont-Pin:before {
+  content: '\E05A';
+}
+
+ /* SG
+# Icon font/Attache
+```
+<i class="iconFont iconFont-Attache iconFont--size24"></i>
+```
+*/ 
+.iconFont-Attache:before {
+  content: '\E05B';
+}
+
+ /* SG
+# Icon font/Download
+```
+<i class="iconFont iconFont-Download iconFont--size24"></i>
+```
+*/ 
+.iconFont-Download:before {
+  content: '\E05C';
+}
+
+
+
+.iconFont {
+  display: inline-block;
+  font-family: 'CartoIcon';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
