@@ -7,6 +7,7 @@ module.exports = function (grunt) {
     clean: require('./tasks/clean'),
     sass: require('./tasks/sass'),
     cssmin: require('./tasks/cssmin'),
+    copy: require('./tasks/copy'),
     shell: require('./tasks/shell'),
     watch: require('./tasks/watch'),
     'gh-pages': require('./tasks/gh-pages')
@@ -17,6 +18,7 @@ module.exports = function (grunt) {
     'sass',
     'concat',
     'cssmin',
+    'copy',
     'shell'
   ];
 
