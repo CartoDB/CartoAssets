@@ -3,12 +3,12 @@
 // --------------------------------------------------
 
 @font-face {
-  font-family: "CartoIcon";
-  src: url("fonts/cartoIcon.eot");
-  src: url("fonts/cartoIcon.eot?#iefix") format("embedded-opentype"),
-  url("fonts/cartoIcon.woff") format("woff"),
-  url("fonts/cartoIcon.ttf") format("truetype"),
-  url("fonts/cartoIcon.svg?ey3vsq#cartoIcon") format("svg");
+  font-family: 'CartoIcon';
+  src: url('fonts/cartoIcon.eot');
+  src: url('fonts/cartoIcon.eot?#iefix') format('embedded-opentype'),
+  url('fonts/cartoIcon.woff') format('woff'),
+  url('fonts/cartoIcon.ttf') format('truetype'),
+  url('fonts/cartoIcon.svg?ey3vsq#cartoIcon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 <i class="iconFont iconFont-<%= glyph.fileName.split("_")[2] %> iconFont--size24"></i>
 ```
 <%= '*/' %>
-.iconFont-<%= glyph.fileName.split("_")[2] %>:before {
+.iconFont-<%= glyph.fileName.split("_")[2] %>::before {
   content: '\<%= glyph.codePoint %>';
 }
 <% }); %>
@@ -35,4 +35,3 @@
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
 }
-
