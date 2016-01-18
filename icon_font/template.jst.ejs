@@ -18,14 +18,18 @@
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
 }
-<% _.each(glyphs, function(glyph) { %>
-<%= '/* SG' %>
-<%= '# Icon font/' + glyph.fileName.split("_")[2]  %>
-```
-<i class="IconFont IconFont-<%= glyph.fileName.split("_")[2] %>"></i>
-```
-<%= '*/' %>
 
+/* SG 
+# Icon font
+```
+<% _.each(glyphs, function(glyph) { %>
+<h4><%= glyph.fileName.split("_")[2] %></h4>
+<i class="IconFont IconFont-<%= glyph.fileName.split("_")[2] %>"></i>
+<% }); %>
+```
+*/
+
+<% _.each(glyphs, function(glyph) { %>
 .IconFont-<%= glyph.fileName.split("_")[2] %>::before {
   content: '\<%= glyph.codePoint %>';
 }
