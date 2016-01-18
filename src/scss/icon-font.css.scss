@@ -1,0 +1,673 @@
+@font-face {
+  font-family: 'CartoIcon';
+  src: url('fonts/cartoIcon.eot');
+  src: url('fonts/cartoIcon.eot?#iefix') format('embedded-opentype'),
+  url('fonts/cartoIcon.woff') format('woff'),
+  url('fonts/cartoIcon.ttf') format('truetype'),
+  url('fonts/cartoIcon.svg?ey3vsq#cartoIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.IconFont {
+  display: inline-block;
+  font-family: 'CartoIcon';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+/* SG 
+# Icon font
+```
+
+<h4>Clock</h4>
+<i class="IconFont IconFont-Clock"></i>
+
+<h4>Stats</h4>
+<i class="IconFont IconFont-Stats"></i>
+
+<h4>Heart--empty</h4>
+<i class="IconFont IconFont-Heart--empty"></i>
+
+<h4>Heart--fill</h4>
+<i class="IconFont IconFont-Heart--fill"></i>
+
+<h4>Alert</h4>
+<i class="IconFont IconFont-Alert"></i>
+
+<h4>Rows</h4>
+<i class="IconFont IconFont-Rows"></i>
+
+<h4>Check</h4>
+<i class="IconFont IconFont-Check"></i>
+
+<h4>Dribbble</h4>
+<i class="IconFont IconFont-Dribbble"></i>
+
+<h4>Twitter</h4>
+<i class="IconFont IconFont-Twitter"></i>
+
+<h4>Wizard</h4>
+<i class="IconFont IconFont-Wizard"></i>
+
+<h4>Info</h4>
+<i class="IconFont IconFont-Info"></i>
+
+<h4>Fork</h4>
+<i class="IconFont IconFont-Fork"></i>
+
+<h4>Facebook</h4>
+<i class="IconFont IconFont-Facebook"></i>
+
+<h4>Folder</h4>
+<i class="IconFont IconFont-Folder"></i>
+
+<h4>Dropbox</h4>
+<i class="IconFont IconFont-Dropbox"></i>
+
+<h4>Cloud</h4>
+<i class="IconFont IconFont-Cloud"></i>
+
+<h4>Step</h4>
+<i class="IconFont IconFont-Step"></i>
+
+<h4>AddDocument</h4>
+<i class="IconFont IconFont-AddDocument"></i>
+
+<h4>ArrowNext</h4>
+<i class="IconFont IconFont-ArrowNext"></i>
+
+<h4>ArrowPrev</h4>
+<i class="IconFont IconFont-ArrowPrev"></i>
+
+<h4>Close</h4>
+<i class="IconFont IconFont-Close"></i>
+
+<h4>CartoFante</h4>
+<i class="IconFont IconFont-CartoFante"></i>
+
+<h4>Lock</h4>
+<i class="IconFont IconFont-Lock"></i>
+
+<h4>CartoDB</h4>
+<i class="IconFont IconFont-CartoDB"></i>
+
+<h4>Lens</h4>
+<i class="IconFont IconFont-Lens"></i>
+
+<h4>CloseLimits</h4>
+<i class="IconFont IconFont-CloseLimits"></i>
+
+<h4>DefaultUser</h4>
+<i class="IconFont IconFont-DefaultUser"></i>
+
+<h4>Cockroach</h4>
+<i class="IconFont IconFont-Cockroach"></i>
+
+<h4>Floppy</h4>
+<i class="IconFont IconFont-Floppy"></i>
+
+<h4>Trash</h4>
+<i class="IconFont IconFont-Trash"></i>
+
+<h4>Wifi</h4>
+<i class="IconFont IconFont-Wifi"></i>
+
+<h4>Unlock</h4>
+<i class="IconFont IconFont-Unlock"></i>
+
+<h4>Unlock--withEllipsis</h4>
+<i class="IconFont IconFont-Unlock--withEllipsis"></i>
+
+<h4>Gift</h4>
+<i class="IconFont IconFont-Gift"></i>
+
+<h4>People</h4>
+<i class="IconFont IconFont-People"></i>
+
+<h4>Play</h4>
+<i class="IconFont IconFont-Play"></i>
+
+<h4>Add</h4>
+<i class="IconFont IconFont-Add"></i>
+
+<h4>Map</h4>
+<i class="IconFont IconFont-Map"></i>
+
+<h4>Anchor</h4>
+<i class="IconFont IconFont-Anchor"></i>
+
+<h4>Key</h4>
+<i class="IconFont IconFont-Key"></i>
+
+<h4>Calendar</h4>
+<i class="IconFont IconFont-Calendar"></i>
+
+<h4>Document</h4>
+<i class="IconFont IconFont-Document"></i>
+
+<h4>Eye</h4>
+<i class="IconFont IconFont-Eye"></i>
+
+<h4>Marker</h4>
+<i class="IconFont IconFont-Marker"></i>
+
+<h4>ProgressBar</h4>
+<i class="IconFont IconFont-ProgressBar"></i>
+
+<h4>Book</h4>
+<i class="IconFont IconFont-Book"></i>
+
+<h4>Notes</h4>
+<i class="IconFont IconFont-Notes"></i>
+
+<h4>Rectangles</h4>
+<i class="IconFont IconFont-Rectangles"></i>
+
+<h4>Mountain</h4>
+<i class="IconFont IconFont-Mountain"></i>
+
+<h4>Points</h4>
+<i class="IconFont IconFont-Points"></i>
+
+<h4>Snake</h4>
+<i class="IconFont IconFont-Snake"></i>
+
+<h4>Boss</h4>
+<i class="IconFont IconFont-Boss"></i>
+
+<h4>Rocket</h4>
+<i class="IconFont IconFont-Rocket"></i>
+
+<h4>Barometer</h4>
+<i class="IconFont IconFont-Barometer"></i>
+
+<h4>Dollar</h4>
+<i class="IconFont IconFont-Dollar"></i>
+
+<h4>Email</h4>
+<i class="IconFont IconFont-Email"></i>
+
+<h4>Label</h4>
+<i class="IconFont IconFont-Label"></i>
+
+<h4>Outside</h4>
+<i class="IconFont IconFont-Outside"></i>
+
+<h4>Jigsaw</h4>
+<i class="IconFont IconFont-Jigsaw"></i>
+
+<h4>Tools</h4>
+<i class="IconFont IconFont-Tools"></i>
+
+<h4>Question</h4>
+<i class="IconFont IconFont-Question"></i>
+
+<h4>LayerStack</h4>
+<i class="IconFont IconFont-LayerStack"></i>
+
+<h4>Alarm</h4>
+<i class="IconFont IconFont-Alarm"></i>
+
+<h4>CloudDownArrow</h4>
+<i class="IconFont IconFont-CloudDownArrow"></i>
+
+<h4>Pencil</h4>
+<i class="IconFont IconFont-Pencil"></i>
+
+<h4>FountainPen</h4>
+<i class="IconFont IconFont-FountainPen"></i>
+
+<h4>EmptyDoc</h4>
+<i class="IconFont IconFont-EmptyDoc"></i>
+
+<h4>MergeArrow</h4>
+<i class="IconFont IconFont-MergeArrow"></i>
+
+<h4>MergeColumns</h4>
+<i class="IconFont IconFont-MergeColumns"></i>
+
+<h4>MergeSpatial</h4>
+<i class="IconFont IconFont-MergeSpatial"></i>
+
+<h4>Globe</h4>
+<i class="IconFont IconFont-Globe"></i>
+
+<h4>ChevronDown</h4>
+<i class="IconFont IconFont-ChevronDown"></i>
+
+<h4>Streets</h4>
+<i class="IconFont IconFont-Streets"></i>
+
+<h4>Keys</h4>
+<i class="IconFont IconFont-Keys"></i>
+
+<h4>FacebookSquare</h4>
+<i class="IconFont IconFont-FacebookSquare"></i>
+
+<h4>Fullscreen</h4>
+<i class="IconFont IconFont-Fullscreen"></i>
+
+<h4>Rarrow</h4>
+<i class="IconFont IconFont-Rarrow"></i>
+
+<h4>Share</h4>
+<i class="IconFont IconFont-Share"></i>
+
+<h4>Linkedin</h4>
+<i class="IconFont IconFont-Linkedin"></i>
+
+<h4>CalendarBlank</h4>
+<i class="IconFont IconFont-CalendarBlank"></i>
+
+<h4>CreativeCommons</h4>
+<i class="IconFont IconFont-CreativeCommons"></i>
+
+<h4>Bubble</h4>
+<i class="IconFont IconFont-Bubble"></i>
+
+<h4>Bars</h4>
+<i class="IconFont IconFont-Bars"></i>
+
+<h4>ArrowMenu</h4>
+<i class="IconFont IconFont-ArrowMenu"></i>
+
+<h4>TieFighter</h4>
+<i class="IconFont IconFont-TieFighter"></i>
+
+<h4>Ray</h4>
+<i class="IconFont IconFont-Ray"></i>
+
+<h4>Markup</h4>
+<i class="IconFont IconFont-Markup"></i>
+
+<h4>Table</h4>
+<i class="IconFont IconFont-Table"></i>
+
+<h4>Airlock</h4>
+<i class="IconFont IconFont-Airlock"></i>
+
+<h4>Pin</h4>
+<i class="IconFont IconFont-Pin"></i>
+
+<h4>Attache</h4>
+<i class="IconFont IconFont-Attache"></i>
+
+<h4>Download</h4>
+<i class="IconFont IconFont-Download"></i>
+
+```
+*/
+
+
+.IconFont-Clock::before {
+  content: '\E001';
+}
+
+.IconFont-Stats::before {
+  content: '\E002';
+}
+
+.IconFont-Heart--empty::before {
+  content: '\E003';
+}
+
+.IconFont-Heart--fill::before {
+  content: '\E004';
+}
+
+.IconFont-Alert::before {
+  content: '\E005';
+}
+
+.IconFont-Rows::before {
+  content: '\E006';
+}
+
+.IconFont-Check::before {
+  content: '\E007';
+}
+
+.IconFont-Dribbble::before {
+  content: '\E008';
+}
+
+.IconFont-Twitter::before {
+  content: '\E009';
+}
+
+.IconFont-Wizard::before {
+  content: '\E00A';
+}
+
+.IconFont-Info::before {
+  content: '\E00B';
+}
+
+.IconFont-Fork::before {
+  content: '\E00C';
+}
+
+.IconFont-Facebook::before {
+  content: '\E00D';
+}
+
+.IconFont-Folder::before {
+  content: '\E00E';
+}
+
+.IconFont-Dropbox::before {
+  content: '\E00F';
+}
+
+.IconFont-Cloud::before {
+  content: '\E010';
+}
+
+.IconFont-Step::before {
+  content: '\E011';
+}
+
+.IconFont-AddDocument::before {
+  content: '\E012';
+}
+
+.IconFont-ArrowNext::before {
+  content: '\E013';
+}
+
+.IconFont-ArrowPrev::before {
+  content: '\E014';
+}
+
+.IconFont-Close::before {
+  content: '\E015';
+}
+
+.IconFont-CartoFante::before {
+  content: '\E016';
+}
+
+.IconFont-Lock::before {
+  content: '\E017';
+}
+
+.IconFont-CartoDB::before {
+  content: '\E018';
+}
+
+.IconFont-Lens::before {
+  content: '\E019';
+}
+
+.IconFont-CloseLimits::before {
+  content: '\E01A';
+}
+
+.IconFont-DefaultUser::before {
+  content: '\E01B';
+}
+
+.IconFont-Cockroach::before {
+  content: '\E01C';
+}
+
+.IconFont-Floppy::before {
+  content: '\E01D';
+}
+
+.IconFont-Trash::before {
+  content: '\E01E';
+}
+
+.IconFont-Wifi::before {
+  content: '\E01F';
+}
+
+.IconFont-Unlock::before {
+  content: '\E020';
+}
+
+.IconFont-Unlock--withEllipsis::before {
+  content: '\E021';
+}
+
+.IconFont-Gift::before {
+  content: '\E022';
+}
+
+.IconFont-People::before {
+  content: '\E023';
+}
+
+.IconFont-Play::before {
+  content: '\E024';
+}
+
+.IconFont-Add::before {
+  content: '\E025';
+}
+
+.IconFont-Map::before {
+  content: '\E026';
+}
+
+.IconFont-Anchor::before {
+  content: '\E027';
+}
+
+.IconFont-Key::before {
+  content: '\E028';
+}
+
+.IconFont-Calendar::before {
+  content: '\E029';
+}
+
+.IconFont-Document::before {
+  content: '\E02A';
+}
+
+.IconFont-Eye::before {
+  content: '\E02B';
+}
+
+.IconFont-Marker::before {
+  content: '\E02C';
+}
+
+.IconFont-ProgressBar::before {
+  content: '\E02D';
+}
+
+.IconFont-Book::before {
+  content: '\E02E';
+}
+
+.IconFont-Notes::before {
+  content: '\E02F';
+}
+
+.IconFont-Rectangles::before {
+  content: '\E030';
+}
+
+.IconFont-Mountain::before {
+  content: '\E031';
+}
+
+.IconFont-Points::before {
+  content: '\E032';
+}
+
+.IconFont-Snake::before {
+  content: '\E033';
+}
+
+.IconFont-Boss::before {
+  content: '\E034';
+}
+
+.IconFont-Rocket::before {
+  content: '\E035';
+}
+
+.IconFont-Barometer::before {
+  content: '\E036';
+}
+
+.IconFont-Dollar::before {
+  content: '\E037';
+}
+
+.IconFont-Email::before {
+  content: '\E038';
+}
+
+.IconFont-Label::before {
+  content: '\E039';
+}
+
+.IconFont-Outside::before {
+  content: '\E03A';
+}
+
+.IconFont-Jigsaw::before {
+  content: '\E03B';
+}
+
+.IconFont-Tools::before {
+  content: '\E03C';
+}
+
+.IconFont-Question::before {
+  content: '\E03D';
+}
+
+.IconFont-LayerStack::before {
+  content: '\E03E';
+}
+
+.IconFont-Alarm::before {
+  content: '\E03F';
+}
+
+.IconFont-CloudDownArrow::before {
+  content: '\E040';
+}
+
+.IconFont-Pencil::before {
+  content: '\E041';
+}
+
+.IconFont-FountainPen::before {
+  content: '\E042';
+}
+
+.IconFont-EmptyDoc::before {
+  content: '\E043';
+}
+
+.IconFont-MergeArrow::before {
+  content: '\E044';
+}
+
+.IconFont-MergeColumns::before {
+  content: '\E045';
+}
+
+.IconFont-MergeSpatial::before {
+  content: '\E046';
+}
+
+.IconFont-Globe::before {
+  content: '\E047';
+}
+
+.IconFont-ChevronDown::before {
+  content: '\E048';
+}
+
+.IconFont-Streets::before {
+  content: '\E049';
+}
+
+.IconFont-Keys::before {
+  content: '\E04A';
+}
+
+.IconFont-FacebookSquare::before {
+  content: '\E04B';
+}
+
+.IconFont-Fullscreen::before {
+  content: '\E04C';
+}
+
+.IconFont-Rarrow::before {
+  content: '\E04D';
+}
+
+.IconFont-Share::before {
+  content: '\E04E';
+}
+
+.IconFont-Linkedin::before {
+  content: '\E04F';
+}
+
+.IconFont-CalendarBlank::before {
+  content: '\E050';
+}
+
+.IconFont-CreativeCommons::before {
+  content: '\E051';
+}
+
+.IconFont-Bubble::before {
+  content: '\E052';
+}
+
+.IconFont-Bars::before {
+  content: '\E053';
+}
+
+.IconFont-ArrowMenu::before {
+  content: '\E054';
+}
+
+.IconFont-TieFighter::before {
+  content: '\E055';
+}
+
+.IconFont-Ray::before {
+  content: '\E056';
+}
+
+.IconFont-Markup::before {
+  content: '\E057';
+}
+
+.IconFont-Table::before {
+  content: '\E058';
+}
+
+.IconFont-Airlock::before {
+  content: '\E059';
+}
+
+.IconFont-Pin::before {
+  content: '\E05A';
+}
+
+.IconFont-Attache::before {
+  content: '\E05B';
+}
+
+.IconFont-Download::before {
+  content: '\E05C';
+}
+
