@@ -2,7 +2,7 @@
 // ----------------------------------------------
 
 /* SG
-# Typography/
+# Typography
 
 ```
 <p class="Text Size-huge">Open Sans 26/34 Regular</p>
@@ -11,7 +11,7 @@
 <p class="Text Size-medium">Open Sans 12/16 Semibold</p>
 <p class="Text is-semibold Size-small">Open Sans 10/14 Semibold</p>
 <p class="Text Size-small">Open Sans 10/14 Regular</p>
-``` 
+```
 */
 
 @import '../variables/sizes';
@@ -47,4 +47,3 @@
   font-size: $sFontSize-small;
   line-height: $sLineHeight-small;
 }
-

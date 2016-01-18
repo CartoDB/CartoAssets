@@ -10,12 +10,20 @@
     var j = jQuery.noConflict(true);
     j(function() {
 
+        // Show current section
+        var hash = window.location.hash.replace(/#/g, '');
+        if (hash) {
+          setTimeout(function() {
+            showSection(hash.split('-')[0]);
+          }, 0);
+        }
+
         // Show section in Styleguide
         j('#styleguide .section[data-section="' + j('#styleguide-menu a').first().data('section') + '"]').show();
 
         // Click on link with subheadings
         j('#styleguide-menu .submenulink').click(function(event) {
-            event.preventDefault();
+            // event.preventDefault();
             var jqCurSubmenu = j('[data-submenu="' + j(this).data('section') + '"]');
             var isCurSubmenuOn = jqCurSubmenu.hasClass('on');
             j('#styleguide-menu .on').removeClass('on');
@@ -28,7 +36,7 @@
 
         // Click on link without subheadings
         j('#styleguide-menu .sectionlink').click(function(event) {
-            event.preventDefault();
+            // event.preventDefault();
             j('#styleguide-menu .on').removeClass('on');
             j(this).addClass('on');
             showSection(j(this).data('section'));
@@ -48,7 +56,7 @@
 	{{#each menu}}
 		<li>
 			{{#if headings.0.name}}
-                <a class="submenulink" href="#" data-section="{{name}}">{{name}}</a>
+                <a class="submenulink" href="#{{name}}" data-section="{{name}}">{{name}}</a>
                 <ul class="submenu" data-submenu="{{../name}}">
                 {{#each headings}}
                     <li><a href="#{{id}}">{{name}}</a></li>
@@ -56,7 +64,7 @@
                 </ul>
 			{{/if}}
             {{#unless headings.0.name}}
-                <a class="sectionlink" href="#" data-section="{{name}}">{{name}}</a>
+                <a class="sectionlink" href="#{{name}}" data-section="{{name}}">{{name}}</a>
             {{/unless}}
 		</li>
 	{{/each}}
