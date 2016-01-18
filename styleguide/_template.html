@@ -23,7 +23,6 @@
 
         // Click on link with subheadings
         j('#styleguide-menu .submenulink').click(function(event) {
-            // event.preventDefault();
             var jqCurSubmenu = j('[data-submenu="' + j(this).data('section') + '"]');
             var isCurSubmenuOn = jqCurSubmenu.hasClass('on');
             j('#styleguide-menu .on').removeClass('on');
@@ -36,7 +35,6 @@
 
         // Click on link without subheadings
         j('#styleguide-menu .sectionlink').click(function(event) {
-            // event.preventDefault();
             j('#styleguide-menu .on').removeClass('on');
             j(this).addClass('on');
             showSection(j(this).data('section'));
