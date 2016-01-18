@@ -26,3 +26,9 @@ If you want to edit, add or remove any icon in our CartoDB font, you should foll
   - ![screen shot 2015-01-16 at 11 02 53](https://cloud.githubusercontent.com/assets/978461/5775004/acf10faa-9d74-11e4-893c-790da626d894.png)
 
 All done!
+
+
+### Troubleshooting
+
+- **Q**: "I ran `gulp` but the icon-font.css.scss file wasn't generated!"
+- **A**: Make sure that the folder `icon-font/svgs` contain the `.svg` files.
