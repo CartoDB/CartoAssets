@@ -3,18 +3,18 @@ var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 
 gulp.task('default', function(){
-  gulp.src(['./icon_font/svgs/*.svg'])
+  gulp.src(['./icon-font/svgs/*.svg'])
 
   .pipe(iconfontCss({
     fontName: 'cartoIcon',
-    path: './icon_font/template.jst.ejs',
+    path: './icon-font/template.jst.ejs',
     targetPath: '../scss/icon-font.css.scss',
     fontPath: '../../fonts/'
   }))
 
   .pipe(iconfont({
     fontName: 'cartoIcon',
-    appendCodepoints: true 
+    appendCodepoints: true
   }))
 
   .pipe(gulp.dest('src/fonts/'));

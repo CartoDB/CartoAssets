@@ -1,3 +1,6 @@
+// Icon font elements
+// ----------------------------------------------
+
 @font-face {
   font-family: 'CartoIcon';
   src: url('fonts/cartoIcon.eot');
@@ -19,12 +22,16 @@
   line-height: 1;
 }
 
-/* SG 
-# Icon font
+/* SG
+# Typography/Icon font
+All available icons in CartoDB.
+
 ```
 <% _.each(glyphs, function(glyph) { %>
-<h4><%= glyph.fileName.split("_")[2] %></h4>
-<i class="IconFont IconFont-<%= glyph.fileName.split("_")[2] %>"></i>
+  <div class="box">
+    <i class="IconFont IconFont-<%= glyph.fileName.split("_")[2] %> Size-large"></i>
+    <h4 class="Text Size-small"><%= glyph.fileName.split("_")[2] %></h4>
+  </div>
 <% }); %>
 ```
 */
@@ -34,4 +41,3 @@
   content: '\<%= glyph.codePoint %>';
 }
 <% }); %>
-

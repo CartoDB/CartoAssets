@@ -9,46 +9,53 @@
 <script>
     var j = jQuery.noConflict(true);
     j(function() {
+      // Click on link with subheadings
+      j('#styleguide-menu .submenulink').click(function(event) {
+        var jqCurSubmenu = j('[data-submenu="' + j(this).data('section') + '"]');
+        var isCurSubmenuOn = jqCurSubmenu.hasClass('on');
+        j('#styleguide-menu .on').removeClass('on');
+        if (!isCurSubmenuOn) {
+          jqCurSubmenu.addClass('on');
+          j(this).addClass('on');
+        }
+        showSection(j(this).data('section'));
+      });
 
+      // Click on link without subheadings
+      j('#styleguide-menu .sectionlink').click(function(event) {
+        j('#styleguide-menu .on').removeClass('on');
+        j(this).addClass('on');
+        showSection(j(this).data('section'));
+      });
+
+      // Show/Hide sections
+      function showSection(section) {
+        j('#styleguide .section').hide();
+        var jqCurSections = j('#styleguide .section[data-section="' + section + '"]');
+        jqCurSections.show();
+      }
+
+      // Show current section
+      var currentElement = window.location.hash.replace(/#/g, '');
+      if (currentElement) {
+        var section = currentElement.split('-')[0];
+        j('.submenulink[data-section="' + section + '"]').click();
+      } else {
         // Show section in Styleguide
         j('#styleguide .section[data-section="' + j('#styleguide-menu a').first().data('section') + '"]').show();
-
-        // Click on link with subheadings
-        j('#styleguide-menu .submenulink').click(function(event) {
-            event.preventDefault();
-            var jqCurSubmenu = j('[data-submenu="' + j(this).data('section') + '"]');
-            var isCurSubmenuOn = jqCurSubmenu.hasClass('on');
-            j('#styleguide-menu .on').removeClass('on');
-            if (!isCurSubmenuOn) {
-                jqCurSubmenu.addClass('on');
-                j(this).addClass('on');
-            }
-            showSection(j(this).data('section'));
-        });
-
-        // Click on link without subheadings
-        j('#styleguide-menu .sectionlink').click(function(event) {
-            event.preventDefault();
-            j('#styleguide-menu .on').removeClass('on');
-            j(this).addClass('on');
-            showSection(j(this).data('section'));
-        });
-
-        // Show/Hide sections
-        function showSection(section) {
-            j('#styleguide .section').hide();
-            var jqCurSections = j('#styleguide .section[data-section="' + section + '"]');
-            jqCurSections.show();
-        }
+      }
     });
 </script>
 
 <div id="styleguide-menu">
 	<ul>
+    <li>
+      <a class="submenulink" href="#Basics" data-section="Basics">Basics</a>
+    </li>
 	{{#each menu}}
 		<li>
 			{{#if headings.0.name}}
-                <a class="submenulink" href="#" data-section="{{name}}">{{name}}</a>
+                <a class="submenulink" href="#{{name}}" data-section="{{name}}">{{name}}</a>
                 <ul class="submenu" data-submenu="{{../name}}">
                 {{#each headings}}
                     <li><a href="#{{id}}">{{name}}</a></li>
@@ -56,7 +63,7 @@
                 </ul>
 			{{/if}}
             {{#unless headings.0.name}}
-                <a class="sectionlink" href="#" data-section="{{name}}">{{name}}</a>
+                <a class="sectionlink" href="#{{name}}" data-section="{{name}}">{{name}}</a>
             {{/unless}}
 		</li>
 	{{/each}}
@@ -64,6 +71,21 @@
 </div>
 
 <div id="styleguide">
+  <div class="section" id="Basics" data-section="Basics" data-heading="Basics">
+    <div class="comment">
+      <h1>Basics</h1>
+      <p>Important notes about this styleguide</p>
+    </div>
+    <div class="result">
+      <ul>
+        <li>All new elements added in this repository should have included a 'CDB-' namespace.</li>
+      </ul>
+    </div>
+    <div class="markup">
+
+    </div>
+  </div>
+
 	{{#each sections}}
 		<div class="section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
 
