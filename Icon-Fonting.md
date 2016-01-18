@@ -30,5 +30,5 @@ All done!
 
 ### Troubleshooting
 
-- **Q**: "I ran `gulp` but the icon-font.css.scss file wasn't generated!"
-- **A**: Make sure that the folder `icon-font/svgs` contain the `.svg` files.
+- **Q**: "I ran `gulp` but the `icon-font.css.scss` file wasn't generated/updated!"  
+ **A**: Make sure that the folder `icon-font/svgs` contain the `.svg` files.
