@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 
   var baseTasks = [
     'clean',
+    'shell:generateFont',
     'sass',
     'concat',
     'cssmin',
@@ -22,16 +23,21 @@ module.exports = function (grunt) {
     'shell'
   ];
 
+  var generateFontTask = baseTasks.concat([
+    'shell:generateFont'
+  ]);
+
   var devTasks = baseTasks.concat([
     'connect',
     'watch:scss'
   ]);
 
   grunt.event.on('watch', function (action, filepath) {
-    grunt.task.run('shell');
+    grunt.task.run('shell:style');
   });
 
   grunt.registerTask('dev', devTasks);
+  grunt.registerTask('generate-font', generateFontTask);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
   grunt.registerTask('publish', ['build', 'gh-pages']);
