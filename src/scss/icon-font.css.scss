@@ -1,3 +1,6 @@
+// Icon font elements
+// ----------------------------------------------
+
 @font-face {
   font-family: 'CartoIcon';
   src: url('fonts/cartoIcon.eot');
@@ -20,284 +23,485 @@
 }
 
 /* SG
-# IconFont
+# Icon font
+All available icons in CartoDB.
+
 ```
 
-<h4>Clock</h4>
-<i class="IconFont IconFont-Clock"></i>
-
-<h4>Stats</h4>
-<i class="IconFont IconFont-Stats"></i>
-
-<h4>Heart--empty</h4>
-<i class="IconFont IconFont-Heart--empty"></i>
-
-<h4>Heart--fill</h4>
-<i class="IconFont IconFont-Heart--fill"></i>
-
-<h4>Alert</h4>
-<i class="IconFont IconFont-Alert"></i>
-
-<h4>Rows</h4>
-<i class="IconFont IconFont-Rows"></i>
-
-<h4>Check</h4>
-<i class="IconFont IconFont-Check"></i>
-
-<h4>Dribbble</h4>
-<i class="IconFont IconFont-Dribbble"></i>
-
-<h4>Twitter</h4>
-<i class="IconFont IconFont-Twitter"></i>
-
-<h4>Wizard</h4>
-<i class="IconFont IconFont-Wizard"></i>
-
-<h4>Info</h4>
-<i class="IconFont IconFont-Info"></i>
-
-<h4>Fork</h4>
-<i class="IconFont IconFont-Fork"></i>
-
-<h4>Facebook</h4>
-<i class="IconFont IconFont-Facebook"></i>
-
-<h4>Folder</h4>
-<i class="IconFont IconFont-Folder"></i>
-
-<h4>Dropbox</h4>
-<i class="IconFont IconFont-Dropbox"></i>
-
-<h4>Cloud</h4>
-<i class="IconFont IconFont-Cloud"></i>
-
-<h4>Step</h4>
-<i class="IconFont IconFont-Step"></i>
-
-<h4>AddDocument</h4>
-<i class="IconFont IconFont-AddDocument"></i>
-
-<h4>ArrowNext</h4>
-<i class="IconFont IconFont-ArrowNext"></i>
-
-<h4>ArrowPrev</h4>
-<i class="IconFont IconFont-ArrowPrev"></i>
-
-<h4>Close</h4>
-<i class="IconFont IconFont-Close"></i>
-
-<h4>CartoFante</h4>
-<i class="IconFont IconFont-CartoFante"></i>
-
-<h4>Lock</h4>
-<i class="IconFont IconFont-Lock"></i>
-
-<h4>CartoDB</h4>
-<i class="IconFont IconFont-CartoDB"></i>
-
-<h4>Lens</h4>
-<i class="IconFont IconFont-Lens"></i>
-
-<h4>CloseLimits</h4>
-<i class="IconFont IconFont-CloseLimits"></i>
-
-<h4>DefaultUser</h4>
-<i class="IconFont IconFont-DefaultUser"></i>
-
-<h4>Cockroach</h4>
-<i class="IconFont IconFont-Cockroach"></i>
-
-<h4>Floppy</h4>
-<i class="IconFont IconFont-Floppy"></i>
-
-<h4>Trash</h4>
-<i class="IconFont IconFont-Trash"></i>
-
-<h4>Wifi</h4>
-<i class="IconFont IconFont-Wifi"></i>
-
-<h4>Unlock</h4>
-<i class="IconFont IconFont-Unlock"></i>
-
-<h4>Unlock--withEllipsis</h4>
-<i class="IconFont IconFont-Unlock--withEllipsis"></i>
-
-<h4>Gift</h4>
-<i class="IconFont IconFont-Gift"></i>
-
-<h4>People</h4>
-<i class="IconFont IconFont-People"></i>
-
-<h4>Play</h4>
-<i class="IconFont IconFont-Play"></i>
-
-<h4>Add</h4>
-<i class="IconFont IconFont-Add"></i>
-
-<h4>Map</h4>
-<i class="IconFont IconFont-Map"></i>
-
-<h4>Anchor</h4>
-<i class="IconFont IconFont-Anchor"></i>
-
-<h4>Key</h4>
-<i class="IconFont IconFont-Key"></i>
-
-<h4>Calendar</h4>
-<i class="IconFont IconFont-Calendar"></i>
-
-<h4>Document</h4>
-<i class="IconFont IconFont-Document"></i>
-
-<h4>Eye</h4>
-<i class="IconFont IconFont-Eye"></i>
-
-<h4>Marker</h4>
-<i class="IconFont IconFont-Marker"></i>
-
-<h4>ProgressBar</h4>
-<i class="IconFont IconFont-ProgressBar"></i>
-
-<h4>Book</h4>
-<i class="IconFont IconFont-Book"></i>
-
-<h4>Notes</h4>
-<i class="IconFont IconFont-Notes"></i>
-
-<h4>Rectangles</h4>
-<i class="IconFont IconFont-Rectangles"></i>
-
-<h4>Mountain</h4>
-<i class="IconFont IconFont-Mountain"></i>
-
-<h4>Points</h4>
-<i class="IconFont IconFont-Points"></i>
-
-<h4>Snake</h4>
-<i class="IconFont IconFont-Snake"></i>
-
-<h4>Boss</h4>
-<i class="IconFont IconFont-Boss"></i>
-
-<h4>Rocket</h4>
-<i class="IconFont IconFont-Rocket"></i>
-
-<h4>Barometer</h4>
-<i class="IconFont IconFont-Barometer"></i>
-
-<h4>Dollar</h4>
-<i class="IconFont IconFont-Dollar"></i>
-
-<h4>Email</h4>
-<i class="IconFont IconFont-Email"></i>
-
-<h4>Label</h4>
-<i class="IconFont IconFont-Label"></i>
-
-<h4>Outside</h4>
-<i class="IconFont IconFont-Outside"></i>
-
-<h4>Jigsaw</h4>
-<i class="IconFont IconFont-Jigsaw"></i>
-
-<h4>Tools</h4>
-<i class="IconFont IconFont-Tools"></i>
-
-<h4>Question</h4>
-<i class="IconFont IconFont-Question"></i>
-
-<h4>LayerStack</h4>
-<i class="IconFont IconFont-LayerStack"></i>
-
-<h4>Alarm</h4>
-<i class="IconFont IconFont-Alarm"></i>
-
-<h4>CloudDownArrow</h4>
-<i class="IconFont IconFont-CloudDownArrow"></i>
-
-<h4>Pencil</h4>
-<i class="IconFont IconFont-Pencil"></i>
-
-<h4>FountainPen</h4>
-<i class="IconFont IconFont-FountainPen"></i>
-
-<h4>EmptyDoc</h4>
-<i class="IconFont IconFont-EmptyDoc"></i>
-
-<h4>MergeArrow</h4>
-<i class="IconFont IconFont-MergeArrow"></i>
-
-<h4>MergeColumns</h4>
-<i class="IconFont IconFont-MergeColumns"></i>
-
-<h4>MergeSpatial</h4>
-<i class="IconFont IconFont-MergeSpatial"></i>
-
-<h4>Globe</h4>
-<i class="IconFont IconFont-Globe"></i>
-
-<h4>ChevronDown</h4>
-<i class="IconFont IconFont-ChevronDown"></i>
-
-<h4>Streets</h4>
-<i class="IconFont IconFont-Streets"></i>
-
-<h4>Keys</h4>
-<i class="IconFont IconFont-Keys"></i>
-
-<h4>FacebookSquare</h4>
-<i class="IconFont IconFont-FacebookSquare"></i>
-
-<h4>Fullscreen</h4>
-<i class="IconFont IconFont-Fullscreen"></i>
-
-<h4>Rarrow</h4>
-<i class="IconFont IconFont-Rarrow"></i>
-
-<h4>Share</h4>
-<i class="IconFont IconFont-Share"></i>
-
-<h4>Linkedin</h4>
-<i class="IconFont IconFont-Linkedin"></i>
-
-<h4>CalendarBlank</h4>
-<i class="IconFont IconFont-CalendarBlank"></i>
-
-<h4>CreativeCommons</h4>
-<i class="IconFont IconFont-CreativeCommons"></i>
-
-<h4>Bubble</h4>
-<i class="IconFont IconFont-Bubble"></i>
-
-<h4>Bars</h4>
-<i class="IconFont IconFont-Bars"></i>
-
-<h4>ArrowMenu</h4>
-<i class="IconFont IconFont-ArrowMenu"></i>
-
-<h4>TieFighter</h4>
-<i class="IconFont IconFont-TieFighter"></i>
-
-<h4>Ray</h4>
-<i class="IconFont IconFont-Ray"></i>
-
-<h4>Markup</h4>
-<i class="IconFont IconFont-Markup"></i>
-
-<h4>Table</h4>
-<i class="IconFont IconFont-Table"></i>
-
-<h4>Airlock</h4>
-<i class="IconFont IconFont-Airlock"></i>
-
-<h4>Pin</h4>
-<i class="IconFont IconFont-Pin"></i>
-
-<h4>Attache</h4>
-<i class="IconFont IconFont-Attache"></i>
-
-<h4>Download</h4>
-<i class="IconFont IconFont-Download"></i>
+  <div class="box">
+    <i class="IconFont IconFont-Clock Size-large"></i>
+    <h4 class="Text Size-small">Clock</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Stats Size-large"></i>
+    <h4 class="Text Size-small">Stats</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Heart--empty Size-large"></i>
+    <h4 class="Text Size-small">Heart--empty</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Heart--fill Size-large"></i>
+    <h4 class="Text Size-small">Heart--fill</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Alert Size-large"></i>
+    <h4 class="Text Size-small">Alert</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Rows Size-large"></i>
+    <h4 class="Text Size-small">Rows</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Check Size-large"></i>
+    <h4 class="Text Size-small">Check</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Dribbble Size-large"></i>
+    <h4 class="Text Size-small">Dribbble</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Twitter Size-large"></i>
+    <h4 class="Text Size-small">Twitter</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Wizard Size-large"></i>
+    <h4 class="Text Size-small">Wizard</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Info Size-large"></i>
+    <h4 class="Text Size-small">Info</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Fork Size-large"></i>
+    <h4 class="Text Size-small">Fork</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Facebook Size-large"></i>
+    <h4 class="Text Size-small">Facebook</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Folder Size-large"></i>
+    <h4 class="Text Size-small">Folder</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Dropbox Size-large"></i>
+    <h4 class="Text Size-small">Dropbox</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Cloud Size-large"></i>
+    <h4 class="Text Size-small">Cloud</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Step Size-large"></i>
+    <h4 class="Text Size-small">Step</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-AddDocument Size-large"></i>
+    <h4 class="Text Size-small">AddDocument</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-ArrowNext Size-large"></i>
+    <h4 class="Text Size-small">ArrowNext</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-ArrowPrev Size-large"></i>
+    <h4 class="Text Size-small">ArrowPrev</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Close Size-large"></i>
+    <h4 class="Text Size-small">Close</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CartoFante Size-large"></i>
+    <h4 class="Text Size-small">CartoFante</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Lock Size-large"></i>
+    <h4 class="Text Size-small">Lock</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CartoDB Size-large"></i>
+    <h4 class="Text Size-small">CartoDB</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Lens Size-large"></i>
+    <h4 class="Text Size-small">Lens</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CloseLimits Size-large"></i>
+    <h4 class="Text Size-small">CloseLimits</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-DefaultUser Size-large"></i>
+    <h4 class="Text Size-small">DefaultUser</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Cockroach Size-large"></i>
+    <h4 class="Text Size-small">Cockroach</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Floppy Size-large"></i>
+    <h4 class="Text Size-small">Floppy</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Trash Size-large"></i>
+    <h4 class="Text Size-small">Trash</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Wifi Size-large"></i>
+    <h4 class="Text Size-small">Wifi</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Unlock Size-large"></i>
+    <h4 class="Text Size-small">Unlock</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Unlock--withEllipsis Size-large"></i>
+    <h4 class="Text Size-small">Unlock--withEllipsis</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Gift Size-large"></i>
+    <h4 class="Text Size-small">Gift</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-People Size-large"></i>
+    <h4 class="Text Size-small">People</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Play Size-large"></i>
+    <h4 class="Text Size-small">Play</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Add Size-large"></i>
+    <h4 class="Text Size-small">Add</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Map Size-large"></i>
+    <h4 class="Text Size-small">Map</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Anchor Size-large"></i>
+    <h4 class="Text Size-small">Anchor</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Key Size-large"></i>
+    <h4 class="Text Size-small">Key</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Calendar Size-large"></i>
+    <h4 class="Text Size-small">Calendar</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Document Size-large"></i>
+    <h4 class="Text Size-small">Document</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Eye Size-large"></i>
+    <h4 class="Text Size-small">Eye</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Marker Size-large"></i>
+    <h4 class="Text Size-small">Marker</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-ProgressBar Size-large"></i>
+    <h4 class="Text Size-small">ProgressBar</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Book Size-large"></i>
+    <h4 class="Text Size-small">Book</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Notes Size-large"></i>
+    <h4 class="Text Size-small">Notes</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Rectangles Size-large"></i>
+    <h4 class="Text Size-small">Rectangles</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Mountain Size-large"></i>
+    <h4 class="Text Size-small">Mountain</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Points Size-large"></i>
+    <h4 class="Text Size-small">Points</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Snake Size-large"></i>
+    <h4 class="Text Size-small">Snake</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Boss Size-large"></i>
+    <h4 class="Text Size-small">Boss</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Rocket Size-large"></i>
+    <h4 class="Text Size-small">Rocket</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Barometer Size-large"></i>
+    <h4 class="Text Size-small">Barometer</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Dollar Size-large"></i>
+    <h4 class="Text Size-small">Dollar</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Email Size-large"></i>
+    <h4 class="Text Size-small">Email</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Label Size-large"></i>
+    <h4 class="Text Size-small">Label</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Outside Size-large"></i>
+    <h4 class="Text Size-small">Outside</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Jigsaw Size-large"></i>
+    <h4 class="Text Size-small">Jigsaw</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Tools Size-large"></i>
+    <h4 class="Text Size-small">Tools</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Question Size-large"></i>
+    <h4 class="Text Size-small">Question</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-LayerStack Size-large"></i>
+    <h4 class="Text Size-small">LayerStack</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Alarm Size-large"></i>
+    <h4 class="Text Size-small">Alarm</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CloudDownArrow Size-large"></i>
+    <h4 class="Text Size-small">CloudDownArrow</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Pencil Size-large"></i>
+    <h4 class="Text Size-small">Pencil</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-FountainPen Size-large"></i>
+    <h4 class="Text Size-small">FountainPen</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-EmptyDoc Size-large"></i>
+    <h4 class="Text Size-small">EmptyDoc</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-MergeArrow Size-large"></i>
+    <h4 class="Text Size-small">MergeArrow</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-MergeColumns Size-large"></i>
+    <h4 class="Text Size-small">MergeColumns</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-MergeSpatial Size-large"></i>
+    <h4 class="Text Size-small">MergeSpatial</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Globe Size-large"></i>
+    <h4 class="Text Size-small">Globe</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-ChevronDown Size-large"></i>
+    <h4 class="Text Size-small">ChevronDown</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Streets Size-large"></i>
+    <h4 class="Text Size-small">Streets</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Keys Size-large"></i>
+    <h4 class="Text Size-small">Keys</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-FacebookSquare Size-large"></i>
+    <h4 class="Text Size-small">FacebookSquare</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Fullscreen Size-large"></i>
+    <h4 class="Text Size-small">Fullscreen</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Rarrow Size-large"></i>
+    <h4 class="Text Size-small">Rarrow</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Share Size-large"></i>
+    <h4 class="Text Size-small">Share</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Linkedin Size-large"></i>
+    <h4 class="Text Size-small">Linkedin</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CalendarBlank Size-large"></i>
+    <h4 class="Text Size-small">CalendarBlank</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-CreativeCommons Size-large"></i>
+    <h4 class="Text Size-small">CreativeCommons</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Bubble Size-large"></i>
+    <h4 class="Text Size-small">Bubble</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Bars Size-large"></i>
+    <h4 class="Text Size-small">Bars</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-ArrowMenu Size-large"></i>
+    <h4 class="Text Size-small">ArrowMenu</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-TieFighter Size-large"></i>
+    <h4 class="Text Size-small">TieFighter</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Ray Size-large"></i>
+    <h4 class="Text Size-small">Ray</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Markup Size-large"></i>
+    <h4 class="Text Size-small">Markup</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Table Size-large"></i>
+    <h4 class="Text Size-small">Table</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Airlock Size-large"></i>
+    <h4 class="Text Size-small">Airlock</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Pin Size-large"></i>
+    <h4 class="Text Size-small">Pin</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Attache Size-large"></i>
+    <h4 class="Text Size-small">Attache</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Download Size-large"></i>
+    <h4 class="Text Size-small">Download</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Group Size-large"></i>
+    <h4 class="Text Size-small">Group</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Dashboard Size-large"></i>
+    <h4 class="Text Size-small">Dashboard</h4>
+  </div>
+
+  <div class="box">
+    <i class="IconFont IconFont-Spinner Size-large"></i>
+    <h4 class="Text Size-small">Spinner</h4>
+  </div>
 
 ```
 */
@@ -669,4 +873,16 @@
 
 .IconFont-Download::before {
   content: '\E05C';
+}
+
+.IconFont-Group::before {
+  content: '\E05D';
+}
+
+.IconFont-Dashboard::before {
+  content: '\E05E';
+}
+
+.IconFont-Spinner::before {
+  content: '\E05F';
 }
