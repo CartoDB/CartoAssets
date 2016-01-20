@@ -1,7 +1,7 @@
 {
   "name": "cartoassets",
   "description": "Share frontend assets between different CartoDB repositories",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "homepage": "https://github.com/cartodb/CartoAssets",
   "author": {
     "name": "xavijam",
