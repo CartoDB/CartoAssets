@@ -2,7 +2,7 @@ module.exports = {
   dist: {
     options: {},
     files: {
-      'dist/cartostyles.css': [
+      'dist/css/cartostyles.css': [
         '.tmp/src/scss/**/*.css'
       ]
     }
