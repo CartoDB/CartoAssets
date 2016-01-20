@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-.IconFont {
+.CDB-IconFont {
   display: inline-block;
   font-family: 'CartoIcon';
   font-style: normal;
@@ -28,861 +28,1051 @@ All available icons in CartoDB.
 
 ```
 
+
   <div class="box">
-    <i class="IconFont IconFont-Clock Size-large"></i>
-    <h4 class="Text Size-small">Clock</h4>
+    <i class="CDB-IconFont CDB-IconFont--clock Size-large"></i>
+    <h4 class="Text Size-small">clock</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Stats Size-large"></i>
-    <h4 class="Text Size-small">Stats</h4>
+    <i class="CDB-IconFont CDB-IconFont--stats Size-large"></i>
+    <h4 class="Text Size-small">stats</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Heart--empty Size-large"></i>
-    <h4 class="Text Size-small">Heart--empty</h4>
+    <i class="CDB-IconFont CDB-IconFont--heartempty Size-large"></i>
+    <h4 class="Text Size-small">heartempty</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Heart--fill Size-large"></i>
-    <h4 class="Text Size-small">Heart--fill</h4>
+    <i class="CDB-IconFont CDB-IconFont--heartfill Size-large"></i>
+    <h4 class="Text Size-small">heartfill</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Alert Size-large"></i>
-    <h4 class="Text Size-small">Alert</h4>
+    <i class="CDB-IconFont CDB-IconFont--alert Size-large"></i>
+    <h4 class="Text Size-small">alert</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Rows Size-large"></i>
-    <h4 class="Text Size-small">Rows</h4>
+    <i class="CDB-IconFont CDB-IconFont--rows Size-large"></i>
+    <h4 class="Text Size-small">rows</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Check Size-large"></i>
-    <h4 class="Text Size-small">Check</h4>
+    <i class="CDB-IconFont CDB-IconFont--check Size-large"></i>
+    <h4 class="Text Size-small">check</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Dribbble Size-large"></i>
-    <h4 class="Text Size-small">Dribbble</h4>
+    <i class="CDB-IconFont CDB-IconFont--dribbble Size-large"></i>
+    <h4 class="Text Size-small">dribbble</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Twitter Size-large"></i>
-    <h4 class="Text Size-small">Twitter</h4>
+    <i class="CDB-IconFont CDB-IconFont--twitter Size-large"></i>
+    <h4 class="Text Size-small">twitter</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Wizard Size-large"></i>
-    <h4 class="Text Size-small">Wizard</h4>
+    <i class="CDB-IconFont CDB-IconFont--wizard Size-large"></i>
+    <h4 class="Text Size-small">wizard</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Info Size-large"></i>
-    <h4 class="Text Size-small">Info</h4>
+    <i class="CDB-IconFont CDB-IconFont--info Size-large"></i>
+    <h4 class="Text Size-small">info</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Fork Size-large"></i>
-    <h4 class="Text Size-small">Fork</h4>
+    <i class="CDB-IconFont CDB-IconFont--fork Size-large"></i>
+    <h4 class="Text Size-small">fork</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Facebook Size-large"></i>
-    <h4 class="Text Size-small">Facebook</h4>
+    <i class="CDB-IconFont CDB-IconFont--facebook Size-large"></i>
+    <h4 class="Text Size-small">facebook</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Folder Size-large"></i>
-    <h4 class="Text Size-small">Folder</h4>
+    <i class="CDB-IconFont CDB-IconFont--folder Size-large"></i>
+    <h4 class="Text Size-small">folder</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Dropbox Size-large"></i>
-    <h4 class="Text Size-small">Dropbox</h4>
+    <i class="CDB-IconFont CDB-IconFont--dropbox Size-large"></i>
+    <h4 class="Text Size-small">dropbox</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Cloud Size-large"></i>
-    <h4 class="Text Size-small">Cloud</h4>
+    <i class="CDB-IconFont CDB-IconFont--cloud Size-large"></i>
+    <h4 class="Text Size-small">cloud</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Step Size-large"></i>
-    <h4 class="Text Size-small">Step</h4>
+    <i class="CDB-IconFont CDB-IconFont--step Size-large"></i>
+    <h4 class="Text Size-small">step</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-AddDocument Size-large"></i>
-    <h4 class="Text Size-small">AddDocument</h4>
+    <i class="CDB-IconFont CDB-IconFont--addDocument Size-large"></i>
+    <h4 class="Text Size-small">addDocument</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-ArrowNext Size-large"></i>
-    <h4 class="Text Size-small">ArrowNext</h4>
+    <i class="CDB-IconFont CDB-IconFont--arrowNext Size-large"></i>
+    <h4 class="Text Size-small">arrowNext</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-ArrowPrev Size-large"></i>
-    <h4 class="Text Size-small">ArrowPrev</h4>
+    <i class="CDB-IconFont CDB-IconFont--arrowPrev Size-large"></i>
+    <h4 class="Text Size-small">arrowPrev</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Close Size-large"></i>
-    <h4 class="Text Size-small">Close</h4>
+    <i class="CDB-IconFont CDB-IconFont--close Size-large"></i>
+    <h4 class="Text Size-small">close</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-CartoFante Size-large"></i>
-    <h4 class="Text Size-small">CartoFante</h4>
+    <i class="CDB-IconFont CDB-IconFont--cartoFante Size-large"></i>
+    <h4 class="Text Size-small">cartoFante</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Lock Size-large"></i>
-    <h4 class="Text Size-small">Lock</h4>
+    <i class="CDB-IconFont CDB-IconFont--lock Size-large"></i>
+    <h4 class="Text Size-small">lock</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-CartoDB Size-large"></i>
-    <h4 class="Text Size-small">CartoDB</h4>
+    <i class="CDB-IconFont CDB-IconFont--cartoDB Size-large"></i>
+    <h4 class="Text Size-small">cartoDB</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Lens Size-large"></i>
-    <h4 class="Text Size-small">Lens</h4>
+    <i class="CDB-IconFont CDB-IconFont--lens Size-large"></i>
+    <h4 class="Text Size-small">lens</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-CloseLimits Size-large"></i>
-    <h4 class="Text Size-small">CloseLimits</h4>
+    <i class="CDB-IconFont CDB-IconFont--closeLimits Size-large"></i>
+    <h4 class="Text Size-small">closeLimits</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-DefaultUser Size-large"></i>
-    <h4 class="Text Size-small">DefaultUser</h4>
+    <i class="CDB-IconFont CDB-IconFont--defaultUser Size-large"></i>
+    <h4 class="Text Size-small">defaultUser</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Cockroach Size-large"></i>
-    <h4 class="Text Size-small">Cockroach</h4>
+    <i class="CDB-IconFont CDB-IconFont--cockroach Size-large"></i>
+    <h4 class="Text Size-small">cockroach</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Floppy Size-large"></i>
-    <h4 class="Text Size-small">Floppy</h4>
+    <i class="CDB-IconFont CDB-IconFont--floppy Size-large"></i>
+    <h4 class="Text Size-small">floppy</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Trash Size-large"></i>
-    <h4 class="Text Size-small">Trash</h4>
+    <i class="CDB-IconFont CDB-IconFont--trash Size-large"></i>
+    <h4 class="Text Size-small">trash</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Wifi Size-large"></i>
-    <h4 class="Text Size-small">Wifi</h4>
+    <i class="CDB-IconFont CDB-IconFont--wifi Size-large"></i>
+    <h4 class="Text Size-small">wifi</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Unlock Size-large"></i>
-    <h4 class="Text Size-small">Unlock</h4>
+    <i class="CDB-IconFont CDB-IconFont--unlock Size-large"></i>
+    <h4 class="Text Size-small">unlock</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Unlock--withEllipsis Size-large"></i>
-    <h4 class="Text Size-small">Unlock--withEllipsis</h4>
+    <i class="CDB-IconFont CDB-IconFont--unlockwithEllipsis Size-large"></i>
+    <h4 class="Text Size-small">unlockwithEllipsis</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Gift Size-large"></i>
-    <h4 class="Text Size-small">Gift</h4>
+    <i class="CDB-IconFont CDB-IconFont--gift Size-large"></i>
+    <h4 class="Text Size-small">gift</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-People Size-large"></i>
-    <h4 class="Text Size-small">People</h4>
+    <i class="CDB-IconFont CDB-IconFont--people Size-large"></i>
+    <h4 class="Text Size-small">people</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Play Size-large"></i>
-    <h4 class="Text Size-small">Play</h4>
+    <i class="CDB-IconFont CDB-IconFont--play Size-large"></i>
+    <h4 class="Text Size-small">play</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Add Size-large"></i>
-    <h4 class="Text Size-small">Add</h4>
+    <i class="CDB-IconFont CDB-IconFont--add Size-large"></i>
+    <h4 class="Text Size-small">add</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Map Size-large"></i>
-    <h4 class="Text Size-small">Map</h4>
+    <i class="CDB-IconFont CDB-IconFont--map Size-large"></i>
+    <h4 class="Text Size-small">map</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Anchor Size-large"></i>
-    <h4 class="Text Size-small">Anchor</h4>
+    <i class="CDB-IconFont CDB-IconFont--anchor Size-large"></i>
+    <h4 class="Text Size-small">anchor</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Key Size-large"></i>
-    <h4 class="Text Size-small">Key</h4>
+    <i class="CDB-IconFont CDB-IconFont--key Size-large"></i>
+    <h4 class="Text Size-small">key</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Calendar Size-large"></i>
-    <h4 class="Text Size-small">Calendar</h4>
+    <i class="CDB-IconFont CDB-IconFont--calendar Size-large"></i>
+    <h4 class="Text Size-small">calendar</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Document Size-large"></i>
-    <h4 class="Text Size-small">Document</h4>
+    <i class="CDB-IconFont CDB-IconFont--document Size-large"></i>
+    <h4 class="Text Size-small">document</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Eye Size-large"></i>
-    <h4 class="Text Size-small">Eye</h4>
+    <i class="CDB-IconFont CDB-IconFont--eye Size-large"></i>
+    <h4 class="Text Size-small">eye</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Marker Size-large"></i>
-    <h4 class="Text Size-small">Marker</h4>
+    <i class="CDB-IconFont CDB-IconFont--marker Size-large"></i>
+    <h4 class="Text Size-small">marker</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-ProgressBar Size-large"></i>
-    <h4 class="Text Size-small">ProgressBar</h4>
+    <i class="CDB-IconFont CDB-IconFont--progressBar Size-large"></i>
+    <h4 class="Text Size-small">progressBar</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Book Size-large"></i>
-    <h4 class="Text Size-small">Book</h4>
+    <i class="CDB-IconFont CDB-IconFont--book Size-large"></i>
+    <h4 class="Text Size-small">book</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Notes Size-large"></i>
-    <h4 class="Text Size-small">Notes</h4>
+    <i class="CDB-IconFont CDB-IconFont--notes Size-large"></i>
+    <h4 class="Text Size-small">notes</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Rectangles Size-large"></i>
-    <h4 class="Text Size-small">Rectangles</h4>
+    <i class="CDB-IconFont CDB-IconFont--rectangles Size-large"></i>
+    <h4 class="Text Size-small">rectangles</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Mountain Size-large"></i>
-    <h4 class="Text Size-small">Mountain</h4>
+    <i class="CDB-IconFont CDB-IconFont--mountain Size-large"></i>
+    <h4 class="Text Size-small">mountain</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Points Size-large"></i>
-    <h4 class="Text Size-small">Points</h4>
+    <i class="CDB-IconFont CDB-IconFont--points Size-large"></i>
+    <h4 class="Text Size-small">points</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Snake Size-large"></i>
-    <h4 class="Text Size-small">Snake</h4>
+    <i class="CDB-IconFont CDB-IconFont--snake Size-large"></i>
+    <h4 class="Text Size-small">snake</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Boss Size-large"></i>
-    <h4 class="Text Size-small">Boss</h4>
+    <i class="CDB-IconFont CDB-IconFont--boss Size-large"></i>
+    <h4 class="Text Size-small">boss</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Rocket Size-large"></i>
-    <h4 class="Text Size-small">Rocket</h4>
+    <i class="CDB-IconFont CDB-IconFont--rocket Size-large"></i>
+    <h4 class="Text Size-small">rocket</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Barometer Size-large"></i>
-    <h4 class="Text Size-small">Barometer</h4>
+    <i class="CDB-IconFont CDB-IconFont--barometer Size-large"></i>
+    <h4 class="Text Size-small">barometer</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Dollar Size-large"></i>
-    <h4 class="Text Size-small">Dollar</h4>
+    <i class="CDB-IconFont CDB-IconFont--dollar Size-large"></i>
+    <h4 class="Text Size-small">dollar</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Email Size-large"></i>
-    <h4 class="Text Size-small">Email</h4>
+    <i class="CDB-IconFont CDB-IconFont--email Size-large"></i>
+    <h4 class="Text Size-small">email</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Label Size-large"></i>
-    <h4 class="Text Size-small">Label</h4>
+    <i class="CDB-IconFont CDB-IconFont--label Size-large"></i>
+    <h4 class="Text Size-small">label</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Outside Size-large"></i>
-    <h4 class="Text Size-small">Outside</h4>
+    <i class="CDB-IconFont CDB-IconFont--outside Size-large"></i>
+    <h4 class="Text Size-small">outside</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Jigsaw Size-large"></i>
-    <h4 class="Text Size-small">Jigsaw</h4>
+    <i class="CDB-IconFont CDB-IconFont--jigsaw Size-large"></i>
+    <h4 class="Text Size-small">jigsaw</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Tools Size-large"></i>
-    <h4 class="Text Size-small">Tools</h4>
+    <i class="CDB-IconFont CDB-IconFont--tools Size-large"></i>
+    <h4 class="Text Size-small">tools</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Question Size-large"></i>
-    <h4 class="Text Size-small">Question</h4>
+    <i class="CDB-IconFont CDB-IconFont--question Size-large"></i>
+    <h4 class="Text Size-small">question</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-LayerStack Size-large"></i>
-    <h4 class="Text Size-small">LayerStack</h4>
+    <i class="CDB-IconFont CDB-IconFont--layerStack Size-large"></i>
+    <h4 class="Text Size-small">layerStack</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Alarm Size-large"></i>
-    <h4 class="Text Size-small">Alarm</h4>
+    <i class="CDB-IconFont CDB-IconFont--alarm Size-large"></i>
+    <h4 class="Text Size-small">alarm</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-CloudDownArrow Size-large"></i>
-    <h4 class="Text Size-small">CloudDownArrow</h4>
+    <i class="CDB-IconFont CDB-IconFont--cloudDownArrow Size-large"></i>
+    <h4 class="Text Size-small">cloudDownArrow</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Pencil Size-large"></i>
-    <h4 class="Text Size-small">Pencil</h4>
+    <i class="CDB-IconFont CDB-IconFont--pencil Size-large"></i>
+    <h4 class="Text Size-small">pencil</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-FountainPen Size-large"></i>
-    <h4 class="Text Size-small">FountainPen</h4>
+    <i class="CDB-IconFont CDB-IconFont--fountainPen Size-large"></i>
+    <h4 class="Text Size-small">fountainPen</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-EmptyDoc Size-large"></i>
-    <h4 class="Text Size-small">EmptyDoc</h4>
+    <i class="CDB-IconFont CDB-IconFont--emptyDoc Size-large"></i>
+    <h4 class="Text Size-small">emptyDoc</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-MergeArrow Size-large"></i>
-    <h4 class="Text Size-small">MergeArrow</h4>
+    <i class="CDB-IconFont CDB-IconFont--mergeArrow Size-large"></i>
+    <h4 class="Text Size-small">mergeArrow</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-MergeColumns Size-large"></i>
-    <h4 class="Text Size-small">MergeColumns</h4>
+    <i class="CDB-IconFont CDB-IconFont--mergeColumns Size-large"></i>
+    <h4 class="Text Size-small">mergeColumns</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-MergeSpatial Size-large"></i>
-    <h4 class="Text Size-small">MergeSpatial</h4>
+    <i class="CDB-IconFont CDB-IconFont--mergeSpatial Size-large"></i>
+    <h4 class="Text Size-small">mergeSpatial</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Globe Size-large"></i>
-    <h4 class="Text Size-small">Globe</h4>
+    <i class="CDB-IconFont CDB-IconFont--globe Size-large"></i>
+    <h4 class="Text Size-small">globe</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-ChevronDown Size-large"></i>
-    <h4 class="Text Size-small">ChevronDown</h4>
+    <i class="CDB-IconFont CDB-IconFont--chevronDown Size-large"></i>
+    <h4 class="Text Size-small">chevronDown</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Streets Size-large"></i>
-    <h4 class="Text Size-small">Streets</h4>
+    <i class="CDB-IconFont CDB-IconFont--streets Size-large"></i>
+    <h4 class="Text Size-small">streets</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Keys Size-large"></i>
-    <h4 class="Text Size-small">Keys</h4>
+    <i class="CDB-IconFont CDB-IconFont--keys Size-large"></i>
+    <h4 class="Text Size-small">keys</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-FacebookSquare Size-large"></i>
-    <h4 class="Text Size-small">FacebookSquare</h4>
+    <i class="CDB-IconFont CDB-IconFont--facebookSquare Size-large"></i>
+    <h4 class="Text Size-small">facebookSquare</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Fullscreen Size-large"></i>
-    <h4 class="Text Size-small">Fullscreen</h4>
+    <i class="CDB-IconFont CDB-IconFont--fullscreen Size-large"></i>
+    <h4 class="Text Size-small">fullscreen</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Rarrow Size-large"></i>
-    <h4 class="Text Size-small">Rarrow</h4>
+    <i class="CDB-IconFont CDB-IconFont--rarrow Size-large"></i>
+    <h4 class="Text Size-small">rarrow</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Share Size-large"></i>
-    <h4 class="Text Size-small">Share</h4>
+    <i class="CDB-IconFont CDB-IconFont--share Size-large"></i>
+    <h4 class="Text Size-small">share</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Linkedin Size-large"></i>
-    <h4 class="Text Size-small">Linkedin</h4>
+    <i class="CDB-IconFont CDB-IconFont--linkedin Size-large"></i>
+    <h4 class="Text Size-small">linkedin</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-CalendarBlank Size-large"></i>
-    <h4 class="Text Size-small">CalendarBlank</h4>
+    <i class="CDB-IconFont CDB-IconFont--calendarBlank Size-large"></i>
+    <h4 class="Text Size-small">calendarBlank</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-CreativeCommons Size-large"></i>
-    <h4 class="Text Size-small">CreativeCommons</h4>
+    <i class="CDB-IconFont CDB-IconFont--creativeCommons Size-large"></i>
+    <h4 class="Text Size-small">creativeCommons</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Bubble Size-large"></i>
-    <h4 class="Text Size-small">Bubble</h4>
+    <i class="CDB-IconFont CDB-IconFont--bubble Size-large"></i>
+    <h4 class="Text Size-small">bubble</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Bars Size-large"></i>
-    <h4 class="Text Size-small">Bars</h4>
+    <i class="CDB-IconFont CDB-IconFont--bars Size-large"></i>
+    <h4 class="Text Size-small">bars</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-ArrowMenu Size-large"></i>
-    <h4 class="Text Size-small">ArrowMenu</h4>
+    <i class="CDB-IconFont CDB-IconFont--arrowMenu Size-large"></i>
+    <h4 class="Text Size-small">arrowMenu</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-TieFighter Size-large"></i>
-    <h4 class="Text Size-small">TieFighter</h4>
+    <i class="CDB-IconFont CDB-IconFont--tieFighter Size-large"></i>
+    <h4 class="Text Size-small">tieFighter</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Ray Size-large"></i>
-    <h4 class="Text Size-small">Ray</h4>
+    <i class="CDB-IconFont CDB-IconFont--ray Size-large"></i>
+    <h4 class="Text Size-small">ray</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Markup Size-large"></i>
-    <h4 class="Text Size-small">Markup</h4>
+    <i class="CDB-IconFont CDB-IconFont--markup Size-large"></i>
+    <h4 class="Text Size-small">markup</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Table Size-large"></i>
-    <h4 class="Text Size-small">Table</h4>
+    <i class="CDB-IconFont CDB-IconFont--table Size-large"></i>
+    <h4 class="Text Size-small">table</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Airlock Size-large"></i>
-    <h4 class="Text Size-small">Airlock</h4>
+    <i class="CDB-IconFont CDB-IconFont--airlock Size-large"></i>
+    <h4 class="Text Size-small">airlock</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Pin Size-large"></i>
-    <h4 class="Text Size-small">Pin</h4>
+    <i class="CDB-IconFont CDB-IconFont--pin Size-large"></i>
+    <h4 class="Text Size-small">pin</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Attache Size-large"></i>
-    <h4 class="Text Size-small">Attache</h4>
+    <i class="CDB-IconFont CDB-IconFont--attache Size-large"></i>
+    <h4 class="Text Size-small">attache</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Download Size-large"></i>
-    <h4 class="Text Size-small">Download</h4>
+    <i class="CDB-IconFont CDB-IconFont--download Size-large"></i>
+    <h4 class="Text Size-small">download</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Group Size-large"></i>
-    <h4 class="Text Size-small">Group</h4>
+    <i class="CDB-IconFont CDB-IconFont--group Size-large"></i>
+    <h4 class="Text Size-small">group</h4>
   </div>
 
+
   <div class="box">
-    <i class="IconFont IconFont-Dashboard Size-large"></i>
-    <h4 class="Text Size-small">Dashboard</h4>
+    <i class="CDB-IconFont CDB-IconFont--dashboard Size-large"></i>
+    <h4 class="Text Size-small">dashboard</h4>
   </div>
+
 
   <div class="box">
-    <i class="IconFont IconFont-Spinner Size-large"></i>
-    <h4 class="Text Size-small">Spinner</h4>
+    <i class="CDB-IconFont CDB-IconFont--spinner Size-large"></i>
+    <h4 class="Text Size-small">spinner</h4>
   </div>
 
 ```
 */
 
 
-.IconFont-Clock::before {
+
+.CDB-IconFont--clock::before {
   content: '\E001';
 }
 
-.IconFont-Stats::before {
+
+.CDB-IconFont--stats::before {
   content: '\E002';
 }
 
-.IconFont-Heart--empty::before {
+
+.CDB-IconFont--heartempty::before {
   content: '\E003';
 }
 
-.IconFont-Heart--fill::before {
+
+.CDB-IconFont--heartfill::before {
   content: '\E004';
 }
 
-.IconFont-Alert::before {
+
+.CDB-IconFont--alert::before {
   content: '\E005';
 }
 
-.IconFont-Rows::before {
+
+.CDB-IconFont--rows::before {
   content: '\E006';
 }
 
-.IconFont-Check::before {
+
+.CDB-IconFont--check::before {
   content: '\E007';
 }
 
-.IconFont-Dribbble::before {
+
+.CDB-IconFont--dribbble::before {
   content: '\E008';
 }
 
-.IconFont-Twitter::before {
+
+.CDB-IconFont--twitter::before {
   content: '\E009';
 }
 
-.IconFont-Wizard::before {
+
+.CDB-IconFont--wizard::before {
   content: '\E00A';
 }
 
-.IconFont-Info::before {
+
+.CDB-IconFont--info::before {
   content: '\E00B';
 }
 
-.IconFont-Fork::before {
+
+.CDB-IconFont--fork::before {
   content: '\E00C';
 }
 
-.IconFont-Facebook::before {
+
+.CDB-IconFont--facebook::before {
   content: '\E00D';
 }
 
-.IconFont-Folder::before {
+
+.CDB-IconFont--folder::before {
   content: '\E00E';
 }
 
-.IconFont-Dropbox::before {
+
+.CDB-IconFont--dropbox::before {
   content: '\E00F';
 }
 
-.IconFont-Cloud::before {
+
+.CDB-IconFont--cloud::before {
   content: '\E010';
 }
 
-.IconFont-Step::before {
+
+.CDB-IconFont--step::before {
   content: '\E011';
 }
 
-.IconFont-AddDocument::before {
+
+.CDB-IconFont--addDocument::before {
   content: '\E012';
 }
 
-.IconFont-ArrowNext::before {
+
+.CDB-IconFont--arrowNext::before {
   content: '\E013';
 }
 
-.IconFont-ArrowPrev::before {
+
+.CDB-IconFont--arrowPrev::before {
   content: '\E014';
 }
 
-.IconFont-Close::before {
+
+.CDB-IconFont--close::before {
   content: '\E015';
 }
 
-.IconFont-CartoFante::before {
+
+.CDB-IconFont--cartoFante::before {
   content: '\E016';
 }
 
-.IconFont-Lock::before {
+
+.CDB-IconFont--lock::before {
   content: '\E017';
 }
 
-.IconFont-CartoDB::before {
+
+.CDB-IconFont--cartoDB::before {
   content: '\E018';
 }
 
-.IconFont-Lens::before {
+
+.CDB-IconFont--lens::before {
   content: '\E019';
 }
 
-.IconFont-CloseLimits::before {
+
+.CDB-IconFont--closeLimits::before {
   content: '\E01A';
 }
 
-.IconFont-DefaultUser::before {
+
+.CDB-IconFont--defaultUser::before {
   content: '\E01B';
 }
 
-.IconFont-Cockroach::before {
+
+.CDB-IconFont--cockroach::before {
   content: '\E01C';
 }
 
-.IconFont-Floppy::before {
+
+.CDB-IconFont--floppy::before {
   content: '\E01D';
 }
 
-.IconFont-Trash::before {
+
+.CDB-IconFont--trash::before {
   content: '\E01E';
 }
 
-.IconFont-Wifi::before {
+
+.CDB-IconFont--wifi::before {
   content: '\E01F';
 }
 
-.IconFont-Unlock::before {
+
+.CDB-IconFont--unlock::before {
   content: '\E020';
 }
 
-.IconFont-Unlock--withEllipsis::before {
+
+.CDB-IconFont--unlockwithEllipsis::before {
   content: '\E021';
 }
 
-.IconFont-Gift::before {
+
+.CDB-IconFont--gift::before {
   content: '\E022';
 }
 
-.IconFont-People::before {
+
+.CDB-IconFont--people::before {
   content: '\E023';
 }
 
-.IconFont-Play::before {
+
+.CDB-IconFont--play::before {
   content: '\E024';
 }
 
-.IconFont-Add::before {
+
+.CDB-IconFont--add::before {
   content: '\E025';
 }
 
-.IconFont-Map::before {
+
+.CDB-IconFont--map::before {
   content: '\E026';
 }
 
-.IconFont-Anchor::before {
+
+.CDB-IconFont--anchor::before {
   content: '\E027';
 }
 
-.IconFont-Key::before {
+
+.CDB-IconFont--key::before {
   content: '\E028';
 }
 
-.IconFont-Calendar::before {
+
+.CDB-IconFont--calendar::before {
   content: '\E029';
 }
 
-.IconFont-Document::before {
+
+.CDB-IconFont--document::before {
   content: '\E02A';
 }
 
-.IconFont-Eye::before {
+
+.CDB-IconFont--eye::before {
   content: '\E02B';
 }
 
-.IconFont-Marker::before {
+
+.CDB-IconFont--marker::before {
   content: '\E02C';
 }
 
-.IconFont-ProgressBar::before {
+
+.CDB-IconFont--progressBar::before {
   content: '\E02D';
 }
 
-.IconFont-Book::before {
+
+.CDB-IconFont--book::before {
   content: '\E02E';
 }
 
-.IconFont-Notes::before {
+
+.CDB-IconFont--notes::before {
   content: '\E02F';
 }
 
-.IconFont-Rectangles::before {
+
+.CDB-IconFont--rectangles::before {
   content: '\E030';
 }
 
-.IconFont-Mountain::before {
+
+.CDB-IconFont--mountain::before {
   content: '\E031';
 }
 
-.IconFont-Points::before {
+
+.CDB-IconFont--points::before {
   content: '\E032';
 }
 
-.IconFont-Snake::before {
+
+.CDB-IconFont--snake::before {
   content: '\E033';
 }
 
-.IconFont-Boss::before {
+
+.CDB-IconFont--boss::before {
   content: '\E034';
 }
 
-.IconFont-Rocket::before {
+
+.CDB-IconFont--rocket::before {
   content: '\E035';
 }
 
-.IconFont-Barometer::before {
+
+.CDB-IconFont--barometer::before {
   content: '\E036';
 }
 
-.IconFont-Dollar::before {
+
+.CDB-IconFont--dollar::before {
   content: '\E037';
 }
 
-.IconFont-Email::before {
+
+.CDB-IconFont--email::before {
   content: '\E038';
 }
 
-.IconFont-Label::before {
+
+.CDB-IconFont--label::before {
   content: '\E039';
 }
 
-.IconFont-Outside::before {
+
+.CDB-IconFont--outside::before {
   content: '\E03A';
 }
 
-.IconFont-Jigsaw::before {
+
+.CDB-IconFont--jigsaw::before {
   content: '\E03B';
 }
 
-.IconFont-Tools::before {
+
+.CDB-IconFont--tools::before {
   content: '\E03C';
 }
 
-.IconFont-Question::before {
+
+.CDB-IconFont--question::before {
   content: '\E03D';
 }
 
-.IconFont-LayerStack::before {
+
+.CDB-IconFont--layerStack::before {
   content: '\E03E';
 }
 
-.IconFont-Alarm::before {
+
+.CDB-IconFont--alarm::before {
   content: '\E03F';
 }
 
-.IconFont-CloudDownArrow::before {
+
+.CDB-IconFont--cloudDownArrow::before {
   content: '\E040';
 }
 
-.IconFont-Pencil::before {
+
+.CDB-IconFont--pencil::before {
   content: '\E041';
 }
 
-.IconFont-FountainPen::before {
+
+.CDB-IconFont--fountainPen::before {
   content: '\E042';
 }
 
-.IconFont-EmptyDoc::before {
+
+.CDB-IconFont--emptyDoc::before {
   content: '\E043';
 }
 
-.IconFont-MergeArrow::before {
+
+.CDB-IconFont--mergeArrow::before {
   content: '\E044';
 }
 
-.IconFont-MergeColumns::before {
+
+.CDB-IconFont--mergeColumns::before {
   content: '\E045';
 }
 
-.IconFont-MergeSpatial::before {
+
+.CDB-IconFont--mergeSpatial::before {
   content: '\E046';
 }
 
-.IconFont-Globe::before {
+
+.CDB-IconFont--globe::before {
   content: '\E047';
 }
 
-.IconFont-ChevronDown::before {
+
+.CDB-IconFont--chevronDown::before {
   content: '\E048';
 }
 
-.IconFont-Streets::before {
+
+.CDB-IconFont--streets::before {
   content: '\E049';
 }
 
-.IconFont-Keys::before {
+
+.CDB-IconFont--keys::before {
   content: '\E04A';
 }
 
-.IconFont-FacebookSquare::before {
+
+.CDB-IconFont--facebookSquare::before {
   content: '\E04B';
 }
 
-.IconFont-Fullscreen::before {
+
+.CDB-IconFont--fullscreen::before {
   content: '\E04C';
 }
 
-.IconFont-Rarrow::before {
+
+.CDB-IconFont--rarrow::before {
   content: '\E04D';
 }
 
-.IconFont-Share::before {
+
+.CDB-IconFont--share::before {
   content: '\E04E';
 }
 
-.IconFont-Linkedin::before {
+
+.CDB-IconFont--linkedin::before {
   content: '\E04F';
 }
 
-.IconFont-CalendarBlank::before {
+
+.CDB-IconFont--calendarBlank::before {
   content: '\E050';
 }
 
-.IconFont-CreativeCommons::before {
+
+.CDB-IconFont--creativeCommons::before {
   content: '\E051';
 }
 
-.IconFont-Bubble::before {
+
+.CDB-IconFont--bubble::before {
   content: '\E052';
 }
 
-.IconFont-Bars::before {
+
+.CDB-IconFont--bars::before {
   content: '\E053';
 }
 
-.IconFont-ArrowMenu::before {
+
+.CDB-IconFont--arrowMenu::before {
   content: '\E054';
 }
 
-.IconFont-TieFighter::before {
+
+.CDB-IconFont--tieFighter::before {
   content: '\E055';
 }
 
-.IconFont-Ray::before {
+
+.CDB-IconFont--ray::before {
   content: '\E056';
 }
 
-.IconFont-Markup::before {
+
+.CDB-IconFont--markup::before {
   content: '\E057';
 }
 
-.IconFont-Table::before {
+
+.CDB-IconFont--table::before {
   content: '\E058';
 }
 
-.IconFont-Airlock::before {
+
+.CDB-IconFont--airlock::before {
   content: '\E059';
 }
 
-.IconFont-Pin::before {
+
+.CDB-IconFont--pin::before {
   content: '\E05A';
 }
 
-.IconFont-Attache::before {
+
+.CDB-IconFont--attache::before {
   content: '\E05B';
 }
 
-.IconFont-Download::before {
+
+.CDB-IconFont--download::before {
   content: '\E05C';
 }
 
-.IconFont-Group::before {
+
+.CDB-IconFont--group::before {
   content: '\E05D';
 }
 
-.IconFont-Dashboard::before {
+
+.CDB-IconFont--dashboard::before {
   content: '\E05E';
 }
 
-.IconFont-Spinner::before {
+
+.CDB-IconFont--spinner::before {
   content: '\E05F';
 }

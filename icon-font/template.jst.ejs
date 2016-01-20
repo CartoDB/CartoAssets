@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-.IconFont {
+.CDB-IconFont {
   display: inline-block;
   font-family: 'CartoIcon';
   font-style: normal;
@@ -28,16 +28,18 @@ All available icons in CartoDB.
 
 ```
 <% _.each(glyphs, function(glyph) { %>
+<% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
   <div class="box">
-    <i class="IconFont IconFont-<%= glyph.fileName.split("_")[2] %> Size-large"></i>
-    <h4 class="Text Size-small"><%= glyph.fileName.split("_")[2] %></h4>
+    <i class="CDB-IconFont CDB-IconFont--<%= name %> Size-large"></i>
+    <h4 class="Text Size-small"><%= name %></h4>
   </div>
 <% }); %>
 ```
 */
 
 <% _.each(glyphs, function(glyph) { %>
-.IconFont-<%= glyph.fileName.split("_")[2] %>::before {
+<% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
+.CDB-IconFont--<%= name %>::before {
   content: '\<%= glyph.codePoint %>';
 }
 <% }); %>
