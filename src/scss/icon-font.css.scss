@@ -598,6 +598,12 @@ All available icons in CartoDB.
     <h4 class="Text Size-small">spinner</h4>
   </div>
 
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont--drop Size-large"></i>
+    <h4 class="Text Size-small">drop</h4>
+  </div>
+
 ```
 */
 
@@ -1075,4 +1081,9 @@ All available icons in CartoDB.
 
 .CDB-IconFont--spinner::before {
   content: '\E05F';
+}
+
+
+.CDB-IconFont--drop::before {
+  content: '\E060';
 }
