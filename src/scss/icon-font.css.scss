@@ -604,12 +604,6 @@ All available icons in CartoDB.
     <h4 class="Text Size-small">drop</h4>
   </div>
 
-
-  <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--tear Size-large"></i>
-    <h4 class="Text Size-small">tear</h4>
-  </div>
-
 ```
 */
 
@@ -1092,9 +1086,4 @@ All available icons in CartoDB.
 
 .CDB-IconFont--drop::before {
   content: '\E060';
-}
-
-
-.CDB-IconFont--tear::before {
-  content: '\E061';
 }
