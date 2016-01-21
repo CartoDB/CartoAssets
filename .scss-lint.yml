@@ -1,6 +1,7 @@
 scss_files: 'src/scss/**/*.scss'
 exclude:
   - 'src/scss/utilities/normalize.scss'
+  - 'src/scss/utilities/reset.scss'
   - 'src/scss/utilities/helpers.scss'
   - 'src/scss/variables/_sizes.scss'
 linters:
