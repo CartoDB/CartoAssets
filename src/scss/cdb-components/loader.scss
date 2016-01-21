@@ -12,7 +12,7 @@ There is only one state 'is-visible', in order to make it visible.
 ```
 */
 
-@import '../utilities/mixins';
+@import '../cdb-utilities/mixins';
 
 .CDB-Loader {
   @include css3-prefix(animation, loader-progress 1000ms linear 1);
