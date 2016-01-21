@@ -1,6 +1,8 @@
 // Icon font elements
 // ----------------------------------------------
 
+@import "cdb-variables/sizes";
+
 @font-face {
   font-family: 'CartoIcon';
   src: url('../fonts/cartoIcon.eot');
@@ -20,6 +22,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
+}
+
+.CDB-IconFont--center {
+  vertical-align: middle;
+}
+.CDB-IconFont--top {
+  vertical-align: top;
+}
+.CDB-IconFont--small {
+  font-size: $sFontSize-small + 1;
 }
 
 /* SG
