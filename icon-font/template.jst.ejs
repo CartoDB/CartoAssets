@@ -1,0 +1,57 @@
+// Icon font elements
+// ----------------------------------------------
+
+@import "cdb-variables/sizes";
+
+@font-face {
+  font-family: 'CartoIcon';
+  src: url('../fonts/cartoIcon.eot');
+  src: url('../fonts/cartoIcon.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cartoIcon.woff') format('woff'),
+  url('../fonts/cartoIcon.ttf') format('truetype'),
+  url('../fonts/cartoIcon.svg?ey3vsq#cartoIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.CDB-IconFont {
+  display: inline-block;
+  font-family: 'CartoIcon';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+.CDB-IconFont--center {
+  vertical-align: middle;
+}
+.CDB-IconFont--top {
+  vertical-align: top;
+}
+.CDB-IconFont--small {
+  font-size: $sFontSize-small + 1;
+}
+
+/* SG
+# Typography/Icon font
+All available icons in CartoDB.
+
+```
+<% _.each(glyphs, function(glyph) { %>
+<% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont--<%= name %> Size-large"></i>
+    <h4 class="Text Size-small"><%= name %></h4>
+  </div>
+<% }); %>
+```
+*/
+
+<% _.each(glyphs, function(glyph) { %>
+<% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
+.CDB-IconFont--<%= name %>::before {
+  content: '\<%= glyph.codePoint %>';
+}
+<% }); %>

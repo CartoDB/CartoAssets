@@ -7,6 +7,7 @@ module.exports = function (grunt) {
     clean: require('./tasks/clean'),
     sass: require('./tasks/sass'),
     cssmin: require('./tasks/cssmin'),
+    copy: require('./tasks/copy'),
     shell: require('./tasks/shell'),
     watch: require('./tasks/watch'),
     'gh-pages': require('./tasks/gh-pages')
@@ -14,11 +15,17 @@ module.exports = function (grunt) {
 
   var baseTasks = [
     'clean',
+    'shell:generateFont',
     'sass',
     'concat',
     'cssmin',
+    'copy',
     'shell'
   ];
+
+  var generateFontTask = baseTasks.concat([
+    'shell:generateFont'
+  ]);
 
   var devTasks = baseTasks.concat([
     'connect',
@@ -26,10 +33,11 @@ module.exports = function (grunt) {
   ]);
 
   grunt.event.on('watch', function (action, filepath) {
-    grunt.task.run('shell');
+    grunt.task.run('shell:style');
   });
 
   grunt.registerTask('dev', devTasks);
+  grunt.registerTask('generate-font', generateFontTask);
   grunt.registerTask('build', baseTasks);
   grunt.registerTask('default', baseTasks);
   grunt.registerTask('publish', ['build', 'gh-pages']);

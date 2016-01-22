@@ -1,5 +1,8 @@
 module.exports = {
-  dist: {
+  style: {
     command: 'styleguide'
+  },
+  generateFont: {
+    command: 'gulp'
   }
 };

@@ -4,8 +4,8 @@ module.exports = {
       check: 'gzip'
     },
     files: {
-      'dist/cartostyles.css': [
-        'dist/cartostyles.css'
+      'dist/css/cartostyles.css': [
+        'dist/css/cartostyles.css'
       ]
     }
   }

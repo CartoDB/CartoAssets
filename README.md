@@ -2,7 +2,6 @@
 
 > Share frontend assets between different CartoDB repositories
 
-
 ### Installation
 As easy as:
 - ```npm install```
@@ -18,6 +17,10 @@ It will generate a UI documentation about the components in this repository:
 
 If you want to check the documenation, it is generated in the ```dist``` folder.
 
+### How to add/update the icon font
+
+See this [instructions](https://github.com/CartoDB/CartoAssets/blob/master/Icon-Fonting.md)
+
 ### Publish a new version in NPM
 In order to publish a new version of CartoAssets you need to:
 
@@ -32,3 +35,4 @@ If you have these previous steps done:
 Just run this command:
 
 - ```grunt publish```
+
