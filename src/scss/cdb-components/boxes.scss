@@ -14,8 +14,8 @@
 @import '../cdb-variables/colors';
 
 .CDB-Box-Modal {
-  background: $cWhite;
   border: 1px solid $cMainLine;
   border-radius: 4px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+  background: $cWhite;
+  box-shadow: 0  $baseSize  $baseSize * 2 0 rgba(0, 0, 0, 0.16);
 }
