@@ -1,11 +1,11 @@
 {
   "name": "cartoassets",
   "description": "Share frontend assets between different CartoDB repositories",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "homepage": "https://github.com/cartodb/CartoAssets",
   "author": {
-    "name": "xavijam",
-    "email": "xavijam@gmail.com"
+    "name": "CartoDB",
+    "email": "contact@cartodb.com"
   },
   "contributors": [
     "Javier Álvarez <jmedina@cartodb.com>",
