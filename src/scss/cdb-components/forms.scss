@@ -7,8 +7,8 @@
 
 ```
   <input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
-  <input class="CDB-Radio" type="radio" name="Gender" value="01">
-  <input class="CDB-Radio" type="radio" name="Gender" value="02" disabled>
+  <input class="CDB-Radio" type="radio" name="Gender" value="02">
+  <input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
 ``` 
 */
 
@@ -288,4 +288,30 @@
   position: absolute;
   top: 40px;
 }
+
+
+/* SG
+# Forms/Labels
+
+```
+  <label class="u-iblock Text Size-medium u-rSpace--xl">
+    <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="01" checked>
+    <span class="u-iBlock">True</span>
+  </label>
+  <label class="u-iblock Text Size-medium">
+    <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="02" checked>
+    <span class="u-iBlock">False</span>
+  </label>
+  <hr/>
+  <label class="u-iblock Text Size-medium u-rSpace--xl">
+    <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Sport" >
+    <span class="u-iBlock">Sport</span>
+  </label>
+  <label class="u-iblock Text Size-medium">
+    <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Travel">
+    <span class="u-iBlock">Travel</span>
+  </label>
+``` 
+*/
+
 
