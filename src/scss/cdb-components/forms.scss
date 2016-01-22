@@ -1,0 +1,291 @@
+// Menu styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Radio
+
+
+```
+  <input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
+  <input class="CDB-Radio" type="radio" name="Gender" value="01">
+  <input class="CDB-Radio" type="radio" name="Gender" value="02" disabled>
+``` 
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-Radio {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $cMainLine;
+  border-radius: 50%;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &:checked {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+
+    &:hover {
+      border: 1px solid $cBlue;
+    }
+
+    &:before {
+      background: $cWhite;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+
+  &:disabled {
+    border: 1px solid $cSecondaryLine;
+    background: $cThirdBackground;
+
+    &:hover {
+      border: 1px solid $cSecondaryLine;
+    }
+
+    &:before {
+      background: $cWhite;
+    }
+  }
+}
+
+/* SG
+# Forms/Checkbox
+
+```
+  <input type="checkbox" name="vehicle" value="Bike" class="CDB-Checkbox" checked>
+  <input type="checkbox" name="vehicle" value="Bus" class="CDB-Checkbox">
+  <input type="checkbox" name="vehicle" value="Car" class="CDB-Checkbox" disabled>
+``` 
+*/
+
+.CDB-Checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+
+  &:before,
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 2px;
+    border-radius: 1px;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &:before {
+    right: 4px; 
+    height: 8px;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    left: 4px;
+    height: 6px;
+    transform: rotate(-45deg);
+  }
+
+  &:checked {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+
+    &:hover {
+      border: 1px solid $cBlue;
+    }
+
+    &:before,
+    &:after {
+      background: $cWhite;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+
+  &:disabled {
+    border: 1px solid $cSecondaryLine;
+    background: $cThirdBackground;
+
+    &:hover {
+      border: 1px solid $cSecondaryLine;
+    }
+
+    &:before,
+    &:after {
+      background: $cWhite;
+    }
+  }
+}
+
+/* SG
+# Forms/Inputs
+
+```
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input has-error Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-Input is-disabled Text">
+``` 
+*/
+
+.CDB-Input {
+  padding: 7px 8px 6px;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+  &:disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+  }
+  &.has-error {
+    border: 1px solid rgba($cError, 0.48);
+    background: rgba($cError, 0.04);
+    color: $cError;
+  }
+}
+
+
+/* SG
+# Forms/Sliders
+
+```
+  <input type="range" min="100" max="500" step="50" value="300" class="CDB-Range"/>
+``` 
+*/
+
+.CDB-Range {
+  position: relative;
+  width: 100%;
+  margin: -4px 0 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.CDB-Range::-webkit-slider-thumb {
+  position: relative;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.CDB-Range::-webkit-slider-runnable-track {
+  height: 4px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background: $cMainLine; 
+}
+
+.CDB-Range::-webkit-slider-thumb:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -3000px;
+  height: 4px;
+  border-radius: 4px;
+  background: $cBlue;
+  content: '';
+}
+
+.CDB-Range::-webkit-slider-thumb:after {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid $cMainLine;
+  border-radius: 50%;
+  background: $cWhite;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.48);
+  content: '';
+  z-index: 10;
+}
+
+.CDB-Range:focus {
+  outline: none;
+}
+
+.CDB-Range:hover::-webkit-slider-thumb:after,
+.CDB-Range:focus::-webkit-slider-thumb:after {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.64);
+  cursor: pointer;
+}
+
+.CDB-Range:disabled::-webkit-slider-thumb:before {
+  opacity: 0.2;
+}
+
+.CDB-Range:disabled::-webkit-slider-thumb:after {
+  opacity: 0.2;
+}
+
+/* SG
+# Forms/Selects
+
+```
+  <div class="CDB-Select" style="height: 400px;">
+    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input Text">
+    <div class="CDB-Box-Modal CDB-SelectItem">
+      <ul class="Text Size-medium">
+        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
+        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
+      </ul>
+    </div>
+  </div>
+``` 
+*/
+
+.CDB-Select {
+  position: relative;
+}
+
+.CDB-SelectItem {
+  position: absolute;
+  top: 40px;
+}
+

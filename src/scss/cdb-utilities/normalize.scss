@@ -489,6 +489,11 @@ input[type="radio"] {
     *width: 13px; /* 3 */
   }
 }
+input[type=range]::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 
 /**

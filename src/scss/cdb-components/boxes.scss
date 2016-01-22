@@ -1,0 +1,21 @@
+// Menu styles
+// ----------------------------------------------
+
+/* SG
+# Boxes/Box Dropdown
+
+
+```
+  <div class="CDB-Box-Modal">&nbsp;</div>
+``` 
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-Box-Modal {
+  background: $cWhite;
+  border: 1px solid $cMainLine;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+}
