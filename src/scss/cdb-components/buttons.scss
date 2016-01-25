@@ -1,0 +1,164 @@
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Primary
+
+```
+<button class="CDB-Button CDB-Button--primary is-medium">
+  <span class="CDB-Button-Text Text is-semibold Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-disabled">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-mini">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-mini is-disabled">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--primary is-medium">
+    <span class="CDB-Button-Text Text is-semibold Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-disabled">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-mini">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-mini is-disabled">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+</div>
+
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.is-mini {
+    padding: 5px 12px;
+  }
+  .CDB-Button-Text {
+    display: block;
+  }
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.24;
+  }
+}
+
+.CDB-Button--primary {
+  background: $cBlue;
+  color: $cWhite;
+  
+  &:hover {
+    background: darken($cBlue, 8%);
+  }
+  &:active {
+    background: darken($cBlue, 16%);
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cBlue;
+    }
+    &:active {
+      background: $cBlue;
+    }
+  }
+}
+
+
+
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Secondary
+
+```
+<button class="CDB-Button CDB-Button--secondary is-medium">
+  <span class="CDB-Button-Text Text is-semibold Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-disabled">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-mini">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-mini is-disabled">
+  <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--secondary is-medium">
+    <span class="CDB-Button-Text Text is-semibold Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-disabled">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-mini">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-mini is-disabled">
+    <span class="CDB-Button-Text Text is-semibold Size-small">SAVE</span>
+  </button>
+</div>
+
+```
+*/
+
+
+.CDB-Button--secondary {
+  border: 1px solid $cBlue;
+  background: $cWhite;
+  color: $cBlue;
+
+  &:hover {
+    background: rgba($cBlue, 0.08);
+  }
+  &:active {
+    background: $cBlue;
+    color: $cWhite;
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cWhite;
+    }
+    &:active {
+      background: $cWhite;
+    }
+  }
+}
