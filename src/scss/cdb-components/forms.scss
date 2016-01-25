@@ -152,13 +152,14 @@
 # Forms/Inputs
 
 ```
-  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input Text">
-  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input has-error Text">
-  <input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-Input is-disabled Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled Text">
 ``` 
 */
 
-.CDB-Input {
+.CDB-InputText {
+  min-width: 152px;
   padding: 7px 8px 6px;
   border: 1px solid $cMainLine;
   border-radius: 3px;
@@ -266,8 +267,8 @@
 # Forms/Selects
 
 ```
-  <div class="CDB-Select" style="height: 400px;">
-    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-Input Text">
+  <div class="CDB-Select" style="height: 250px;">
+    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
     <div class="CDB-Box-Modal CDB-SelectItem">
       <ul class="Text Size-medium">
         <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
@@ -302,7 +303,11 @@
     <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="02" checked>
     <span class="u-iBlock">False</span>
   </label>
-  <hr/>
+
+  <br/>
+  <br/>
+  <br/>
+
   <label class="u-iblock Text Size-medium u-rSpace--xl">
     <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Sport" >
     <span class="u-iBlock">Sport</span>
@@ -311,7 +316,40 @@
     <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Travel">
     <span class="u-iBlock">Travel</span>
   </label>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <fieldset>
+    <p class="CDB-Legend u-iBlock Text is-semibold Size-small u-rSpace--m">RADIO</p>
+    <ul class="Text Size-medium u-iBlock">
+      <li class="u-iBlock u-rSpace--xl">
+        <label>
+          <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+          <span class="u-iBlock">Travel</span>
+        </label>
+      </li>
+      <li class="u-iblock">
+        <label>
+          <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+          <span class="u-iBlock">Travel</span>
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset class="u-tSpace-xl">
+    <p class="CDB-Legend u-iBlock Text is-semibold Size-small u-rSpace--m">RADIO</p>
+    <div class="u-iBlock">
+      <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
+    </div>
+  </fieldset>
+
+
 ``` 
 */
 
+.CDB-Legend {
+  width: $baseSize * 12;
+}
 
