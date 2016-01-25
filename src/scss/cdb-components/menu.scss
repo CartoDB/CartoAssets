@@ -8,129 +8,148 @@
 ```
 <nav class="CDB-NavMenu">
   <ul class="CDB-NavMenu-Inner">
-    <li class="CDB-NavMenu-item"><a href="#">Layers</a></li>
-    <li class="CDB-NavMenu-item"><a href="#">Layers</a></li>
-    <li class="CDB-NavMenu-item"><a href="#">Layers</a></li>
+    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <a class="CDB-NavMenu-Link" href="#">DATA</a>
+    </li>
+    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+    </li>
+    <li class="CDB-NavMenu-Item is-active Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+      <ul class="CDB-NavSubmenu">
+        <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock is-active">
+          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+        <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock">
+          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+      </ul>
+    </li>
+    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+    </li>
   </ul>
+  <div style="position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;">
+    <!-- ready for a button -->
+  </div>
 </nav>
+
+<br/><br/>
+<br/><br/>
+
+<div style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu is-dark">
+    <ul class="CDB-NavMenu-Inner">
+      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+        <a class="CDB-NavMenu-Link" href="#">DATA</a>
+      </li>
+      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+        <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+      </li>
+      <li class="CDB-NavMenu-item is-active Text is-semibold Size-medium u-rSpace--m u-iBlock">
+        <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+        <ul class="CDB-NavSubmenu">
+          <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock is-active">
+            <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+          <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock">
+            <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+        <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<br/><br/>
+<br/><br/>
+
 ``` 
 */
 
 @import '../cdb-variables/colors';
 
-.box {
-  width: 120px;
-  height: 64px;
-  display: inline-block;
-  margin: 0 24px 24px 0;
+.CDB-NavMenu {
+  position: relative;
 }
 
-.Color-Blue {
-  background: $cBlue;
-}
-.Color-White {
-  background: $cWhite;
-  border: 1px solid #e5e5e5;
-}
-.Color-Dark {
-  background: $cBlack;
+.CDB-NavMenu-Inner {
+  position: relative;
+  margin-bottom: 18px;
+  border-bottom: 1px solid $cMainLine;
 }
 
-.Color-MainDark {
-  background: $cMainDark;
-}
-.Color-SecondaryDark {
-  background: $cSecondaryDark;
-}
-.Color-SecondaryBackground {
-  background: $cSecondaryBackground;
-}
-.Color-ThirdBackground {
-  background: $cThirdBackground;
+.CDB-NavMenu-Link {
+  display: block;
+  margin-bottom: -1px;
+  padding: 4px 0 11px;
+  border-bottom: 1px solid transparent;
 }
 
-
-/* SG
-# Colors/line
-
-
-```
-<div class="box Color-Blue"></div>
-<div class="box Color-HoverLine"></div>
-<div class="box Color-MainLine"></div>
-<div class="box Color-SecondaryLine"></div>
-```
-*/
-
-
-.Color-HoverLine {
-  background: $cHoverLine;
-}
-.Color-MainLine {
-  background: $cMainLine;
-}
-.Color-SecondaryLine {
-  background: $cSecondaryLine;
+.CDB-NavMenu-Item.is-active .CDB-NavMenu-Link {
+  border-bottom: 1px solid $cMainDark;
+  color: $cMainDark;
 }
 
-
-/* SG
-# Colors/typography
-
-
-```
-<div class="box Color-MainDark"></div>
-<div class="box Color-Type02"></div>
-<div class="box Color-Type03"></div>
-<div class="box Color-Type04"></div>
-<div class="box Color-White"></div>
-<div class="box Color-Blue"></div>
-```
-*/
-
-
-.Color-Type02 {
-  background: $cTypo2;
-}
-.Color-Type03 {
-  background: $cTypo3;
-}
-.Color-Type04 {
-  background: $cTypo4;
+.CDB-NavSubmenu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-top: 14px;
+  border-bottom: 1px solid $cSecondaryLine;
 }
 
+.CDB-NavSubmenu-Link {
+  display: block;
+  margin-bottom: -1px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid transparent;
+}
 
-/* SG
-# Colors/other
+.CDB-NavSubmenu-item.is-active {
+  .CDB-NavSubmenu-Link {
+    border-bottom: 1px solid $cTypo3;
+    color: $cMainDark;
+  }
+}
 
+.CDB-NavSubmenu-Status {
+  margin-left: 2px;
+  color: $cTypo4;
+}
 
-```
-<div class="box Color-Higlight"></div>
-<div class="box Color-Alert"></div>
-<div class="box Color-Public"></div>
-<div class="box Color-Link"></div>
-<div class="box Color-Password"></div>
-<div class="box Color-Error"></div>
-```
-*/
+.CDB-Navmenu.is-dark {
 
-.Color-Higlight {
-  background: $cHighlight;
-}
-.Color-Alert {
-  background: $cAlert;
-}
-.Color-Public {
-  background: $cPublic;
-}
-.Color-Link {
-  background: $cLink;
-}
-.Color-Password {
-  background: $cPassword;
-}
-.Color-Error {
-  background: $cError;
+  .CDB-NavMenu-Inner,
+  .CDB-NavSubmenu {
+    border-bottom: 1px solid $cTypo2;
+  }
+
+  .CDB-NavMenu-Link,
+  .CDB-NavSubmenu-Link {
+    color: $cTypo3;
+  }
+
+  .CDB-NavMenu-Item.is-active {
+    .CDB-NavMenu-Link {
+      border-bottom: 1px solid $cMainLine;
+      color: $cWhite;
+    }
+  }
+
+  .CDB-NavSubmenu-item.is-active {
+    .CDB-NavSubmenu-Link {
+      border-bottom: 1px solid $cMainLine;
+      color: $cWhite;
+    }
+  }
+
+  .CDB-NavSubmenu-Status {
+    color: $cTypo2;
+  }
 }
 
 
