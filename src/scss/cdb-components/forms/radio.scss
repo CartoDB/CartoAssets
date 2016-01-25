@@ -22,7 +22,7 @@
   border: 1px solid $cMainLine;
   border-radius: 50%;
 
-  &:before {
+  &::before {
     display: block;
     position: absolute;
     top: 50%;
@@ -44,7 +44,7 @@
       border: 1px solid $cBlue;
     }
 
-    &:before {
+    &::before {
       background: $cWhite;
     }
   }
@@ -65,7 +65,7 @@
       border: 1px solid $cSecondaryLine;
     }
 
-    &:before {
+    &::before {
       background: $cWhite;
     }
   }

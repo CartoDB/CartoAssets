@@ -21,8 +21,8 @@
   border: 1px solid $cMainLine;
   border-radius: 3px;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     display: block;
     position: absolute;
     bottom: 3px;
@@ -32,13 +32,13 @@
     content: '';
   }
 
-  &:before {
+  &::before {
     right: $baseSize / 2;
     height: $baseSize;
     transform: rotate(45deg);
   }
 
-  &:after {
+  &::after {
     left: $baseSize / 2;
     height: $baseSize - 2;
     transform: rotate(-45deg);
@@ -52,8 +52,8 @@
       border: 1px solid $cBlue;
     }
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background: $cWhite;
     }
   }
@@ -74,8 +74,8 @@
       border: 1px solid $cSecondaryLine;
     }
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background: $cWhite;
     }
   }
