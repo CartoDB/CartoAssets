@@ -42,7 +42,7 @@ All available icons in CartoDB.
 <% _.each(glyphs, function(glyph) { %>
 <% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--<%= name %> Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-<%= name %> Size-large"></i>
     <h4 class="Text Size-small"><%= name %></h4>
   </div>
 <% }); %>
@@ -51,7 +51,7 @@ All available icons in CartoDB.
 
 <% _.each(glyphs, function(glyph) { %>
 <% var name = glyph.fileName.split("_")[2].toCamelCase(); %>
-.CDB-IconFont--<%= name %>::before {
+.CDB-IconFont-<%= name %>::before {
   content: '\<%= glyph.codePoint %>';
 }
 <% }); %>

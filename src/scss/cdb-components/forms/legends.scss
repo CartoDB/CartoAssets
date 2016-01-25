@@ -1,0 +1,65 @@
+// Legends styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Labels
+
+```
+  <label class="u-iblock Text Size-medium u-rSpace--xl">
+    <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="01" checked>
+    <span class="u-iBlock">True</span>
+  </label>
+  <label class="u-iblock Text Size-medium">
+    <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="02" checked>
+    <span class="u-iBlock">False</span>
+  </label>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <label class="u-iblock Text Size-medium u-rSpace--xl">
+    <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Sport" >
+    <span class="u-iBlock">Sport</span>
+  </label>
+  <label class="u-iblock Text Size-medium">
+    <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Travel">
+    <span class="u-iBlock">Travel</span>
+  </label>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <fieldset>
+    <p class="CDB-Legend u-iBlock Text is-semibold Size-small u-rSpace--m">RADIO</p>
+    <ul class="Text Size-medium u-iBlock">
+      <li class="u-iBlock u-rSpace--xl">
+        <label>
+          <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+          <span class="u-iBlock">Travel</span>
+        </label>
+      </li>
+      <li class="u-iblock">
+        <label>
+          <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+          <span class="u-iBlock">Travel</span>
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset class="u-tSpace-xl">
+    <p class="CDB-Legend u-iBlock Text is-semibold Size-small u-rSpace--m">RADIO</p>
+    <div class="u-iBlock">
+      <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
+    </div>
+  </fieldset>
+
+```
+*/
+
+@import '../../cdb-variables/sizes';
+
+.CDB-Legend {
+  width: $baseSize * 12;
+}

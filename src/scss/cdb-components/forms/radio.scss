@@ -1,0 +1,72 @@
+// Radio Button styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Radio2
+
+
+```
+  <input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
+  <input class="CDB-Radio" type="radio" name="Gender" value="02">
+  <input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-Radio {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid $cMainLine;
+  border-radius: 50%;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $baseSize - 2;
+    height: $baseSize - 2;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &:checked {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+
+    &:hover {
+      border: 1px solid $cBlue;
+    }
+
+    &:before {
+      background: $cWhite;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+
+  &:disabled {
+    border: 1px solid $cSecondaryLine;
+    background: $cThirdBackground;
+
+    &:hover {
+      border: 1px solid $cSecondaryLine;
+    }
+
+    &:before {
+      background: $cWhite;
+    }
+  }
+}

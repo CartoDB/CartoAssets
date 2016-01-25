@@ -1,0 +1,82 @@
+// CheckBoxes styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Checkbox
+
+```
+  <input type="checkbox" name="vehicle" value="Bike" class="CDB-Checkbox" checked>
+  <input type="checkbox" name="vehicle" value="Bus" class="CDB-Checkbox">
+  <input type="checkbox" name="vehicle" value="Car" class="CDB-Checkbox" disabled>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-Checkbox {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+
+  &:before,
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 2px;
+    border-radius: 1px;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &:before {
+    right: $baseSize / 2; 
+    height: $baseSize;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    left: $baseSize / 2;
+    height: $baseSize - 2;
+    transform: rotate(-45deg);
+  }
+
+  &:checked {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+
+    &:hover {
+      border: 1px solid $cBlue;
+    }
+
+    &:before,
+    &:after {
+      background: $cWhite;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+
+  &:disabled {
+    border: 1px solid $cSecondaryLine;
+    background: $cThirdBackground;
+
+    &:hover {
+      border: 1px solid $cSecondaryLine;
+    }
+
+    &:before,
+    &:after {
+      background: $cWhite;
+    }
+  }
+}

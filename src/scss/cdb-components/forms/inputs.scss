@@ -1,0 +1,41 @@
+// Input styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Inputs
+
+```
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error Text">
+  <input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled Text">
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-InputText {
+  min-width: 152px;
+  padding: 7px 8px 6px;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+  &:disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+  }
+  &.has-error {
+    border: 1px solid rgba($cError, 0.48);
+    background: rgba($cError, 0.04);
+    color: $cError;
+  }
+}
+
