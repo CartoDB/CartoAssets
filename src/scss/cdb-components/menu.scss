@@ -7,25 +7,25 @@
 
 ```
 <nav class="CDB-NavMenu">
-  <ul class="CDB-NavMenu-Inner">
-    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+  <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
+    <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">DATA</a>
     </li>
-    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+    <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">STYLE</a>
     </li>
-    <li class="CDB-NavMenu-Item is-active Text is-semibold Size-medium u-rSpace--m u-iBlock">
+    <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
-      <ul class="CDB-NavSubmenu">
-        <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock is-active">
+      <ul class="CDB-NavSubmenu Size-small">
+        <li class="CDB-NavSubmenu-Item is-active">
           <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
         </li>
-        <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock">
+        <li class="CDB-NavSubmenu-Item">
           <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
         </li>
       </ul>
     </li>
-    <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+    <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
     </li>
   </ul>
@@ -39,25 +39,25 @@
 
 <div style="background: #2E3C43; height: 100px; padding: 20px;">
   <nav class="CDB-NavMenu is-dark">
-    <ul class="CDB-NavMenu-Inner">
-      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+    <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
+      <li class="CDB-NavMenu-Item Text">
         <a class="CDB-NavMenu-Link" href="#">DATA</a>
       </li>
-      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <li class="CDB-NavMenu-Item">
         <a class="CDB-NavMenu-Link" href="#">STYLE</a>
       </li>
-      <li class="CDB-NavMenu-item is-active Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <li class="CDB-NavMenu-item is-active">
         <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
-        <ul class="CDB-NavSubmenu">
-          <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock is-active">
+        <ul class="CDB-NavSubmenu Size-small">
+          <li class="CDB-NavSubmenu-Item is-active">
             <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
           </li>
-          <li class="CDB-NavSubmenu-Item Text is-semibold Size-small u-rSpace--m u-iBlock">
+          <li class="CDB-NavSubmenu-Item">
             <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
           </li>
         </ul>
       </li>
-      <li class="CDB-NavMenu-Item Text is-semibold Size-medium u-rSpace--m u-iBlock">
+      <li class="CDB-NavMenu-Item">
         <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
       </li>
     </ul>
@@ -87,6 +87,13 @@
   margin-bottom: -1px;
   padding: 4px 0 11px;
   border-bottom: 1px solid transparent;
+}
+
+.CDB-NavMenu-Item,
+.CDB-NavSubmenu-Item {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .CDB-NavMenu-Item.is-active .CDB-NavMenu-Link {
