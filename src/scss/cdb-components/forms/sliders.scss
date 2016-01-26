@@ -51,9 +51,8 @@
 
 .CDB-Range::-webkit-slider-thumb::after {
   position: absolute;
-  top: -5px;
+  top: -6px;
   right: -6px;
-  bottom: -6px;
   left: -6px;
   width: $baseSize + 4;
   height: $baseSize + 4;
