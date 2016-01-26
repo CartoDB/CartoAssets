@@ -5,18 +5,18 @@
 # Typography
 
 ```
-<p class="Text Size-huge">Open Sans 26/34 Regular</p>
-<p class="Text Size-large">Open Sans 16/22 Regular</p>
-<p class="Text is-semibold Size-medium">Open Sans 12/16 Semibold</p>
-<p class="Text Size-medium">Open Sans 12/16 Semibold</p>
-<p class="Text is-semibold Size-small">Open Sans 10/14 Semibold</p>
-<p class="Text Size-small">Open Sans 10/14 Regular</p>
+<p class="CDB-Text CDB-Size-huge">Open Sans 26/34 Regular</p>
+<p class="CDB-Text CDB-Size-large">Open Sans 16/22 Regular</p>
+<p class="CDB-Text is-semibold CDB-Size-medium">Open Sans 12/16 Semibold</p>
+<p class="CDB-Text CDB-Size-medium">Open Sans 12/16 Regular</p>
+<p class="CDB-Text is-semibold Size-small">Open Sans 10/14 Semibold</p>
+<p class="CDB-Text CDB-Size-small">Open Sans 10/14 Regular</p>
 ```
 */
 
 @import '../cdb-variables/sizes';
 
-.Text {
+.CDB-Text {
   font-family: 'Open Sans';
   $sFontWeight-normal: 400;
 
@@ -28,22 +28,22 @@
   }
 }
 
-.Size-huge {
+.CDB-Size-huge {
   font-size: $sFontSize-huge;
   line-height: $sLineHeight-huge;
 }
 
-.Size-large {
+.CDB-Size-large {
   font-size: $sFontSize-large;
   line-height: $sLineHeight-large;
 }
 
-.Size-medium {
+.CDB-Size-medium {
   font-size: $sFontSize-medium;
   line-height: $sLineHeight-medium;
 }
 
-.Size-small {
+.CDB-Size-small {
   font-size: $sFontSize-small;
   line-height: $sLineHeight-small;
 }
