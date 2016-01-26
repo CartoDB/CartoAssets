@@ -96,6 +96,30 @@ All available icons in CartoDB.
 
 
   <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-caretDown Size-large"></i>
+    <h4 class="Text Size-small">caretDown</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-lightbulb Size-large"></i>
+    <h4 class="Text Size-small">lightbulb</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-explore Size-large"></i>
+    <h4 class="Text Size-small">explore</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-drop Size-large"></i>
+    <h4 class="Text Size-small">drop</h4>
+  </div>
+
+
+  <div class="box">
     <i class="CDB-IconFont CDB-IconFont-wizard Size-large"></i>
     <h4 class="Text Size-small">wizard</h4>
   </div>
@@ -498,8 +522,8 @@ All available icons in CartoDB.
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-rarrow Size-large"></i>
-    <h4 class="Text Size-small">rarrow</h4>
+    <i class="CDB-IconFont CDB-IconFont-rArrowLight Size-large"></i>
+    <h4 class="Text Size-small">rArrowLight</h4>
   </div>
 
 
@@ -540,8 +564,8 @@ All available icons in CartoDB.
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-arrowMenu Size-large"></i>
-    <h4 class="Text Size-small">arrowMenu</h4>
+    <i class="CDB-IconFont CDB-IconFont-arrowMenuLight Size-large"></i>
+    <h4 class="Text Size-small">arrowMenuLight</h4>
   </div>
 
 
@@ -612,8 +636,14 @@ All available icons in CartoDB.
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-drop Size-large"></i>
-    <h4 class="Text Size-small">drop</h4>
+    <i class="CDB-IconFont CDB-IconFont-mapsearch Size-large"></i>
+    <h4 class="Text Size-small">mapsearch</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-rArrow Size-large"></i>
+    <h4 class="Text Size-small">rArrow</h4>
   </div>
 
 ```
@@ -666,436 +696,461 @@ All available icons in CartoDB.
 }
 
 
-.CDB-IconFont-wizard::before {
+.CDB-IconFont-caretDown::before {
   content: '\E00A';
 }
 
 
-.CDB-IconFont-info::before {
+.CDB-IconFont-lightbulb::before {
   content: '\E00B';
 }
 
 
-.CDB-IconFont-fork::before {
+.CDB-IconFont-explore::before {
   content: '\E00C';
 }
 
 
-.CDB-IconFont-facebook::before {
+.CDB-IconFont-drop::before {
   content: '\E00D';
 }
 
 
-.CDB-IconFont-folder::before {
+.CDB-IconFont-wizard::before {
   content: '\E00E';
 }
 
 
-.CDB-IconFont-dropbox::before {
+.CDB-IconFont-info::before {
   content: '\E00F';
 }
 
 
-.CDB-IconFont-cloud::before {
+.CDB-IconFont-fork::before {
   content: '\E010';
 }
 
 
-.CDB-IconFont-step::before {
+.CDB-IconFont-facebook::before {
   content: '\E011';
 }
 
 
-.CDB-IconFont-addDocument::before {
+.CDB-IconFont-folder::before {
   content: '\E012';
 }
 
 
-.CDB-IconFont-arrowNext::before {
+.CDB-IconFont-dropbox::before {
   content: '\E013';
 }
 
 
-.CDB-IconFont-arrowPrev::before {
+.CDB-IconFont-cloud::before {
   content: '\E014';
 }
 
 
-.CDB-IconFont-close::before {
+.CDB-IconFont-step::before {
   content: '\E015';
 }
 
 
-.CDB-IconFont-cartoFante::before {
+.CDB-IconFont-addDocument::before {
   content: '\E016';
 }
 
 
-.CDB-IconFont-lock::before {
+.CDB-IconFont-arrowNext::before {
   content: '\E017';
 }
 
 
-.CDB-IconFont-cartoDB::before {
+.CDB-IconFont-arrowPrev::before {
   content: '\E018';
 }
 
 
-.CDB-IconFont-lens::before {
+.CDB-IconFont-close::before {
   content: '\E019';
 }
 
 
-.CDB-IconFont-closeLimits::before {
+.CDB-IconFont-cartoFante::before {
   content: '\E01A';
 }
 
 
-.CDB-IconFont-defaultUser::before {
+.CDB-IconFont-lock::before {
   content: '\E01B';
 }
 
 
-.CDB-IconFont-cockroach::before {
+.CDB-IconFont-cartoDB::before {
   content: '\E01C';
 }
 
 
-.CDB-IconFont-floppy::before {
+.CDB-IconFont-lens::before {
   content: '\E01D';
 }
 
 
-.CDB-IconFont-trash::before {
+.CDB-IconFont-closeLimits::before {
   content: '\E01E';
 }
 
 
-.CDB-IconFont-wifi::before {
+.CDB-IconFont-defaultUser::before {
   content: '\E01F';
 }
 
 
-.CDB-IconFont-unlock::before {
+.CDB-IconFont-cockroach::before {
   content: '\E020';
 }
 
 
-.CDB-IconFont-unlockWithEllipsis::before {
+.CDB-IconFont-floppy::before {
   content: '\E021';
 }
 
 
-.CDB-IconFont-gift::before {
+.CDB-IconFont-trash::before {
   content: '\E022';
 }
 
 
-.CDB-IconFont-people::before {
+.CDB-IconFont-wifi::before {
   content: '\E023';
 }
 
 
-.CDB-IconFont-play::before {
+.CDB-IconFont-unlock::before {
   content: '\E024';
 }
 
 
-.CDB-IconFont-add::before {
+.CDB-IconFont-unlockWithEllipsis::before {
   content: '\E025';
 }
 
 
-.CDB-IconFont-map::before {
+.CDB-IconFont-gift::before {
   content: '\E026';
 }
 
 
-.CDB-IconFont-anchor::before {
+.CDB-IconFont-people::before {
   content: '\E027';
 }
 
 
-.CDB-IconFont-key::before {
+.CDB-IconFont-play::before {
   content: '\E028';
 }
 
 
-.CDB-IconFont-calendar::before {
+.CDB-IconFont-add::before {
   content: '\E029';
 }
 
 
-.CDB-IconFont-document::before {
+.CDB-IconFont-map::before {
   content: '\E02A';
 }
 
 
-.CDB-IconFont-eye::before {
+.CDB-IconFont-anchor::before {
   content: '\E02B';
 }
 
 
-.CDB-IconFont-marker::before {
+.CDB-IconFont-key::before {
   content: '\E02C';
 }
 
 
-.CDB-IconFont-progressBar::before {
+.CDB-IconFont-calendar::before {
   content: '\E02D';
 }
 
 
-.CDB-IconFont-book::before {
+.CDB-IconFont-document::before {
   content: '\E02E';
 }
 
 
-.CDB-IconFont-notes::before {
+.CDB-IconFont-eye::before {
   content: '\E02F';
 }
 
 
-.CDB-IconFont-rectangles::before {
+.CDB-IconFont-marker::before {
   content: '\E030';
 }
 
 
-.CDB-IconFont-mountain::before {
+.CDB-IconFont-progressBar::before {
   content: '\E031';
 }
 
 
-.CDB-IconFont-points::before {
+.CDB-IconFont-book::before {
   content: '\E032';
 }
 
 
-.CDB-IconFont-snake::before {
+.CDB-IconFont-notes::before {
   content: '\E033';
 }
 
 
-.CDB-IconFont-boss::before {
+.CDB-IconFont-rectangles::before {
   content: '\E034';
 }
 
 
-.CDB-IconFont-rocket::before {
+.CDB-IconFont-mountain::before {
   content: '\E035';
 }
 
 
-.CDB-IconFont-barometer::before {
+.CDB-IconFont-points::before {
   content: '\E036';
 }
 
 
-.CDB-IconFont-dollar::before {
+.CDB-IconFont-snake::before {
   content: '\E037';
 }
 
 
-.CDB-IconFont-email::before {
+.CDB-IconFont-boss::before {
   content: '\E038';
 }
 
 
-.CDB-IconFont-label::before {
+.CDB-IconFont-rocket::before {
   content: '\E039';
 }
 
 
-.CDB-IconFont-outside::before {
+.CDB-IconFont-barometer::before {
   content: '\E03A';
 }
 
 
-.CDB-IconFont-jigsaw::before {
+.CDB-IconFont-dollar::before {
   content: '\E03B';
 }
 
 
-.CDB-IconFont-tools::before {
+.CDB-IconFont-email::before {
   content: '\E03C';
 }
 
 
-.CDB-IconFont-question::before {
+.CDB-IconFont-label::before {
   content: '\E03D';
 }
 
 
-.CDB-IconFont-layerStack::before {
+.CDB-IconFont-outside::before {
   content: '\E03E';
 }
 
 
-.CDB-IconFont-alarm::before {
+.CDB-IconFont-jigsaw::before {
   content: '\E03F';
 }
 
 
-.CDB-IconFont-cloudDownArrow::before {
+.CDB-IconFont-tools::before {
   content: '\E040';
 }
 
 
-.CDB-IconFont-pencil::before {
+.CDB-IconFont-question::before {
   content: '\E041';
 }
 
 
-.CDB-IconFont-fountainPen::before {
+.CDB-IconFont-layerStack::before {
   content: '\E042';
 }
 
 
-.CDB-IconFont-emptyDoc::before {
+.CDB-IconFont-alarm::before {
   content: '\E043';
 }
 
 
-.CDB-IconFont-mergeArrow::before {
+.CDB-IconFont-cloudDownArrow::before {
   content: '\E044';
 }
 
 
-.CDB-IconFont-mergeColumns::before {
+.CDB-IconFont-pencil::before {
   content: '\E045';
 }
 
 
-.CDB-IconFont-mergeSpatial::before {
+.CDB-IconFont-fountainPen::before {
   content: '\E046';
 }
 
 
-.CDB-IconFont-globe::before {
+.CDB-IconFont-emptyDoc::before {
   content: '\E047';
 }
 
 
-.CDB-IconFont-chevronDown::before {
+.CDB-IconFont-mergeArrow::before {
   content: '\E048';
 }
 
 
-.CDB-IconFont-streets::before {
+.CDB-IconFont-mergeColumns::before {
   content: '\E049';
 }
 
 
-.CDB-IconFont-keys::before {
+.CDB-IconFont-mergeSpatial::before {
   content: '\E04A';
 }
 
 
-.CDB-IconFont-facebookSquare::before {
+.CDB-IconFont-globe::before {
   content: '\E04B';
 }
 
 
-.CDB-IconFont-fullscreen::before {
+.CDB-IconFont-chevronDown::before {
   content: '\E04C';
 }
 
 
-.CDB-IconFont-rarrow::before {
+.CDB-IconFont-streets::before {
   content: '\E04D';
 }
 
 
-.CDB-IconFont-share::before {
+.CDB-IconFont-keys::before {
   content: '\E04E';
 }
 
 
-.CDB-IconFont-linkedin::before {
+.CDB-IconFont-facebookSquare::before {
   content: '\E04F';
 }
 
 
-.CDB-IconFont-calendarBlank::before {
+.CDB-IconFont-fullscreen::before {
   content: '\E050';
 }
 
 
-.CDB-IconFont-creativeCommons::before {
+.CDB-IconFont-rArrowLight::before {
   content: '\E051';
 }
 
 
-.CDB-IconFont-bubble::before {
+.CDB-IconFont-share::before {
   content: '\E052';
 }
 
 
-.CDB-IconFont-bars::before {
+.CDB-IconFont-linkedin::before {
   content: '\E053';
 }
 
 
-.CDB-IconFont-arrowMenu::before {
+.CDB-IconFont-calendarBlank::before {
   content: '\E054';
 }
 
 
-.CDB-IconFont-tieFighter::before {
+.CDB-IconFont-creativeCommons::before {
   content: '\E055';
 }
 
 
-.CDB-IconFont-ray::before {
+.CDB-IconFont-bubble::before {
   content: '\E056';
 }
 
 
-.CDB-IconFont-markup::before {
+.CDB-IconFont-bars::before {
   content: '\E057';
 }
 
 
-.CDB-IconFont-table::before {
+.CDB-IconFont-arrowMenuLight::before {
   content: '\E058';
 }
 
 
-.CDB-IconFont-airlock::before {
+.CDB-IconFont-tieFighter::before {
   content: '\E059';
 }
 
 
-.CDB-IconFont-pin::before {
+.CDB-IconFont-ray::before {
   content: '\E05A';
 }
 
 
-.CDB-IconFont-attache::before {
+.CDB-IconFont-markup::before {
   content: '\E05B';
 }
 
 
-.CDB-IconFont-download::before {
+.CDB-IconFont-table::before {
   content: '\E05C';
 }
 
 
-.CDB-IconFont-group::before {
+.CDB-IconFont-airlock::before {
   content: '\E05D';
 }
 
 
-.CDB-IconFont-dashboard::before {
+.CDB-IconFont-pin::before {
   content: '\E05E';
 }
 
 
-.CDB-IconFont-spinner::before {
+.CDB-IconFont-attache::before {
   content: '\E05F';
 }
 
 
-.CDB-IconFont-drop::before {
+.CDB-IconFont-download::before {
   content: '\E060';
+}
+
+
+.CDB-IconFont-group::before {
+  content: '\E061';
+}
+
+
+.CDB-IconFont-dashboard::before {
+  content: '\E062';
+}
+
+
+.CDB-IconFont-spinner::before {
+  content: '\E063';
+}
+
+
+.CDB-IconFont-mapsearch::before {
+  content: '\E064';
+}
+
+
+.CDB-IconFont-rArrow::before {
+  content: '\E065';
 }
