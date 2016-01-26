@@ -522,12 +522,6 @@ All available icons in CartoDB.
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-rarrow Size-large"></i>
-    <h4 class="Text Size-small">rarrow</h4>
-  </div>
-
-
-  <div class="box">
     <i class="CDB-IconFont CDB-IconFont-rArrowLight Size-large"></i>
     <h4 class="Text Size-small">rArrowLight</h4>
   </div>
@@ -566,12 +560,6 @@ All available icons in CartoDB.
   <div class="box">
     <i class="CDB-IconFont CDB-IconFont-bars Size-large"></i>
     <h4 class="Text Size-small">bars</h4>
-  </div>
-
-
-  <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-arrowMenu Size-large"></i>
-    <h4 class="Text Size-small">arrowMenu</h4>
   </div>
 
 
@@ -644,12 +632,6 @@ All available icons in CartoDB.
   <div class="box">
     <i class="CDB-IconFont CDB-IconFont-spinner Size-large"></i>
     <h4 class="Text Size-small">spinner</h4>
-  </div>
-
-
-  <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-drop Size-large"></i>
-    <h4 class="Text Size-small">drop</h4>
   </div>
 
 
@@ -1069,121 +1051,106 @@ All available icons in CartoDB.
 }
 
 
-.CDB-IconFont-rarrow::before {
+.CDB-IconFont-rArrowLight::before {
   content: '\E051';
 }
 
 
-.CDB-IconFont-rArrowLight::before {
+.CDB-IconFont-share::before {
   content: '\E052';
 }
 
 
-.CDB-IconFont-share::before {
+.CDB-IconFont-linkedin::before {
   content: '\E053';
 }
 
 
-.CDB-IconFont-linkedin::before {
+.CDB-IconFont-calendarBlank::before {
   content: '\E054';
 }
 
 
-.CDB-IconFont-calendarBlank::before {
+.CDB-IconFont-creativeCommons::before {
   content: '\E055';
 }
 
 
-.CDB-IconFont-creativeCommons::before {
+.CDB-IconFont-bubble::before {
   content: '\E056';
 }
 
 
-.CDB-IconFont-bubble::before {
+.CDB-IconFont-bars::before {
   content: '\E057';
 }
 
 
-.CDB-IconFont-bars::before {
+.CDB-IconFont-arrowMenuLight::before {
   content: '\E058';
 }
 
 
-.CDB-IconFont-arrowMenu::before {
+.CDB-IconFont-tieFighter::before {
   content: '\E059';
 }
 
 
-.CDB-IconFont-arrowMenuLight::before {
+.CDB-IconFont-ray::before {
   content: '\E05A';
 }
 
 
-.CDB-IconFont-tieFighter::before {
+.CDB-IconFont-markup::before {
   content: '\E05B';
 }
 
 
-.CDB-IconFont-ray::before {
+.CDB-IconFont-table::before {
   content: '\E05C';
 }
 
 
-.CDB-IconFont-markup::before {
+.CDB-IconFont-airlock::before {
   content: '\E05D';
 }
 
 
-.CDB-IconFont-table::before {
+.CDB-IconFont-pin::before {
   content: '\E05E';
 }
 
 
-.CDB-IconFont-airlock::before {
+.CDB-IconFont-attache::before {
   content: '\E05F';
 }
 
 
-.CDB-IconFont-pin::before {
+.CDB-IconFont-download::before {
   content: '\E060';
 }
 
 
-.CDB-IconFont-attache::before {
+.CDB-IconFont-group::before {
   content: '\E061';
 }
 
 
-.CDB-IconFont-download::before {
+.CDB-IconFont-dashboard::before {
   content: '\E062';
 }
 
 
-.CDB-IconFont-group::before {
+.CDB-IconFont-spinner::before {
   content: '\E063';
 }
 
 
-.CDB-IconFont-dashboard::before {
+.CDB-IconFont-mapsearch::before {
   content: '\E064';
 }
 
 
-.CDB-IconFont-spinner::before {
-  content: '\E065';
-}
-
-
-.CDB-IconFont-drop::before {
-  content: '\E066';
-}
-
-
-.CDB-IconFont-mapsearch::before {
-  content: '\E067';
-}
-
-
 .CDB-IconFont-rArrow::before {
-  content: '\E068';
+  content: '\E065';
 }
