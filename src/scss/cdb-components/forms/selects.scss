@@ -6,17 +6,17 @@
 # Forms/Selects
 
 ```
-  <div class="CDB-Select" style="height: 250px;">
-    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
-    <div class="CDB-Box-Modal CDB-SelectItem">
-      <ul class="Text Size-medium">
-        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
-        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
-        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
-        <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
-      </ul>
-    </div>
+<div class="CDB-Select" style="height: 250px;">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+  <div class="CDB-Box-Modal CDB-SelectItem">
+    <ul class="CDB-Text CDB-Size-medium">
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
+    </ul>
   </div>
+</div>
 ```
 */
 

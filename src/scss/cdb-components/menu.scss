@@ -7,7 +7,7 @@
 
 ```
 <nav class="CDB-NavMenu">
-  <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
+  <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
     <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">DATA</a>
     </li>
@@ -16,7 +16,7 @@
     </li>
     <li class="CDB-NavMenu-Item">
       <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
-      <ul class="CDB-NavSubmenu Size-small">
+      <ul class="CDB-NavSubmenu CDB-Size-small">
         <li class="CDB-NavSubmenu-Item is-active">
           <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
         </li>
@@ -39,8 +39,8 @@
 
 <div style="background: #2E3C43; height: 100px; padding: 20px;">
   <nav class="CDB-NavMenu is-dark">
-    <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
-      <li class="CDB-NavMenu-Item Text">
+    <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
+      <li class="CDB-NavMenu-Item CDB-Text">
         <a class="CDB-NavMenu-Link" href="#">DATA</a>
       </li>
       <li class="CDB-NavMenu-Item">
@@ -48,7 +48,7 @@
       </li>
       <li class="CDB-NavMenu-item is-active">
         <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
-        <ul class="CDB-NavSubmenu Size-small">
+        <ul class="CDB-NavSubmenu CDB-Size-small">
           <li class="CDB-NavSubmenu-Item is-active">
             <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
           </li>
