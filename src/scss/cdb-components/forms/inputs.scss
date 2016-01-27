@@ -5,9 +5,9 @@
 # Forms/Inputs
 
 ```
-  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText Text">
-  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error Text">
-  <input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled Text">
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled CDB-Text">
 ```
 */
 
