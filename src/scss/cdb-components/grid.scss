@@ -1,0 +1,30 @@
+// Grid layout
+// ----------------------------------------------
+
+/* SG
+# Grid/gaps
+
+```
+  <div class="Grid">
+    <div class="CDB-Width-1" style="background: green; height: 100px;">&nbsp;</div>
+    <div class="CDB-Width-2" style="background: orange">&nbsp;</div>
+    <div class="CDB-Width-3" style="background: red">&nbsp;</div>
+    <div class="CDB-Width-20" style="background: blue">&nbsp;</div>
+  </div>
+  <div class="CDB-Col12" style="margin: 20px 0; background: blue">&nbsp;</div>
+```
+*/
+
+@import '../cdb-variables/sizes';
+
+.Grid {
+  display: flex;
+}
+
+@for $i from 1 through 180 {
+  .CDB-Col#{$baseSize * $i} {
+      width: $baseSize * $i;
+      flex: 0 0 $baseSize * $i;
+      max-width: $baseSize * $i;
+  }
+}
