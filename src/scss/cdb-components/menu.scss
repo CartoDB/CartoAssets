@@ -1,0 +1,162 @@
+// Menu styles
+// ----------------------------------------------
+
+/* SG
+# Menu/
+
+
+```
+<nav class="CDB-NavMenu">
+  <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">DATA</a>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+      <ul class="CDB-NavSubmenu Size-small">
+        <li class="CDB-NavSubmenu-Item is-active">
+          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+        <li class="CDB-NavSubmenu-Item">
+          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+      </ul>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+    </li>
+  </ul>
+  <div style="position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;">
+    <!-- ready for a button -->
+  </div>
+</nav>
+
+<br/><br/>
+<br/><br/>
+
+<div style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu is-dark">
+    <ul class="CDB-NavMenu-Inner Text is-semibold Size-medium">
+      <li class="CDB-NavMenu-Item Text">
+        <a class="CDB-NavMenu-Link" href="#">DATA</a>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+      </li>
+      <li class="CDB-NavMenu-item is-active">
+        <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+        <ul class="CDB-NavSubmenu Size-small">
+          <li class="CDB-NavSubmenu-Item is-active">
+            <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+          <li class="CDB-NavSubmenu-Item">
+            <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<br/><br/>
+<br/><br/>
+
+```
+*/
+
+@import '../cdb-variables/colors';
+
+.CDB-NavMenu {
+  position: relative;
+}
+
+.CDB-NavMenu-Inner {
+  position: relative;
+  margin-bottom: 18px;
+  border-bottom: 1px solid $cMainLine;
+}
+
+.CDB-NavMenu-Link {
+  display: block;
+  margin-bottom: -1px;
+  padding: 4px 0 11px;
+  border-bottom: 1px solid transparent;
+}
+
+.CDB-NavMenu-Item,
+.CDB-NavSubmenu-Item {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.CDB-NavMenu-Item.is-active .CDB-NavMenu-Link {
+  border-bottom: 1px solid $cMainDark;
+  color: $cMainDark;
+}
+
+.CDB-NavSubmenu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-top: 14px;
+  border-bottom: 1px solid $cSecondaryLine;
+}
+
+.CDB-NavSubmenu-Link {
+  display: block;
+  margin-bottom: -1px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid transparent;
+}
+
+.CDB-NavSubmenu-item.is-active {
+  .CDB-NavSubmenu-Link {
+    border-bottom: 1px solid $cTypo3;
+    color: $cMainDark;
+  }
+}
+
+.CDB-NavSubmenu-Status {
+  margin-left: 2px;
+  color: $cTypo4;
+}
+
+.CDB-Navmenu.is-dark {
+
+  .CDB-NavMenu-Inner,
+  .CDB-NavSubmenu {
+    border-bottom: 1px solid $cTypo2;
+  }
+
+  .CDB-NavMenu-Link,
+  .CDB-NavSubmenu-Link {
+    color: $cTypo3;
+  }
+
+  .CDB-NavMenu-Item.is-active {
+    .CDB-NavMenu-Link {
+      border-bottom: 1px solid $cMainLine;
+      color: $cWhite;
+    }
+  }
+
+  .CDB-NavSubmenu-item.is-active {
+    .CDB-NavSubmenu-Link {
+      border-bottom: 1px solid $cMainLine;
+      color: $cWhite;
+    }
+  }
+
+  .CDB-NavSubmenu-Status {
+    color: $cTypo2;
+  }
+}
+
+

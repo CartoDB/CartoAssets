@@ -1,0 +1,27 @@
+// List styles
+// ----------------------------------------------
+
+/* SG
+# Lists/Lists Decorations
+
+
+```
+  <div class="CDB-Box-Modal">&nbsp;</div>
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-ListDecoration-Item {
+  border-bottom: 1px solid $cSecondaryLine;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.CDB-ListDecoration-ItemLink {
+  display: block;
+  padding: 12px 16px;
+}

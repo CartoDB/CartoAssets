@@ -477,13 +477,24 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  outline: none;
+  cursor: pointer;
   @if $legacy_browser_support {
     *height: 13px; /* 3 */
     *width: 13px; /* 3 */
   }
 }
+input[type=range]::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -575,4 +586,23 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Remove default styles for forms
+ */
+
+input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  
+  &[type="checkbox"],
+  &[type="radio"] {
+    cursor: pointer;
+  }
 }

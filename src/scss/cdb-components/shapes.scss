@@ -1,8 +1,8 @@
-// Shapes styles
+// Shape styles
 // ----------------------------------------------
 
 /* SG
-# Shapes/dot
+# Shapes/Dot
 
 You may resize and change the colors of the icons with the `glyph-`-classes. Available sizes and colors listed:
 
@@ -13,6 +13,7 @@ You may resize and change the colors of the icons with the `glyph-`-classes. Ava
 */
 
 @import '../cdb-utilities/mixins';
+
 
 .CDB-Shape-dot {
   display: inline-block;
