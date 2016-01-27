@@ -6,12 +6,12 @@
 
 ```
   <div class="Grid">
-    <div class="CDB-Width-1" style="background: green; height: 100px;">&nbsp;</div>
-    <div class="CDB-Width-2" style="background: orange">&nbsp;</div>
-    <div class="CDB-Width-3" style="background: red">&nbsp;</div>
-    <div class="CDB-Width-20" style="background: blue">&nbsp;</div>
+    <div class="Gap CDB-Width CDB-Width--1" style="background: green; height: 100px;">&nbsp;</div>
+    <div class="Gap CDB-Width CDB-Width--2" style="background: orange">&nbsp;</div>
+    <div class="Gap CDB-Width CDB-Width--3" style="background: red">&nbsp;</div>
+    <div class="Gap CDB-Width CDB-Width--20" style="background: blue">&nbsp;</div>
   </div>
-  <div class="CDB-Col12" style="margin: 20px 0; background: blue">&nbsp;</div>
+  <div class="CDB-Width--120" style="margin: 20px 0; background: blue">&nbsp;</div>
 ```
 */
 
@@ -21,8 +21,14 @@
   display: flex;
 }
 
+.CDB-Width {
+  width: $baseSize;
+  flex: 0 0 $baseSize;
+  max-width: $baseSize;
+}
+
 @for $i from 1 through 180 {
-  .CDB-Col#{$baseSize * $i} {
+  .CDB-Width--#{$i} {
       width: $baseSize * $i;
       flex: 0 0 $baseSize * $i;
       max-width: $baseSize * $i;
