@@ -1,0 +1,70 @@
+/* SG
+# Shapes/Magnify
+
+Description
+
+```
+<div style="padding: 20px;">
+  <div class="CDB-Shape-magnify"></div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape-magnify is-blue"></div>
+</div>
+<div style="background: #2E3C43; padding: 20px;">
+  <div class="CDB-Shape-magnify is-white"></div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-magnify {
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid $cMainDark;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 19px;
+    width: 1px;
+    height: 6px;
+    transform: rotate(314deg);
+    background: $cMainDark;
+    content: '';
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.CDB-Shape-magnify.is-blue {
+  &:before {
+    border: 1px solid $cBlue;
+  }
+  &:after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-magnify.is-white {
+  &:before {
+    border: 1px solid $cWhite;
+  }
+  &:after {
+    background: $cWhite;
+  }
+}
