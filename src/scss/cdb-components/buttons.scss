@@ -1,0 +1,168 @@
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Primary
+
+Layout Component:
+[CDB-Button][CDB-Button--primary | CDB-Button--secondary]
+
+```
+<button class="CDB-Button CDB-Button--primary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--primary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+</div>
+
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Button {
+  padding: $baseSize $baseSize + 12;
+  border-radius: $baseSize / 2;
+  cursor: pointer;
+
+  .CDB-Button-Text {
+    display: block;
+  }
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.24;
+  }
+}
+
+.CDB-Button--small {
+  padding: $baseSize - 3 $baseSize + 4;
+}
+
+.CDB-Button--primary {
+  background: $cBlue;
+  color: $cWhite;
+
+  &:hover {
+    background: darken($cBlue, 8%);
+  }
+  &:active {
+    background: darken($cBlue, 16%);
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cBlue;
+    }
+    &:active {
+      background: $cBlue;
+    }
+  }
+}
+
+
+
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Secondary
+
+```
+<button class="CDB-Button CDB-Button--secondary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--secondary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+</div>
+
+```
+*/
+
+
+.CDB-Button--secondary {
+  border: 1px solid $cBlue;
+  background: $cWhite;
+  color: $cBlue;
+
+  &:hover {
+    background: rgba($cBlue, 0.08);
+  }
+  &:active {
+    background: $cBlue;
+    color: $cWhite;
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cWhite;
+    }
+    &:active {
+      background: $cWhite;
+    }
+  }
+}
