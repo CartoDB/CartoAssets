@@ -3,6 +3,7 @@ exclude:
   - 'src/scss/cdb-utilities/normalize.scss'
   - 'src/scss/cdb-utilities/reset.scss'
   - 'src/scss/cdb-utilities/helpers.scss'
+  - 'src/scss/utilities/reset.scss'
   - 'src/scss/variables/_sizes.scss'
 linters:
   BangFormat:
