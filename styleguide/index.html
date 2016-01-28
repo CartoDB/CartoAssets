@@ -10109,6 +10109,19 @@ return jQuery;
       <a class="submenulink" href="#Basics" data-section="Basics">Basics</a>
     </li>
 		<li>
+                <a class="submenulink" href="#Boxes" data-section="Boxes">Boxes</a>
+                <ul class="submenu" data-submenu="Boxes">
+                    <li><a href="#Boxes-Box_Dropdown">Box Dropdown</a></li>
+                </ul>
+		</li>
+		<li>
+                <a class="submenulink" href="#Buttons" data-section="Buttons">Buttons</a>
+                <ul class="submenu" data-submenu="Buttons">
+                    <li><a href="#Buttons-Primary">Primary</a></li>
+                    <li><a href="#Buttons-Secondary">Secondary</a></li>
+                </ul>
+		</li>
+		<li>
                 <a class="submenulink" href="#Colors" data-section="Colors">Colors</a>
                 <ul class="submenu" data-submenu="Colors">
                     <li><a href="#Colors-line">line</a></li>
@@ -10118,13 +10131,34 @@ return jQuery;
                 </ul>
 		</li>
 		<li>
+                <a class="submenulink" href="#Forms" data-section="Forms">Forms</a>
+                <ul class="submenu" data-submenu="Forms">
+                    <li><a href="#Forms-Checkbox">Checkbox</a></li>
+                    <li><a href="#Forms-Inputs">Inputs</a></li>
+                    <li><a href="#Forms-Labels">Labels</a></li>
+                    <li><a href="#Forms-Radio">Radio</a></li>
+                    <li><a href="#Forms-Selects">Selects</a></li>
+                    <li><a href="#Forms-Sliders">Sliders</a></li>
+                    <li><a href="#Forms-Toogle">Toogle</a></li>
+                </ul>
+		</li>
+		<li>
+                <a class="submenulink" href="#Lists" data-section="Lists">Lists</a>
+                <ul class="submenu" data-submenu="Lists">
+                    <li><a href="#Lists-Lists_Decorations">Lists Decorations</a></li>
+                </ul>
+		</li>
+		<li>
                 <a class="sectionlink" href="#Loader" data-section="Loader">Loader</a>
+		</li>
+		<li>
+                <a class="sectionlink" href="#Menu" data-section="Menu">Menu</a>
 		</li>
 		<li>
                 <a class="submenulink" href="#Shapes" data-section="Shapes">Shapes</a>
                 <ul class="submenu" data-submenu="Shapes">
+                    <li><a href="#Shapes-Dot">Dot</a></li>
                     <li><a href="#Shapes-arrow">arrow</a></li>
-                    <li><a href="#Shapes-dot">dot</a></li>
                     <li><a href="#Shapes-hamburguer">hamburguer</a></li>
                     <li><a href="#Shapes-lens">lens</a></li>
                     <li><a href="#Shapes-magnify">magnify</a></li>
@@ -11018,6 +11052,205 @@ hsla(120, 100%, 50%, 1);</pre></div>
     </div>
   </div>
 
+		<div class="section" id="Boxes-Box_Dropdown" data-section="Boxes" data-heading="Box Dropdown">
+
+            <div class="comment">
+                <h1>Boxes/Box Dropdown</h1>
+                
+            </div>
+
+                <div class="result">
+                    <div class="CDB-Box-Modal">&#xA0;</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"CDB-Box-Modal"</span>&gt;&amp;<span class="hljs-comment">#xA0;&lt;/div&gt;</span>
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Buttons-Primary" data-section="Buttons" data-heading="Primary">
+
+            <div class="comment">
+                <h1>Buttons/Primary</h1>
+                <p>Layout Component:
+[CDB-Button][CDB-Button--primary | CDB-Button--secondary]</p>
+            </div>
+
+                <div class="result">
+                    <button class="CDB-Button CDB-Button--primary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<br>
+<br>
+<br>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--primary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary is-disabled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary CDB-Button--small"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary CDB-Button--small is-disabled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background: #2E3C43; padding: 20px;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary CDB-Button--small"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--primary CDB-Button--small is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Buttons-Secondary" data-section="Buttons" data-heading="Secondary">
+
+            <div class="comment">
+                <h1>Buttons/Secondary</h1>
+                
+            </div>
+
+                <div class="result">
+                    <button class="CDB-Button CDB-Button--secondary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<br>
+<br>
+<br>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--secondary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary is-disabled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary CDB-Button--small"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary CDB-Button--small is-disabled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background: #2E3C43; padding: 20px;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary CDB-Button--small"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button CDB-Button--secondary CDB-Button--small is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Button-Text CDB-Text is-semibold CDB-Size-small"</span>&gt;</span>SAVE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</pre>
+                </div>
+
+		</div>
 		<div class="section" id="Colors-line" data-section="Colors" data-heading="line">
 
             <div class="comment">
@@ -11126,6 +11359,286 @@ hsla(120, 100%, 50%, 1);</pre></div>
                 </div>
 
 		</div>
+		<div class="section" id="Forms-Checkbox" data-section="Forms" data-heading="Checkbox">
+
+            <div class="comment">
+                <h1>Forms/Checkbox</h1>
+                
+            </div>
+
+                <div class="result">
+                    <input type="checkbox" name="vehicle" value="Bike" class="CDB-Checkbox" checked>
+<input type="checkbox" name="vehicle" value="Bus" class="CDB-Checkbox">
+<input type="checkbox" name="vehicle" value="Car" class="CDB-Checkbox" disabled>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"vehicle"</span> value=<span class="hljs-string">"Bike"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox"</span> checked&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"vehicle"</span> value=<span class="hljs-string">"Bus"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox"</span>&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"vehicle"</span> value=<span class="hljs-string">"Car"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox"</span> disabled&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Inputs" data-section="Forms" data-heading="Inputs">
+
+            <div class="comment">
+                <h1>Forms/Inputs</h1>
+                
+            </div>
+
+                <div class="result">
+                    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled CDB-Text">
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"text"</span> name=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-InputText CDB-Text"</span>&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"text"</span> name=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-InputText has-error CDB-Text"</span>&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"text"</span> name=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> disabled <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-InputText is-disabled CDB-Text"</span>&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Labels" data-section="Forms" data-heading="Labels">
+
+            <div class="comment">
+                <h1>Forms/Labels</h1>
+                
+            </div>
+
+                <div class="result">
+                    <label class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="01" checked>
+  <span class="u-iBlock">True</span>
+</label>
+<label class="u-iblock CDB-Text CDB-Size-medium">
+  <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="02" checked>
+  <span class="u-iBlock">False</span>
+</label>
+
+<br>
+<br>
+<br>
+
+<label class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Sport">
+  <span class="u-iBlock">Sport</span>
+</label>
+<label class="u-iblock CDB-Text CDB-Size-medium">
+  <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Travel">
+  <span class="u-iBlock">Travel</span>
+</label>
+
+<br>
+<br>
+<br>
+
+<fieldset>
+  <p class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">RADIO</p>
+  <ul class="CDB-Text CDB-Size-medium u-iBlock">
+    <li class="u-iBlock u-rSpace--xl">
+      <label>
+        <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+        <span class="u-iBlock">Travel</span>
+      </label>
+    </li>
+    <li class="u-iblock">
+      <label>
+        <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
+        <span class="u-iBlock">Travel</span>
+      </label>
+    </li>
+  </ul>
+</fieldset>
+<fieldset class="u-tSpace-xl CDB-Text">
+  <p class="CDB-Legend u-iBlock is-semibold CDB-Size-small u-rSpace--m">RADIO</p>
+  <div class="u-iBlock">
+    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+  </div>
+</fieldset>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;label <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iblock CDB-Text CDB-Size-medium u-rSpace--xl"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Radio u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"radio"</span> name=<span class="hljs-string">"True"</span> value=<span class="hljs-string">"01"</span> checked&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">True</span>&lt;/span&gt;
+&lt;/label&gt;
+&lt;label <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iblock CDB-Text CDB-Size-medium"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Radio u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"radio"</span> name=<span class="hljs-string">"True"</span> value=<span class="hljs-string">"02"</span> checked&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">False</span>&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;label <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iblock CDB-Text CDB-Size-medium u-rSpace--xl"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"hobbies"</span> value=<span class="hljs-string">"Sport"</span>&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">Sport</span>&lt;/span&gt;
+&lt;/label&gt;
+&lt;label <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iblock CDB-Text CDB-Size-medium"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"hobbies"</span> value=<span class="hljs-string">"Travel"</span>&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">Travel</span>&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;fieldset&gt;
+  &lt;p <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m"</span>&gt;<span class="hljs-type">RADIO</span>&lt;/p&gt;
+  &lt;ul <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Text CDB-Size-medium u-iBlock"</span>&gt;
+    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock u-rSpace--xl"</span>&gt;
+      &lt;label&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"Gender"</span> value=<span class="hljs-string">"Travel"</span>&gt;
+        &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">Travel</span>&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iblock"</span>&gt;
+      &lt;label&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Checkbox u-iBlock u-rSpace--s"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"Gender"</span> value=<span class="hljs-string">"Travel"</span>&gt;
+        &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">Travel</span>&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+&lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-tSpace-xl CDB-Text"</span>&gt;
+  &lt;p <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Legend u-iBlock is-semibold CDB-Size-small u-rSpace--m"</span>&gt;<span class="hljs-type">RADIO</span>&lt;/p&gt;
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"text"</span> name=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-InputText"</span>&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Radio" data-section="Forms" data-heading="Radio">
+
+            <div class="comment">
+                <h1>Forms/Radio</h1>
+                
+            </div>
+
+                <div class="result">
+                    <input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
+<input class="CDB-Radio" type="radio" name="Gender" value="02">
+<input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Radio"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"radio"</span> name=<span class="hljs-string">"Gender"</span> value=<span class="hljs-string">"01"</span> checked&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Radio"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"radio"</span> name=<span class="hljs-string">"Gender"</span> value=<span class="hljs-string">"02"</span>&gt;
+&lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Radio"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"radio"</span> name=<span class="hljs-string">"Gender"</span> value=<span class="hljs-string">"03"</span> disabled&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Selects" data-section="Forms" data-heading="Selects">
+
+            <div class="comment">
+                <h1>Forms/Selects</h1>
+                
+            </div>
+
+                <div class="result">
+                    <div class="CDB-Select" style="height: 250px;">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+  <div class="CDB-Box-Modal CDB-SelectItem">
+    <ul class="CDB-Text CDB-Size-medium">
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset&#x2026;</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer&#x2026;</a></li>
+    </ul>
+  </div>
+</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-Select"</span> style=<span class="hljs-string">"height: 250px;"</span>&gt;
+  &lt;input type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-InputText CDB-Text"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-Box-Modal CDB-SelectItem"</span>&gt;
+    &lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-Text CDB-Size-medium"</span>&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-Item"</span>&gt;&lt;a href=<span class="hljs-string">"#"</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-ItemLink"</span>&gt;Hide&lt;/a&gt;&lt;/li&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-Item"</span>&gt;&lt;a href=<span class="hljs-string">"#"</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-ItemLink"</span>&gt;Rename&lt;/a&gt;&lt;/li&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-Item"</span>&gt;&lt;a href=<span class="hljs-string">"#"</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-ItemLink"</span>&gt;Change source dataset&amp;<span class="hljs-preprocessor">#x2026;&lt;/a&gt;&lt;/li&gt;</span>
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-Item"</span>&gt;&lt;a href=<span class="hljs-string">"#"</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-ListDecoration-ItemLink"</span>&gt;Delete <span class="hljs-keyword">this</span> layer&amp;<span class="hljs-preprocessor">#x2026;&lt;/a&gt;&lt;/li&gt;</span>
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Sliders" data-section="Forms" data-heading="Sliders">
+
+            <div class="comment">
+                <h1>Forms/Sliders</h1>
+                
+            </div>
+
+                <div class="result">
+                    <input type="range" min="100" max="500" step="50" value="300" class="CDB-Range">
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;input type=<span class="hljs-string">"range"</span> <span class="hljs-built_in">min</span>=<span class="hljs-string">"100"</span> <span class="hljs-built_in">max</span>=<span class="hljs-string">"500"</span> <span class="hljs-keyword">step</span>=<span class="hljs-string">"50"</span> value=<span class="hljs-string">"300"</span> <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">CDB</span>-<span class="hljs-title">Range</span>"&gt;</span>
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Forms-Toogle" data-section="Forms" data-heading="Toogle">
+
+            <div class="comment">
+                <h1>Forms/Toogle</h1>
+                
+            </div>
+
+                <div class="result">
+                    <label class="CDB-Text CDB-Size-small is-semibold u-rSpace--xl">
+  <span class="u-iBlock">TOOLS</span>
+  <input class="CDB-Toogle u-iBlock" type="checkbox" name="Analysis">
+  <span class="u-iBlock">SQL</span>
+</label>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;label <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Text CDB-Size-small is-semibold u-rSpace--xl"</span>&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">TOOLS</span>&lt;/span&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"CDB-Toogle u-iBlock"</span> <span class="hljs-class"><span class="hljs-keyword">type</span>=</span><span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"Analysis"</span>&gt;
+  &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=</span><span class="hljs-string">"u-iBlock"</span>&gt;<span class="hljs-type">SQL</span>&lt;/span&gt;
+&lt;/label&gt;
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Lists-Lists_Decorations" data-section="Lists" data-heading="Lists Decorations">
+
+            <div class="comment">
+                <h1>Lists/Lists Decorations</h1>
+                
+            </div>
+
+                <div class="result">
+                    <div class="CDB-Box-Modal">&#xA0;</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"CDB-Box-Modal"</span>&gt;&amp;<span class="hljs-comment">#xA0;&lt;/div&gt;</span>
+</pre>
+                </div>
+
+		</div>
 		<div class="section" id="Loader-" data-section="Loader" data-heading="">
 
             <div class="comment">
@@ -11145,6 +11658,162 @@ There is only one state &apos;is-visible&apos;, in order to make it visible.</p>
                 </div>
 
 		</div>
+		<div class="section" id="Menu-" data-section="Menu" data-heading="">
+
+            <div class="comment">
+                <h1>Menu</h1>
+                
+            </div>
+
+                <div class="result">
+                    <nav class="CDB-NavMenu">
+  <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">DATA</a>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+      <ul class="CDB-NavSubmenu CDB-Size-small">
+        <li class="CDB-NavSubmenu-Item is-active">
+          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+        <li class="CDB-NavSubmenu-Item">
+          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+        </li>
+      </ul>
+    </li>
+    <li class="CDB-NavMenu-Item">
+      <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+    </li>
+  </ul>
+  <div style="position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;">
+    <!-- ready for a button -->
+  </div>
+</nav>
+
+<br><br>
+<br><br>
+
+<div style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu is-dark">
+    <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
+      <li class="CDB-NavMenu-Item CDB-Text">
+        <a class="CDB-NavMenu-Link" href="#">DATA</a>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+      </li>
+      <li class="CDB-NavMenu-item is-active">
+        <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+        <ul class="CDB-NavSubmenu CDB-Size-small">
+          <li class="CDB-NavSubmenu-Item is-active">
+            <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+          <li class="CDB-NavSubmenu-Item">
+            <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<br><br>
+<br><br>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu CDB-Size-small"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-active"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ready for a button --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background: #2E3C43; height: 100px; padding: 20px;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu is-dark"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item CDB-Text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu CDB-Size-small"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-active"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Shapes-Dot" data-section="Shapes" data-heading="Dot">
+
+            <div class="comment">
+                <h1>Shapes/Dot</h1>
+                <p>You may resize and change the colors of the icons with the <code>glyph-</code>-classes. Available sizes and colors listed:</p>
+            </div>
+
+                <div class="result">
+                    <button class="CDB-Shape-dot CDB-Widget-dot--navigation is-selected" data-page="3"></button>
+<button class="CDB-Shape-dot CDB-Widget-dot--navigation" data-page="3"></button>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;<span class="hljs-keyword">button </span>class=<span class="hljs-string">"CDB-Shape-dot CDB-Widget-dot--navigation is-selected"</span> <span class="hljs-preprocessor">data</span>-page=<span class="hljs-string">"3"</span>&gt;&lt;/<span class="hljs-keyword">button&gt;
+</span>&lt;<span class="hljs-keyword">button </span>class=<span class="hljs-string">"CDB-Shape-dot CDB-Widget-dot--navigation"</span> <span class="hljs-preprocessor">data</span>-page=<span class="hljs-string">"3"</span>&gt;&lt;/<span class="hljs-keyword">button&gt;</span>
+</pre>
+                </div>
+
+		</div>
 		<div class="section" id="Shapes-arrow" data-section="Shapes" data-heading="arrow">
 
             <div class="comment">
@@ -11159,26 +11828,6 @@ There is only one state &apos;is-visible&apos;, in order to make it visible.</p>
                 <div class="markup hljs">
 <pre>
 <span class="hljs-tag">&lt;div&gt;</span><span class="hljs-tag">&lt;/div&gt;</span>
-</pre>
-                </div>
-
-		</div>
-		<div class="section" id="Shapes-dot" data-section="Shapes" data-heading="dot">
-
-            <div class="comment">
-                <h1>Shapes/dot</h1>
-                <p>You may resize and change the colors of the icons with the <code>glyph-</code>-classes. Available sizes and colors listed:</p>
-            </div>
-
-                <div class="result">
-                    <button class="CDB-Shape-dot CDB-Widget-dot--navigation is-selected" data-page="3"></button>
-<button class="CDB-Shape-dot CDB-Widget-dot--navigation" data-page="3"></button>
-                </div>
-
-                <div class="markup hljs">
-<pre>
-&lt;<span class="hljs-keyword">button </span>class=<span class="hljs-string">"CDB-Shape-dot CDB-Widget-dot--navigation is-selected"</span> <span class="hljs-preprocessor">data</span>-page=<span class="hljs-string">"3"</span>&gt;&lt;/<span class="hljs-keyword">button&gt;
-</span>&lt;<span class="hljs-keyword">button </span>class=<span class="hljs-string">"CDB-Shape-dot CDB-Widget-dot--navigation"</span> <span class="hljs-preprocessor">data</span>-page=<span class="hljs-string">"3"</span>&gt;&lt;/<span class="hljs-keyword">button&gt;</span>
 </pre>
                 </div>
 
@@ -11263,22 +11912,22 @@ There is only one state &apos;is-visible&apos;, in order to make it visible.</p>
             </div>
 
                 <div class="result">
-                    <p class="Text Size-huge">Open Sans 26/34 Regular</p>
-<p class="Text Size-large">Open Sans 16/22 Regular</p>
-<p class="Text is-semibold Size-medium">Open Sans 12/16 Semibold</p>
-<p class="Text Size-medium">Open Sans 12/16 Semibold</p>
-<p class="Text is-semibold Size-small">Open Sans 10/14 Semibold</p>
-<p class="Text Size-small">Open Sans 10/14 Regular</p>
+                    <p class="CDB-Text CDB-Size-huge">Open Sans 26/34 Regular</p>
+<p class="CDB-Text CDB-Size-large">Open Sans 16/22 Regular</p>
+<p class="CDB-Text is-semibold CDB-Size-medium">Open Sans 12/16 Semibold</p>
+<p class="CDB-Text CDB-Size-medium">Open Sans 12/16 Regular</p>
+<p class="CDB-Text is-semibold Size-small">Open Sans 10/14 Semibold</p>
+<p class="CDB-Text CDB-Size-small">Open Sans 10/14 Regular</p>
                 </div>
 
                 <div class="markup hljs">
 <pre>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text Size-huge"</span>&gt;</span>Open Sans 26/34 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text Size-large"</span>&gt;</span>Open Sans 16/22 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text is-semibold Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text is-semibold Size-small"</span>&gt;</span>Open Sans 10/14 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"Text Size-small"</span>&gt;</span>Open Sans 10/14 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-huge"</span>&gt;</span>Open Sans 26/34 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-large"</span>&gt;</span>Open Sans 16/22 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-medium"</span>&gt;</span>Open Sans 12/16 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-semibold Size-small"</span>&gt;</span>Open Sans 10/14 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-small"</span>&gt;</span>Open Sans 10/14 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </pre>
                 </div>
 
@@ -11292,1156 +11941,1216 @@ There is only one state &apos;is-visible&apos;, in order to make it visible.</p>
 
                 <div class="result">
                     <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--clock Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-clock Size-large"></i>
     <h4 class="Text Size-small">clock</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--stats Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-stats Size-large"></i>
     <h4 class="Text Size-small">stats</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--heartempty Size-large"></i>
-    <h4 class="Text Size-small">heartempty</h4>
+    <i class="CDB-IconFont CDB-IconFont-heartEmpty Size-large"></i>
+    <h4 class="Text Size-small">heartEmpty</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--heartfill Size-large"></i>
-    <h4 class="Text Size-small">heartfill</h4>
+    <i class="CDB-IconFont CDB-IconFont-heartFill Size-large"></i>
+    <h4 class="Text Size-small">heartFill</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--alert Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-alert Size-large"></i>
     <h4 class="Text Size-small">alert</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--rows Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-rows Size-large"></i>
     <h4 class="Text Size-small">rows</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--check Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-check Size-large"></i>
     <h4 class="Text Size-small">check</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--dribbble Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-dribbble Size-large"></i>
     <h4 class="Text Size-small">dribbble</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--twitter Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-twitter Size-large"></i>
     <h4 class="Text Size-small">twitter</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--wizard Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-caretDown Size-large"></i>
+    <h4 class="Text Size-small">caretDown</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-lightbulb Size-large"></i>
+    <h4 class="Text Size-small">lightbulb</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-explore Size-large"></i>
+    <h4 class="Text Size-small">explore</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-drop Size-large"></i>
+    <h4 class="Text Size-small">drop</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-wizard Size-large"></i>
     <h4 class="Text Size-small">wizard</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--info Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-info Size-large"></i>
     <h4 class="Text Size-small">info</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--fork Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-fork Size-large"></i>
     <h4 class="Text Size-small">fork</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--facebook Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-facebook Size-large"></i>
     <h4 class="Text Size-small">facebook</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--folder Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-folder Size-large"></i>
     <h4 class="Text Size-small">folder</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--dropbox Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-dropbox Size-large"></i>
     <h4 class="Text Size-small">dropbox</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--cloud Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-cloud Size-large"></i>
     <h4 class="Text Size-small">cloud</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--step Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-step Size-large"></i>
     <h4 class="Text Size-small">step</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--addDocument Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-addDocument Size-large"></i>
     <h4 class="Text Size-small">addDocument</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--arrowNext Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-arrowNext Size-large"></i>
     <h4 class="Text Size-small">arrowNext</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--arrowPrev Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
     <h4 class="Text Size-small">arrowPrev</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--close Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-close Size-large"></i>
     <h4 class="Text Size-small">close</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--cartoFante Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-cartoFante Size-large"></i>
     <h4 class="Text Size-small">cartoFante</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--lock Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-lock Size-large"></i>
     <h4 class="Text Size-small">lock</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--cartoDB Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-cartoDB Size-large"></i>
     <h4 class="Text Size-small">cartoDB</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--lens Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-lens Size-large"></i>
     <h4 class="Text Size-small">lens</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--closeLimits Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-closeLimits Size-large"></i>
     <h4 class="Text Size-small">closeLimits</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--defaultUser Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-defaultUser Size-large"></i>
     <h4 class="Text Size-small">defaultUser</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--cockroach Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-cockroach Size-large"></i>
     <h4 class="Text Size-small">cockroach</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--floppy Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-floppy Size-large"></i>
     <h4 class="Text Size-small">floppy</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--trash Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-trash Size-large"></i>
     <h4 class="Text Size-small">trash</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--wifi Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-wifi Size-large"></i>
     <h4 class="Text Size-small">wifi</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--unlock Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-unlock Size-large"></i>
     <h4 class="Text Size-small">unlock</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--unlockwithEllipsis Size-large"></i>
-    <h4 class="Text Size-small">unlockwithEllipsis</h4>
+    <i class="CDB-IconFont CDB-IconFont-unlockWithEllipsis Size-large"></i>
+    <h4 class="Text Size-small">unlockWithEllipsis</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--gift Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-gift Size-large"></i>
     <h4 class="Text Size-small">gift</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--people Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-people Size-large"></i>
     <h4 class="Text Size-small">people</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--play Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-play Size-large"></i>
     <h4 class="Text Size-small">play</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--add Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-add Size-large"></i>
     <h4 class="Text Size-small">add</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--map Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-map Size-large"></i>
     <h4 class="Text Size-small">map</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--anchor Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-anchor Size-large"></i>
     <h4 class="Text Size-small">anchor</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--key Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-key Size-large"></i>
     <h4 class="Text Size-small">key</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--calendar Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-calendar Size-large"></i>
     <h4 class="Text Size-small">calendar</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--document Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-document Size-large"></i>
     <h4 class="Text Size-small">document</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--eye Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-eye Size-large"></i>
     <h4 class="Text Size-small">eye</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--marker Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-marker Size-large"></i>
     <h4 class="Text Size-small">marker</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--progressBar Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-progressBar Size-large"></i>
     <h4 class="Text Size-small">progressBar</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--book Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-book Size-large"></i>
     <h4 class="Text Size-small">book</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--notes Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-notes Size-large"></i>
     <h4 class="Text Size-small">notes</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--rectangles Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-rectangles Size-large"></i>
     <h4 class="Text Size-small">rectangles</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--mountain Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-mountain Size-large"></i>
     <h4 class="Text Size-small">mountain</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--points Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-points Size-large"></i>
     <h4 class="Text Size-small">points</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--snake Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-snake Size-large"></i>
     <h4 class="Text Size-small">snake</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--boss Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-boss Size-large"></i>
     <h4 class="Text Size-small">boss</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--rocket Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-rocket Size-large"></i>
     <h4 class="Text Size-small">rocket</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--barometer Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-barometer Size-large"></i>
     <h4 class="Text Size-small">barometer</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--dollar Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-dollar Size-large"></i>
     <h4 class="Text Size-small">dollar</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--email Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-email Size-large"></i>
     <h4 class="Text Size-small">email</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--label Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-label Size-large"></i>
     <h4 class="Text Size-small">label</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--outside Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-outside Size-large"></i>
     <h4 class="Text Size-small">outside</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--jigsaw Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-jigsaw Size-large"></i>
     <h4 class="Text Size-small">jigsaw</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--tools Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-tools Size-large"></i>
     <h4 class="Text Size-small">tools</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--question Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-question Size-large"></i>
     <h4 class="Text Size-small">question</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--layerStack Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-layerStack Size-large"></i>
     <h4 class="Text Size-small">layerStack</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--alarm Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-alarm Size-large"></i>
     <h4 class="Text Size-small">alarm</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--cloudDownArrow Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-cloudDownArrow Size-large"></i>
     <h4 class="Text Size-small">cloudDownArrow</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--pencil Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-pencil Size-large"></i>
     <h4 class="Text Size-small">pencil</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--fountainPen Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-fountainPen Size-large"></i>
     <h4 class="Text Size-small">fountainPen</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--emptyDoc Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-emptyDoc Size-large"></i>
     <h4 class="Text Size-small">emptyDoc</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--mergeArrow Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-mergeArrow Size-large"></i>
     <h4 class="Text Size-small">mergeArrow</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--mergeColumns Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-mergeColumns Size-large"></i>
     <h4 class="Text Size-small">mergeColumns</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--mergeSpatial Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-mergeSpatial Size-large"></i>
     <h4 class="Text Size-small">mergeSpatial</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--globe Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-globe Size-large"></i>
     <h4 class="Text Size-small">globe</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--chevronDown Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-chevronDown Size-large"></i>
     <h4 class="Text Size-small">chevronDown</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--streets Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-streets Size-large"></i>
     <h4 class="Text Size-small">streets</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--keys Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-keys Size-large"></i>
     <h4 class="Text Size-small">keys</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--facebookSquare Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-facebookSquare Size-large"></i>
     <h4 class="Text Size-small">facebookSquare</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--fullscreen Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-fullscreen Size-large"></i>
     <h4 class="Text Size-small">fullscreen</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--rarrow Size-large"></i>
-    <h4 class="Text Size-small">rarrow</h4>
+    <i class="CDB-IconFont CDB-IconFont-rArrowLight Size-large"></i>
+    <h4 class="Text Size-small">rArrowLight</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--share Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-share Size-large"></i>
     <h4 class="Text Size-small">share</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--linkedin Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-linkedin Size-large"></i>
     <h4 class="Text Size-small">linkedin</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--calendarBlank Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-calendarBlank Size-large"></i>
     <h4 class="Text Size-small">calendarBlank</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--creativeCommons Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-creativeCommons Size-large"></i>
     <h4 class="Text Size-small">creativeCommons</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--bubble Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-bubble Size-large"></i>
     <h4 class="Text Size-small">bubble</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--bars Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-bars Size-large"></i>
     <h4 class="Text Size-small">bars</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--arrowMenu Size-large"></i>
-    <h4 class="Text Size-small">arrowMenu</h4>
+    <i class="CDB-IconFont CDB-IconFont-arrowMenuLight Size-large"></i>
+    <h4 class="Text Size-small">arrowMenuLight</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--tieFighter Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-tieFighter Size-large"></i>
     <h4 class="Text Size-small">tieFighter</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--ray Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-ray Size-large"></i>
     <h4 class="Text Size-small">ray</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--markup Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-markup Size-large"></i>
     <h4 class="Text Size-small">markup</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--table Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-table Size-large"></i>
     <h4 class="Text Size-small">table</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--airlock Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-airlock Size-large"></i>
     <h4 class="Text Size-small">airlock</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--pin Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-pin Size-large"></i>
     <h4 class="Text Size-small">pin</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--attache Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-attache Size-large"></i>
     <h4 class="Text Size-small">attache</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--download Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-download Size-large"></i>
     <h4 class="Text Size-small">download</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--group Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-group Size-large"></i>
     <h4 class="Text Size-small">group</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--dashboard Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-dashboard Size-large"></i>
     <h4 class="Text Size-small">dashboard</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--spinner Size-large"></i>
+    <i class="CDB-IconFont CDB-IconFont-spinner Size-large"></i>
     <h4 class="Text Size-small">spinner</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont--drop Size-large"></i>
-    <h4 class="Text Size-small">drop</h4>
+    <i class="CDB-IconFont CDB-IconFont-mapsearch Size-large"></i>
+    <h4 class="Text Size-small">mapsearch</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-rArrow Size-large"></i>
+    <h4 class="Text Size-small">rArrow</h4>
   </div>
                 </div>
 
                 <div class="markup hljs">
 <pre>
 &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--clock Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-clock Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;clock&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--stats Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-stats Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;stats&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--heartempty Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;heartempty&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-heartEmpty Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;heartEmpty&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--heartfill Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;heartfill&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-heartFill Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;heartFill&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--alert Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-alert Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;alert&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--rows Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-rows Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rows&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--check Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-check Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;check&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--dribbble Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-dribbble Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;dribbble&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--twitter Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-twitter Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;twitter&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--wizard Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-caretDown Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;caretDown&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-lightbulb Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;lightbulb&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-explore Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;explore&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-drop Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;drop&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-wizard Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;wizard&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--info Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-info Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;info&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--fork Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-fork Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;fork&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--facebook Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-facebook Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;facebook&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--folder Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-folder Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;folder&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--dropbox Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-dropbox Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;dropbox&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--cloud Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-cloud Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;cloud&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--step Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-step Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;step&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--addDocument Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-addDocument Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;addDocument&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--arrowNext Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-arrowNext Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;arrowNext&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--arrowPrev Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-arrowPrev Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;arrowPrev&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--close Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-close Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;close&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--cartoFante Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-cartoFante Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;cartoFante&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--lock Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-lock Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;<span class="hljs-keyword">lock</span>&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--cartoDB Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-cartoDB Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;cartoDB&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--lens Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-lens Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;lens&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--closeLimits Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-closeLimits Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;closeLimits&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--defaultUser Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-defaultUser Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;defaultUser&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--cockroach Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-cockroach Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;cockroach&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--floppy Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-floppy Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;floppy&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--trash Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-trash Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;trash&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--wifi Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-wifi Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;wifi&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--unlock Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-unlock Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;unlock&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--unlockwithEllipsis Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;unlockwithEllipsis&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-unlockWithEllipsis Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;unlockWithEllipsis&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--gift Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-gift Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;gift&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--people Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-people Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;people&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--play Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-play Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;play&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--add Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-add Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;add&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--map Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-map Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;map&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--anchor Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-anchor Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;anchor&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--key Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-key Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;key&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--calendar Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-calendar Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;calendar&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--document Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-document Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;document&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--eye Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-eye Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;eye&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--marker Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-marker Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;marker&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--progressBar Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-progressBar Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;progressBar&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--book Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-book Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;book&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--notes Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-notes Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;notes&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--rectangles Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-rectangles Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rectangles&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--mountain Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-mountain Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;mountain&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--points Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-points Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;points&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--snake Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-snake Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;snake&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--boss Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-boss Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;boss&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--rocket Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-rocket Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rocket&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--barometer Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-barometer Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;barometer&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--dollar Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-dollar Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;dollar&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--email Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-email Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;email&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--label Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-label Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;label&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--outside Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-outside Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;outside&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--jigsaw Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-jigsaw Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;jigsaw&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--tools Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-tools Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;tools&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--question Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-question Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;question&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--layerStack Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-layerStack Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;layerStack&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--alarm Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-alarm Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;alarm&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--cloudDownArrow Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-cloudDownArrow Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;cloudDownArrow&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--pencil Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-pencil Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;pencil&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--fountainPen Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-fountainPen Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;fountainPen&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--emptyDoc Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-emptyDoc Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;emptyDoc&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--mergeArrow Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-mergeArrow Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;mergeArrow&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--mergeColumns Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-mergeColumns Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;mergeColumns&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--mergeSpatial Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-mergeSpatial Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;mergeSpatial&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--globe Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-globe Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;globe&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--chevronDown Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-chevronDown Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;chevronDown&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--streets Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-streets Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;streets&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--keys Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-keys Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;keys&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--facebookSquare Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-facebookSquare Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;facebookSquare&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--fullscreen Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-fullscreen Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;fullscreen&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--rarrow Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rarrow&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-rArrowLight Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rArrowLight&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--share Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-share Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;share&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--linkedin Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-linkedin Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;linkedin&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--calendarBlank Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-calendarBlank Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;calendarBlank&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--creativeCommons Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-creativeCommons Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;creativeCommons&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--bubble Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-bubble Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;bubble&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--bars Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-bars Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;bars&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--arrowMenu Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;arrowMenu&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-arrowMenuLight Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;arrowMenuLight&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--tieFighter Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-tieFighter Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;tieFighter&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--ray Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-ray Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;ray&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--markup Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-markup Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;markup&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--table Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-table Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;table&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--airlock Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-airlock Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;airlock&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--pin Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-pin Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;pin&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--attache Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-attache Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;attache&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--download Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-download Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;download&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--group Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-group Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;<span class="hljs-keyword">group</span>&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--dashboard Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-dashboard Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;dashboard&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--spinner Size-large"</span>&gt;&lt;/i&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-spinner Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;spinner&lt;/h4&gt;
   &lt;/div&gt;
 
 
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
-    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont--drop Size-large"</span>&gt;&lt;/i&gt;
-    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;drop&lt;/h4&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-mapsearch Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;mapsearch&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-rArrow Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;rArrow&lt;/h4&gt;
   &lt;/div&gt;
 </pre>
                 </div>
