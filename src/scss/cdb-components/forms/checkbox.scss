@@ -5,9 +5,18 @@
 # Forms/Checkbox
 
 ```
-<input type="checkbox" name="vehicle" value="Bike" class="CDB-Checkbox" checked>
-<input type="checkbox" name="vehicle" value="Bus" class="CDB-Checkbox">
-<input type="checkbox" name="vehicle" value="Car" class="CDB-Checkbox" disabled>
+<div class="CDB-Checkbox">
+  <input type="checkbox" name="vehicle" value="Bike" checked>
+  <label></label>
+</div>
+<div class="CDB-Checkbox">
+  <input type="checkbox" name="vehicle" value="Bus">
+  <label></label>
+</div>
+<div class="CDB-Checkbox">
+  <input type="checkbox" name="vehicle" value="Car" disabled>
+  <label></label>
+</div>
 ```
 */
 
@@ -20,9 +29,18 @@
   height: $baseSize * 2;
   border: 1px solid $cMainLine;
   border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-block;
 
-  &::before,
-  &::after {
+  input[type="checkbox"] {
+    opacity: 0;
+    z-index: -1;
+    width: $baseSize * 2;
+    height: $baseSize * 2;
+  }
+
+  input[type="checkbox"] ~ label::before,
+  input[type="checkbox"] ~ label::after {
     display: block;
     position: absolute;
     bottom: 3px;
@@ -32,13 +50,13 @@
     content: '';
   }
 
-  &::before {
+  input[type="checkbox"] ~ label::before {
     right: $baseSize / 2;
     height: $baseSize;
     transform: rotate(45deg);
   }
 
-  &::after {
+  input[type="checkbox"] ~ label::after {
     left: $baseSize / 2;
     height: $baseSize - 2;
     transform: rotate(-45deg);
@@ -52,8 +70,8 @@
       border: 1px solid $cBlue;
     }
 
-    &::before,
-    &::after {
+    input[type="checkbox"] ~ label::before,
+    input[type="checkbox"] ~ label::after {
       background: $cWhite;
     }
   }
@@ -74,8 +92,8 @@
       border: 1px solid $cSecondaryLine;
     }
 
-    &::before,
-    &::after {
+    input[type="checkbox"] ~ label::before,
+    input[type="checkbox"] ~ label::after {
       background: $cWhite;
     }
   }
