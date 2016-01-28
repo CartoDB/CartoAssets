@@ -4,25 +4,64 @@
 Description
 
 ```
+<h2>16px</h2>
 <div style="padding: 20px;">
-  <div class="CDB-Shape-threePoints">
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
   </div>
 </div>
 <div style="padding: 20px;">
-  <div class="CDB-Shape-threePoints is-blue">
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-blue">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
   </div>
 </div>
-<div style="background: #2E3C43; padding: 20px;">
-  <div class="CDB-Shape-threePoints is-white">
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
-    <div class="CDB-Shape-threePointsItem"></div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-threePoints is-white">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-small">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-blue is-small">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-threePoints is-white is-small">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
   </div>
 </div>
 ```
@@ -30,24 +69,38 @@ Description
 
 @import '../../cdb-variables/colors';
 
-.CDB-Shape-threePoints {
-  display: inline-block;
-  position: relative;
-  width: 3px;
-  height: 15px;
-  padding: 0 12;
-
+.CDB-Shape {
+  width: 16px; 
+  height: 16px;
+  text-align: center;
   &:hover {
     cursor: pointer;
   }
 }
 
+.CDB-Shape-threePoints {
+  display: inline-block;
+  height: 100%;
+}
+
 .CDB-Shape-threePointsItem {
-  width: 3px;
-  height: 3px;
-  margin-bottom: 3px;
-  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  margin-bottom: 5px;
   background: $cMainDark;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.CDB-Shape-threePoints.is-small {
+  padding-top: 2px;
+
+  .CDB-Shape-threePointsItem {
+    width: 2px;
+    height: 2px;
+    margin-bottom: 3px;
+  }
 }
 
 .CDB-Shape-threePoints.is-blue {
