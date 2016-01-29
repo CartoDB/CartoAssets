@@ -5,16 +5,19 @@
 # Forms/Checkbox
 
 ```
-<div class="u-iBlock CDB-CheckboxContainer">
+<div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+  <span class="u-iBlock CDB-CheckboxFace"></span>
   <label class="CDB-CheckboxLabel"></label>
 </div>
-<div class="u-iBlock CDB-CheckboxContainer">
+<div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bus">
+  <span class="u-iBlock CDB-CheckboxFace"></span>
   <label class="CDB-CheckboxLabel"></label>
 </div>
-<div class="u-iBlock CDB-CheckboxContainer">
+<div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
+  <span class="u-iBlock CDB-CheckboxFace"></span>
   <label class="CDB-CheckboxLabel"></label>
 </div>
 ```
@@ -23,64 +26,19 @@
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
 
-.CDB-CheckboxContainer {
+.CDB-Checkbox {
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+
+  ~ .CDB-CheckboxFace {
     position: relative;
     width: $baseSize * 2;
     height: $baseSize * 2;
-
-  .CDB-Checkbox {
-    width: $baseSize * 2;
-    height: $baseSize * 2;
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-
-    &:checked {
-      ~ .CDB-CheckboxLabel {
-        border: 1px solid $cBlue;
-        background: $cBlue;
-
-        &::before,
-        &::after {
-          background: $cWhite;
-        }
-      }
-
-      &:hover ~ .CDB-CheckboxLabel {
-        border: 1px solid $cBlue;
-      }
-    }
-
-    &:focus ~ .CDB-CheckboxLabel {
-      border: 1px solid $cBlue;
-    }
-
-    &:hover ~ .CDB-CheckboxLabel {
-      border: 1px solid $cHoverLine;
-    }
-
-    &:disabled {
-      ~ .CDB-CheckboxLabel {
-        border: 1px solid $cSecondaryLine;
-        background: $cThirdBackground;
-
-        &::before,
-        &::after {
-          background: $cWhite;
-        }
-      }
-
-      &:hover ~ .CDB-CheckboxLabel {
-        border: 1px solid $cSecondaryLine;
-      }
-    }
-  }
-
-  .CDB-CheckboxLabel {
-    position: absolute;
-    width: $baseSize * 2;
-    height: $baseSize * 2;
     border: 1px solid $cMainLine;
+    background: $cWhite;
     border-radius: 3px;
     box-sizing: border-box;
     cursor: pointer;
@@ -106,6 +64,46 @@
       left: $baseSize / 2;
       height: $baseSize - 2;
       transform: rotate(-45deg);
+    }
+  }
+
+  &:checked {
+    ~ .CDB-CheckboxFace {
+      border: 1px solid $cBlue;
+      background: $cBlue;
+
+      &::before,
+      &::after {
+        background: $cWhite;
+      }
+    }
+
+    &:hover ~ .CDB-CheckboxFace {
+      border: 1px solid $cBlue;
+    }
+  }
+
+  &:focus ~ .CDB-CheckboxFace {
+    border: 1px solid $cBlue;
+  }
+
+  &:hover ~ .CDB-CheckboxFace {
+    border: 1px solid $cHoverLine;
+  }
+
+  &:disabled {
+    ~ .CDB-CheckboxFace {
+      border: 1px solid $cSecondaryLine;
+      background: $cThirdBackground;
+
+      &::before,
+      &::after {
+        background: $cWhite;
+      }
+    }
+
+    &:hover ~ .CDB-CheckboxFace {
+      border: 1px solid $cSecondaryLine;
     }
   }
 }

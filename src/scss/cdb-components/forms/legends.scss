@@ -5,26 +5,30 @@
 # Forms/Labels
 
 ```
-<label class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
-  <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="01" checked>
-  <span class="u-iBlock">True</span>
-</label>
-<label class="u-iblock CDB-Text CDB-Size-medium">
-  <input class="CDB-Radio u-iBlock u-rSpace--s" type="radio" name="True" value="02" checked>
-  <span class="u-iBlock">False</span>
-</label>
+<div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Radio" type="radio" name="veritas" value="01">
+  <span class="u-iBlock CDB-RadioFace"></span>
+  <label class="u-iBlock">True</label>
+</div>
+<div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Radio" type="radio" name="veritas" value="02" checked>
+  <span class="u-iBlock CDB-RadioFace"></span>
+  <label class="u-iBlock">False</label>
+</div>
 
 <br/>
 <br/>
 <br/>
 
-<label class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
-  <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Sport" >
-  <span class="u-iBlock">Sport</span>
-</label>
+<div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
+  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <label class="u-iBlock">Sport</label>
+</div>
 <label class="u-iblock CDB-Text CDB-Size-medium">
-  <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="hobbies" value="Travel">
-  <span class="u-iBlock">Travel</span>
+  <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
+  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <label class="u-iBlock">Travel</label>
 </label>
 
 <br/>
@@ -35,16 +39,18 @@
   <p class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">RADIO</p>
   <ul class="CDB-Text CDB-Size-medium u-iBlock">
     <li class="u-iBlock u-rSpace--xl">
-      <label>
-        <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
-        <span class="u-iBlock">Travel</span>
-      </label>
+      <div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
+        <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
+        <span class="u-iBlock CDB-CheckboxFace"></span>
+        <label class="u-iBlock">Sport</label>
+      </div>
     </li>
     <li class="u-iblock">
-      <label>
-        <input class="CDB-Checkbox u-iBlock u-rSpace--s" type="checkbox" name="Gender" value="Travel">
-        <span class="u-iBlock">Travel</span>
-      </label>
+      <label class="u-iblock CDB-Text CDB-Size-medium">
+        <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
+        <span class="u-iBlock CDB-CheckboxFace"></span>
+        <label class="u-iBlock">Travel</label>
+</label>
     </li>
   </ul>
 </fieldset>
