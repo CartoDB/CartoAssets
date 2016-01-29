@@ -5,17 +5,18 @@
 # Forms/Checkbox
 
 ```
-<div class="CDB-Checkbox">
-  <input type="checkbox" name="vehicle" value="Bike" checked>
-  <label></label>
+
+<div class="u-iBlock CDB-CheckboxContainer">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+  <label class="CDB-CheckboxLabel"></label>
 </div>
-<div class="CDB-Checkbox">
-  <input type="checkbox" name="vehicle" value="Bus">
-  <label></label>
+<div class="u-iBlock CDB-CheckboxContainer">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bus">
+  <label class="CDB-CheckboxLabel"></label>
 </div>
-<div class="CDB-Checkbox">
-  <input type="checkbox" name="vehicle" value="Car" disabled>
-  <label></label>
+<div class="u-iBlock CDB-CheckboxContainer">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
+  <label class="CDB-CheckboxLabel"></label>
 </div>
 ```
 */
@@ -23,78 +24,89 @@
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
 
-.CDB-Checkbox {
-  position: relative;
-  width: $baseSize * 2;
-  height: $baseSize * 2;
-  border: 1px solid $cMainLine;
-  border-radius: 3px;
-  box-sizing: border-box;
-  display: inline-block;
-
-  input[type="checkbox"] {
-    opacity: 0;
-    z-index: -1;
+.CDB-CheckboxContainer {
+    position: relative;
     width: $baseSize * 2;
     height: $baseSize * 2;
-  }
 
-  input[type="checkbox"] ~ label::before,
-  input[type="checkbox"] ~ label::after {
-    display: block;
+  .CDB-Checkbox {
+    width: $baseSize * 2;
+    height: $baseSize * 2;
+    opacity: 0;
     position: absolute;
-    bottom: 3px;
-    width: 2px;
-    border-radius: 1px;
-    background: $cSecondaryLine;
-    content: '';
-  }
+    z-index: 1;
 
-  input[type="checkbox"] ~ label::before {
-    right: $baseSize / 2;
-    height: $baseSize;
-    transform: rotate(45deg);
-  }
+    &:checked {
+      ~ .CDB-CheckboxLabel {
+        border: 1px solid $cBlue;
+        background: $cBlue;
 
-  input[type="checkbox"] ~ label::after {
-    left: $baseSize / 2;
-    height: $baseSize - 2;
-    transform: rotate(-45deg);
-  }
+        &::before,
+        &::after {
+          background: $cWhite;
+        }
+      }
 
-  &:checked {
-    border: 1px solid $cBlue;
-    background: $cBlue;
+      &:hover ~ .CDB-CheckboxLabel {
+        border: 1px solid $cBlue;
+      }
+    }
 
-    &:hover {
+    &:focus ~ .CDB-CheckboxLabel {
       border: 1px solid $cBlue;
     }
 
-    input[type="checkbox"] ~ label::before,
-    input[type="checkbox"] ~ label::after {
-      background: $cWhite;
+    &:hover ~ .CDB-CheckboxLabel {
+      border: 1px solid $cHoverLine;
+    }
+
+    &:disabled {
+      ~ .CDB-CheckboxLabel {
+        border: 1px solid $cSecondaryLine;
+        background: $cThirdBackground;
+
+        &::before,
+        &::after {
+          background: $cWhite;
+        }
+      }
+
+      &:hover ~ .CDB-CheckboxLabel {
+        border: 1px solid $cSecondaryLine;
+      }
     }
   }
 
-  &:focus {
-    border: 1px solid $cBlue;
-  }
+  .CDB-CheckboxLabel {
+    position: absolute;
+    width: $baseSize * 2;
+    height: $baseSize * 2;
+    border: 1px solid $cMainLine;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
 
-  &:hover {
-    border: 1px solid $cHoverLine;
-  }
-
-  &:disabled {
-    border: 1px solid $cSecondaryLine;
-    background: $cThirdBackground;
-
-    &:hover {
-      border: 1px solid $cSecondaryLine;
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      width: 2px;
+      border-radius: 1px;
+      background: $cSecondaryLine;
+      content: '';
     }
 
-    input[type="checkbox"] ~ label::before,
-    input[type="checkbox"] ~ label::after {
-      background: $cWhite;
+    &::before {
+      right: $baseSize / 2;
+      height: $baseSize;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      left: $baseSize / 2;
+      height: $baseSize - 2;
+      transform: rotate(-45deg);
     }
   }
 }
