@@ -85,16 +85,6 @@ Description
 
 @import '../../cdb-variables/colors';
 
-.CDB-Shape {
-  width: 16px; 
-  height: 16px;
-  text-align: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .CDB-ArrowToogle {
   position: relative;
   height: 100%;

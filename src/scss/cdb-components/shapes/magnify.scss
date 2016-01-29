@@ -46,15 +46,6 @@ Description
 
 @import '../../cdb-variables/colors';
 
-.CDB-Shape {
-  width: 16px; 
-  height: 16px;
-  text-align: center;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .CDB-Shape-magnify {
   display: block;
   position: relative;

@@ -7,17 +7,17 @@ Description
 <h2>16px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-close"></div>
+    <div class="CDB-Shape-close is-huge"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-close is-blue"></div>
+    <div class="CDB-Shape-close is-blue is-huge"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-close is-white"></div>
+    <div class="CDB-Shape-close is-white is-huge"></div>
   </div>
 </div>
 <br>
@@ -27,32 +27,23 @@ Description
 <h2>12px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-close is-small"></div>
+    <div class="CDB-Shape-close is-large"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-close is-blue is-small"></div>
+    <div class="CDB-Shape-close is-blue is-large"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-close is-white is-small"></div>
+    <div class="CDB-Shape-close is-white is-large"></div>
   </div>
 </div>
 ```
 */
 
 @import '../../cdb-variables/colors';
-
-.CDB-Shape {
-  width: 16px; 
-  height: 16px;
-  text-align: center;
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .CDB-Shape-close {
   display: block;
@@ -62,10 +53,7 @@ Description
   &::before {
     display: block;
     position: absolute;
-    top: -2px;
-    left: 7px;
     width: 1px;
-    height: 20px;
     transform: rotate(-45deg);
     background: $cMainDark;
     content: '';
@@ -73,25 +61,61 @@ Description
   &::after {
     display: block;
     position: absolute;
-    top: -2px;
-    right: 8px;
     width: 1px;
-    height: 20px;
     transform: rotate(45deg);
     background: $cMainDark;
     content: '';
   }
-  &.is-small {
+
+  &.is-huge {
+    &::before {
+      top: -2px;
+      left: 7px;
+      height: 20px;
+    }
+    &::after {
+      top: -2px;
+      right: 8px;
+      height: 20px;
+    }
+  }
+
+  &.is-large {
     &::before {
       top: 2px;
       left: 7px;
       height: 12px;
-      transform: rotate(-45deg);
     }
     &::after {
       top: 2px;
       right: 8px;
       height: 12px;
+    }
+  }
+
+  &.is-medium {
+    &::before {
+      top: 3px;
+      left: 6px;
+      height: 8px;
+    }
+    &::after {
+      top: 3px;
+      right: 7px;
+      height: 8px;
+    }
+  }
+
+  &.is-small {
+    &::before {
+      top: 2px;
+      left: 4px;
+      height: 6px;
+    }
+    &::after {
+      top: 2px;
+      right: 5px;
+      height: 6px;
     }
   }
 }
