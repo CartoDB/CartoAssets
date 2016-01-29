@@ -57,36 +57,3 @@
     }
   }
 }
-
-
-
-// .CDB-Toggle {
-//   @include transition(background, 300ms);
-//   position: relative;
-//   width: $baseSize * 4;
-//   height: $baseSize * 2;
-//   margin: 0 2px;
-//   border-radius: 50px;
-//   background: $cTypo4;
-// }
-
-// .CDB-Toggle:before {
-//   position: absolute;
-//   top: 2px;
-//   left: 2px;
-//   width: $baseSize + 4;
-//   height: $baseSize + 4;
-//   border-radius: 50%;
-//   background: $cWhite;
-//   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.48);
-//   content: '';
-// }
-
-// .CDB-Toggle:checked {
-//   background: $cMainDark;
-// }
-
-// .CDB-Toggle:checked:before {
-//   right: 2px;
-//   left: auto;
-// }
