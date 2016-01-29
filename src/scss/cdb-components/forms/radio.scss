@@ -1,72 +1,100 @@
-// Radio Button styles
+// Radios styles
 // ----------------------------------------------
 
 /* SG
 # Forms/Radio
 
-
 ```
-<input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
-<input class="CDB-Radio" type="radio" name="Gender" value="02">
-<input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
+<div class="u-iBlock CDB-RadioContainer">
+  <input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
+  <label class="CDB-RadioLabel"></label>
+</div>
+<div class="u-iBlock CDB-RadioContainer">
+  <input class="CDB-Radio" type="radio" name="Gender" value="02">
+  <label class="CDB-RadioLabel"></label>
+</div>
+<div class="u-iBlock CDB-RadioContainer">
+  <input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
+  <label class="CDB-RadioLabel"></label>
+</div>
 ```
 */
 
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
 
-.CDB-Radio {
-  position: relative;
-  width: $baseSize * 2;
-  height: $baseSize * 2;
-  border: 1px solid $cMainLine;
-  border-radius: 50%;
+.CDB-RadioContainer {
+    position: relative;
+    width: $baseSize * 2;
+    height: $baseSize * 2;
 
-  &::before {
-    display: block;
+  .CDB-Radio {
+    width: $baseSize * 2;
+    height: $baseSize * 2;
+    opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: $baseSize - 2;
-    height: $baseSize - 2;
-    margin-top: -3px;
-    margin-left: -3px;
-    border-radius: 50%;
-    background: $cSecondaryLine;
-    content: '';
-  }
+    z-index: 1;
 
-  &:checked {
-    border: 1px solid $cBlue;
-    background: $cBlue;
+    &:checked {
+      ~ .CDB-RadioLabel {
+        border: 1px solid $cBlue;
+        background: $cBlue;
 
-    &:hover {
+        &::before {
+          background: $cWhite;
+        }
+      }
+
+      &:hover ~ .CDB-RadioLabel {
+        border: 1px solid $cBlue;
+      }
+    }
+
+    &:focus ~ .CDB-RadioLabel {
       border: 1px solid $cBlue;
     }
 
-    &::before {
-      background: $cWhite;
+    &:hover ~ .CDB-RadioLabel {
+      border: 1px solid $cHoverLine;
+    }
+
+    &:disabled {
+      ~ .CDB-RadioLabel {
+        border: 1px solid $cSecondaryLine;
+        background: $cThirdBackground;
+
+        &::before {
+          background: $cWhite;
+        }
+      }
+
+      &:hover ~ .CDB-RadioLabel {
+        border: 1px solid $cSecondaryLine;
+      }
     }
   }
 
-  &:focus {
-    border: 1px solid $cBlue;
-  }
-
-  &:hover {
-    border: 1px solid $cHoverLine;
-  }
-
-  &:disabled {
-    border: 1px solid $cSecondaryLine;
-    background: $cThirdBackground;
-
-    &:hover {
-      border: 1px solid $cSecondaryLine;
-    }
+  .CDB-RadioLabel {
+    position: absolute;
+    width: $baseSize * 2;
+    height: $baseSize * 2;
+    border: 1px solid $cMainLine;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
 
     &::before {
-      background: $cWhite;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: $baseSize - 2;
+      height: $baseSize - 2;
+      margin-top: -3px;
+      margin-left: -3px;
+      border-radius: 50%;
+      background: $cSecondaryLine;
+      content: '';
     }
   }
 }
