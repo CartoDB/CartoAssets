@@ -29,6 +29,7 @@
   height: $baseSize * 2;
   opacity: 0;
   position: absolute;
+  vertical-align: middle;
   z-index: 1;
 
   ~ .CDB-RadioFace {

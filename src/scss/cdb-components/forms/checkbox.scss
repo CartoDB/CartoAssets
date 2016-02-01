@@ -8,17 +8,14 @@
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
   <span class="u-iBlock CDB-CheckboxFace"></span>
-  <label class="CDB-CheckboxLabel"></label>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bus">
   <span class="u-iBlock CDB-CheckboxFace"></span>
-  <label class="CDB-CheckboxLabel"></label>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
   <span class="u-iBlock CDB-CheckboxFace"></span>
-  <label class="CDB-CheckboxLabel"></label>
 </div>
 ```
 */
@@ -31,6 +28,7 @@
   height: $baseSize * 2;
   opacity: 0;
   position: absolute;
+  vertical-align: middle;
   z-index: 1;
 
   ~ .CDB-CheckboxFace {

@@ -8,12 +8,12 @@
 <div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Radio" type="radio" name="veritas" value="01">
   <span class="u-iBlock CDB-RadioFace"></span>
-  <label class="u-iBlock">True</label>
+  <label class="CDB-Label u-iBlock u-lSpace">True</label>
 </div>
 <div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Radio" type="radio" name="veritas" value="02" checked>
   <span class="u-iBlock CDB-RadioFace"></span>
-  <label class="u-iBlock">False</label>
+  <label class="CDB-Label u-iBlock u-lSpace">False</label>
 </div>
 
 <br/>
@@ -23,12 +23,12 @@
 <div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
   <span class="u-iBlock CDB-CheckboxFace"></span>
-  <label class="u-iBlock">Sport</label>
+  <label class="CDB-Label u-iBlock u-lSpace">Sport</label>
 </div>
 <label class="u-iblock CDB-Text CDB-Size-medium">
   <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
   <span class="u-iBlock CDB-CheckboxFace"></span>
-  <label class="u-iBlock">Travel</label>
+  <label class="CDB-Label u-iBlock u-lSpace">Travel</label>
 </label>
 
 <br/>
@@ -42,14 +42,14 @@
       <div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
         <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
         <span class="u-iBlock CDB-CheckboxFace"></span>
-        <label class="u-iBlock">Sport</label>
+        <label class="CDB-Label u-iBlock u-lSpace">Sport</label>
       </div>
     </li>
     <li class="u-iblock">
       <label class="u-iblock CDB-Text CDB-Size-medium">
         <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
         <span class="u-iBlock CDB-CheckboxFace"></span>
-        <label class="u-iBlock">Travel</label>
+        <label class="CDB-Label u-iBlock u-lSpace">Travel</label>
 </label>
     </li>
   </ul>
@@ -68,4 +68,8 @@
 
 .CDB-Legend {
   width: $baseSize * 12;
+}
+
+.CDB-Label {
+ vertical-align: middle;
 }
