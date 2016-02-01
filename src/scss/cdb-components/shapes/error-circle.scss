@@ -58,14 +58,14 @@ Description
 @import '../../cdb-variables/colors';
 
 .CDB-Shape-CircleItem {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   border: 1px solid $cMainDark;
   border-radius: 50%;
 
   &.is-small {
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     margin: 2px auto;
   }
   &.is-blue {

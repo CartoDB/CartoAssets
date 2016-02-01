@@ -1,5 +1,5 @@
 /* SG
-# Shapes/Subtract
+# Shapes/Dash
 
 Description
 
@@ -7,17 +7,17 @@ Description
 <h2>16px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-subtract"></div>
+    <div class="CDB-Shape-dash"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-subtract is-blue"></div>
+    <div class="CDB-Shape-dash is-blue"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-subtract is-white"></div>
+    <div class="CDB-Shape-dash is-white"></div>
   </div>
 </div>
 <br>
@@ -27,17 +27,17 @@ Description
 <h2>12px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-subtract is-small"></div>
+    <div class="CDB-Shape-dash is-small"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-subtract is-blue is-small"></div>
+    <div class="CDB-Shape-dash is-blue is-small"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-subtract is-white is-small"></div>
+    <div class="CDB-Shape-dash is-white is-small"></div>
   </div>
 </div>
 ```
@@ -45,7 +45,7 @@ Description
 
 @import '../../cdb-variables/colors';
 
-.CDB-Shape-subtract {
+.CDB-Shape-dash {
   position: relative;
   height: 100%;
 
@@ -61,7 +61,7 @@ Description
   }
 }
 
-.CDB-Shape-subtract.is-small {
+.CDB-Shape-dash.is-small {
 
   &::before {
     right: 3px;
@@ -69,13 +69,13 @@ Description
   }
 }
 
-.CDB-Shape-subtract.is-blue {
+.CDB-Shape-dash.is-blue {
   &::before {
     background: $cBlue;
   }
 }
 
-.CDB-Shape-subtract.is-white {
+.CDB-Shape-dash.is-white {
   &::before {
     background: $cWhite;
   }

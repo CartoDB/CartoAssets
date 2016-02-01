@@ -47,18 +47,17 @@ Description
     background: $cMainDark;
     content: '';
   }
-}
+  &.is-up {
+    top: 6px;
+    right: 9px;
+    transform: rotate(45deg);
+  }
 
-.CDB-Shape-Arrow--top {
-  top: 6px;
-  right: 9px;
-  transform: rotate(45deg);
-}
-
-.CDB-Shape-Arrow--bottom {
-  top: 13px;
-  left: 46px;
-  transform: rotate(-135deg);
+  &.is-down {
+    top: 13px;
+    left: 46px;
+    transform: rotate(-135deg);
+  }
 }
 
 .CDB-Shape-Arrow.is-blue {
