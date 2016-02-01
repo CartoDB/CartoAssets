@@ -77,19 +77,19 @@ Description
 }
 
 .CDB-Shape-magnify.is-blue {
-  &:before {
+  &::before {
     border: 1px solid $cBlue;
   }
-  &:after {
+  &::after {
     background: $cBlue;
   }
 }
 
 .CDB-Shape-magnify.is-white {
-  &:before {
+  &::before {
     border: 1px solid $cWhite;
   }
-  &:after {
+  &::after {
     background: $cWhite;
   }
 }
