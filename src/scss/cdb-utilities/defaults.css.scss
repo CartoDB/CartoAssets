@@ -1,0 +1,14 @@
+// Default classes
+// ----------------------------------------------
+
+@import '../cdb-variables/colors';
+
+a {
+  color: $cBlue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
