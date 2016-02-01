@@ -118,3 +118,26 @@
   background: $cBlue;
   content: '';
 }
+
+.CDB-Range::-ms-track {
+  height: $baseSize / 4;
+  margin: $baseSize 0;
+  border-radius: $baseSize / 2;
+  background: $cMainLine;
+  color: transparent;
+  border: transparent;
+}
+
+.CDB-Range::-ms-thumb {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  width: $baseSize + 4;
+  height: $baseSize + 4;
+  border: 1px solid $cBlue;
+  border-radius: 50%;
+  background: $cWhite;
+  content: '';
+  z-index: 1;
+}
