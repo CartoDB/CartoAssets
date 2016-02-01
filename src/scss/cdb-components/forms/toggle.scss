@@ -20,10 +20,10 @@
 @import '../../cdb-utilities/mixins';
 
 .CDB-Toggle {
+  position: absolute;
   width: $baseSize * 4;
   height: $baseSize * 2;
   opacity: 0;
-  position: absolute;
   z-index: 1;
 
   ~ .CDB-ToggleFace {

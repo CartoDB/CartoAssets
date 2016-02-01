@@ -38,10 +38,10 @@
     width: $baseSize * 2;
     height: $baseSize * 2;
     border: 1px solid $cMainLine;
-    background: $cWhite;
     border-radius: 3px;
-    box-sizing: border-box;
+    background: $cWhite;
     cursor: pointer;
+    box-sizing: border-box;
 
     &::before,
     &::after {

@@ -37,10 +37,10 @@
     height: $baseSize * 2;
     border: 1px solid $cMainLine;
     border-radius: 50%;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-indent: 20px;
     background: $cWhite;
+    text-indent: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
 
     &::before {
       position: absolute;

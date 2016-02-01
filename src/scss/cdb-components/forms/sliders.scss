@@ -122,10 +122,10 @@
 .CDB-Range::-ms-track {
   height: $baseSize / 4;
   margin: $baseSize 0;
+  border: transparent;
   border-radius: $baseSize / 2;
   background: $cMainLine;
   color: transparent;
-  border: transparent;
 }
 
 .CDB-Range::-ms-thumb {
