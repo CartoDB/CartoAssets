@@ -6,8 +6,19 @@
 
 ```
 <div class="CDB-HeaderInfo is-block">
-  <div>
-    <h2 class="CDB-Text CDB-Size-huge is-light u-bSpace">Name map</h2>
+  <div class="CDB-HeaderInfo-Title u-bSpace">
+    <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Name Map</h2>
+    <div class="CDB-HeaderInfo-Actions">
+      <a href="#">
+          <div class="CDB-Shape">
+            <div class="CDB-Shape-threePoints is-blue is-small">
+              <div class="CDB-Shape-threePointsItem"></div>
+              <div class="CDB-Shape-threePointsItem"></div>
+              <div class="CDB-Shape-threePointsItem"></div>
+            </div>
+          </div>
+      </a>
+    </div>
   </div>
   <ul class="CDB-HeaderInfo-List">
     <li class="CDB-HeaderInfo-ListItem">
@@ -45,10 +56,33 @@
   </a>
   <div class="CDB-HeaderInfo-Inner">
     <div class="CDB-HeaderInfo-Title u-bSpace">
-      <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Stadiums Affected</h2>
-      <p>Rabo</p>
+      <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
+      <ul class="CDB-HeaderInfo-Actions">
+        <li class="CDB-HeaderInfo-ActionsItem">
+          <button class="CDB-Button CDB-Button--primary CDB-Button--icon">
+            <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+          </button>
+        </li>
+        <li class="CDB-HeaderInfo-ActionsItem">
+          <a href="#">
+              <div class="CDB-Shape">
+                <div class="CDB-Shape-threePoints is-blue is-small">
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                </div>
+              </div>
+          </a>
+        </li>
+      </ul>
     </div>
-    <p class="CDB-Text CDB-Size-medium"><a href="#">populated_places</a></p>
+    <div class="CDB-Shape u-iBlock">
+      <ul class="CDB-Shape-Dataset is-small is-grey">
+        <li class="CDB-Shape-DatasetItem"></li>
+        <li class="CDB-Shape-DatasetItem"></li>
+      </ul>
+    </div>
+    <p class="CDB-Text CDB-Size-medium u-iBlock"><a href="#" class="u-iBlock">populates_places</a></p>
   </div>
 </div>
 <br/>
@@ -60,7 +94,20 @@
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
   </a>
   <div class="CDB-HeaderInfo-Inner">
-    <h2 class="CDB-Text CDB-Size-huge is-light u-bSpace">Basemap</h2>
+    <div class="CDB-HeaderInfo-Title u-bSpace">
+      <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Basemap</h2>
+      <div class="CDB-HeaderInfo-Actions">
+        <a href="#">
+            <div class="CDB-Shape">
+              <div class="CDB-Shape-threePoints is-blue is-small">
+                <div class="CDB-Shape-threePointsItem"></div>
+                <div class="CDB-Shape-threePointsItem"></div>
+                <div class="CDB-Shape-threePointsItem"></div>
+              </div>
+            </div>
+        </a>
+      </div>
+    </div>
     <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium">Positron by CartoDB</p>
   </div>
 </div>
@@ -74,7 +121,13 @@
   </a>
   <div class="CDB-HeaderInfo-Inner">
     <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text u-bSpace--m">
-    <p class="CDB-Text CDB-Size-medium"><a href="#">populates_places</a></p>
+    <div class="CDB-Shape u-iBlock">
+      <ul class="CDB-Shape-Dataset is-small is-grey">
+        <li class="CDB-Shape-DatasetItem"></li>
+        <li class="CDB-Shape-DatasetItem"></li>
+      </ul>
+    </div>
+    <p class="CDB-Text CDB-Size-medium u-iBlock"><a href="#" class="u-iBlock">populates_places</a></p>
   </div>
 </div>
 <br/>
@@ -125,9 +178,18 @@
 
 .CDB-HeaderInfo-TitleText {
   @include flex(1);
+  width: 0;
   padding-right: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
+.CDB-HeaderInfo-ActionsItem {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+}
 
 
 
