@@ -71,11 +71,11 @@
     ~ .CDB-CheckboxFace {
       border: 1px solid $cBlue;
       background: $cBlue;
+    }
 
-      &::before,
-      &::after {
-        background: $cWhite;
-      }
+    ~ .CDB-CheckboxFace::before,
+    ~ .CDB-CheckboxFace::after {
+      background: $cWhite;
     }
 
     &:hover ~ .CDB-CheckboxFace {
@@ -95,11 +95,11 @@
     ~ .CDB-CheckboxFace {
       border: 1px solid $cSecondaryLine;
       background: $cThirdBackground;
+    }
 
-      &::before,
-      &::after {
-        background: $cWhite;
-      }
+    ~ .CDB-CheckboxFace::before,
+    ~ .CDB-CheckboxFace::after {
+      background: $cWhite;
     }
 
     &:hover ~ .CDB-CheckboxFace {

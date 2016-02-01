@@ -60,10 +60,10 @@
     ~ .CDB-RadioFace {
       border: 1px solid $cBlue;
       background: $cBlue;
+    }
 
-      &::before {
-        background: $cWhite;
-      }
+    ~ .CDB-RadioFace::before {
+      background: $cWhite;
     }
 
     &:hover ~ .CDB-RadioFace {
@@ -83,10 +83,10 @@
     ~ .CDB-RadioFace {
       border: 1px solid $cSecondaryLine;
       background: $cThirdBackground;
+    }
 
-      &::before {
-        background: $cWhite;
-      }
+    ~ .CDB-RadioFace::before {
+      background: $cWhite;
     }
 
     &:hover ~ .CDB-RadioFace {
