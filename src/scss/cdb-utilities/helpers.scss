@@ -2,7 +2,9 @@
 // ----------------------------------------------
 
 @import './mixins';
+@import '../cdb-variables/colors';
 
+/* Margins */
 .u-tSpace {
   margin-top: 4px;
 }
@@ -21,6 +23,12 @@
 .u-rSpace--xl {
   margin-right: 12px;
 }
+.u-bSpace--m {
+  margin-bottom: 8px;
+}
+.u-bSpace--xl {
+  margin-bottom: 12px;
+}
 .u-bSpace-xxxl {
   margin-bottom: 40px;
 }
@@ -30,6 +38,8 @@
 .u-lSpace--xl {
   margin-left: 12px;
 }
+
+/* Displays */
 .u-iBlock {
   @include inline-block();
 }
@@ -39,10 +49,16 @@
 .u-showMobile {
   display: none !important;
 }
+
+/* Text */
 .u-uppercase {
   text-transform: uppercase;
 }
+.u-color-cTypo3 {
+  color: $cTypo3;
+}
 
+/* Media queries*/
 @include media-query-mobile() {
   .u-showDesktop {
     display: none !important;
