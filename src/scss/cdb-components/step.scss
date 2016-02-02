@@ -5,50 +5,51 @@
 # Step
 
 ```
-<ul class="CDB-Steps">
-  <li class="CDB-Step-item">
-    <div class="CDB-Step-header">
+<ol class="CDB-Steps">
+  <li class="u-bSpace-xxxl">
+    <div class="CDB-Step-header u-bSpace--xl">
       <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">1</div>
 
       <div class="CDB-Step-headerInfo CDB-Text">
-        <p class="CDB-Step-headerTitle CDB-Text CDB-Size-large u-bSpace--m">Aggregation</p>
-        <p class="CDB-Size-small u-uppercase u-color-cTypo3">Heatmap</p>
+        <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Aggregation</p>
+        <p class="u-uppercase u-color-cTypo3 CDB-FontSize-small u-bSpace--m">Heatmap</p>
       </div>
+
+      <i class="CDB-Step-action CDB-IconFont CDB-IconFont-arrowMenuLight Size-large u-color-cBlue"></i>
     </div>
   </li>
-  <li class="CDB-Step-item">
-    <div class="CDB-Step-header">
+  <li class="u-bSpace-xxxl">
+    <div class="CDB-Step-header u-bSpace--xl">
       <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">2</div>
 
       <div class="CDB-Step-headerInfo CDB-Text">
-        <p class="CDB-Step-headerTitle CDB-Text CDB-Size-large u-bSpace--m">Select style</p>
-        <p class="CDB-Size-small u-uppercase u-color-cTypo3">None</p>
+        <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Select style</p>
+        <p class="u-uppercase u-color-cTypo3 CDB-FontSize-small u-bSpace--m">None</p>
       </div>
+
+      <i class="CDB-Step-action CDB-IconFont CDB-IconFont-arrowMenuLight Size-large u-color-cBlue"></i>
     </div>
   </li>
-  <li class="CDB-Step-item">
-    <div class="CDB-Step-header">
+  <li class="u-bSpace-xxxl">
+    <div class="CDB-Step-header u-bSpace--xl">
       <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">3</div>
 
       <div class="CDB-Step-headerInfo CDB-Text">
-        <p class="CDB-Step-headerTitle CDB-Text CDB-Size-large u-bSpace--m">Type</p>
-        <p class="CDB-Size-small u-uppercase u-color-cTypo3">Histogram</p>
-        <p class="CDB-Size-medium u-color-cTypo3">Distribution of a numeric variable in a range</p>
+        <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Type</p>
+        <p class="u-uppercase u-color-cTypo3 CDB-FontSize-small u-bSpace--m">Histogram</p>
+        <p class="u-color-cTypo3 CDB-FontSize-medium">Distribution of a numeric variable in a range</p>
       </div>
+
+      <i class="CDB-Step-action CDB-IconFont CDB-IconFont-arrowMenuLight Size-large u-color-cBlue"></i>
     </div>
   </li>
-</ul>
+</ol>
 ```
 */
 
 @import '../cdb-utilities/mixins';
 @import '../cdb-variables/sizes';
 @import '../cdb-variables/colors';
-
-.CDB-Step-item {
-  margin-bottom: 40px;
-  width: 300px;
-}
 
 .CDB-Step-header {
   @include display-flex();
@@ -59,7 +60,6 @@
 .CDB-Step-headerNumeration {
   width: $baseSize * 3;
   height: $baseSize * 3;
-  margin-right: 1px;
   border: 1px solid $cMainLine;
   border-radius: 4px;
   background-color: $cWhite;
@@ -70,5 +70,12 @@
 }
 
 .CDB-Step-headerInfo {
-  color: $cMainDark;
+  width: 100%;
+}
+
+.CDB-Step-action {
+  width: $baseSize * 3;
+  height: $baseSize * 3;
+  font-size: 14px;
+  text-align: center;
 }

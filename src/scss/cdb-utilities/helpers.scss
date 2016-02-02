@@ -54,8 +54,15 @@
 .u-uppercase {
   text-transform: uppercase;
 }
+.u-color-cBlue {
+  color: $cBlue;
+}
 .u-color-cTypo3 {
   color: $cTypo3;
+}
+
+.u-color-cMainDark {
+  color: $cMainDark;
 }
 
 /* Media queries*/
