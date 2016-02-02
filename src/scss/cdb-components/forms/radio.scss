@@ -8,15 +8,15 @@
 ```
 <div class="u-iBlock">
   <input class="CDB-Radio" type="radio" name="gender" value="01" checked>
-  <span class="u-iBlock CDB-RadioFace"></span>
+  <span class="u-iBlock CDB-Radio-face"></span>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Radio" type="radio" name="gender" value="02">
-  <span class="u-iBlock CDB-RadioFace"></span>
+  <span class="u-iBlock CDB-Radio-face"></span>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Radio" type="radio" name="gender" value="03" disabled>
-  <span class="u-iBlock CDB-RadioFace"></span>
+  <span class="u-iBlock CDB-Radio-face"></span>
 </div>
 ```
 */
@@ -31,67 +31,60 @@
   position: absolute;
   vertical-align: middle;
   z-index: 1;
+}
 
-  ~ .CDB-RadioFace {
-    position: relative;
-    width: $baseSize * 2;
-    height: $baseSize * 2;
-    border: 1px solid $cMainLine;
+.CDB-Radio-face {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid $cMainLine;
+  border-radius: 50%;
+  background: $cWhite;
+  text-indent: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $baseSize - 2;
+    height: $baseSize - 2;
+    margin-top: -3px;
+    margin-left: -3px;
     border-radius: 50%;
+    background: $cSecondaryLine;
+    content: '';
+  }
+}
+
+.CDB-Radio:checked + .CDB-Radio-face {
+  border: 1px solid $cBlue;
+  background: $cBlue;
+
+  &::before {
     background: $cWhite;
-    text-indent: 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: $baseSize - 2;
-      height: $baseSize - 2;
-      margin-top: -3px;
-      margin-left: -3px;
-      border-radius: 50%;
-      background: $cSecondaryLine;
-      content: '';
-    }
   }
+}
 
-  &:checked {
-    ~ .CDB-RadioFace {
-      border: 1px solid $cBlue;
-      background: $cBlue;
-    }
+.CDB-Radio:disabled + .CDB-Radio-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
 
-    ~ .CDB-RadioFace::before {
-      background: $cWhite;
-    }
-
-    &:hover ~ .CDB-RadioFace {
-      border: 1px solid $cBlue;
-    }
+  &::before {
+    background: $cWhite;
   }
+}
 
-  &:focus ~ .CDB-RadioFace {
-    border: 1px solid $cBlue;
-  }
+.CDB-Radio:disabled:hover + .CDB-Radio-face {
+  border: 1px solid $cSecondaryLine;
+}
 
-  &:hover ~ .CDB-RadioFace {
-    border: 1px solid $cHoverLine;
-  }
+.CDB-Radio:hover + .CDB-Radio-face {
+  border: 1px solid $cHoverLine;
+}
 
-  &:disabled {
-    ~ .CDB-RadioFace {
-      border: 1px solid $cSecondaryLine;
-      background: $cThirdBackground;
-    }
-
-    ~ .CDB-RadioFace::before {
-      background: $cWhite;
-    }
-
-    &:hover ~ .CDB-RadioFace {
-      border: 1px solid $cSecondaryLine;
-    }
-  }
+.CDB-Radio:focus + .CDB-Radio-face,
+.CDB-Radio:checked:hover + .CDB-Radio-face {
+  border: 1px solid $cBlue;
 }

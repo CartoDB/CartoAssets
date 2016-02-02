@@ -7,15 +7,15 @@
 ```
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
-  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bus">
-  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
 </div>
 <div class="u-iBlock">
   <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
-  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
 </div>
 ```
 */
@@ -30,78 +30,71 @@
   position: absolute;
   vertical-align: middle;
   z-index: 1;
+}
 
-  ~ .CDB-CheckboxFace {
-    position: relative;
-    width: $baseSize * 2;
-    height: $baseSize * 2;
-    border: 1px solid $cMainLine;
-    border-radius: 3px;
+.CDB-Checkbox-face {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+  background: $cWhite;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 2px;
+    border-radius: 1px;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &::before {
+    right: $baseSize / 2;
+    height: $baseSize;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: $baseSize / 2;
+    height: $baseSize - 2;
+    transform: rotate(-45deg);
+  }
+}
+
+.CDB-Checkbox:checked + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
+  background: $cBlue;
+
+  &::before,
+  &::after {
     background: $cWhite;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    &::before,
-    &::after {
-      display: block;
-      position: absolute;
-      bottom: 3px;
-      width: 2px;
-      border-radius: 1px;
-      background: $cSecondaryLine;
-      content: '';
-    }
-
-    &::before {
-      right: $baseSize / 2;
-      height: $baseSize;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      left: $baseSize / 2;
-      height: $baseSize - 2;
-      transform: rotate(-45deg);
-    }
   }
+}
 
-  &:checked {
-    ~ .CDB-CheckboxFace {
-      border: 1px solid $cBlue;
-      background: $cBlue;
-    }
+.CDB-Checkbox:disabled + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
 
-    ~ .CDB-CheckboxFace::before,
-    ~ .CDB-CheckboxFace::after {
-      background: $cWhite;
-    }
-
-    &:hover ~ .CDB-CheckboxFace {
-      border: 1px solid $cBlue;
-    }
+  &::before,
+  &::after {
+    background: $cWhite;
   }
+}
 
-  &:focus ~ .CDB-CheckboxFace {
-    border: 1px solid $cBlue;
-  }
+.CDB-Checkbox:disabled:hover ~ .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+}
 
-  &:hover ~ .CDB-CheckboxFace {
-    border: 1px solid $cHoverLine;
-  }
+.CDB-Checkbox:checked:hover + .CDB-Checkbox-face,
+.CDB-Checkbox:focus + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
+}
 
-  &:disabled {
-    ~ .CDB-CheckboxFace {
-      border: 1px solid $cSecondaryLine;
-      background: $cThirdBackground;
-    }
-
-    ~ .CDB-CheckboxFace::before,
-    ~ .CDB-CheckboxFace::after {
-      background: $cWhite;
-    }
-
-    &:hover ~ .CDB-CheckboxFace {
-      border: 1px solid $cSecondaryLine;
-    }
-  }
+.CDB-Checkbox:hover + .CDB-Checkbox-face {
+  border: 1px solid $cHoverLine;
 }

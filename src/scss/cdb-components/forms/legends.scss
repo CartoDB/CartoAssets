@@ -7,12 +7,12 @@
 ```
 <div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Radio" type="radio" name="veritas" value="01">
-  <span class="u-iBlock CDB-RadioFace"></span>
+  <span class="u-iBlock CDB-Radio-face"></span>
   <label class="u-iBlock u-lSpace">True</label>
 </div>
 <div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Radio" type="radio" name="veritas" value="02" checked>
-  <span class="u-iBlock CDB-RadioFace"></span>
+  <span class="u-iBlock CDB-Radio-face"></span>
   <label class="u-iBlock u-lSpace">False</label>
 </div>
 
@@ -22,12 +22,12 @@
 
 <div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
   <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
-  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
   <label class="u-iBlock u-lSpace">Sport</label>
 </div>
 <label class="u-iblock CDB-Text CDB-Size-medium">
   <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
-  <span class="u-iBlock CDB-CheckboxFace"></span>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
   <label class="u-iBlock u-lSpace">Travel</label>
 </label>
 
@@ -41,14 +41,14 @@
     <li class="u-iBlock u-rSpace--xl">
       <div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
         <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
-        <span class="u-iBlock CDB-CheckboxFace"></span>
+        <span class="u-iBlock CDB-Checkbox-face"></span>
         <label class="u-iBlock u-lSpace">Sport</label>
       </div>
     </li>
     <li class="u-iblock">
       <label class="u-iblock CDB-Text CDB-Size-medium">
         <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
-        <span class="u-iBlock CDB-CheckboxFace"></span>
+        <span class="u-iBlock CDB-Checkbox-face"></span>
         <label class="u-iBlock u-lSpace">Travel</label>
       </label>
     </li>
