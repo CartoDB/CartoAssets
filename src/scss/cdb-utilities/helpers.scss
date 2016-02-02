@@ -39,6 +39,9 @@
 .u-showMobile {
   display: none !important;
 }
+.u-uppercase {
+  text-transform: uppercase;
+}
 
 @include media-query-mobile() {
   .u-showDesktop {

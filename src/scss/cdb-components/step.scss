@@ -1,0 +1,64 @@
+// Step styles
+// ----------------------------------------------
+
+/* SG
+# Step
+
+```
+<ul class="CDB-Steps">
+  <li class="CDB-Step">
+    <div class="CDB-Step-header">
+      <div class="CDB-Step-header-numeration CDB-Text is-semibold">1</div>
+      <p class="CDB-Step-header-title CDB-Text CDB-Size-large">Aggregation</p>
+    </div>
+  </li>
+  <li class="CDB-Step">
+    <div class="CDB-Step-header">
+      <div class="CDB-Step-header-numeration CDB-Text is-semibold">2</div>
+      <p class="CDB-Step-header-title CDB-Text CDB-Size-large">Select style</p>
+    </div>
+  </li>
+  <li class="CDB-Step">
+    <div class="CDB-Step-header">
+      <div class="CDB-Step-header-numeration CDB-Text is-semibold">3</div>
+      <p class="CDB-Step-header-title CDB-Text CDB-Size-large">Select template</p>
+    </div>
+  </li>
+</ul>
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-Steps {
+  display: block;
+}
+
+.CDB-Step {
+  margin-bottom: 40px;
+}
+
+.CDB-Step-header {
+  width: 300px;
+}
+
+.CDB-Step-header-numeration {
+  @include inline-block();
+  width: $baseSize * 3;
+  height: $baseSize * 3;
+  color: $cTypo3;
+  margin-right: 1px;
+  background-color: $cWhite;
+  border: 1px solid $cMainLine;
+  border-radius: 4px;
+  font-size: $sFontSize-small;
+  text-align: center;
+  line-height: $baseSize * 3;
+}
+
+.CDB-Step-header-title {
+  @include inline-block();
+  color: $cMainDark;
+}
