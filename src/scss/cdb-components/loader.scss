@@ -66,7 +66,7 @@ There is only one state 'is-visible', in order to make it visible.
   width: $baseSize * 2;
   height: $baseSize * 2;
   border: 2px solid $cMainLine;
-  border-radius: 50%; 
+  border-radius: 50%;
   &.is-grey {
     border: 2px solid $cTypo2;
   }
