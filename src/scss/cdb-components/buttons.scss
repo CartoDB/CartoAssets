@@ -24,6 +24,10 @@ Layout Component:
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
 
+<button class="CDB-Button CDB-Button--primary CDB-Button--icon">
+  <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+</button>
+
 <br/>
 <br/>
 <br/>
@@ -44,6 +48,11 @@ Layout Component:
   <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
   </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--icon">
+    <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+  </button>
+
 </div>
 
 ```
@@ -70,6 +79,9 @@ Layout Component:
 
 .CDB-Button--small {
   padding: $baseSize - 3 $baseSize + 4;
+}
+.CDB-Button--icon {
+  padding: 7px 9px;
 }
 
 .CDB-Button--primary {
