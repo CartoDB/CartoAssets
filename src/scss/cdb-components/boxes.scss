@@ -29,16 +29,7 @@
 <div class="CDB-InfoBox">
   <h2 class="CDB-Text is-semibold CDB-Size-small u-bSpace--m">ABOUT PREVIEW MODE</h2>
   <p class="CDB-Text CDB-Size-medium u-bSpace--m">He's a queer man, Captain Ahab—so some thinkbut a good one. Oh, thou'lt like him well enough; no fear, no fear</p>
-  <ul class="CDB-InfoBox-footer">
-    <li class="CDB-InfoBox-footerItem">
-      <p class="CDB-Text is-semibold CDB-Size-small"><a href="#">CLOSE</a></p>
-    </li>
-    <li class="CDB-InfoBox-footerItem">
-      <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
-        <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
-      </button>
-    </li>
-  </ul>
+  <p class="CDB-Text is-semibold CDB-Size-small"><a href="#">CLOSE</a></p>
 </div>
 <br/>
 <br/>
@@ -50,7 +41,7 @@
     <li class="CDB-InfoBox-footerItem">
       <p class="CDB-Text is-semibold CDB-Size-small"><a href="#">CLOSE</a></p>
     </li>
-    <li class="CDB-InfoBox-footerItem is-right">
+    <li class="CDB-InfoBox-footerItem CDB-InfoBox-footerItem--right">
       <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
         <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
       </button>
@@ -76,7 +67,8 @@
 
 .CDB-InfoBox-footerItem {
   @include flex(1);
-  &.is-right {
-    text-align: right;
-  }
+}
+
+.CDB-InfoBox-footerItem--right {
+  text-align: right;
 }
