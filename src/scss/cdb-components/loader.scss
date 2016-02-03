@@ -2,7 +2,7 @@
 // ----------------------------------------------
 
 /* SG
-# Loader
+# Loader/principal
 
 This is the generic loader for widgets, maps, components, ...
 There is only one state 'is-visible', in order to make it visible.
@@ -13,6 +13,8 @@ There is only one state 'is-visible', in order to make it visible.
 */
 
 @import '../cdb-utilities/mixins';
+@import '../cdb-variables/colors';
+@import '../cdb-variables/sizes';
 
 .CDB-Loader {
   @include css3-prefix(animation, loader-progress 1000ms linear 1);
@@ -39,3 +41,89 @@ There is only one state 'is-visible', in order to make it visible.
     width: 100%;
   }
 }
+
+/* SG
+# Loader/circle
+
+```
+<div style="padding: 20px;">
+  <div class="CDB-LoaderIcon">
+    <div class="CDB-LoaderIcon-item"></div>
+  </div>
+</div>
+
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-LoaderIcon is-white">
+    <div class="CDB-LoaderIcon-item is-white"></div>
+  </div>
+</div>
+```
+*/
+
+.CDB-LoaderIcon {
+  box-sizing: border-box;
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 2px solid #D8D8D8;
+  border-radius: 50%; 
+  &.is-white {
+    border: 2px solid #636D72;
+  }
+}
+
+.CDB-LoaderIcon-item {
+  @include css3-prefix(animation, loader-icon 1.4s linear infinite);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border-radius: 50%;
+  background: linear-gradient(to right, #FFF 10%, rgba(255, 255, 255, 0) 42%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+
+  &::before {
+    width: 50%;
+    height: 50%;
+    border-radius: 100% 0 0;
+    background: #D8D8D8;
+  }
+  &::after {
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    border-radius: 50%;
+    background: #FFF;
+  }
+  &.is-white {
+    background: linear-gradient(to right, #2E3C43 10%, rgba(255, 255, 255, 0) 42%);
+    &::before {
+      background: #636D72;
+    }
+    &::after {
+      background: #2E3C43;
+    }
+  }
+}
+
+
+@include keyframes(loader-icon) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

@@ -66,12 +66,18 @@ Description
   &.is-small {
     width: 9px;
     height: 9px;
-    margin: 2px auto;
+    margin: 0 auto;
   }
   &.is-blue {
     border: 1px solid $cBlue;
   }
   &.is-white {
     border: 1px solid $cWhite;
+  } 
+  &.is-green {
+    border: 1px solid $cHighlight;
+  }
+  &.is-red {
+    border: 1px solid $cError;
   }
 }
