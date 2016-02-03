@@ -125,13 +125,13 @@
 */
 
 .CDB-BoxLoader {
-  padding: 0 24px;
+  padding: 0 $baseSize * 3;
   border-top: 1px solid $cMainLine;
 }
 
 
 .CDB-BoxLoader-inner {
-  padding: 12px 0;
+  padding: $baseSize + 4 0;
   border-top: 1px solid $cMainLine;
   &:first-child {
     border-top: 0;
@@ -140,7 +140,7 @@
 
 .CDB-BoxLoader-item {
   @include display-flex();
-  padding: 8px 0;
+  padding: $baseSize 0;
   color: $cTypo2;
   &.is-working {
     color: $cTypo3;
@@ -149,6 +149,6 @@
 
 .CDB-BoxLoader-info {
   @include flex(1);
-  padding-right: 16px;
+  padding-right: $baseSize * 2;
 }
 

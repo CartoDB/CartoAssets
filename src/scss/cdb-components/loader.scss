@@ -53,8 +53,8 @@ There is only one state 'is-visible', in order to make it visible.
 </div>
 
 <div style="padding: 20px; background: #2E3C43;">
-  <div class="CDB-LoaderIcon is-white">
-    <div class="CDB-LoaderIcon-item is-white"></div>
+  <div class="CDB-LoaderIcon is-grey">
+    <div class="CDB-LoaderIcon-item is-grey"></div>
   </div>
 </div>
 ```
@@ -65,10 +65,10 @@ There is only one state 'is-visible', in order to make it visible.
   position: relative;
   width: $baseSize * 2;
   height: $baseSize * 2;
-  border: 2px solid #D8D8D8;
+  border: 2px solid $cMainLine;
   border-radius: 50%; 
-  &.is-white {
-    border: 2px solid #636D72;
+  &.is-grey {
+    border: 2px solid $cTypo2;
   }
 }
 
@@ -80,7 +80,7 @@ There is only one state 'is-visible', in order to make it visible.
   width: $baseSize * 2;
   height: $baseSize * 2;
   border-radius: 50%;
-  background: linear-gradient(to right, #FFF 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, $cWhite 10%, rgba($cWhite, 0) 42%);
 
   &::before,
   &::after {
@@ -94,7 +94,7 @@ There is only one state 'is-visible', in order to make it visible.
     width: 50%;
     height: 50%;
     border-radius: 100% 0 0;
-    background: #D8D8D8;
+    background: $cMainLine;
   }
   &::after {
     right: 0;
@@ -103,15 +103,15 @@ There is only one state 'is-visible', in order to make it visible.
     height: 75%;
     margin: auto;
     border-radius: 50%;
-    background: #FFF;
+    background: $cWhite;
   }
-  &.is-white {
-    background: linear-gradient(to right, #2E3C43 10%, rgba(255, 255, 255, 0) 42%);
+  &.is-grey {
+    background: linear-gradient(to right, $cMainDark 10%, rgba($cWhite, 0) 42%);
     &::before {
-      background: #636D72;
+      background: $cTypo2;
     }
     &::after {
-      background: #2E3C43;
+      background: $cMainDark;
     }
   }
 }
