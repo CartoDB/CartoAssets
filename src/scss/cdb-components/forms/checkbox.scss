@@ -86,7 +86,7 @@
   }
 }
 
-.CDB-Checkbox:disabled:hover ~ .CDB-Checkbox-face {
+.CDB-Checkbox:disabled:hover + .CDB-Checkbox-face {
   border: 1px solid $cSecondaryLine;
 }
 
