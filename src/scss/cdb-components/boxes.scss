@@ -24,7 +24,6 @@
 
 /* SG
 # Boxes/Loader
-
 ```
 <div class="CDB-BoxLoader">
   <ul class="CDB-BoxLoader-inner">
@@ -152,3 +151,54 @@
   padding-right: $baseSize * 2;
 }
 
+/* SG
+# Boxes/Info Boxes
+
+
+```
+<div class="CDB-InfoBox">
+  <h2 class="CDB-Text is-semibold CDB-Size-small u-bSpace--m">ABOUT PREVIEW MODE</h2>
+  <p class="CDB-Text CDB-Size-medium u-bSpace--m">He's a queer man, Captain Ahab—so some thinkbut a good one. Oh, thou'lt like him well enough; no fear, no fear</p>
+  <p class="CDB-Text is-semibold CDB-Size-small"><a href="#">CLOSE</a></p>
+</div>
+<br/>
+<br/>
+<br/>
+<div class="CDB-InfoBox is-alert">
+  <h2 class="CDB-Text is-semibold CDB-Size-small u-bSpace--m">ABOUT PREVIEW MODE</h2>
+  <p class="CDB-Text CDB-Size-medium u-bSpace--m">He's a queer man, Captain Ahab—so some thinkbut a good one. Oh, thou'lt like him well enough; no fear, no fear</p>
+  <ul class="CDB-InfoBox-footer">
+    <li class="CDB-InfoBox-footerItem">
+      <p class="CDB-Text is-semibold CDB-Size-small"><a href="#">CLOSE</a></p>
+    </li>
+    <li class="CDB-InfoBox-footerItem CDB-InfoBox-footerItem--right">
+      <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+        <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+      </button>
+    </li>
+  </ul>
+</div>
+```
+*/
+
+.CDB-InfoBox {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: $cThirdBackground;
+  &.is-alert {
+    background: rgba($cHighlightYellow, 0.6);
+  }
+}
+
+.CDB-InfoBox-footer {
+  @include display-flex();
+  @include align-items(center);
+}
+
+.CDB-InfoBox-footerItem {
+  @include flex(1);
+}
+
+.CDB-InfoBox-footerItem--right {
+  text-align: right;
+}
