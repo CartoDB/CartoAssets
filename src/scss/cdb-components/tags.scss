@@ -1,0 +1,47 @@
+// Typography styles
+// ----------------------------------------------
+
+/* SG
+# Tags
+
+```
+<button class="CDB-Tag is-public CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PUBLIC
+</button>
+<button class="CDB-Tag is-link CDB-Text is-semibold CDB-Size-small u-iBlock">
+  LINK
+</button>
+<button class="CDB-Tag is-password CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PASSWORD
+</button>
+<button class="CDB-Tag is-private CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PRIVATE
+</button>
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Tag {
+  padding: 0 3px;
+  border-radius: 2px;
+
+  &.is-public {
+    border: 1px solid $cPublic;
+    color: $cPublic;
+  }
+  &.is-link {
+    border: 1px solid $cLink;
+    color: $cLink;
+  }
+  &.is-password {
+    border: 1px solid $cPassword;
+    color: $cPassword;
+  }
+  &.is-private {
+    border: 1px solid $cError;
+    color: $cError;
+  }
+}
