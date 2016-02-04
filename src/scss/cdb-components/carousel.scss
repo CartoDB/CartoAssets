@@ -18,7 +18,7 @@
     </div>
 
     <div class="CDB-Carousel">
-      <ul class="CDB-Carousel-inner">
+      <ul>
         <li class="CDB-Carousel-item"></li>
         <li class="CDB-Carousel-item"></li>
         <li class="CDB-Carousel-item"></li>
@@ -36,15 +36,8 @@
 @import '../cdb-variables/colors';
 
 .CDB-Carousel {
-  width: 300px;
+  width: 100%;
   margin-left: 32px;
-}
-
-.CDB-Carousel-inner {
-  width: 300px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
 
 .CDB-Carousel-item {
