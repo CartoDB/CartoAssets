@@ -15,10 +15,10 @@
 @import '../../cdb-variables/colors';
 
 .CDB-InputText {
-  min-width: 152px;
+  width: 100%;
   padding: 7px 8px 6px;
   border: 1px solid $cMainLine;
-  border-radius: 3px;
+  border-radius: $baseSize / 2;
   font-size: $sFontSize-medium;
   line-height: $sLineHeight-medium;
 

@@ -19,11 +19,11 @@
   width: 100%;
   margin: -4px 0 0;
   padding: 0 6px;
+  border: 0;
   background: transparent;
   cursor: pointer;
   overflow: hidden;
   vertical-align: middle;
-  border: 0;
 
   &:focus {
     outline: 0;
@@ -87,10 +87,10 @@
 .CDB-Range::-moz-range-track {
   height: $baseSize / 4;
   margin: $baseSize 0;
-  border-radius: $baseSize / 2;
-  background: $cMainLine;
   border: 0;
+  border-radius: $baseSize / 2;
   outline: none;
+  background: $cMainLine;
 }
 
 .CDB-Range::-moz-range-thumb {

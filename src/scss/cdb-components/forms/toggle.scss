@@ -26,7 +26,7 @@
   opacity: 0;
   z-index: 1;
 
-  ~ .CDB-ToggleFace {
+  + .CDB-ToggleFace {
     @include transition(background, 300ms);
     position: relative;
     width: $baseSize * 4;
@@ -48,7 +48,7 @@
     }
   }
 
-  &:checked ~ .CDB-ToggleFace {
+  &:checked + .CDB-ToggleFace {
     background: $cMainDark;
 
     &::before {
