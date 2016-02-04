@@ -1,5 +1,5 @@
 /* SG
-# Shapes/Toogle Arrows
+# Shapes/Toggle Arrows
 
 Description
 
@@ -7,17 +7,17 @@ Description
 <h2>16px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle"></div>
+    <div class="CDB-ArrowToggle"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-blue"></div>
+    <div class="CDB-ArrowToggle is-blue"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-ArrowToogle is-white"></div>
+    <div class="CDB-ArrowToggle is-white"></div>
   </div>
 </div>
 <br>
@@ -27,17 +27,17 @@ Description
 <h2>12px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-small"></div>
+    <div class="CDB-ArrowToggle is-small"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-blue is-small"></div>
+    <div class="CDB-ArrowToggle is-blue is-small"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-ArrowToogle is-white is-small"></div>
+    <div class="CDB-ArrowToggle is-white is-small"></div>
   </div>
 </div>
 <br>
@@ -47,17 +47,17 @@ Description
 <h2>16px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-down"></div>
+    <div class="CDB-ArrowToggle is-down"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-blue is-down"></div>
+    <div class="CDB-ArrowToggle is-blue is-down"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-ArrowToogle is-white is-down"></div>
+    <div class="CDB-ArrowToggle is-white is-down"></div>
   </div>
 </div>
 <br>
@@ -67,25 +67,26 @@ Description
 <h2>12px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-small is-down"></div>
+    <div class="CDB-ArrowToggle is-small is-down"></div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
+    <div class="CDB-ArrowToggle is-blue is-small is-down"></div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-ArrowToogle is-white is-small is-down"></div>
+    <div class="CDB-ArrowToggle is-white is-small is-down"></div>
   </div>
 </div>
 ```
 */
 
 @import '../../cdb-variables/colors';
+@import '../../cdb-variables/sizes';
 
-.CDB-ArrowToogle {
+.CDB-ArrowToggle {
   position: relative;
   height: 100%;
 
@@ -113,11 +114,14 @@ Description
   }
 }
 
-.CDB-ArrowToogle.is-down {
+.CDB-ArrowToggle.is-down {
   transform: rotate(180deg);
 }
 
-.CDB-ArrowToogle.is-small {
+.CDB-ArrowToggle.is-small {
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+
   &::before {
     left: 2px;
     width: 8px;
@@ -128,7 +132,7 @@ Description
   }
 }
 
-.CDB-ArrowToogle.is-blue {
+.CDB-ArrowToggle.is-blue {
   &::before {
     background: $cBlue;
   }
@@ -137,7 +141,7 @@ Description
   }
 }
 
-.CDB-ArrowToogle.is-white {
+.CDB-ArrowToggle.is-white {
   &::before {
     background: $cWhite;
   }
