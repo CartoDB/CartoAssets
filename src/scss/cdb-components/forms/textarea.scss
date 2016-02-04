@@ -5,9 +5,9 @@
 # Forms/Textareas
 
 ```
-<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-InputTextarea CDB-Text"></textarea>
-<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-InputTextarea has-error CDB-Text"></textarea>
-<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-InputTextarea is-disabled CDB-Text" disabled></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea has-error CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea is-disabled CDB-Text" disabled></textarea>
 ```
 */
 
@@ -15,7 +15,7 @@
 @import '../../cdb-variables/colors';
 @import '../../cdb-utilities/mixins';
 
-.CDB-InputTextarea {
+.CDB-Textarea {
   width: 100%;
   padding: 7px 8px 6px;
   border: 1px solid $cMainLine;
