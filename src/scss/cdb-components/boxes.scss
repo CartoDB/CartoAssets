@@ -2,7 +2,7 @@
 // ----------------------------------------------
 
 /* SG
-# Boxes/Box Dropdown
+# Boxes/Dropdown
 
 
 ```
@@ -19,6 +19,136 @@
   border-radius: 4px;
   background: $cWhite;
   box-shadow: 0  $baseSize  $baseSize * 2 0 rgba(0, 0, 0, 0.16);
+}
+
+
+/* SG
+# Boxes/Loader
+```
+<div class="CDB-BoxLoader">
+  <ul class="CDB-BoxLoader-inner">
+    <li class="CDB-BoxLoader-item">
+      <div class="CDB-Shape u-rSpace--m">
+        <div class="CDB-Shape-CircleItem is-green is-medium">
+          <div class="CDB-Shape-tick is-medium is-green"></div>
+        </div>
+      </div>
+      <div class="CDB-BoxLoader-info">
+        <p class="CDB-Text CDB-Size-medium">Query applied. Showing 2,561 rows, Query applied. Showing 2,561 rows, Query applied. Showing 2,561 rows Query applied. Showing 2,561 rowsQuery applied. Showing 2,561 rows Query applied. Showing 2,561 rows</p>
+      </div>
+      <div class="CDB-BoxLoader-actions">
+        <div class="CDB-Shape">
+          <div class="CDB-Shape-threePoints is-small is-blue">
+            <div class="CDB-Shape-threePointsItem"></div>
+            <div class="CDB-Shape-threePointsItem"></div>
+            <div class="CDB-Shape-threePointsItem"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="CDB-BoxLoader">
+  <ul class="CDB-BoxLoader-inner">
+    <li class="CDB-BoxLoader-item">
+      <div class="CDB-Shape u-rSpace--m">
+        <div class="CDB-Shape-CircleItem is-green is-medium">
+          <div class="CDB-Shape-tick is-medium is-green"></div>
+        </div>
+      </div>
+      <div class="CDB-BoxLoader-info">
+        <p class="CDB-Text CDB-Size-medium">Finished importing <a href="#">populated_places_2</a></p>
+      </div>
+    </li>
+    <li class="CDB-BoxLoader-item is-working">
+      <div class="CDB-LoaderIcon u-rSpace--m">
+        <div class="CDB-LoaderIcon-item"></div>
+      </div>
+      <div class="CDB-BoxLoader-info">
+        <p class="CDB-Text CDB-Size-medium">Geocoding populated_places_2 (28%)</p>
+      </div>
+      <div class="CDB-BoxLoader-actions">
+        <div class="CDB-Shape">
+          <div class="CDB-Shape-close is-blue is-large"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="CDB-BoxLoader-inner">
+    <li class="CDB-BoxLoader-item">
+      <div class="CDB-Shape u-rSpace--m">
+        <div class="CDB-Shape-CircleItem is-green is-medium">
+          <div class="CDB-Shape-tick is-medium is-green"></div>
+        </div>
+      </div>
+      <div class="CDB-BoxLoader-info">
+        <p class="CDB-Text CDB-Size-medium">Finished importing <a href="#">populated_places_2</a></p>
+      </div>
+    </li>
+  </ul>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="CDB-BoxLoader">
+  <ul class="CDB-BoxLoader-inner">
+    <li class="CDB-BoxLoader-item">
+      <div class="CDB-Shape u-rSpace--m">
+        <div class="CDB-Shape-CircleItem is-red">
+          <div class="CDB-Shape-close is-medium is-red"></div>
+        </div>
+      </div>
+      <div class="CDB-BoxLoader-info">
+        <p class="CDB-Text CDB-Size-medium">Error in query. Data might be outdated</p>
+      </div>
+      <div class="CDB-BoxLoader-actions">
+        <div class="CDB-Shape">
+          <div class="CDB-Shape-threePoints is-small is-blue">
+            <div class="CDB-Shape-threePointsItem"></div>
+            <div class="CDB-Shape-threePointsItem"></div>
+            <div class="CDB-Shape-threePointsItem"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+*/
+
+.CDB-BoxLoader {
+  padding: 0 $baseSize * 3;
+  border-top: 1px solid $cMainLine;
+}
+
+
+.CDB-BoxLoader-inner {
+  padding: $baseSize + 4 0;
+  border-top: 1px solid $cMainLine;
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.CDB-BoxLoader-item {
+  @include display-flex();
+  padding: $baseSize 0;
+  color: $cTypo2;
+  &.is-working {
+    color: $cTypo3;
+  }
+}
+
+.CDB-BoxLoader-info {
+  @include flex(1);
+  padding-right: $baseSize * 2;
 }
 
 /* SG
