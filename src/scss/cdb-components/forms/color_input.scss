@@ -1,0 +1,48 @@
+// Color input styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Color input
+
+```
+<fieldset>
+  <p class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">COLOR</p>
+  <div class="u-iBlock">
+    <div class="CDB-ColorInput">
+      <span class="CDB-ColorInput-colorBar Color-Higlight"></span>
+    </div>
+  </div>
+</fieldset>
+ ```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+.CDB-ColorInput {
+  @include display-flex();
+  @include align-items(center);
+  width: $baseSize * 20;
+  height: $baseSize * 4;
+  padding: $baseSize;
+  border: 1px solid $cMainLine;
+  border-radius: $baseSize / 2;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+  }
+}
+
+.CDB-ColorInput-colorBar {
+  @include inline-block();
+  width: 100%;
+  height: $baseSize / 2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: $baseSize;
+}
