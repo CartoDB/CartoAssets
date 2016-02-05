@@ -119,9 +119,6 @@ Description
 }
 
 .CDB-ArrowToogle.is-small {
-  width: $baseSize * 2;
-  height: $baseSize * 2;
-
   &::before {
     left: 2px;
     width: 8px;
