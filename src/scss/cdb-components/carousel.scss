@@ -5,29 +5,15 @@
 # Carousel
 
 ```
-<ol class="CDB-Steps">
-  <li class="CDB-Step-item">
-    <div class="CDB-Step-header u-bSpace--xl">
-      <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">1</div>
-
-      <div class="CDB-Step-headerInfo CDB-Text">
-        <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Aggregation</p>
-        <p class="u-uppercase u-color-cTypo3 CDB-FontSize-small u-bSpace--m">Histogram</p>
-        <p class="u-color-cTypo3 CDB-FontSize-medium">Distribution of a numeric variable in a range</p>
-      </div>
-    </div>
-
-    <div class="CDB-Carousel">
-      <ul>
-        <li class="CDB-Carousel-item"></li>
-        <li class="CDB-Carousel-item"></li>
-        <li class="CDB-Carousel-item"></li>
-        <li class="CDB-Carousel-item"></li>
-        <li class="CDB-Carousel-item"></li>
-      </ul>
-    </div>
-  </li>
-</ol>
+<div>
+  <ul class="CDB-Carousel">
+    <li class="CDB-Carousel-item is-selected"></li>
+    <li class="CDB-Carousel-item"></li>
+    <li class="CDB-Carousel-item"></li>
+    <li class="CDB-Carousel-item"></li>
+    <li class="CDB-Carousel-item"></li>
+  </ul>
+</div>
 ```
 */
 
@@ -37,21 +23,37 @@
 
 .CDB-Carousel {
   width: 100%;
-  margin-left: 32px;
+  font-size: 0;
 }
 
 .CDB-Carousel-item {
   @include inline-block();
   width: $baseSize * 11;
   height: $baseSize * 7;
-  margin-right: 10px;
   border: 1px solid $cSecondaryLine;
   border-radius: 4px;
   background: $cThirdBackground;
   vertical-align: top;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
   &:hover {
     border: 1px solid $cMainLine;
     cursor: pointer;
+  }
+
+  &.is-selected {
+    border: 2px solid $cBlue;
+  }
+}
+
+.CDB-Carousel-headerDetails {
+  color: $cTypo3;
+
+  &.is-uppercase {
+    text-transform: uppercase;
   }
 }

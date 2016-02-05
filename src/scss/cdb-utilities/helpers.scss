@@ -35,9 +35,6 @@
 .u-bSpace--xl {
   margin-bottom: 12px;
 }
-.u-bSpace-xxxl {
-  margin-bottom: 40px;
-}
 .u-lSpace {
   margin-left: 4px;
 }
@@ -54,21 +51,6 @@
 }
 .u-showMobile {
   display: none !important;
-}
-
-/* Text */
-.u-uppercase {
-  text-transform: uppercase;
-}
-.u-color-cBlue {
-  color: $cBlue;
-}
-.u-color-cTypo3 {
-  color: $cTypo3;
-}
-
-.u-color-cMainDark {
-  color: $cMainDark;
 }
 
 /* Media queries*/
