@@ -1,0 +1,72 @@
+// Step styles
+// ----------------------------------------------
+
+/* SG
+# Step
+
+```
+<ol class="CDB-Steps">
+  <li>
+    <div class="CDB-Step-header u-bSpace--xl">
+      <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">1</div>
+
+      <div class="CDB-Step-headerInfo CDB-Text">
+        <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Type</p>
+        <p class="CDB-Step-headerDetails is-uppercase CDB-FontSize-small u-bSpace--m">Histogram</p>
+        <p class="CDB-Step-headerDetails CDB-FontSize-medium">Distribution of a numeric variable in a range</p>
+      </div>
+
+      <div class="CDB-Shape">
+        <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
+      </div>
+    </div>
+  </li>
+</ol>
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-Step-header {
+  @include display-flex();
+  @include flex-direction(row);
+  @include align-items(flex-start, flex-start);
+}
+
+.CDB-Step-headerNumeration {
+  width: $baseSize * 3;
+  height: $baseSize * 3;
+  border: 1px solid $cMainLine;
+  border-radius: 4px;
+  background-color: $cWhite;
+  color: $cTypo3;
+  font-size: $sFontSize-small;
+  line-height: $baseSize * 3;
+  text-align: center;
+}
+
+.CDB-Step-headerInfo {
+  width: 100%;
+}
+
+.CDB-Step-headerTitle {
+  color: $cMainDark;
+}
+
+.CDB-Step-headerDetails {
+  color: $cTypo3;
+
+  &.is-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.CDB-Step-action {
+  width: $baseSize * 3;
+  height: $baseSize * 3;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
