@@ -100,25 +100,25 @@ Description
 
   &.is-medium {
     &::before {
-      top: 6px;
+      top: 5px;
       left: 4px;
       height: 4px;
     }
     &::after {
-      top: 4px;
+      top: 3px;
       right: 5px;
-      height: 7px;
+      height: 6px;
     }
   }
 
   &.is-small {
     &::before {
-      top: 5px;
-      left: 3px;
+      top: 4px;
+      left: 2px;
       height: 3px;
     }
     &::after {
-      top: 3px;
+      top: 2px;
       right: 3px;
       height: 5px;
     }
@@ -142,5 +142,15 @@ Description
     background: $cWhite;
   }
 }
+
+.CDB-Shape-tick.is-green {
+  &::before {
+    background: $cHighlight;
+  }
+  &::after {
+    background: $cHighlight;
+  }
+}
+
 
 

@@ -1,14 +1,23 @@
-// Radio Button styles
+
+// Radios styles
 // ----------------------------------------------
 
 /* SG
 # Forms/Radio
 
-
 ```
-<input class="CDB-Radio" type="radio" name="Gender" value="01" checked>
-<input class="CDB-Radio" type="radio" name="Gender" value="02">
-<input class="CDB-Radio" type="radio" name="Gender" value="03" disabled>
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="01" checked>
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="02">
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="03" disabled>
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
 ```
 */
 
@@ -16,14 +25,26 @@
 @import '../../cdb-variables/colors';
 
 .CDB-Radio {
+  position: absolute;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  opacity: 0;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.CDB-Radio-face {
   position: relative;
   width: $baseSize * 2;
   height: $baseSize * 2;
   border: 1px solid $cMainLine;
   border-radius: 50%;
+  background: $cWhite;
+  text-indent: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
 
   &::before {
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,38 +56,35 @@
     background: $cSecondaryLine;
     content: '';
   }
+}
 
-  &:checked {
-    border: 1px solid $cBlue;
-    background: $cBlue;
+.CDB-Radio:checked + .CDB-Radio-face {
+  border: 1px solid $cBlue;
+  background: $cBlue;
 
-    &:hover {
-      border: 1px solid $cBlue;
-    }
-
-    &::before {
-      background: $cWhite;
-    }
+  &::before {
+    background: $cWhite;
   }
+}
 
-  &:focus {
-    border: 1px solid $cBlue;
+.CDB-Radio:disabled + .CDB-Radio-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
+
+  &::before {
+    background: $cWhite;
   }
+}
 
-  &:hover {
-    border: 1px solid $cHoverLine;
-  }
+.CDB-Radio:disabled:hover + .CDB-Radio-face {
+  border: 1px solid $cSecondaryLine;
+}
 
-  &:disabled {
-    border: 1px solid $cSecondaryLine;
-    background: $cThirdBackground;
+.CDB-Radio:hover + .CDB-Radio-face {
+  border: 1px solid $cHoverLine;
+}
 
-    &:hover {
-      border: 1px solid $cSecondaryLine;
-    }
-
-    &::before {
-      background: $cWhite;
-    }
-  }
+.CDB-Radio:focus + .CDB-Radio-face,
+.CDB-Radio:checked:hover + .CDB-Radio-face {
+  border: 1px solid $cBlue;
 }
