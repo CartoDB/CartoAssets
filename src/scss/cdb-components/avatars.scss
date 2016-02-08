@@ -16,7 +16,7 @@
     <img src="/src/img/avatar-40x40.png" alt="User Name" class="CDB-AvatarList-itemMedia" />
   </li>
   <li class="CDB-AvatarList-itemMore">
-    <button class="CDB-Text is-semibold CDB-Size-small">+ 16</button>
+    <button class="CDB-Text is-semibold CDB-Size-small u-textSecondary">+ 16</button>
   </li>
 </ul>
 ```
@@ -44,7 +44,6 @@
   border-left: 2px solid $cWhite;
   border-radius: 50px;
   background: $cSecondaryLine;
-  color: $cTypo2;
 }
 
 .CDB-AvatarList-itemMedia {

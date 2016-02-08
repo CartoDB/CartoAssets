@@ -18,10 +18,10 @@
       <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
       <ul class="CDB-NavSubmenu CDB-Size-small">
         <li class="CDB-NavSubmenu-Item is-active">
-          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status u-textDisabled">NONE</span></a>
         </li>
         <li class="CDB-NavSubmenu-Item">
-          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status u-textDisabled">NONE</span></a>
         </li>
       </ul>
     </li>
@@ -125,7 +125,6 @@
 
 .CDB-NavSubmenu-Status {
   margin-left: 2px;
-  color: $cTypo4;
 }
 
 .CDB-Navmenu.is-dark {

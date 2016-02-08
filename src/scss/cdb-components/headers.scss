@@ -43,7 +43,7 @@
       </ul>
     </li>
     <li class="CDB-HeaderInfo-ListItem">
-      <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-iBlock">Published 8 days ago</p>
+      <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-iBlock u-textSubtitle">Published 8 days ago</p>
     </li>
   </ul>
 </div>
@@ -108,7 +108,7 @@
         </a>
       </div>
     </div>
-    <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium">Positron by CartoDB</p>
+    <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-textSubtitle">Positron by CartoDB</p>
   </div>
 </div>
 <br/>
@@ -157,10 +157,6 @@
   &:last-child {
     margin-right: 0;
   }
-}
-
-.CDB-HeaderInfo-Text {
-  color: $cTypo3;
 }
 
 .CDB-HeaderInfo-Inner {
