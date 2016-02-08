@@ -34,7 +34,6 @@
   @include flex-direction(row);
   @include align-items(flex-start, flex-start);
 }
-
 .CDB-Step-headerNumeration {
   width: $baseSize * 3;
   height: $baseSize * 3;
@@ -46,15 +45,12 @@
   line-height: $baseSize * 3;
   text-align: center;
 }
-
 .CDB-Step-headerInfo {
   width: 100%;
 }
-
 .CDB-Step-headerTitle {
   color: $cMainDark;
 }
-
 .CDB-Step-headerDetails {
   color: $cTypo3;
 
@@ -62,7 +58,6 @@
     text-transform: uppercase;
   }
 }
-
 .CDB-Step-action {
   width: $baseSize * 3;
   height: $baseSize * 3;
