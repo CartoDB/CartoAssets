@@ -139,17 +139,24 @@
 <br/>
 <br/>
 
-<div class="CDB-Step-header u-bSpace--xl">
-  <div class="CDB-Step-headerNumeration CDB-Text is-semibold u-rSpace--m">1</div>
+<div class="CDB-HeaderInfo">
+  <div class="CDB-HeaderNumeration CDB-Text is-semibold u-rSpace--m">1</div>
 
-  <div class="CDB-Step-headerInfo CDB-Text">
-    <p class="CDB-Size-large u-color-cMainDark u-bSpace--m">Type</p>
-    <p class="CDB-Step-headerDetails is-uppercase CDB-FontSize-small u-bSpace--m">Histogram</p>
-    <p class="CDB-Step-headerDetails CDB-FontSize-medium">Distribution of a numeric variable in a range</p>
-  </div>
+  <div class="CDB-HeaderInfo-Inner CDB-Text">
+    <div class="CDB-HeaderInfo-Title u-bSpace--m">
+      <h2 class="CDB-HeaderInfo-TitleText CDB-Size-large u-color-cMainDark">Type</h2>
+      
+      <div class="CDB-HeaderInfo-Actions">
+        <a href="#">
+          <div class="CDB-Shape">
+            <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
+          </div>
+        </a>
+      </div>
+    </div>
 
-  <div class="CDB-Shape">
-    <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
+    <p class="CDB-HeaderInfo-Text is-uppercase CDB-FontSize-small u-bSpace--m">Histogram</p>
+    <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium">Distribution of a numeric variable in a range</p>
   </div>
 </div>
 
@@ -170,7 +177,6 @@
     display: block;
   }
 }
-
 .CDB-HeaderInfo-ListItem {
   display: inline-block;
   margin-right: 8px;
@@ -180,24 +186,23 @@
     margin-right: 0;
   }
 }
-
 .CDB-HeaderInfo-Text {
   color: $cTypo3;
+  
+  &.is-uppercase {
+    text-transform: uppercase;
+  }
 }
-
 .CDB-HeaderInfo-Inner {
   @include flex(1);
 }
-
 .CDB-HeaderInfo-Back {
   margin-top: 7px;
 }
-
 .CDB-HeaderInfo-Title {
   @include display-flex();
   @include align-items(center);
 }
-
 .CDB-HeaderInfo-TitleText {
   @include flex(1);
   width: 0;
@@ -206,20 +211,12 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
 .CDB-HeaderInfo-ActionsItem {
   display: inline-block;
   margin-left: 4px;
   vertical-align: middle;
 }
-
-/* Steps header */
-.CDB-Step-header {
-  @include display-flex();
-  @include flex-direction(row);
-  @include align-items(flex-start, flex-start);
-}
-.CDB-Step-headerNumeration {
+.CDB-HeaderNumeration {
   width: $baseSize * 3;
   height: $baseSize * 3;
   border: 1px solid $cMainLine;
@@ -227,20 +224,7 @@
   background-color: $cWhite;
   color: $cTypo3;
   font-size: $sFontSize-small;
-  line-height: $baseSize * 3;
+  line-height: 23px;
   text-align: center;
   box-sizing: border-box;
-}
-.CDB-Step-headerInfo {
-  @include flex-grow(2);
-}
-.CDB-Step-headerTitle {
-  color: $cMainDark;
-}
-.CDB-Step-headerDetails {
-  color: $cTypo3;
-
-  &.is-uppercase {
-    text-transform: uppercase;
-  }
 }
