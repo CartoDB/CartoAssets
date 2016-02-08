@@ -2,6 +2,7 @@
 // ----------------------------------------------
 
 @import './mixins';
+@import '../cdb-variables/colors';
 
 .u-tSpace {
   margin-top: 4px;
@@ -36,6 +37,17 @@
 .u-bSpace--m {
   margin-bottom: 8px;
 }
+.u-textSecondary {
+  color: $cTypo2;
+}
+.u-textSubtitle {
+  color: $cTypo3;
+}
+.u-textDisabled {
+  color: $cTypo4;
+}
+
+
 
 .u-iBlock {
   @include inline-block();
