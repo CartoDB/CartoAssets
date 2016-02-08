@@ -25,7 +25,6 @@
   width: 100%;
   font-size: 0;
 }
-
 .CDB-Carousel-item {
   @include inline-block();
   width: $baseSize * 11;
@@ -44,16 +43,7 @@
     border: 1px solid $cMainLine;
     cursor: pointer;
   }
-
-  &.is-selected {
-    border: 2px solid $cBlue;
-  }
 }
-
-.CDB-Carousel-headerDetails {
-  color: $cTypo3;
-
-  &.is-uppercase {
-    text-transform: uppercase;
-  }
+.CDB-Carousel-item.is-selected {
+  border: 2px solid $cBlue;
 }
