@@ -1,0 +1,117 @@
+// Dropdown styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Dropdowns
+
+```
+<div class="CDB-DropdownContainer">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+  <div class="CDB-Dropdown CDB-Box-Modal">
+    <div class="CDB-Dropdown-calculations CDB-Text is-semibold">
+      <ul>
+        <li class="CDB-Dropdown-calculationsElement u-iBlock">
+          <input class="CDB-Radio" type="radio" name="calculation" value="01" checked>
+          <span class="u-iBlock CDB-Radio-face"></span>
+          <label class="u-iBlock u-lSpace">COUNT</label>
+        </li>
+        <li class="CDB-Dropdown-calculationsElement u-iBlock">
+          <input class="CDB-Radio" type="radio" name="calculation" value="02">
+          <span class="u-iBlock CDB-Radio-face"></span>
+          <label class="u-iBlock u-lSpace">SUM</label>
+        </li>
+        <li class="CDB-Dropdown-calculationsElement u-iBlock">
+          <input class="CDB-Radio" type="radio" name="calculation" value="03">
+          <span class="u-iBlock CDB-Radio-face"></span>
+          <label class="u-iBlock u-lSpace">AVG</label>
+        </li>
+        <li class="CDB-Dropdown-calculationsElement u-iBlock">
+          <input class="CDB-Radio" type="radio" name="calculation" value="04">
+          <span class="u-iBlock CDB-Radio-face"></span>
+          <label class="u-iBlock u-lSpace">MAX</label>
+        </li>
+        <li class="CDB-Dropdown-calculationsElement u-iBlock">
+          <input class="CDB-Radio" type="radio" name="calculation" value="05">
+          <span class="u-iBlock CDB-Radio-face"></span>
+          <label class="u-iBlock u-lSpace">MIN</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="CDB-Dropdown-options">
+      <ul>
+        <li class="CDB-Dropdown-optionsElement is-selected">
+          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">selected</span>
+        </li>
+        <li class="CDB-Dropdown-optionsElement">
+          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">active</span>
+        </li>
+        <li class="CDB-Dropdown-optionsElement is-disabled">
+          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">disabled</span>
+        </li>
+        <li class="CDB-Dropdown-optionsElement is-disabled">
+          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">disabled</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-DropdownContainer {
+  position: relative;
+  height: 250px;
+}
+.CDB-Dropdown {
+  height: 200px;
+  position: absolute;
+  top: 40px;
+  font-size: 0;
+}
+.CDB-Dropdown-calculations {
+  display: inline-block;
+  width: $baseSize * 11;
+  height: 100%;
+  padding: $sMargin-element;
+  border-right: 1px solid $cMainLine;
+  border-radius: 3px 0 0 3px;
+  background-color: $cSecondaryBackground;
+  box-sizing: border-box;
+}
+.CDB-Dropdown-calculationsElement {
+  font-size: $sFontSize-small;
+
+  &:not(:last-child) {
+    margin-bottom: $sLineHeight-medium;
+  }
+}
+.CDB-Dropdown-options {
+  display: inline-block;
+  width: $baseSize * 20;
+  border-radius: 0 3px 3px 0;
+  background-color: $cWhite;
+  vertical-align: top;
+}
+.CDB-Dropdown-optionsElement {
+  padding: 12px 10px;
+  border-bottom: 1px solid $cMainLine;
+  color: $cBlue;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+  &:hover {
+    background-color: rgba(157, 224, 173, 0.2);
+    cursor: pointer;
+  }
+}
+.CDB-Dropdown-optionsElement.is-selected {
+  color: $cBlack;
+}
+.CDB-Dropdown-optionsElement.is-disabled {
+  color: $cTypo4;
+}
