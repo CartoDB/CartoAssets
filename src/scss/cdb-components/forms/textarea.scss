@@ -35,9 +35,9 @@
     border-color: $cSecondaryLine;
     background: $cThirdBackground;
   }
-  &.has-error {
-    border: 1px solid rgba($cError, 0.48);
-    background: rgba($cError, 0.04);
-    color: $cError;
-  }
 }
+.CDB-Textarea.has-error {
+  border: 1px solid rgba($cError, 0.48);
+  background: rgba($cError, 0.04);
+  color: $cError;
+  }
