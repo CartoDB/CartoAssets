@@ -29,14 +29,14 @@
   @include inline-block();
   width: $baseSize * 11;
   height: $baseSize * 7;
+  margin-right: 8px;
   border: 1px solid $cSecondaryLine;
   border-radius: 4px;
   background: $cThirdBackground;
-  vertical-align: top;
   box-sizing: border-box;
 
-  &:not(:last-child) {
-    margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
   }
 
   &:hover {
