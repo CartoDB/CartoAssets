@@ -44,9 +44,10 @@
   font-size: $sFontSize-small;
   line-height: $baseSize * 3;
   text-align: center;
+  box-sizing: border-box;
 }
 .CDB-Step-headerInfo {
-  width: 100%;
+  @include flex-grow(2);
 }
 .CDB-Step-headerTitle {
   color: $cMainDark;
