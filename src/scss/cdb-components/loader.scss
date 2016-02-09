@@ -67,7 +67,7 @@ This is the generic loader for widgets, maps, components, ...
   border: 2px solid $cMainLine;
   border-radius: 50%;
   &.is-grey {
-    border: 2px solid $cTypo2;
+    border: 2px solid $cSecondaryText;
   }
 }
 
@@ -107,7 +107,7 @@ This is the generic loader for widgets, maps, components, ...
   &.is-grey {
     background: linear-gradient(to right, $cMainBg 10%, rgba($cWhite, 0) 42%);
     &::before {
-      background: $cTypo2;
+      background: $cSecondaryText;
     }
     &::after {
       background: $cMainBg;

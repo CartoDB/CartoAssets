@@ -97,8 +97,8 @@
 }
 
 .CDB-NavMenu-Item.is-active .CDB-NavMenu-Link {
-  border-bottom: 1px solid $cMainBg;
-  color: $cMainBg;
+  border-bottom: 1px solid $cMainLine;
+  color: $cMainText;
 }
 
 .CDB-NavSubmenu {
@@ -118,8 +118,8 @@
 
 .CDB-NavSubmenu-item.is-active {
   .CDB-NavSubmenu-Link {
-    border-bottom: 1px solid $cTypo3;
-    color: $cMainBg;
+    border-bottom: 1px solid $cMainLine;
+    color: $cMainText;
   }
 }
 
@@ -131,12 +131,12 @@
 
   .CDB-NavMenu-Inner,
   .CDB-NavSubmenu {
-    border-bottom: 1px solid $cTypo2;
+    border-bottom: 1px solid $cSecondaryText;
   }
 
   .CDB-NavMenu-Link,
   .CDB-NavSubmenu-Link {
-    color: $cTypo3;
+    color: $cAltText;
   }
 
   .CDB-NavMenu-Item.is-active {
@@ -154,7 +154,7 @@
   }
 
   .CDB-NavSubmenu-Status {
-    color: $cTypo2;
+    color: $cSecondaryText;
   }
 }
 
