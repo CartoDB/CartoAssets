@@ -55,7 +55,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(-45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
   &::after {
@@ -63,7 +63,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 

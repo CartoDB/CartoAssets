@@ -43,7 +43,7 @@
       </ul>
     </li>
     <li class="CDB-HeaderInfo-ListItem">
-      <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-iBlock">Published 8 days ago</p>
+      <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-iBlock u-altTextColor">Published 8 days ago</p>
     </li>
   </ul>
 </div>
@@ -111,7 +111,7 @@
         </a>
       </div>
     </div>
-    <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium">Positron by CartoDB</p>
+    <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-altTextColor">Positron by CartoDB</p>
   </div>
 </div>
 
@@ -144,7 +144,7 @@
 
   <div class="CDB-HeaderInfo-Inner CDB-Text">
     <div class="CDB-HeaderInfo-Title u-bSpace--m">
-      <h2 class="CDB-HeaderInfo-TitleText CDB-Size-large u-color-cMainDark">Type</h2>
+      <h2 class="CDB-Text CDB-HeaderInfo-TitleText CDB-Size-large">Type</h2>
       
       <div class="CDB-HeaderInfo-Actions">
         <a href="#">
@@ -155,8 +155,8 @@
       </div>
     </div>
 
-    <p class="CDB-HeaderInfo-Text is-uppercase CDB-FontSize-small u-bSpace--m">Histogram</p>
-    <p class="CDB-HeaderInfo-Text CDB-Size-medium">Distribution of a numeric variable in a range</p>
+    <p class="CDB-Text is-upper CDB-FontSize-small u-altTextColor u-bSpace--m">Histogram</p>
+    <p class="CDB-Text CDB-Size-medium u-altTextColor">Distribution of a numeric variable in a range</p>
   </div>
 </div>
 
@@ -186,13 +186,7 @@
     margin-right: 0;
   }
 }
-.CDB-HeaderInfo-Text {
-  color: $cTypo3;
-  
-  &.is-uppercase {
-    text-transform: uppercase;
-  }
-}
+
 .CDB-HeaderInfo-Inner {
   @include flex(1);
 }
@@ -222,7 +216,7 @@
   border: 1px solid $cMainLine;
   border-radius: 4px;
   background-color: $cWhite;
-  color: $cTypo3;
+  color: $cAltText;
   font-size: $sFontSize-small;
   line-height: 23px;
   text-align: center;

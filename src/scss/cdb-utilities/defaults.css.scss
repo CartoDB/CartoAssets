@@ -3,6 +3,10 @@
 
 @import '../cdb-variables/colors';
 
+body {
+  color: $cMainText;
+}
+
 a {
   color: $cBlue;
   text-decoration: none;
