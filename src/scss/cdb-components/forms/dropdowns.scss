@@ -38,19 +38,19 @@
       </ul>
     </div>
 
-    <div class="CDB-Dropdown-options">
+    <div class="CDB-Dropdown-options CDB-Text">
       <ul>
         <li class="CDB-Dropdown-optionsElement is-selected">
-          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">selected</span>
+          <span class="u-iBlock u-lSpace CDB-Size-medium">selected</span>
         </li>
         <li class="CDB-Dropdown-optionsElement">
-          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">active</span>
+          <span class="u-iBlock u-lSpace CDB-Size-medium">active</span>
         </li>
         <li class="CDB-Dropdown-optionsElement is-disabled">
-          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">disabled</span>
+          <span class="u-iBlock u-lSpace CDB-Size-medium">disabled</span>
         </li>
         <li class="CDB-Dropdown-optionsElement is-disabled">
-          <span class="u-iBlock u-lSpace CDB-Text CDB-Size-medium">disabled</span>
+          <span class="u-iBlock u-lSpace CDB-Size-medium">disabled</span>
         </li>
       </ul>
     </div>
@@ -59,6 +59,7 @@
 ```
 */
 
+@import '../../cdb-utilities/mixins';
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
 
@@ -67,10 +68,11 @@
   height: 250px;
 }
 .CDB-Dropdown {
+  @include display-flex();
+  @include flex-direction(row);
   height: 200px;
   position: absolute;
   top: 40px;
-  font-size: 0;
 }
 .CDB-Dropdown-calculations {
   display: inline-block;
