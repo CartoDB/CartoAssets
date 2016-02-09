@@ -7,11 +7,11 @@
 ```
 <div>
   <ul class="CDB-Carousel">
-    <li class="CDB-Carousel-item is-selected"></li>
-    <li class="CDB-Carousel-item"></li>
-    <li class="CDB-Carousel-item"></li>
-    <li class="CDB-Carousel-item"></li>
-    <li class="CDB-Carousel-item"></li>
+    <li class="CDB-CarouselItem is-selected"></li>
+    <li class="CDB-CarouselItem"></li>
+    <li class="CDB-CarouselItem"></li>
+    <li class="CDB-CarouselItem"></li>
+    <li class="CDB-CarouselItem"></li>
   </ul>
 </div>
 ```
@@ -22,11 +22,15 @@
 @import '../cdb-variables/colors';
 
 .CDB-Carousel {
+  @include display-flex();
+  @include justify-content(flex-start);
   width: 100%;
   font-size: 0;
 }
-.CDB-Carousel-item {
-  @include inline-block();
+.CDB-CarouselItem {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
   width: $baseSize * 11;
   height: $baseSize * 7;
   margin-right: 8px;
@@ -38,13 +42,11 @@
   &:last-child {
     margin-right: 0;
   }
-
   &:hover {
     border: 1px solid $cMainLine;
     cursor: pointer;
   }
 }
-.CDB-Carousel-item.is-selected {
+.CDB-CarouselItem.is-selected {
   border: 2px solid $cBlue;
 }
-
