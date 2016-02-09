@@ -22,7 +22,7 @@ Description
   position: relative;
   width: 1px;
   height: 8px;
-  background: $cMainBgColor;
+  background: $cMainBg;
 
   &::before {
     display: block;
@@ -32,7 +32,7 @@ Description
     width: 5px;
     height: 1px;
     transform: rotate(45deg);
-    background: $cMainBgColor;
+    background: $cMainBg;
     content: '';
   }
 
@@ -44,7 +44,7 @@ Description
     width: 5px;
     height: 1px;
     transform: rotate(-45deg);
-    background: $cMainBgColor;
+    background: $cMainBg;
     content: '';
   }
   &.is-up {

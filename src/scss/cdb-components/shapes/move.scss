@@ -101,7 +101,7 @@ Description
     display: inline-block;
     width: 3px;
     height: 3px;
-    background: $cMainBgColor;
+    background: $cMainBg;
     content: '';
   }
 
@@ -110,7 +110,7 @@ Description
     width: 3px;
     height: 3px;
     margin-left: 2px;
-    background: $cMainBgColor;
+    background: $cMainBg;
     content: '';
   }
 }

@@ -43,7 +43,7 @@ Description
 .CDB-Shape-hamburguerItem {
   height: $baseSize / 4;
   margin-bottom: $baseSize / 4;
-  background: $cMainBgColor;
+  background: $cMainBg;
 
   &:last-child {
     margin-bottom: 0;

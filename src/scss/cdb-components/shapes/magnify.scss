@@ -58,7 +58,7 @@ Description
     left: 0;
     width: 11px;
     height: 11px;
-    border: 1px solid $cMainBgColor;
+    border: 1px solid $cMainBg;
     border-radius: 50%;
     content: '';
   }
@@ -71,7 +71,7 @@ Description
     width: 1px;
     height: 7px;
     transform: rotate(314deg);
-    background: $cMainBgColor;
+    background: $cMainBg;
     content: '';
   }
 }

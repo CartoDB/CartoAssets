@@ -97,8 +97,8 @@
 }
 
 .CDB-NavMenu-Item.is-active .CDB-NavMenu-Link {
-  border-bottom: 1px solid $cMainBgColor;
-  color: $cMainBgColor;
+  border-bottom: 1px solid $cMainBg;
+  color: $cMainBg;
 }
 
 .CDB-NavSubmenu {
@@ -119,7 +119,7 @@
 .CDB-NavSubmenu-item.is-active {
   .CDB-NavSubmenu-Link {
     border-bottom: 1px solid $cTypo3;
-    color: $cMainBgColor;
+    color: $cMainBg;
   }
 }
 
