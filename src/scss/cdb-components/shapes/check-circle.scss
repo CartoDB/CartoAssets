@@ -60,7 +60,7 @@ Description
 .CDB-Shape-CircleItem {
   width: 14px;
   height: 14px;
-  border: 1px solid $cMainDark;
+  border: 1px solid $cMainBg;
   border-radius: 50%;
 
   &.is-small {
@@ -86,7 +86,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(-45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
   &::after {
@@ -94,7 +94,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 
