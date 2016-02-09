@@ -49,14 +49,15 @@ Description
   width: 16px;
   height: 16px;
   text-align: center;
-  &.is-medium {
-    width: 24px;
-    height: 24px;
-  }
-  &:hover {
-    cursor: pointer;
-  }
 }
+.CDB-Shape .is-medium {
+  width: 24px;
+  height: 24px;
+}
+.CDB-Shape:hover {
+  cursor: pointer;
+}
+
 
 .CDB-Shape-add {
   position: relative;
