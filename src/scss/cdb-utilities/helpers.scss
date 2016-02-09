@@ -2,6 +2,7 @@
 // ----------------------------------------------
 
 @import './mixins';
+@import '../cdb-variables/colors';
 
 /* Margins */
 .u-tSpace {
@@ -39,6 +40,23 @@
 }
 .u-lSpace--xl {
   margin-left: 12px;
+}
+
+// Colors
+// Main Text Color is default color 
+// ----------------------------------------------
+
+.u-mainTextColor {
+  color: $cMainText;
+}
+.u-secondaryTextColor {
+  color: $cSecondaryText;
+}
+.u-altTextColor {
+  color: $cAltText;
+}
+.u-hintTextColor {
+  color: $cHintText;
 }
 
 /* Displays */
