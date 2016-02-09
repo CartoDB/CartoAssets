@@ -4,8 +4,9 @@
 
 ### Installation
 As easy as:
-- ```npm install```
+- ```npm install --global gulp-cli``` [Gulp installation](https://github.com/gulpjs/gulp)
 - ```npm install -g markdown-styleguide-generator``` [StyleGenerator installation](https://www.npmjs.com/package/markdown-styleguide-generator#install)
+- ```npm install```
 
 ### Build
 If you want to use any of the CartoAssets components, after the installation just run:
