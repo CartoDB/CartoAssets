@@ -4,6 +4,7 @@
 @import './mixins';
 @import '../cdb-variables/colors';
 
+/* Margins */
 .u-tSpace {
   margin-top: 4px;
 }
@@ -25,17 +26,20 @@
 .u-rSpace--xl {
   margin-right: 12px;
 }
-.u-lSpace {
-  margin-left: 4px;
-}
-.u-lSpace--xl {
-  margin-left: 12px;
-}
 .u-bSpace {
   margin-bottom: 4px;
 }
 .u-bSpace--m {
   margin-bottom: 8px;
+}
+.u-bSpace--xl {
+  margin-bottom: 12px;
+}
+.u-lSpace {
+  margin-left: 4px;
+}
+.u-lSpace--xl {
+  margin-left: 12px;
 }
 
 // Colors
@@ -55,8 +59,7 @@
   color: $cHintText;
 }
 
-
-
+/* Displays */
 .u-iBlock {
   @include inline-block();
 }
@@ -67,6 +70,7 @@
   display: none !important;
 }
 
+/* Media queries*/
 @include media-query-mobile() {
   .u-showDesktop {
     display: none !important;
