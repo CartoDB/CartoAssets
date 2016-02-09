@@ -37,13 +37,21 @@
 .u-bSpace--m {
   margin-bottom: 8px;
 }
+
+// Colors
+// Main Text Color is default color 
+// ----------------------------------------------
+
+.u-mainTextColor {
+  color: $cMainDark;
+}
 .u-textSecondary {
   color: $cTypo2;
 }
-.u-textSubtitle {
+.u-aux1TextColor {
   color: $cTypo3;
 }
-.u-textDisabled {
+.u-aux2TextColor {
   color: $cTypo4;
 }
 
