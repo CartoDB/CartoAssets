@@ -49,7 +49,7 @@
   }
 
   &:checked + .CDB-ToggleFace {
-    background: $cMainDark;
+    background: $cMainBgColor;
 
     &::before {
       right: 2px;

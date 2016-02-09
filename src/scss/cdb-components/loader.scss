@@ -105,12 +105,12 @@ This is the generic loader for widgets, maps, components, ...
     background: $cWhite;
   }
   &.is-grey {
-    background: linear-gradient(to right, $cMainDark 10%, rgba($cWhite, 0) 42%);
+    background: linear-gradient(to right, $cMainBgColor 10%, rgba($cWhite, 0) 42%);
     &::before {
       background: $cTypo2;
     }
     &::after {
-      background: $cMainDark;
+      background: $cMainBgColor;
     }
   }
 }

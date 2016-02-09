@@ -95,7 +95,7 @@ Description
   width: 9px;
   height: 9px;
   margin-left: -10px;
-  border: 1px solid $cMainDark;
+  border: 1px solid $cMainBgColor;
   border-radius: 50%;
   background: $cWhite;
 
@@ -132,15 +132,15 @@ Description
 .CDB-Shape-Dataset.is-white {
   .CDB-Shape-DatasetItem {
     border: 1px solid $cHoverLine;
-    background: $cMainDark;
+    background: $cMainBgColor;
     &:first-child {
-      box-shadow: 3px 0 $cMainDark;
+      box-shadow: 3px 0 $cMainBgColor;
     }
   }
 }
 
 .CDB-Shape-Dataset.is-white.is-small {
   .CDB-Shape-DatasetItem:first-child {
-    box-shadow: 2px 0 $cMainDark;
+    box-shadow: 2px 0 $cMainBgColor;
   }
 }

@@ -97,7 +97,7 @@ Description
     width: 10px;
     height: 1px;
     transform: rotate(-45deg);
-    background: $cMainDark;
+    background: $cMainBgColor;
     content: '';
   }
   &::after {
@@ -108,7 +108,7 @@ Description
     width: 10px;
     height: 1px;
     transform: rotate(45deg);
-    background: $cMainDark;
+    background: $cMainBgColor;
     content: '';
   }
 }

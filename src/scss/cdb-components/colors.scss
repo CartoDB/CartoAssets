@@ -18,9 +18,9 @@
 @import '../cdb-variables/colors';
 
 .box {
+  display: inline-block;
   width: 120px;
   height: 64px;
-  display: inline-block;
   margin: 0 24px 24px 0;
 }
 
@@ -28,15 +28,15 @@
   background: $cBlue;
 }
 .Color-White {
+  border: 1px solid #E5E5E5;
   background: $cWhite;
-  border: 1px solid #e5e5e5;
 }
 .Color-Dark {
   background: $cBlack;
 }
 
 .Color-MainDark {
-  background: $cMainDark;
+  background: $cMainBgColor;
 }
 .Color-SecondaryDark {
   background: $cSecondaryDark;

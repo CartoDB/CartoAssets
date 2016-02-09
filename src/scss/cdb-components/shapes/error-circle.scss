@@ -60,7 +60,7 @@ Description
 .CDB-Shape-CircleItem {
   width: 13px;
   height: 13px;
-  border: 1px solid $cMainDark;
+  border: 1px solid $cMainBgColor;
   border-radius: 50%;
 
   &.is-small {
