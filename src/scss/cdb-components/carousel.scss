@@ -25,7 +25,6 @@
   @include display-flex();
   @include justify-content(flex-start);
   width: 100%;
-  font-size: 0;
 }
 .CDB-CarouselItem {
   @include display-flex();
