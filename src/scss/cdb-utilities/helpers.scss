@@ -79,6 +79,11 @@
   display: none !important;
 }
 
+/* Decoration */
+.u-upperCase {
+  text-transform: uppercase;
+}
+
 /* Media queries*/
 @include media-query-mobile() {
   .u-showDesktop {
