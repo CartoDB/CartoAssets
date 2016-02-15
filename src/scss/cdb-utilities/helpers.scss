@@ -42,6 +42,12 @@
   margin-left: 12px;
 }
 
+.u-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 // Colors
 // Main Text Color is default color 
 // ----------------------------------------------
