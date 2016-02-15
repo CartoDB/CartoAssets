@@ -9,7 +9,7 @@
 <p class="CDB-Text CDB-Size-huge is-light">Open Sans 26/34 Light</p>
 <p class="CDB-Text CDB-Size-large">Open Sans 16/22 Regular</p>
 <p class="CDB-Text is-semibold CDB-Size-medium">Open Sans 12/16 Semibold</p>
-<p class="CDB-Text is-semibold is-upper CDB-Size-medium">Open Sans 12/16 Semibold Uppercase</p>
+<p class="CDB-Text is-semibold u-upperCase CDB-Size-medium">Open Sans 12/16 Semibold Uppercase</p>
 <p class="CDB-Text CDB-Size-medium u-secondaryTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text CDB-Size-medium u-altTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text CDB-Size-medium u-hintTextColor">Open Sans 12/16 Regular</p>
@@ -29,9 +29,6 @@
   }
   &.is-light {
     font-weight: $sFontWeight-lighter;
-  }
-  &.is-upper {
-    text-transform: uppercase;
   }
 }
 
