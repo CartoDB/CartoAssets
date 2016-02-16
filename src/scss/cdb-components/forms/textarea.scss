@@ -1,0 +1,42 @@
+// Textarea styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Textareas
+
+```
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea has-error CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea is-disabled CDB-Text" disabled></textarea>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-Textarea {
+  width: 100%;
+  padding: 7px 8px 6px;
+  border: 1px solid $cMainLine;
+  border-radius: $baseSize / 2;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+    outline-color: transparent;
+    outline-style: none;
+  }
+  &:disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+  }
+}
+.CDB-Textarea.has-error {
+  border: 1px solid rgba($cError, 0.48);
+  background: rgba($cError, 0.04);
+  color: $cError;
+  }

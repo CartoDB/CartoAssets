@@ -49,10 +49,15 @@ Description
   width: 16px;
   height: 16px;
   text-align: center;
-  &:hover {
-    cursor: pointer;
-  }
 }
+.CDB-Shape--medium {
+  width: 24px;
+  height: 24px;
+}
+.CDB-Shape:hover {
+  cursor: pointer;
+}
+
 
 .CDB-Shape-add {
   position: relative;
@@ -65,7 +70,7 @@ Description
     bottom: 7px;
     left: 0;
     height: 1px;
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 
@@ -76,7 +81,7 @@ Description
     bottom: 0;
     left: 7px;
     width: 1px;
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 }
@@ -90,7 +95,7 @@ Description
     bottom: 7px;
     left: 4px;
     height: 1px;
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 
@@ -101,7 +106,7 @@ Description
     bottom: 3px;
     left: 8px;
     width: 1px;
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 }

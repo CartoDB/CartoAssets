@@ -60,18 +60,24 @@ Description
 .CDB-Shape-CircleItem {
   width: 13px;
   height: 13px;
-  border: 1px solid $cMainDark;
+  border: 1px solid $cMainBg;
   border-radius: 50%;
 
   &.is-small {
     width: 9px;
     height: 9px;
-    margin: 2px auto;
+    margin: 0 auto;
   }
   &.is-blue {
     border: 1px solid $cBlue;
   }
   &.is-white {
     border: 1px solid $cWhite;
+  }
+  &.is-green {
+    border: 1px solid $cHighlight;
+  }
+  &.is-red {
+    border: 1px solid $cError;
   }
 }

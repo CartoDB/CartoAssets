@@ -55,7 +55,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(-45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
   &::after {
@@ -63,7 +63,7 @@ Description
     position: absolute;
     width: 1px;
     transform: rotate(45deg);
-    background: $cMainDark;
+    background: $cMainBg;
     content: '';
   }
 
@@ -137,3 +137,13 @@ Description
     background: $cWhite;
   }
 }
+
+.CDB-Shape-close.is-red {
+  &::before {
+    background: $cError;
+  }
+  &::after {
+    background: $cError;
+  }
+}
+
