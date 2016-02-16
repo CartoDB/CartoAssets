@@ -2,14 +2,14 @@
 // ----------------------------------------------
 
 /* SG
-# Forms/Color input
+# Forms/Option input
 
 ```
 <fieldset>
-  <p class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">COLOR</p>
+  <label class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">OPTION</label>
   <div class="u-iBlock">
-    <div class="CDB-ColorInput">
-      <span class="CDB-ColorInput-colorBar Color-Higlight"></span>
+    <div class="CDB-OptionInput">
+      <span class="CDB-ColorBar CDB-ColorBar--mBorderRadius" style="background-color: #9DE0AD;"></span>
     </div>
   </div>
 </fieldset>
@@ -20,7 +20,7 @@
 @import '../../cdb-variables/colors';
 @import '../../cdb-utilities/mixins';
 
-.CDB-ColorInput {
+.CDB-OptionInput {
   @include display-flex();
   @include align-items(center);
   width: $baseSize * 20;
@@ -38,11 +38,6 @@
     border: 1px solid $cBlue;
   }
 }
-
-.CDB-ColorInput-colorBar {
-  @include inline-block();
-  width: 100%;
-  height: $baseSize / 2;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: $baseSize;
+.CDB-OptionInput.is-active {
+  border: 1px solid $cBlue;
 }

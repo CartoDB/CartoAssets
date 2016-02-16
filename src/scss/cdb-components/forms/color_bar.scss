@@ -1,0 +1,67 @@
+// Color input styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Color bar
+
+```
+<span class="CDB-ColorBar CDB-ColorBar--mBorderRadius u-rSpace u-iBlock u-bSpace--xl" style="background-color: #9DE0AD;"></span>
+<span class="CDB-ColorBar CDB-ColorBar--mBorderRadius u-rSpace u-iBlock u-bSpace--xl" style="background-color: #50E3C2;"></span>
+<span class="CDB-ColorBar CDB-ColorBar--mBorderRadius u-rSpace u-iBlock u-bSpace--xl" style="background-color: #FFFFC0;"></span>
+
+<div class="CDB-ColorBarContainer u-bSpace--xl">
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--msBorderRadius u-rSpace--s" style="background-color: #9DE0AD;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--sBorderRadius u-rSpace--s" style="background-color: #50E3C2;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--sBorderRadius u-rSpace--s" style="background-color: #FFFFC0;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--sBorderRadius u-rSpace--s" style="background-color: #7ED321;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--sBorderRadius u-rSpace--s" style="background-color: #BD10E0;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--med CDB-ColorBar--smBorderRadius u-rSpace--s" style="background-color: #F15743;"></span>
+</div>
+
+<div class="CDB-ColorBarContainer u-bSpace--xl">
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #9DE0AD;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #50E3C2;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #FFFFC0;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #7ED321;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #BD10E0;"></span>
+  <span class="CDB-ColorBar CDB-ColorBar--small CDB-ColorBar--mBorderRadius u-rSpace" style="background-color: #F15743;"></span>
+</div>
+ ```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+.CDB-ColorBarContainer {
+  @include display-flex();
+  @include flex-direction(row);
+}
+.CDB-ColorBar {
+  width: 100%;
+  height: $baseSize / 2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.CDB-ColorBar.CDB-ColorBar--small {
+  width: $baseSize * 2;
+}
+.CDB-ColorBar.CDB-ColorBar--med {
+  width: 29px;
+}
+.CDB-ColorBar.CDB-ColorBar--sBorderRadius {
+  border-radius: 2px;
+}
+.CDB-ColorBar.CDB-ColorBar--mBorderRadius {
+  border-radius: 6px;
+}
+.CDB-ColorBar.CDB-ColorBar--msBorderRadius {
+  border-radius: 6px 2px 2px 6px;
+}
+.CDB-ColorBar.CDB-ColorBar--smBorderRadius {
+  border-radius: 2px 6px 6px 2px;
+}
+
