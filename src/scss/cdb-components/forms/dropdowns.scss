@@ -76,6 +76,7 @@
 }
 .CDB-Dropdown-calculationsElement {
   margin-bottom: $sLineHeight-medium;
+  color: $cMainDark;
   font-size: $sFontSize-small;
 
   &:last-child {
@@ -103,7 +104,7 @@
   }
 }
 .CDB-Dropdown-optionsElement.is-selected {
-  color: $cBlack;
+  color: $cMainDark;
 }
 .CDB-Dropdown-optionsElement.is-disabled {
   color: $cTypo4;
@@ -112,14 +113,4 @@
     background-color: transparent;
     cursor: default;
   }
-}
-background-color: rgba(157, 224, 173, 0.2);
-    cursor: pointer;
-  }
-}
-.CDB-Dropdown-optionsElement.is-selected {
-  color: $cBlack;
-}
-.CDB-Dropdown-optionsElement.is-disabled {
-  color: $cTypo4;
 }
