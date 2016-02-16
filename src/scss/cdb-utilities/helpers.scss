@@ -2,7 +2,9 @@
 // ----------------------------------------------
 
 @import './mixins';
+@import '../cdb-variables/colors';
 
+/* Margins */
 .u-tSpace {
   margin-top: 4px;
 }
@@ -24,19 +26,49 @@
 .u-rSpace--xl {
   margin-right: 12px;
 }
-.u-lSpace {
-  margin-left: 4px;
-}
-.u-lSpace--xl {
-  margin-left: 12px;
-}
 .u-bSpace {
   margin-bottom: 4px;
 }
 .u-bSpace--m {
   margin-bottom: 8px;
 }
+.u-bSpace--xl {
+  margin-bottom: 12px;
+}
+.u-lSpace {
+  margin-left: 4px;
+}
+.u-lSpace--xl {
+  margin-left: 12px;
+}
 
+.u-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// Colors
+// Main Text Color is default color 
+// ----------------------------------------------
+
+.u-actionTextColor {
+  color: $cBlue;
+}
+.u-mainTextColor {
+  color: $cMainText;
+}
+.u-secondaryTextColor {
+  color: $cSecondaryText;
+}
+.u-altTextColor {
+  color: $cAltText;
+}
+.u-hintTextColor {
+  color: $cHintText;
+}
+
+/* Displays */
 .u-iBlock {
   @include inline-block();
 }
@@ -47,6 +79,12 @@
   display: none !important;
 }
 
+/* Decoration */
+.u-upperCase {
+  text-transform: uppercase;
+}
+
+/* Media queries*/
 @include media-query-mobile() {
   .u-showDesktop {
     display: none !important;

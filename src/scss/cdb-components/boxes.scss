@@ -140,9 +140,9 @@
 .CDB-BoxLoader-item {
   @include display-flex();
   padding: $baseSize 0;
-  color: $cTypo2;
+  color: $cSecondaryText;
   &.is-working {
-    color: $cTypo3;
+    color: $cAltText;
   }
 }
 
