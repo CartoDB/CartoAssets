@@ -72,7 +72,7 @@
 }
 .CDB-Dropdown-calculationsElement {
   margin-bottom: $sLineHeight-medium;
-  color: $cMainDark;
+  color: $cMainBg;
   font-size: $sFontSize-small;
 
   &:last-child {
@@ -100,10 +100,10 @@
   }
 }
 .CDB-Dropdown-optionsElement.is-selected {
-  color: $cMainDark;
+  color: $cMainBg;
 }
 .CDB-Dropdown-optionsElement.is-disabled {
-  color: $cTypo4;
+  color: $cHintText;
 
   &:hover {
     background-color: transparent;
