@@ -14,7 +14,7 @@
     <li class="CDB-NavMenu-Item">
       <button class="CDB-NavMenu-Link">STYLE</button>
     </li>
-    <li class="CDB-NavMenu-Item">
+    <li class="CDB-NavMenu-Item is-selected">
       <button class="CDB-NavMenu-Link">POP-UP</button>
       <ul class="CDB-NavSubmenu CDB-Size-small">
         <li class="CDB-NavSubmenu-Item is-selected">
@@ -87,6 +87,7 @@
   margin-bottom: -1px;
   padding: 4px 0 11px;
   border-bottom: 1px solid transparent;
+  color: $cBlue;
 }
 
 .CDB-NavMenu-Item,
@@ -97,7 +98,7 @@
 }
 
 .CDB-NavMenu-Item.is-selected .CDB-NavMenu-Link {
-  border-bottom: 1px solid $cMainLine;
+  border-bottom: 1px solid $cBlack;
   color: $cMainText;
 }
 
@@ -114,6 +115,7 @@
   margin-bottom: -1px;
   padding-bottom: 12px;
   border-bottom: 1px solid transparent;
+  color: $cBlue;
 }
 
 .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-Link {
