@@ -13,7 +13,7 @@
   <div class="CDB-OptionInput-element CDB-Text">
     <span class="CDB-OptionInput--text">solid</span>
   </div>
-  
+
   <ul class="CDB-ColorBarContainer CDB-Text CDB-Size-medium">
     <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
   </ul>
@@ -81,14 +81,14 @@
   box-sizing: content-box;
 
   &::after {
-    color: $cHintText;
     padding: 9px;
-    content: "·";
+    color: $cHintText;
+    content: '·';
   }
   &:last-child {
     &::after {
       padding: 0;
-      content: "";
+      content: '';
     }
   }
 }
