@@ -81,14 +81,14 @@
   box-sizing: content-box;
 
   &::after {
-    content: "·";
     color: $cHintText;
     padding: 9px;
+    content: "·";
   }
   &:last-child {
     &::after {
-      content: "";
       padding: 0;
+      content: "";
     }
   }
 }
