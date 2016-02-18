@@ -5,40 +5,40 @@
 # Forms/Color bar
 
 ```
-<div class="CDB-ColorBarContainer u-bSpace--xl">
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></span>
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></span>
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></span>
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></span>
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></span>
-  <span class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></span>
-</div>
+<ul class="CDB-ColorBarContainer u-bSpace--xl">
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+</ul>
 
-<div class="CDB-ColorBarContainer u-bSpace--xl">
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #9DE0AD;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #50E3C2;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #FFFFC0;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #7ED321;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #BD10E0;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #F15743;"></span>
-</div>
+<ul class="CDB-ColorBarContainer u-bSpace--xl">
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--uBorder u-rSpace--s" style="background-color: #F15743;"></li>
+</ul>
 
-<div class="CDB-ColorBarContainer u-bSpace--xl">
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #BD10E0;"></span>
-  <span class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #F15743;"></span>
-</div>
+<ul class="CDB-ColorBarContainer u-bSpace--xl">
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #F15743;"></li>
+</ul>
 
-<div class="CDB-ColorBarContainer u-bSpace--xl">
-  <span class="CDB-ColorBar" style="background-color: #9DE0AD;"></span>
-</div>
+<ul class="CDB-ColorBarContainer u-bSpace--xl">
+  <li class="CDB-ColorBar" style="background-color: #9DE0AD;"></li>
+</ul>
 
-<div class="CDB-ColorBarContainer u-bSpace--xl">
-  <span class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></span>
-</div>
+<ul class="CDB-ColorBarContainer u-bSpace--xl">
+  <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
+</ul>
  ```
 */
 
@@ -47,6 +47,7 @@
 .CDB-ColorBarContainer {
   @include display-flex();
   @include flex-direction(row);
+  width: 100%;
   max-width: 215px;
 }
 .CDB-ColorBar {

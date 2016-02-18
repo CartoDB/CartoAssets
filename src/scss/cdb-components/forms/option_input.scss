@@ -5,15 +5,46 @@
 # Forms/Option input
 
 ```
-<fieldset>
-  <label class="CDB-Legend u-iBlock CDB-Text is-semibold CDB-Size-small u-rSpace--m">OPTION</label>
-  <div class="u-iBlock">
-    <div class="CDB-OptionInput">
-      <span class="CDB-ColorBar" style="background-color: #207EBA;"></span>
-    </div>
+<div class="CDB-OptionInput is-active u-bSpace--xl">
+  <div class="CDB-OptionInput-element CDB-Text">
+    <span class="CDB-OptionInput--text is-active">8px</span>
   </div>
-</fieldset>
- ```
+
+  <div class="CDB-OptionInput-element CDB-Text">
+    <span class="CDB-OptionInput--text">solid</span>
+  </div>
+  
+  <ul class="CDB-ColorBarContainer CDB-Text CDB-Size-medium">
+    <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
+  </ul>
+</div>
+
+<div class="CDB-OptionInput u-bSpace--xl">
+  <ul class="CDB-ColorBarContainer">
+    <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
+  </ul>
+</div>
+
+<div class="CDB-OptionInput u-bSpace--xl">
+  <ul class="CDB-ColorBarContainer">
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
+    <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+  </ul>
+</div>
+
+<div class="CDB-OptionInput u-bSpace--xl">
+  <ul class="CDB-ColorBarContainer">
+    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
+    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
+    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
+    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+  </ul>
+</div>
+```
 */
 
 @import '../../cdb-variables/sizes';
@@ -23,6 +54,7 @@
 .CDB-OptionInput {
   @include display-flex();
   @include align-items(center);
+  @include align-content(center);
   width: $baseSize * 20;
   height: $baseSize * 4;
   padding: $baseSize;
@@ -40,4 +72,29 @@
 }
 .CDB-OptionInput.is-active {
   border: 1px solid $cBlue;
+}
+.CDB-OptionInput-element {
+  @include display-flex();
+  @include align-content(center);
+  color: $cMainBg;
+  font-size: $sFontSize-medium;
+  box-sizing: content-box;
+
+  &::after {
+    content: "·";
+    color: $cHintText;
+    padding: 9px;
+  }
+  &:last-child {
+    &::after {
+      content: "";
+      padding: 0;
+    }
+  }
+}
+.CDB-OptionInput--text {
+  padding: 9px 0;
+}
+.CDB-OptionInput--text.is-active {
+  border-bottom: 1px solid $cMainBg;
 }
