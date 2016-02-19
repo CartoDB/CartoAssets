@@ -5,43 +5,59 @@
 # Forms/Option input
 
 ```
-<div class="CDB-OptionInput is-active u-bSpace--xl">
-  <div class="CDB-OptionInput-element CDB-Text">
-    <span class="CDB-OptionInput--text is-active">8px</span>
-  </div>
+<div class="CDB-OptionInput is-active u-bSpace--xl CDB-Text">
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-option is-active">
+      <span class="CDB-OptionInput-optionContent">8px</span>
+    </li>
 
-  <div class="CDB-OptionInput-element CDB-Text">
-    <span class="CDB-OptionInput--text">solid</span>
-  </div>
-
-  <ul class="CDB-ColorBarContainer CDB-Text CDB-Size-medium">
-    <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
+    <li class="CDB-OptionInput-option">
+      <span class="CDB-OptionInput-optionContent">solid</span>
+    </li>
+    
+    <li class="CDB-OptionInput-option">
+      <ul class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+        <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
 <div class="CDB-OptionInput u-bSpace--xl">
-  <ul class="CDB-ColorBarContainer">
-    <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-option">
+      <ul class="CDB-ColorBarContainer">
+        <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
 <div class="CDB-OptionInput u-bSpace--xl">
-  <ul class="CDB-ColorBarContainer">
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
-    <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-option">
+      <ul class="CDB-ColorBarContainer">
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
+        <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
 <div class="CDB-OptionInput u-bSpace--xl">
-  <ul class="CDB-ColorBarContainer">
-    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
-    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
-    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
-    <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-option">
+      <ul class="CDB-ColorBarContainer">
+        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
+        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
+        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
+        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+      </ul>
+    </li>
   </ul>
 </div>
 ```
@@ -53,11 +69,9 @@
 
 .CDB-OptionInput {
   @include display-flex();
-  @include align-items(center);
   @include align-content(center);
   width: $baseSize * 20;
   height: $baseSize * 4;
-  padding: $baseSize;
   border: 1px solid $cMainLine;
   border-radius: $baseSize / 2;
   box-sizing: border-box;
@@ -73,8 +87,15 @@
 .CDB-OptionInput.is-active {
   border: 1px solid $cBlue;
 }
-.CDB-OptionInput-element {
+.CDB-OptionInput-container {
   @include display-flex();
+  @include align-items(center);
+  @include align-content(center);
+  margin: 0 $baseSize;
+}
+.CDB-OptionInput-option {
+  @include display-flex();
+  @include align-items(center);
   @include align-content(center);
   color: $cMainBg;
   font-size: $sFontSize-medium;
@@ -92,9 +113,7 @@
     }
   }
 }
-.CDB-OptionInput--text {
+.CDB-OptionInput-option.is-active > .CDB-OptionInput-optionContent {
   padding: 9px 0;
-}
-.CDB-OptionInput--text.is-active {
   border-bottom: 1px solid $cMainBg;
 }
