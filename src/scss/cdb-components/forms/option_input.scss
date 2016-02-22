@@ -14,7 +14,7 @@
     <li class="CDB-OptionInput-option">
       <span class="CDB-OptionInput-optionContent">solid</span>
     </li>
-    
+
     <li class="CDB-OptionInput-option">
       <ul class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
         <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
@@ -68,8 +68,6 @@
 @import '../../cdb-utilities/mixins';
 
 .CDB-OptionInput {
-  @include display-flex();
-  @include align-content(center);
   width: $baseSize * 20;
   height: $baseSize * 4;
   border: 1px solid $cMainLine;
@@ -89,14 +87,16 @@
 }
 .CDB-OptionInput-container {
   @include display-flex();
-  @include align-items(center);
   @include align-content(center);
+  @include align-items(center);
   margin: 0 $baseSize;
 }
 .CDB-OptionInput-option {
   @include display-flex();
   @include align-items(center);
   @include align-content(center);
+  width: 100%;
+  height: 100%;
   color: $cMainBg;
   font-size: $sFontSize-medium;
   box-sizing: content-box;
