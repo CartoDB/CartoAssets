@@ -10150,6 +10150,7 @@ return jQuery;
                     <li><a href="#Forms-Radio">Radio</a></li>
                     <li><a href="#Forms-Selects">Selects</a></li>
                     <li><a href="#Forms-Sliders">Sliders</a></li>
+                    <li><a href="#Forms-Textareas">Textareas</a></li>
                     <li><a href="#Forms-Toggle">Toggle</a></li>
                 </ul>
 		</li>
@@ -10170,7 +10171,11 @@ return jQuery;
                 </ul>
 		</li>
 		<li>
-                <a class="sectionlink" href="#Menu" data-section="Menu">Menu</a>
+                <a class="submenulink" href="#Menu" data-section="Menu">Menu</a>
+                <ul class="submenu" data-submenu="Menu">
+                    <li><a href="#Menu-Editor">Editor</a></li>
+                    <li><a href="#Menu-Navigation">Navigation</a></li>
+                </ul>
 		</li>
 		<li>
                 <a class="submenulink" href="#Shapes" data-section="Shapes">Shapes</a>
@@ -12033,6 +12038,28 @@ hsla(120, 100%, 50%, 1);</pre></div>
                 </div>
 
 		</div>
+		<div class="section" id="Forms-Textareas" data-section="Forms" data-heading="Textareas">
+
+            <div class="comment">
+                <h1>Forms/Textareas</h1>
+                
+            </div>
+
+                <div class="result">
+                    <textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea has-error CDB-Text"></textarea>
+<textarea name="textarea" placeholder="DejaVu Sans" class="CDB-Textarea is-disabled CDB-Text" disabled></textarea>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+&lt;textarea <span class="hljs-property">name</span>=<span class="hljs-string">"textarea"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-type">class</span>=<span class="hljs-string">"CDB-Textarea CDB-Text"</span>&gt;&lt;/textarea&gt;
+&lt;textarea <span class="hljs-property">name</span>=<span class="hljs-string">"textarea"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-type">class</span>=<span class="hljs-string">"CDB-Textarea has-error CDB-Text"</span>&gt;&lt;/textarea&gt;
+&lt;textarea <span class="hljs-property">name</span>=<span class="hljs-string">"textarea"</span> placeholder=<span class="hljs-string">"DejaVu Sans"</span> <span class="hljs-type">class</span>=<span class="hljs-string">"CDB-Textarea is-disabled CDB-Text"</span> disabled&gt;&lt;/textarea&gt;
+</pre>
+                </div>
+
+		</div>
 		<div class="section" id="Forms-Toggle" data-section="Forms" data-heading="Toggle">
 
             <div class="comment">
@@ -12219,7 +12246,7 @@ hsla(120, 100%, 50%, 1);</pre></div>
       </div>
     </div>
 
-    <p class="CDB-Text is-upper CDB-FontSize-small u-altTextColor u-bSpace--m">Histogram</p>
+    <p class="CDB-Text u-upperCase CDB-FontSize-small u-altTextColor u-bSpace--m">Histogram</p>
     <p class="CDB-Text CDB-Size-medium u-altTextColor">Distribution of a numeric variable in a range</p>
   </div>
 </div>
@@ -12381,7 +12408,7 @@ hsla(120, 100%, 50%, 1);</pre></div>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-upper CDB-FontSize-small u-altTextColor u-bSpace--m"</span>&gt;</span>Histogram<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text u-upperCase CDB-FontSize-small u-altTextColor u-bSpace--m"</span>&gt;</span>Histogram<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-medium u-altTextColor"</span>&gt;</span>Distribution of a numeric variable in a range<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -12467,10 +12494,90 @@ hsla(120, 100%, 50%, 1);</pre></div>
                 </div>
 
 		</div>
-		<div class="section" id="Menu-" data-section="Menu" data-heading="">
+		<div class="section" id="Menu-Editor" data-section="Menu" data-heading="Editor">
 
             <div class="comment">
-                <h1>Menu</h1>
+                <h1>Menu/Editor</h1>
+                
+            </div>
+
+                <div class="result">
+                    <div class="CDB-MenuEditor">
+  <div class="CDB-MenuEditor-logo">
+    <i class="CDB-IconFont CDB-IconFont-cartoFante u-actionTextColor"></i>
+  </div>
+  <nav>
+    <ul class="CDB-MenuEditor-navigation">
+      <li class="CDB-MenuEditor-navigationItem is-selected">
+        <a href="#" class="CDB-MenuEditor-navigationLink">
+          <i class="CDB-IconFont CDB-IconFont-edition CDB-MenuEditor-navigationIcon"></i>
+        </a>
+      </li>
+      <li class="CDB-MenuEditor-navigationItem">
+        <a href="#" class="CDB-MenuEditor-navigationLink">
+          <i class="CDB-IconFont CDB-IconFont-view CDB-MenuEditor-navigationIcon"></i>
+        </a>
+      </li>
+      <li class="CDB-MenuEditor-navigationItem">
+        <a href="#" class="CDB-MenuEditor-navigationLink">
+          <i class="CDB-IconFont CDB-IconFont-odyssey CDB-MenuEditor-navigationIcon"></i>
+        </a>
+      </li>
+      <li class="CDB-MenuEditor-navigationItem">
+        <a href="#" class="CDB-MenuEditor-navigationLink">
+          <i class="CDB-IconFont CDB-IconFont-settings CDB-MenuEditor-navigationIcon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a href="http://piensaenpixel.cartodb.com" class="CDB-MenuEditor-avatar">
+    <img src="https://s3.amazonaws.com/com.cartodb.users-assets.production/production/piensaenpixel/assets/20150507074635Captura%20de%20pantalla%202015-05-07%20a%20la%28s%29%2009.46.28.png" class="CDB-MenuEditor-avatarImage">
+  </a>
+</div>
+                </div>
+
+                <div class="markup hljs">
+<pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-IconFont CDB-IconFont-cartoFante u-actionTextColor"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationItem is-selected"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationLink"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-IconFont CDB-IconFont-edition CDB-MenuEditor-navigationIcon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationItem"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationLink"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-IconFont CDB-IconFont-view CDB-MenuEditor-navigationIcon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationItem"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationLink"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-IconFont CDB-IconFont-odyssey CDB-MenuEditor-navigationIcon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationItem"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-navigationLink"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-IconFont CDB-IconFont-settings CDB-MenuEditor-navigationIcon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://piensaenpixel.cartodb.com"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-avatar"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://s3.amazonaws.com/com.cartodb.users-assets.production/production/piensaenpixel/assets/20150507074635Captura%20de%20pantalla%202015-05-07%20a%20la%28s%29%2009.46.28.png"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-MenuEditor-avatarImage"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</pre>
+                </div>
+
+		</div>
+		<div class="section" id="Menu-Navigation" data-section="Menu" data-heading="Navigation">
+
+            <div class="comment">
+                <h1>Menu/Navigation</h1>
                 
             </div>
 
@@ -12478,24 +12585,24 @@ hsla(120, 100%, 50%, 1);</pre></div>
                     <nav class="CDB-NavMenu">
   <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
     <li class="CDB-NavMenu-Item">
-      <a class="CDB-NavMenu-Link" href="#">DATA</a>
+      <button class="CDB-NavMenu-Link">DATA</button>
     </li>
     <li class="CDB-NavMenu-Item">
-      <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+      <button class="CDB-NavMenu-Link">STYLE</button>
     </li>
-    <li class="CDB-NavMenu-Item">
-      <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+    <li class="CDB-NavMenu-Item is-selected">
+      <button class="CDB-NavMenu-Link">POP-UP</button>
       <ul class="CDB-NavSubmenu CDB-Size-small">
-        <li class="CDB-NavSubmenu-Item is-active">
-          <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></a>
+        <li class="CDB-NavSubmenu-Item is-selected">
+          <button class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></button>
         </li>
         <li class="CDB-NavSubmenu-Item">
-          <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></a>
+          <button class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></button>
         </li>
       </ul>
     </li>
     <li class="CDB-NavMenu-Item">
-      <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+      <button class="CDB-NavMenu-Link">LEGEND</button>
     </li>
   </ul>
   <div style="position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;">
@@ -12510,24 +12617,24 @@ hsla(120, 100%, 50%, 1);</pre></div>
   <nav class="CDB-NavMenu is-dark">
     <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
       <li class="CDB-NavMenu-Item CDB-Text">
-        <a class="CDB-NavMenu-Link" href="#">DATA</a>
+        <button class="CDB-NavMenu-Link">DATA</button>
       </li>
       <li class="CDB-NavMenu-Item">
-        <a class="CDB-NavMenu-Link" href="#">STYLE</a>
+        <button class="CDB-NavMenu-Link">STYLE</button>
       </li>
-      <li class="CDB-NavMenu-item is-active">
-        <a class="CDB-NavMenu-Link" href="#">POP-UP</a>
+      <li class="CDB-NavMenu-item is-selected">
+        <button class="CDB-NavMenu-Link">POP-UP</button>
         <ul class="CDB-NavSubmenu CDB-Size-small">
-          <li class="CDB-NavSubmenu-Item is-active">
-            <a href="#" class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></a>
+          <li class="CDB-NavSubmenu-Item is-selected">
+            <button class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></button>
           </li>
           <li class="CDB-NavSubmenu-Item">
-            <a href="#" class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></a>
+            <button class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></button>
           </li>
         </ul>
       </li>
       <li class="CDB-NavMenu-Item">
-        <a class="CDB-NavMenu-Link" href="#">LEGEND</a>
+        <button class="CDB-NavMenu-Link">LEGEND</button>
       </li>
     </ul>
   </nav>
@@ -12542,24 +12649,24 @@ hsla(120, 100%, 50%, 1);</pre></div>
 <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item is-selected"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu CDB-Size-small"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-active"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status u-hintTextColor"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-selected"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status u-hintTextColor"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status u-hintTextColor"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status u-hintTextColor"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;"</span>&gt;</span>
@@ -12574,24 +12681,24 @@ hsla(120, 100%, 50%, 1);</pre></div>
   <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu is-dark"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item CDB-Text"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>DATA<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>STYLE<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-item is-active"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-item is-selected"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>POP-UP<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu CDB-Size-small"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-active"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item is-selected"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>CLICK <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Link"</span>&gt;</span>HOVER <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavSubmenu-Status"</span>&gt;</span>NONE<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Item"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-NavMenu-Link"</span>&gt;</span>LEGEND<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
@@ -14017,7 +14124,7 @@ hsla(120, 100%, 50%, 1);</pre></div>
 <p class="CDB-Text CDB-Size-huge is-light">Open Sans 26/34 Light</p>
 <p class="CDB-Text CDB-Size-large">Open Sans 16/22 Regular</p>
 <p class="CDB-Text is-semibold CDB-Size-medium">Open Sans 12/16 Semibold</p>
-<p class="CDB-Text is-semibold is-upper CDB-Size-medium">Open Sans 12/16 Semibold Uppercase</p>
+<p class="CDB-Text is-semibold u-upperCase CDB-Size-medium">Open Sans 12/16 Semibold Uppercase</p>
 <p class="CDB-Text CDB-Size-medium u-secondaryTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text CDB-Size-medium u-altTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text CDB-Size-medium u-hintTextColor">Open Sans 12/16 Regular</p>
@@ -14031,7 +14138,7 @@ hsla(120, 100%, 50%, 1);</pre></div>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-huge is-light"</span>&gt;</span>Open Sans 26/34 Light<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-large"</span>&gt;</span>Open Sans 16/22 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-semibold CDB-Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-semibold is-upper CDB-Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold Uppercase<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text is-semibold u-upperCase CDB-Size-medium"</span>&gt;</span>Open Sans 12/16 Semibold Uppercase<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-medium u-secondaryTextColor"</span>&gt;</span>Open Sans 12/16 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-medium u-altTextColor"</span>&gt;</span>Open Sans 12/16 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"CDB-Text CDB-Size-medium u-hintTextColor"</span>&gt;</span>Open Sans 12/16 Regular<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -14124,6 +14231,30 @@ hsla(120, 100%, 50%, 1);</pre></div>
   <div class="box">
     <i class="CDB-IconFont CDB-IconFont-drop Size-large"></i>
     <h4 class="Text Size-small">drop</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-edition Size-large"></i>
+    <h4 class="Text Size-small">edition</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-view Size-large"></i>
+    <h4 class="Text Size-small">view</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-odyssey Size-large"></i>
+    <h4 class="Text Size-small">odyssey</h4>
+  </div>
+
+
+  <div class="box">
+    <i class="CDB-IconFont CDB-IconFont-settings Size-large"></i>
+    <h4 class="Text Size-small">settings</h4>
   </div>
 
 
@@ -14732,6 +14863,30 @@ hsla(120, 100%, 50%, 1);</pre></div>
   &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
     &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-drop Size-large"</span>&gt;&lt;/i&gt;
     &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;drop&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-edition Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;edition&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-view Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;view&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-odyssey Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;odyssey&lt;/h4&gt;
+  &lt;/div&gt;
+
+
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"box"</span>&gt;
+    &lt;i <span class="hljs-keyword">class</span>=<span class="hljs-string">"CDB-IconFont CDB-IconFont-settings Size-large"</span>&gt;&lt;/i&gt;
+    &lt;h4 <span class="hljs-keyword">class</span>=<span class="hljs-string">"Text Size-small"</span>&gt;settings&lt;/h4&gt;
   &lt;/div&gt;
 
 
