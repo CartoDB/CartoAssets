@@ -23,19 +23,19 @@
   </ul>
 </div>
 
-<button class="CDB-OptionInput is-active u-rSpace--m CDB-Text">
+<div class="CDB-OptionInput is-active u-rSpace--m CDB-Text u-iBlock">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option">
-      <a class="CDB-OptionInput-optionContent">8...12</a>
+      <button class="CDB-OptionInput-optionContent">8...12</button>
     </li>
 
     <li class="CDB-OptionInput-option is-active">
-      <a class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+      <button class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
         <span class="CDB-ColorBar" style="background-color: #FFFFC0;"></span>
-      </a>
+      </button>
     </li>
   </ul>
-</button>
+</div>
 
 <button type="button" class="CDB-OptionInput u-rSpace--m">
   <ul class="CDB-OptionInput-container">
