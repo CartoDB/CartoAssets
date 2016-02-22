@@ -169,22 +169,22 @@
     <ul class="CDB-MenuEditor-navigation">
       <li class="CDB-MenuEditor-navigationItem is-selected">
         <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-edition Size-large"></i>
+          <i class="CDB-IconFont CDB-IconFont-edition CDB-MenuEditor-navigationIcon"></i>
         </a>
       </li>
       <li class="CDB-MenuEditor-navigationItem">
         <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-view Size-large"></i>
+          <i class="CDB-IconFont CDB-IconFont-view CDB-MenuEditor-navigationIcon"></i>
         </a>
       </li>
       <li class="CDB-MenuEditor-navigationItem">
         <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-clock Size-large"></i>
+          <i class="CDB-IconFont CDB-IconFont-clock CDB-MenuEditor-navigationIcon"></i>
         </a>
       </li>
       <li class="CDB-MenuEditor-navigationItem">
         <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-settings Size-large"></i>
+          <i class="CDB-IconFont CDB-IconFont-settings CDB-MenuEditor-navigationIcon"></i>
         </a>
       </li>
     </ul>
@@ -210,23 +210,24 @@
   padding: 12px $baseSize * 2 12px $baseSize + 6;
   border-left: 2px solid transparent;
   text-align: center;
-
-  &.is-selected {
-    border-left: 2px solid #FFF;
-    .CDB-MenuEditor-navigationLink {
-      opacity: 1;
-    }
-  }
+}
+.CDB-MenuEditor-navigationItem.is-selected {
+  border-left: 2px solid #FFF;
+}
+.CDB-MenuEditor-navigationItem.is-selected .CDB-MenuEditor-navigationIcon {
+  opacity: 1;
 }
 
 .CDB-MenuEditor-navigationLink {
   display: block;
-  height: 24px;
+}
+.CDB-MenuEditor-navigationIcon {
   color: #FFF;
   font-size: 24px;
+  line-height: 24px;
   opacity: 0.32;
 }
-.CDB-MenuEditor-navigationLink:hover {
+.CDB-MenuEditor-navigationLink:hover .CDB-MenuEditor-navigationIcon {
   opacity: 1;
 }
 
