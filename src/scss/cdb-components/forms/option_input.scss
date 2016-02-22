@@ -5,74 +5,76 @@
 # Forms/Option input
 
 ```
-<div class="CDB-OptionInput is-active u-rSpace--m CDB-Text u-iBlock">
+<div class="CDB-OptionInput is-active CDB-Text">
   <ul class="CDB-OptionInput-container">
-    <li class="CDB-OptionInput-option is-active">
-      <button tupe="button" class="CDB-OptionInput-optionContent">8px</button>
+    <li class="CDB-OptionInput-item is-active">
+      <button type="button" class="CDB-OptionInput-content">8px</button>
     </li>
 
-    <li class="CDB-OptionInput-option">
-      <button tupe="button" class="CDB-OptionInput-optionContent">solid</button>
+    <li class="CDB-OptionInput-item">
+      <button type="button" class="CDB-OptionInput-content">solid</button>
     </li>
 
-    <li class="CDB-OptionInput-option">
-      <button tupe="button" class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+    <li class="CDB-OptionInput-item">
+      <button type="button" class="CDB-ColorBarContainer CDB-OptionInput-content">
         <span class="CDB-ColorBar" style="background-color: #207EBA;"></span>
       </button>
     </li>
   </ul>
 </div>
 
-<div class="CDB-OptionInput is-active u-rSpace--m CDB-Text u-iBlock">
+<br/>
+
+<div class="CDB-OptionInput is-active CDB-Text">
   <ul class="CDB-OptionInput-container">
-    <li class="CDB-OptionInput-option">
-      <button class="CDB-OptionInput-optionContent">8...12</button>
+    <li class="CDB-OptionInput-item">
+      <button type="button" class="CDB-OptionInput-content">8...12</button>
     </li>
 
-    <li class="CDB-OptionInput-option is-active">
-      <button class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+    <li class="CDB-OptionInput-item is-active">
+      <button type="button" class="CDB-ColorBarContainer CDB-OptionInput-content">
         <span class="CDB-ColorBar" style="background-color: #FFFFC0;"></span>
       </button>
     </li>
   </ul>
 </div>
 
-<button type="button" class="CDB-OptionInput u-rSpace--m">
-  <ul class="CDB-OptionInput-container">
-    <li class="CDB-OptionInput-option">
-      <ul class="CDB-ColorBarContainer">
-        <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
-      </ul>
-    </li>
-  </ul>
-</button>
-
-<button class="CDB-OptionInput u-rSpace--m">
-  <ul class="CDB-OptionInput-container">
-    <li class="CDB-OptionInput-option">
-      <ul class="CDB-ColorBarContainer">
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
-        <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
-      </ul>
-    </li>
-  </ul>
-</button>
+<br/>
 
 <button type="button" class="CDB-OptionInput">
-  <ul class="CDB-OptionInput-container">
-    <li class="CDB-OptionInput-option">
-      <ul class="CDB-ColorBarContainer">
-        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
-        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
-        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
-        <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
-      </ul>
-    </li>
-  </ul>
+  <div class="CDB-OptionInput-container">
+    <span class="CDB-ColorBar CDB-ColorBar-gradient" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></span>
+  </div>
+</button>
+
+<br/>
+<br/>
+
+<button type="button" class="CDB-OptionInput">
+  <div class="CDB-OptionInput-container">
+    <ul class="CDB-ColorBarContainer">
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
+      <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+    </ul>
+  </div>
+</button>
+
+<br/>
+<br/>
+
+<button type="button" class="CDB-OptionInput">
+  <div class="CDB-OptionInput-container">
+    <ul class="CDB-ColorBarContainer">
+      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+    </ul>
+  </div>
 </button>
 ```
 */
@@ -82,7 +84,7 @@
 @import '../../cdb-utilities/mixins';
 
 .CDB-OptionInput {
-  width: $baseSize * 20;
+  width: 100%;
   height: $baseSize * 4;
   border: 1px solid $cMainLine;
   border-radius: $baseSize / 2;
@@ -106,7 +108,7 @@
   @include align-items(center);
   margin: 0 $baseSize;
 }
-.CDB-OptionInput-option {
+.CDB-OptionInput-item {
   @include display-flex();
   @include align-items(center);
   @include align-content(center);
@@ -129,7 +131,7 @@
     }
   }
 }
-.CDB-OptionInput-optionContent {
+.CDB-OptionInput-content {
   @include display-flex();
   @include align-items(center);
   height: 100%;
@@ -141,6 +143,6 @@
     text-decoration: none;
   }
 }
-.CDB-OptionInput-option.is-active > .CDB-OptionInput-optionContent {
+.CDB-OptionInput-item.is-active > .CDB-OptionInput-content {
   border-bottom: 1px solid $cMainBg;
 }

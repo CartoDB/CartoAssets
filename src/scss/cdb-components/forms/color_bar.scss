@@ -5,39 +5,47 @@
 # Forms/Color bar
 
 ```
-<ul class="CDB-ColorBarContainer u-bSpace--xl">
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #9DE0AD;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #50E3C2;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #FFFFC0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #7ED321;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #BD10E0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sMargin" style="background-color: #F15743;"></li>
+<ul class="CDB-ColorBarContainer">
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceMedium" style="background-color: #F15743;"></li>
 </ul>
 
-<ul class="CDB-ColorBarContainer u-bSpace--xl">
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #9DE0AD;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #50E3C2;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #FFFFC0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #7ED321;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #BD10E0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--sRadius" style="background-color: #F15743;"></li>
+<br/>
+
+<ul class="CDB-ColorBarContainer">
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #F15743;"></li>
 </ul>
 
-<ul class="CDB-ColorBarContainer u-bSpace--xl">
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #BD10E0;"></li>
-  <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #F15743;"></li>
+<br/>
+
+<ul class="CDB-ColorBarContainer">
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #9DE0AD;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #50E3C2;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #FFFFC0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #7ED321;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #BD10E0;"></li>
+  <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #F15743;"></li>
 </ul>
 
-<ul class="CDB-ColorBarContainer u-bSpace--xl">
+<br/>
+
+<ul class="CDB-ColorBarContainer">
   <li class="CDB-ColorBar" style="background-color: #9DE0AD;"></li>
 </ul>
 
-<ul class="CDB-ColorBarContainer u-bSpace--xl">
-  <li class="CDB-ColorBar" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
+<br/>
+
+<ul class="CDB-ColorBarContainer">
+  <li class="CDB-ColorBar CDB-ColorBar-gradient" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></li>
 </ul>
  ```
 */
@@ -48,13 +56,20 @@
   @include display-flex();
   @include flex-direction(row);
   width: 100%;
-  max-width: 215px;
 }
 .CDB-ColorBar {
   position: relative;
   width: 100%;
   height: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.CDB-ColorBar-gradient {
+  border: 0;
 
   &::after {
     position: absolute;
@@ -66,57 +81,34 @@
     border-radius: 6px;
     content: '';
   }
-  &:last-child {
-    margin-right: 0;
-  }
 }
-.CDB-ColorBar.CDB-ColorBar--sMargin {
+.CDB-ColorBar.CDB-ColorBar--spaceMedium {
   margin-right: 4px;
 
   &:last-child {
     margin-right: 0;
   }
 }
-.CDB-ColorBar.CDB-ColorBar--compacted {
+.CDB-ColorBar.CDB-ColorBar--spaceless {
+  border-width: 1px 0;
   border-radius: 0;
-
-  &::after {
-    border-width: 1px 0;
-    border-radius: 0;
-  }
-  &:first-child {
-    border-radius: 6px 0 0 6px;
-    &::after {
-      border-width: 1px 0 1px 1px;
-      border-radius: 6px 0 0 6px;
-    }
-  }
-  &:last-child {
-    border-radius: 0 6px 6px 0;
-    &::after {
-      border-width: 1px 1px 1px 0;
-      border-radius: 0 6px 6px 0;
-    }
-  }
 }
-.CDB-ColorBar.CDB-ColorBar--sRadius {
+.CDB-ColorBar.CDB-ColorBar--spaceless:first-child {
+  border-width: 1px 0 1px 1px;
+  border-radius: 6px 0 0 6px;
+}
+.CDB-ColorBar.CDB-ColorBar--spaceless:last-child {
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 6px 6px 0;
+}
+.CDB-ColorBar.CDB-ColorBar--spaceSmall {
   margin-right: 2px;
   border-radius: 2px;
-
-  &::after {
-    border-radius: 2px;
-  }
-  &:first-child {
-    border-radius: 6px 2px 2px 6px;
-    &::after {
-      border-radius: 6px 2px 2px 6px;
-    }
-  }
-  &:last-child {
-    margin-right: 0;
-    border-radius: 2px 6px 6px 2px;
-    &::after {
-      border-radius: 2px 6px 6px 2px;
-    }
-  }
+}
+.CDB-ColorBar.CDB-ColorBar--spaceSmall:first-child {
+  border-radius: 6px 3px 3px 6px;
+}
+.CDB-ColorBar.CDB-ColorBar--spaceSmall:last-child {
+  margin-right: 0;
+  border-radius: 3px 6px 6px 3px;
 }
