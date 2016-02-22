@@ -5,25 +5,39 @@
 # Forms/Option input
 
 ```
-<div class="CDB-OptionInput is-active u-bSpace--xl CDB-Text">
+<button class="CDB-OptionInput is-active u-rSpace--m CDB-Text">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option is-active">
-      <span class="CDB-OptionInput-optionContent">8px</span>
+      <a class="CDB-OptionInput-optionContent">8px</a>
     </li>
 
     <li class="CDB-OptionInput-option">
-      <span class="CDB-OptionInput-optionContent">solid</span>
+      <a class="CDB-OptionInput-optionContent">solid</a>
     </li>
 
     <li class="CDB-OptionInput-option">
-      <ul class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
-        <li class="CDB-ColorBar" style="background-color: #207EBA;"></li>
-      </ul>
+      <a class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+        <span class="CDB-ColorBar" style="background-color: #207EBA;"></span>
+      </a>
     </li>
   </ul>
-</div>
+</button>
 
-<div class="CDB-OptionInput u-bSpace--xl">
+<button class="CDB-OptionInput is-active u-rSpace--m CDB-Text">
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-option">
+      <a class="CDB-OptionInput-optionContent">8...12</a>
+    </li>
+
+    <li class="CDB-OptionInput-option is-active">
+      <a class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+        <span class="CDB-ColorBar" style="background-color: #FFFFC0;"></span>
+      </a>
+    </li>
+  </ul>
+</button>
+
+<button type="button" class="CDB-OptionInput u-rSpace--m">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option">
       <ul class="CDB-ColorBarContainer">
@@ -31,9 +45,9 @@
       </ul>
     </li>
   </ul>
-</div>
+</button>
 
-<div class="CDB-OptionInput u-bSpace--xl">
+<button class="CDB-OptionInput u-rSpace--m">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option">
       <ul class="CDB-ColorBarContainer">
@@ -46,9 +60,9 @@
       </ul>
     </li>
   </ul>
-</div>
+</button>
 
-<div class="CDB-OptionInput u-bSpace--xl">
+<button type="button" class="CDB-OptionInput">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option">
       <ul class="CDB-ColorBarContainer">
@@ -59,7 +73,7 @@
       </ul>
     </li>
   </ul>
-</div>
+</button>
 ```
 */
 
@@ -95,9 +109,8 @@
   @include display-flex();
   @include align-items(center);
   @include align-content(center);
-  width: 100%;
+  width: auto;
   height: 100%;
-  color: $cMainBg;
   font-size: $sFontSize-medium;
   box-sizing: content-box;
 
@@ -107,10 +120,19 @@
     content: '·';
   }
   &:last-child {
+    width: 100%;
+
     &::after {
       padding: 0;
       content: '';
     }
+  }
+}
+.CDB-OptionInput-optionContent {
+  color: $cMainBg;
+
+  &:hover {
+    text-decoration: none;
   }
 }
 .CDB-OptionInput-option.is-active > .CDB-OptionInput-optionContent {
