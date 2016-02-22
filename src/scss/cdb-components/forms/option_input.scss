@@ -5,23 +5,23 @@
 # Forms/Option input
 
 ```
-<button class="CDB-OptionInput is-active u-rSpace--m CDB-Text">
+<div class="CDB-OptionInput is-active u-rSpace--m CDB-Text u-iBlock">
   <ul class="CDB-OptionInput-container">
     <li class="CDB-OptionInput-option is-active">
-      <a class="CDB-OptionInput-optionContent">8px</a>
+      <button tupe="button" class="CDB-OptionInput-optionContent">8px</button>
     </li>
 
     <li class="CDB-OptionInput-option">
-      <a class="CDB-OptionInput-optionContent">solid</a>
+      <button tupe="button" class="CDB-OptionInput-optionContent">solid</button>
     </li>
 
     <li class="CDB-OptionInput-option">
-      <a class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
+      <button tupe="button" class="CDB-ColorBarContainer CDB-OptionInput-optionContent">
         <span class="CDB-ColorBar" style="background-color: #207EBA;"></span>
-      </a>
+      </button>
     </li>
   </ul>
-</button>
+</div>
 
 <button class="CDB-OptionInput is-active u-rSpace--m CDB-Text">
   <ul class="CDB-OptionInput-container">
@@ -134,6 +134,8 @@
   @include align-items(center);
   height: 100%;
   color: $cMainBg;
+  box-sizing: content-box;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: none;
