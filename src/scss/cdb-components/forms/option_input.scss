@@ -89,7 +89,6 @@
   border: 1px solid $cMainLine;
   border-radius: $baseSize / 2;
   box-sizing: border-box;
-  cursor: pointer;
   vertical-align: middle;
 
   &:hover {
@@ -126,8 +125,7 @@
     width: 100%;
 
     &::after {
-      padding: 0;
-      content: '';
+      display: none;
     }
   }
 }
