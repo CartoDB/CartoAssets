@@ -17,8 +17,20 @@
     </ul>
   </div>
 </div>
+<select name="select" class="CDB-SelectFake CDB-Text">
+  <option value="value1" selected>Choose an option</option>
+  <option value="value2">Hide</option>
+  <option value="value3">Rename</option>
+  <option value="value4">Change source dataset…</option>
+  <option value="value5">Delete this layer…</option>
+</select>
+
+
 ```
 */
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
 
 .CDB-Select {
   position: relative;
@@ -27,4 +39,33 @@
 .CDB-SelectItem {
   position: absolute;
   top: 40px;
+}
+
+.CDB-SelectFake {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 7px 8px 6px;
+  border: 1px solid $cMainLine;
+  border-radius: $baseSize / 2;
+  background: $cWhite;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+    outline: none;
+  }
+  &:disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+  }
+  &.has-error {
+    border: 1px solid rgba($cError, 0.48);
+    background: rgba($cError, 0.04);
+    color: $cError;
+  }
 }
