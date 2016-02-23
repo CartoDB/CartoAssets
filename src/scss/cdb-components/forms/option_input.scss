@@ -53,12 +53,12 @@
 <button type="button" class="CDB-OptionInput">
   <div class="CDB-OptionInput-container">
     <ul class="CDB-ColorBarContainer">
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #9DE0AD;"></li>
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #50E3C2;"></li>
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #FFFFC0;"></li>
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #7ED321;"></li>
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #BD10E0;"></li>
-      <li class="CDB-ColorBar u-rSpace" style="background-color: #F15743;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #9DE0AD;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #50E3C2;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #FFFFC0;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #7ED321;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #BD10E0;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceSmall" style="background-color: #F15743;"></li>
     </ul>
   </div>
 </button>
@@ -69,10 +69,10 @@
 <button type="button" class="CDB-OptionInput">
   <div class="CDB-OptionInput-container">
     <ul class="CDB-ColorBarContainer">
-      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #9DE0AD;"></li>
-      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #50E3C2;"></li>
-      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #FFFFC0;"></li>
-      <li class="CDB-ColorBar CDB-ColorBar--compacted" style="background-color: #7ED321;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #9DE0AD;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #50E3C2;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #FFFFC0;"></li>
+      <li class="CDB-ColorBar CDB-ColorBar--spaceless" style="background-color: #7ED321;"></li>
     </ul>
   </div>
 </button>
