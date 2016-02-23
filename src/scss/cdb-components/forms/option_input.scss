@@ -118,7 +118,7 @@
   box-sizing: content-box;
 
   &::after {
-    padding: 0 6px;
+    padding: 0 $baseSize - 2;
     color: $cHintText;
     content: '·';
   }
