@@ -25,3 +25,87 @@
   display: block;
   padding: 12px 16px;
 }
+
+
+/* SG
+# Lists/Lists Widgets
+
+
+```
+  <ul class="CDB-BlockList">
+    <li class="CDB-BlockList-item">
+      <div class="CDB-BlockList-media u-rSpace--xl">
+      </div>
+      <div class="CDB-BlockList-Inner">
+        <div class="CDB-BlockList-Title u-bSpace">
+          <h2 class="CDB-BlockList-TitleText CDB-Text CDB-Size-large u-ellipsis">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
+          <div class="CDB-HeaderInfo-Actions">
+            <button class="CDB-Shape">
+              <div class="CDB-Shape-close is-blue is-large"></div>
+            </button>
+          </div>
+        </div>
+        <p class="CDB-Text CDB-Size-medium u-secondaryTextColor">NBA Fans, fans_num</p>
+      </div>
+    </li>
+    <li class="CDB-BlockList-item">
+      <div class="CDB-BlockList-media u-rSpace--xl">
+      </div>
+      <div class="CDB-BlockList-Inner">
+        <div class="CDB-BlockList-Title u-bSpace">
+          <h2 class="CDB-BlockList-TitleText CDB-Text CDB-Size-large u-ellipsis">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
+          <div class="CDB-HeaderInfo-Actions">
+            <button class="CDB-Shape">
+              <div class="CDB-Shape-close is-blue is-large"></div>
+            </button>
+          </div>
+        </div>
+        <p class="CDB-Text CDB-Size-medium u-secondaryTextColor">NBA Fans, fans_num</p>
+      </div>
+    </li>
+  </ul>
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-BlockList-item {
+  @include display-flex();
+  margin-bottom: 8px;
+  padding: 16px;
+  border: 1px solid $cSecondaryLine;
+  border-radius: $baseSize;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.CDB-BlockList-inner {
+  @include flex(1);
+}
+
+.CDB-BlockList-Title {
+  @include display-flex();
+  @include align-items(center);
+}
+
+.CDB-BlockList-TitleText {
+  @include flex(1);
+  width: 0;
+  padding-right: 16px;
+}
+
+.CDB-BlockList-media {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $cSecondaryLine;
+  border-radius: 4px;
+  background: $cThirdBackground;
+}
+
+
+
