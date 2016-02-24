@@ -2,7 +2,7 @@
 // ----------------------------------------------
 
 /* SG
-# Tags
+# Tags / Privacy
 
 ```
 <button class="CDB-Tag is-public CDB-Text is-semibold CDB-Size-small u-iBlock">
@@ -44,4 +44,20 @@
     border: 1px solid $cError;
     color: $cError;
   }
+}
+
+/* SG
+# Tags / Metadata
+
+```
+<button class="CDB-Metadata CDB-Text u-iBlock">
+  population
+</button>
+
+```
+*/
+
+.CDB-Metadata {
+  border-radius: $baseSize / 2;
+  background: #FF5500;
 }
