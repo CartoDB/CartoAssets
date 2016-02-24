@@ -74,10 +74,10 @@
 
 .CDB-BlockList-item {
   @include display-flex();
-  margin-bottom: 8px;
-  padding: 16px;
+  margin-bottom: $baseSize;
+  padding: $baseSize * 2;
   border: 1px solid $cSecondaryLine;
-  border-radius: $baseSize;
+  border-radius: $baseSize / 2;
 
   &:last-child {
     margin-bottom: 0;
@@ -96,14 +96,14 @@
 .CDB-BlockList-TitleText {
   @include flex(1);
   width: 0;
-  padding-right: 16px;
+  padding-right: $baseSize * 2;
 }
 
 .CDB-BlockList-media {
   width: 40px;
   height: 40px;
   border: 1px solid $cSecondaryLine;
-  border-radius: 4px;
+  border-radius: $baseSize / 2;
   background: $cThirdBackground;
 }
 
