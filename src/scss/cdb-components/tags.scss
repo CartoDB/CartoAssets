@@ -20,6 +20,7 @@
 ```
 */
 
+@import '../cdb-utilities/mixins';
 @import '../cdb-variables/sizes';
 @import '../cdb-variables/colors';
 
@@ -50,14 +51,47 @@
 # Tags / Metadata
 
 ```
-<button class="CDB-Metadata CDB-Text u-iBlock">
-  population
-</button>
+<ul class="CDB-ListMetadata CDB-Text CDB-Size-medium u-secondaryTextColor">
+  <li class="CDB-ListMetadata-item">
+    <button class="CDB-Metadata CDB-Text">
+      trees
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+  <li class="CDB-ListMetadata-item">
+    <button class="CDB-Metadata CDB-Text">
+      table_merge
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+  <li class="CDB-ListMetadata-item">
+    <button class="CDB-Metadata CDB-Text">
+      word
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+</ul>
 
 ```
 */
 
+.CDB-ListMetadata {
+  @include display-flex();
+}
+
+.CDB-ListMetadata-item {
+  margin-right: $baseSize;
+}
+
 .CDB-Metadata {
+  @include display-flex();
+  padding: $baseSize / 2 $baseSize / 2  $baseSize / 2 $baseSize;
   border-radius: $baseSize / 2;
-  background: #FF5500;
+  background: rgba($cBlue, 0.16);
 }
