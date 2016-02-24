@@ -63,10 +63,6 @@
     </ul>
   </nav>
 </div>
-
-<br/><br/>
-<br/><br/>
-
 ```
 */
 
@@ -153,105 +149,5 @@
   .CDB-NavSubmenu-Status {
     color: $cSecondaryText;
   }
-}
-
-
-/* SG
-# Menu/Editor
-
-
-```
-<div class="CDB-MenuEditor">
-  <div class="CDB-MenuEditor-logo">
-    <i class="CDB-IconFont CDB-IconFont-cartoFante u-actionTextColor"></i>
-  </div>
-  <nav>
-    <ul class="CDB-MenuEditor-navigation">
-      <li class="CDB-MenuEditor-navigationItem is-selected">
-        <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-edition CDB-MenuEditor-navigationIcon"></i>
-        </a>
-      </li>
-      <li class="CDB-MenuEditor-navigationItem">
-        <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-view CDB-MenuEditor-navigationIcon"></i>
-        </a>
-      </li>
-      <li class="CDB-MenuEditor-navigationItem">
-        <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-odyssey CDB-MenuEditor-navigationIcon"></i>
-        </a>
-      </li>
-      <li class="CDB-MenuEditor-navigationItem">
-        <a href="#" class="CDB-MenuEditor-navigationLink">
-          <i class="CDB-IconFont CDB-IconFont-settings CDB-MenuEditor-navigationIcon"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <a href="http://piensaenpixel.cartodb.com" class="CDB-MenuEditor-avatar">
-    <img src="https://s3.amazonaws.com/com.cartodb.users-assets.production/production/piensaenpixel/assets/20150507074635Captura%20de%20pantalla%202015-05-07%20a%20la%28s%29%2009.46.28.png" class="CDB-MenuEditor-avatarImage">
-  </a>
-</div>
-```
-*/
-
-.CDB-MenuEditor {
-  position: relative;
-  width: 72px;
-  min-height: 450px;
-  box-sizing: border-box;
-  padding: $baseSize * 2 0;
-  background: $cBlue;
-  box-shadow: 4px 0 $baseSize * 2 rgba(0, 0, 0, 0.05);
-}
-
-.CDB-MenuEditor-navigationItem {
-  padding: 12px $baseSize * 2 12px $baseSize + 6;
-  border-left: 2px solid transparent;
-  text-align: center;
-}
-.CDB-MenuEditor-navigationItem.is-selected {
-  border-left: 2px solid #FFF;
-}
-.CDB-MenuEditor-navigationItem.is-selected .CDB-MenuEditor-navigationIcon {
-  opacity: 1;
-}
-
-.CDB-MenuEditor-navigationLink {
-  display: block;
-}
-.CDB-MenuEditor-navigationIcon {
-  color: #FFF;
-  font-size: 24px;
-  line-height: 24px;
-  opacity: 0.32;
-}
-.CDB-MenuEditor-navigationLink:hover .CDB-MenuEditor-navigationIcon {
-  opacity: 1;
-}
-
-.CDB-MenuEditor-logo {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto $baseSize * 2;
-  padding: $baseSize - 2 0;
-  border-radius: $baseSize / 2;
-  background: #FFF;
-  box-sizing: border-box;
-  font-size: $baseSize * 3;
-  text-align: center;
-}
-
-.CDB-MenuEditor-avatar {
-  position: absolute;
-  bottom: $baseSize * 2;
-  left: $baseSize * 2;
-  width: 40px;
-  height: 40px;
-}
-.CDB-MenuEditor-avatarImage {
-  width: 100%;
-  border-radius: $baseSize / 2;
 }
 
