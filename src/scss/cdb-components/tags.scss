@@ -53,7 +53,7 @@
 ```
 <ul class="CDB-ListMetadata CDB-Text CDB-Size-medium u-secondaryTextColor">
   <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata CDB-Text">
+    <button class="CDB-Metadata">
       trees
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -61,7 +61,7 @@
     </button>
   </li>
   <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata CDB-Text">
+    <button class="CDB-Metadata">
       table_merge
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -69,7 +69,7 @@
     </button>
   </li>
   <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata CDB-Text">
+    <button class="CDB-Metadata">
       word
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -95,3 +95,44 @@
   border-radius: $baseSize / 2;
   background: rgba($cBlue, 0.16);
 }
+
+/* SG
+# Tags / Data Type
+
+```
+<ul class="CDB-ListDataType">
+  <li class="CDB-ListDataType-item">
+    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+      Number
+    </button>
+  </li>
+  <li class="CDB-ListDataType-item">
+    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+      Text
+    </button>
+  </li>
+  <li class="CDB-ListDataType-item">
+    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+      String
+    </button>
+  </li>
+</ul>
+
+```
+*/
+
+.CDB-ListDataType {
+  @include display-flex();
+}
+
+.CDB-ListDataType-item {
+  margin-right: $baseSize;
+}
+
+.CDB-DataType {
+  padding: $baseSize / 4 $baseSize / 2;
+  border-radius: $baseSize / 4;
+  background: $cThirdBackground;
+  text-transform: uppercase;
+}
+
