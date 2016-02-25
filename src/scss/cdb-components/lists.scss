@@ -10,6 +10,7 @@
 ```
 */
 
+@import '../cdb-utilities/mixins';
 @import '../cdb-variables/sizes';
 @import '../cdb-variables/colors';
 
@@ -26,3 +27,172 @@
   padding: 12px 16px;
 }
 
+/* SG
+# Lists/List Widgets
+
+
+```
+  <div style="margin: 0 auto; padding: 20px; box-sizing: border-box; background: #f9f9f9;">
+    <ul class="CDB-WidgetList">
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <div class="u-bSpace--xl">
+            <svg width="239px" height="16px" viewBox="0 0 239 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="Bars" sketch:type="MSLayerGroup">
+                        <g id="Group" fill="#EEEEEE" sketch:type="MSShapeGroup">
+                            <rect id="vLine" x="71" y="0" width="1" height="16"></rect>
+                            <rect id="vLine" x="132" y="0" width="1" height="16"></rect>
+                            <rect id="vLine" x="193" y="0" width="1" height="16"></rect>
+                            <rect id="hLine" x="0" y="0" width="239" height="1"></rect>
+                            <rect id="hLine" x="0" y="8" width="239" height="1"></rect>
+                        </g>
+                        <rect id="Bar-Copy-7" fill="#9DE0AD" sketch:type="MSShapeGroup" x="0" y="4" width="27" height="12"></rect>
+                        <rect id="Bar-Copy-8" fill="#9DE0AD" sketch:type="MSShapeGroup" x="29" y="0" width="27" height="16"></rect>
+                        <rect id="Bar-Copy-9" fill="#9DE0AD" sketch:type="MSShapeGroup" x="58" y="4" width="27" height="12"></rect>
+                        <rect id="Bar-Copy-12" fill="#9DE0AD" sketch:type="MSShapeGroup" x="87" y="2" width="27" height="14"></rect>
+                        <rect id="Bar-Copy-11" fill="#9DE0AD" sketch:type="MSShapeGroup" x="116" y="4" width="27" height="12"></rect>
+                        <rect id="Bar-Copy-10" fill="#9DE0AD" sketch:type="MSShapeGroup" x="145" y="4" width="27" height="12"></rect>
+                        <rect id="Bar-Copy-15" fill="#9DE0AD" sketch:type="MSShapeGroup" x="174" y="2" width="27" height="14"></rect>
+                        <rect id="Bar-Copy-14" fill="#9DE0AD" sketch:type="MSShapeGroup" x="203" y="4" width="27" height="12"></rect>
+                        <rect id="xAxis" fill="#AAAAAA" sketch:type="MSShapeGroup" x="0" y="15" width="239" height="1"></rect>
+                    </g>
+                </g>
+            </svg>
+          </div>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+      <li class="CDB-WidgetList-item">
+        <div class="CDB-WidgetList-option">
+          <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+          <span class="u-iBlock CDB-Checkbox-face"></span>
+        </div>
+        <div class="CDB-WidgetList-inner">
+          <h3 class="CDB-WidgetList-title CDB-Text CDB-Size-large u-bSpace--xl">Title</h3>
+          <select name="select" class="CDB-SelectFake CDB-Text">
+            <option value="value1" selected>Choose an option</option>
+            <option value="value2">Hide</option>
+            <option value="value3">Rename</option>
+            <option value="value4">Change source dataset&#x2026;</option>
+            <option value="value5">Delete this layer&#x2026;</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+  </div>
+```
+*/
+
+.CDB-WidgetList {
+  @include display-flex;
+  flex-wrap: wrap;
+}
+
+.CDB-WidgetList-option {
+  margin-right: 16px;
+}
+.CDB-Widgetlist-inner {
+  @include display-flex;
+  flex-wrap: wrap;
+}
+.CDB-Widgetlist-item {
+  @include display-flex;
+  @include align-items(baseline);
+  flex: 0 0 304px;
+  width: 304px;
+  margin: 0 4px 8px;
+  box-sizing: border-box;
+  padding: $baseSize * 2;
+  border: 1px solid transparent;
+  border-radius: $baseSize / 2;
+  background: $cWhite;
+}
+.CDB-Widgetlist-item:hover {
+  border: 1px solid $cBlue;
+  background: #F5FAFE;
+}
+
+.CDB-WidgetList-inner {
+  @include display-flex;
+  width: 100%;
+}
+
+.CDB-WidgetList-title {
+  @include display-flex;
+}
