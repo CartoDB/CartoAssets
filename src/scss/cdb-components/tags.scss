@@ -53,7 +53,7 @@
 ```
 <ul class="CDB-ListTag CDB-Text CDB-Size-medium u-secondaryTextColor">
   <li class="CDB-ListTag-item">
-    <button class="CDB-Tag CDB-Tag--withLin">
+    <button class="CDB-Tag CDB-Tag--withLink">
       trees
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -61,7 +61,7 @@
     </button>
   </li>
   <li class="CDB-ListTag-item">
-    <button class="CDB-Tag CDB-Tag--withLin">
+    <button class="CDB-Tag CDB-Tag--withLink">
       table_merge
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -69,7 +69,7 @@
     </button>
   </li>
   <li class="CDB-ListTag-item">
-    <button class="CDB-Tag CDB-Tag--withLin">
+    <button class="CDB-Tag CDB-Tag--withLink">
       word
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -89,7 +89,7 @@
   margin-right: $baseSize;
 }
 
-.CDB-Tag.CDB-Tag--withLin {
+.CDB-Tag.CDB-Tag--withLink {
   @include display-flex();
   padding: $halfBaseSize $halfBaseSize $halfBaseSize $baseSize;
   border-radius: $halfBaseSize;
