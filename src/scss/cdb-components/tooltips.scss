@@ -1,0 +1,85 @@
+// Typography styles
+// ----------------------------------------------
+
+/* SG
+# Tooltips
+
+```
+<div style="height: 100px; position: relative;">
+  <div class="CDB-Tooltip is-top u-iBlock CDB-Text CDB-Size-medium">
+    <p>627K Transactions</p>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div style="height: 100px; position: relative;">
+  <div class="CDB-Tooltip is-top is-error u-iBlock CDB-Text CDB-Size-medium">
+    <p>Hello I am a Form error</p>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div style="height: 100px; position: relative;">
+  <div class="CDB-Tooltip is-bottom u-iBlock CDB-Text CDB-Size-medium">
+    <p>627K Transactions</p>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div style="height: 100px; position: relative;">
+  <div class="CDB-Tooltip is-bottom is-error u-iBlock CDB-Text CDB-Size-medium">
+    <p>Hello I am a Form error</p>
+  </div>
+</div>
+
+
+
+
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Tooltip {
+  position: absolute;
+  padding: 8px;
+  border-radius: 4px;
+  background: rgba($cMainBg, 0.8);
+  color: $cWhite;
+}
+
+.CDB-Tooltip:before {
+  display: block;
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 6px);
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom: 6px solid rgba($cMainBg, 0.8);
+  content: '';
+}
+
+.CDB-Tooltip.is-error {
+  background: $cError;
+}
+
+.CDB-Tooltip.is-error:before {
+  border-bottom: 6px solid $cError;
+}
+
+
