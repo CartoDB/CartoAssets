@@ -51,25 +51,25 @@
 # Tags / Metadata
 
 ```
-<ul class="CDB-ListMetadata CDB-Text CDB-Size-medium u-secondaryTextColor">
-  <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata">
+<ul class="CDB-ListTag CDB-Text CDB-Size-medium u-secondaryTextColor">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLin">
       trees
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
       </div>
     </button>
   </li>
-  <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLin">
       table_merge
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
       </div>
     </button>
   </li>
-  <li class="CDB-ListMetadata-item">
-    <button class="CDB-Metadata">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLin">
       word
       <div class="CDB-Shape u-lSpace">
         <div class="CDB-Shape-close is-blue is-large"></div>
@@ -81,18 +81,18 @@
 ```
 */
 
-.CDB-ListMetadata {
+.CDB-ListTag {
   @include display-flex();
 }
 
-.CDB-ListMetadata-item {
+.CDB-ListTag-item {
   margin-right: $baseSize;
 }
 
-.CDB-Metadata {
+.CDB-Tag.CDB-Tag--withLin {
   @include display-flex();
-  padding: $halfSize $halfSize $halfSize $baseSize;
-  border-radius: $halfSize;
+  padding: $halfBaseSize $halfBaseSize $halfBaseSize $baseSize;
+  border-radius: $halfBaseSize;
   background: rgba($cBlue, 0.16);
 }
 
@@ -100,19 +100,19 @@
 # Tags / Data Type
 
 ```
-<ul class="CDB-ListDataType">
-  <li class="CDB-ListDataType-item">
-    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+<ul class="CDB-ListTag">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
       Number
     </button>
   </li>
-  <li class="CDB-ListDataType-item">
-    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
       Text
     </button>
   </li>
-  <li class="CDB-ListDataType-item">
-    <button class="CDB-DataType CDB-Text CDB-Size-small u-altTextColor">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
       String
     </button>
   </li>
@@ -120,17 +120,10 @@
 
 ```
 */
+ 
 
-.CDB-ListDataType {
-  @include display-flex();
-}
-
-.CDB-ListDataType-item {
-  margin-right: $baseSize;
-}
-
-.CDB-DataType {
-  padding: $baseSize / 4 $halfSize;
+.CDB-Tag.CDB-Tag--opaque {
+  padding: $baseSize / 4 $halfBaseSize;
   border-radius: $baseSize / 4;
   background: $cThirdBackground;
   text-transform: uppercase;
