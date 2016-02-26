@@ -91,8 +91,8 @@
 
 .CDB-Metadata {
   @include display-flex();
-  padding: $baseSize / 2 $baseSize / 2  $baseSize / 2 $baseSize;
-  border-radius: $baseSize / 2;
+  padding: $halfSize $halfSize $halfSize $baseSize;
+  border-radius: $halfSize;
   background: rgba($cBlue, 0.16);
 }
 
@@ -130,7 +130,7 @@
 }
 
 .CDB-DataType {
-  padding: $baseSize / 4 $baseSize / 2;
+  padding: $baseSize / 4 $halfSize;
   border-radius: $baseSize / 4;
   background: $cThirdBackground;
   text-transform: uppercase;
