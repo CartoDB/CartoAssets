@@ -72,7 +72,7 @@
   border-radius: $halfBaseSize;
   background: rgba($cMainBg, 0.8);
 }
-.CDB-Tooltip:after {
+.CDB-Tooltip::after {
   display: block;
   position: absolute;
   width: 0;
@@ -82,57 +82,57 @@
 }
 
 .is-black {
-  &.CDB-Tooltip.CDB-Tooltip--up:after {
+  &.CDB-Tooltip.CDB-Tooltip--up::after {
     border-bottom-color: rgba($cMainBg, 0.8);
   }
-  &.CDB-Tooltip.CDB-Tooltip--down:after {
+  &.CDB-Tooltip.CDB-Tooltip--down::after {
     border-top-color: rgba($cMainBg, 0.8);
   }
-  &.CDB-Tooltip.CDB-Tooltip--left:after {
+  &.CDB-Tooltip.CDB-Tooltip--left::after {
     border-right-color: rgba($cMainBg, 0.8);
   }
-  &.CDB-Tooltip.CDB-Tooltip--right:after {
+  &.CDB-Tooltip.CDB-Tooltip--right::after {
     border-left-color: rgba($cMainBg, 0.8);
   }
 }
 
 .is-error {
-  &.CDB-Tooltip.CDB-Tooltip--up:after {
+  &.CDB-Tooltip.CDB-Tooltip--up::after {
     border-bottom-color: $cError;
   }
-  &.CDB-Tooltip.CDB-Tooltip--down:after {
+  &.CDB-Tooltip.CDB-Tooltip--down::after {
     border-top-color: $cError;
   }
-  &.CDB-Tooltip.CDB-Tooltip--left:after {
+  &.CDB-Tooltip.CDB-Tooltip--left::after {
     border-right-color: $cError;
   }
-  &.CDB-Tooltip.CDB-Tooltip--right:after {
+  &.CDB-Tooltip.CDB-Tooltip--right::after {
     border-left-color: $cError;
   }
 }
 
-.CDB-Tooltip.CDB-Tooltip--up:after {
+.CDB-Tooltip.CDB-Tooltip--up::after {
   top: -$baseSize;
   left: calc(50% - #{$halfBaseSize});
   border-top-width: $halfBaseSize;
   border-top-style: solid;
 }
 
-.CDB-Tooltip.CDB-Tooltip--down:after {
+.CDB-Tooltip.CDB-Tooltip--down::after {
   bottom: -$baseSize;
   left: calc(50% - #{$halfBaseSize});
   border-top-width: $halfBaseSize;
   border-top-style: solid;
 }
 
-.CDB-Tooltip.CDB-Tooltip--left:after {
+.CDB-Tooltip.CDB-Tooltip--left::after {
   top: calc(50% - #{$halfBaseSize});
   left: -$baseSize;
   border-right-width: $halfBaseSize;
   border-right-style: solid;
 }
 
-.CDB-Tooltip.CDB-Tooltip--right:after {
+.CDB-Tooltip.CDB-Tooltip--right::after {
   top: calc(50% - #{$halfBaseSize});
   right: -$baseSize;
   border-right-width: $halfBaseSize;
