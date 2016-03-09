@@ -395,7 +395,7 @@
   @include align-items(center);
   margin: 0 $halfBaseSize;
   background: $cWhite;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .CDB-ListAnalysis-layer {
