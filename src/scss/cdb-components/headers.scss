@@ -211,6 +211,10 @@
   margin-left: 4px;
   vertical-align: middle;
 }
+.CDB-HeaderInfo-ActionsItem:first-child {
+  margin-left: 0;
+}
+
 .CDB-HeaderNumeration {
   width: $baseSize * 3;
   height: $baseSize * 3;
