@@ -120,22 +120,30 @@
 ```
   <ul class="CDB-ListLayer">
     <li class="CDB-ListLayer-item">
-      <div class="CDB-ListLayer-media u-rSpace--xl" style="background: #E27D61; color: #fff">
-        <p class="CDB-Text CDB-Size-large is-semibold">A</p>
-      </div>
-      <div class="CDB-ListLayer-Inner">
-        <div class="CDB-ListLayer-Title u-bSpace">
-          <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">ATM Machines</h2>
-          <!--
-          <div class="CDB-HeaderInfo-Actions">
-            <button class="CDB-Shape">
-              <div class="CDB-Shape-close is-blue is-large"></div>
-            </button>
-          </div>-->
+      <div class="CDB-ListLayer-itemHeader">
+        <div class="CDB-ListLayer-media u-rSpace--xl" style="background: #E27D61; color: #fff">
+          <p class="CDB-Text CDB-Size-large is-semibold">A</p>
         </div>
-        <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
-          ADD ANALYSIS
-        </button>
+        <div class="CDB-ListLayer-Inner">
+          <div class="CDB-ListLayer-Title u-bSpace">
+            <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">ATM Machines</h2>
+            <ul class="CDB-HeaderInfo-Actions">
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <div class="CDB-ArrowToogle is-blue is-small"></div>
+              </li>
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <button class="CDB-Shape-threePoints is-blue is-small">
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
+            ADD ANALYSIS
+          </button>
+        </div>
       </div>
       <ul class="CDB-ListAnalysis">
         <li class="CDB-ListAnalysis-item is-analysis">
@@ -177,22 +185,30 @@
       </ul>
     </li>
     <li class="CDB-ListLayer-item">
-      <div class="CDB-ListLayer-media u-rSpace--xl" style="background: #E27D61; color: #fff">
-        <p class="CDB-Text CDB-Size-large is-semibold">A</p>
-      </div>
-      <div class="CDB-ListLayer-Inner">
-        <div class="CDB-ListLayer-Title u-bSpace">
-          <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">ATM Machines</h2>
-          <!--
-          <div class="CDB-HeaderInfo-Actions">
-            <button class="CDB-Shape">
-              <div class="CDB-Shape-close is-blue is-large"></div>
-            </button>
-          </div>-->
+      <div class="CDB-ListLayer-itemHeader">
+        <div class="CDB-ListLayer-media u-rSpace--xl" style="background: #E27D61; color: #fff">
+          <p class="CDB-Text CDB-Size-large is-semibold">A</p>
         </div>
-        <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
-          ADD ANALYSIS
-        </button>
+        <div class="CDB-ListLayer-Inner">
+          <div class="CDB-ListLayer-Title u-bSpace">
+            <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">ATM Machines</h2>
+            <ul class="CDB-HeaderInfo-Actions">
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <div class="CDB-ArrowToogle is-blue is-small"></div>
+              </li>
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <button class="CDB-Shape-threePoints is-blue is-small">
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
+            ADD ANALYSIS
+          </button>
+        </div>
       </div>
       <ul class="CDB-ListAnalysis">
         <li class="CDB-ListAnalysis-item is-analysis">
@@ -232,22 +248,30 @@
       </ul>
     </li>
     <li class="CDB-ListLayer-item">
-      <div class="CDB-ListLayer-media u-rSpace--xl is-hide" style="background: #E27D61; color: #fff">
-        <p class="CDB-Text CDB-Size-large is-semibold">A</p>
-      </div>
-      <div class="CDB-ListLayer-Inner">
-        <div class="CDB-ListLayer-Title u-bSpace">
-          <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">Bus stops</h2>
-          <!--
-          <div class="CDB-HeaderInfo-Actions">
-            <button class="CDB-Shape">
-              <div class="CDB-Shape-close is-blue is-large"></div>
-            </button>
-          </div>-->
+      <div class="CDB-ListLayer-itemHeader">
+        <div class="CDB-ListLayer-media u-rSpace--xl is-hide" style="background: #E27D61; color: #fff">
+          <p class="CDB-Text CDB-Size-large is-semibold">A</p>
         </div>
-        <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
-          ADD ANALYSIS
-        </button>
+        <div class="CDB-ListLayer-Inner">
+          <div class="CDB-ListLayer-Title u-bSpace">
+            <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">Bus stops</h2>
+            <ul class="CDB-HeaderInfo-Actions">
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <div class="CDB-ArrowToogle is-blue is-small"></div>
+              </li>
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <button class="CDB-Shape-threePoints is-blue is-small">
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="CDB-Text CDB-Size-medium u-actionTextColor ">
+            ADD ANALYSIS
+          </button>
+        </div>
       </div>
       <ul class="CDB-ListAnalysis">
         <li class="CDB-ListAnalysis-item CDB-ListAnalysis-layer is-base">
@@ -259,22 +283,30 @@
       </ul>
     </li>
     <li class="CDB-ListLayer-item">
-      <div class="CDB-ListLayer-media CDB-ListLayer-media--basemap u-rSpace--xl">
-        <img src="/src/img/basemap/positron.png" alt="Title Basemap">
-      </div>
-      <div class="CDB-ListLayer-Inner">
-        <div class="CDB-ListLayer-Title u-bSpace">
-          <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">Positron by CartoDB</h2>
-          <!--
-          <div class="CDB-HeaderInfo-Actions">
-            <button class="CDB-Shape">
-              <div class="CDB-Shape-close is-blue is-large"></div>
-            </button>
-          </div>-->
+      <div class="CDB-ListLayer-itemHeader">
+        <div class="CDB-ListLayer-media CDB-ListLayer-media--basemap u-rSpace--xl">
+          <img src="/src/img/basemap/positron.png" alt="Title Basemap">
         </div>
-        <p class="CDB-Text CDB-Size-medium u-altTextColor">
-          Basemap
-        </p>
+        <div class="CDB-ListLayer-Inner">
+          <div class="CDB-ListLayer-Title u-bSpace">
+            <h2 class="CDB-ListLayer-TitleText CDB-Text CDB-Size-large u-ellipsis">Positron by CartoDB</h2>
+            <ul class="CDB-HeaderInfo-Actions">
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <div class="CDB-ArrowToogle is-blue is-small"></div>
+              </li>
+              <li class="CDB-HeaderInfo-ActionsItem CDB-Shape">
+                <button class="CDB-Shape-threePoints is-blue is-small">
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                  <div class="CDB-Shape-threePointsItem"></div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <p class="CDB-Text CDB-Size-medium u-altTextColor">
+            Basemap
+          </p>
+        </div>
       </div>
     </li>
   </ul>
@@ -287,15 +319,10 @@
   padding: $baseSize * 2;
   border: 1px solid $cSecondaryLine;
   border-radius: $baseSize / 2;
-  overflow: hidden;
 
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.CDB-ListLayer-inner {
-  overflow: hidden;
 }
 
 .CDB-ListLayer-media {
@@ -304,12 +331,10 @@
   @include justify-content(center);
   width: 40px;
   height: 40px;
-  float: left;
   border-radius: $baseSize / 2;
 }
 .CDB-ListLayer-media--basemap {
   border: 1px solid $cMainLine;
-  overflow: hidden;
 }
 
 .CDB-ListLayer-media.is-hide {
@@ -371,29 +396,23 @@
   margin: 0 4px;
   background: $cWhite;
 }
-.CDB-ListAnalysis-innerItem .CDB-ListAnalysis-itemInfo {
-  width: 45px;
-}
 
 .CDB-ListAnalysis-layer {
-  border: 1px solid #eee;
+  border: 1px solid $cSecondaryLine;
   border-radius: 4px;
   padding-right: 12px;
 
   &.is-base {
-    background: #F9F9F9;
+    background: $cThirdBackground;
   }
-}
-
-.CDB-ListAnalysis-layer.is-base .CDB-ListAnalysis-itemInfo {
-  width: 39px;
 }
 
 .CDB-ListAnalysis-itemInfo {
   @include display-flex();
-  @include align-items(center);
   @include justify-content(center);
-  width: 42px;
+  @include align-items(center);
+  width: 40px;
+  min-width: 40px;
   height: 32px;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -407,10 +426,24 @@
   padding-right: 12px;
 }
 
+.CDB-ListAnalysis-innerItem .CDB-ListAnalysis-title {
+  max-width: 50px;
+}
+
 .CDB-ListAnalysis-error {
   width: 6px;
+  min-width: 6px;
   height: 6px;
   border-radius: 50%;
   background: $cError;
 }
 
+.CDB-ListLayer-itemHeader {
+  @include display-flex();
+  @include flex(1);
+  @include align-items(center);
+}
+
+.CDB-ListLayer-Inner {
+  @include flex(1);
+}
