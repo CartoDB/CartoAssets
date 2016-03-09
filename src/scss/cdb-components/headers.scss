@@ -53,9 +53,9 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <a href="#" class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
-  </a>
+  </button>
   <div class="CDB-HeaderInfo-Inner">
     <div class="CDB-HeaderInfo-Title u-bSpace">
       <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
@@ -93,9 +93,9 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <a href="#" class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
-  </a>
+  </button>
   <div class="CDB-HeaderInfo-Inner">
     <div class="CDB-HeaderInfo-Title u-bSpace">
       <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Basemap</h2>
@@ -120,9 +120,9 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <a href="#" class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
-  </a>
+  </button>
   <div class="CDB-HeaderInfo-Inner">
     <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text u-bSpace--m">
     <div class="CDB-Shape u-iBlock">
@@ -172,6 +172,7 @@
 
 .CDB-HeaderInfo {
   @include display-flex();
+  @include align-items(flex-start);
 
   &.is-block {
     display: block;
