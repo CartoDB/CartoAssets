@@ -39,35 +39,12 @@
 
 .CDB-Range::-webkit-slider-thumb {
   position: relative;
-  width: $baseSize / 2;
-  height: 100%;
-  border-radius: $baseSize / 2;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -3000px;
-    height: $baseSize / 4;
-    border-radius: $baseSize / 2;
-    background: $cBlue;
-    content: '';
-  }
-
-  &::after {
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    left: -6px;
-    width: $baseSize + 4;
-    height: $baseSize + 4;
-    border: 1px solid $cBlue;
-    border-radius: 50%;
-    background: $cWhite;
-    content: '';
-    z-index: 1;
-  }
+  width: $baseSize + 4;
+  height: $baseSize + 4;
+  margin-top: -5px;
+  border: 1px solid $cBlue;
+  border-radius: 50%;
+  background: $cWhite;
 
   &:focus,
   &:hover {
