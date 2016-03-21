@@ -1,0 +1,389 @@
+/* SG
+# Shapes/Widgets Carousel
+
+Description
+
+```
+<div class="ShapeCarousel">
+  <div class="ShapeCarousel-histogram">
+    <h2 class="ShapeCarousel-histogram-title"></h2>
+    <ul class="ShapeCarousel-histogram-list">
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--1"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--2"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--3"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--4"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--5"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--6"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--7"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--8"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--9"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--10"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--11"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--12"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--13"></li>
+      <li class="ShapeCarousel-histogram-item ShapeCarousel-histogram-item--14"></li>
+    </ul>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="ShapeCarousel">
+  <div class="ShapeCarousel-category">
+    <h2 class="ShapeCarousel-category-title"></h2>
+    <ul class="ShapeCarousel-category-list">
+      <li class="ShapeCarousel-category-item">
+        <div class="ShapeCarousel-category-percent ShapeCarousel-category-percent--1"></div>
+      </li>
+      <li class="ShapeCarousel-category-item">
+        <div class="ShapeCarousel-category-percent ShapeCarousel-category-percent--2"></div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="ShapeCarousel">
+  <div class="ShapeCarousel-formula">
+    <h2 class="ShapeCarousel-formula-title"></h2>
+    <p class="ShapeCarousel-formula-info"></p>
+    <h3 class="ShapeCarousel-formula-number"></h3>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="ShapeCarousel">
+  <div class="ShapeCarousel-timeSeries">
+    <div class="ShapeCarousel-timeSeries-header">
+      <p class="ShapeCarousel-timeSeries-play"></p>
+      <h2 class="ShapeCarousel-timeSeries-title"></h2>
+    </div>
+    <ul class="ShapeCarousel-timeSeries-list">
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--1"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--2"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--3"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--4"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--5"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--6"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--7"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--8"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--9"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--10"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--11"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--12"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--13"></li>
+      <li class="ShapeCarousel-timeSeries-item ShapeCarousel-timeSeries-item--14"></li>
+    </ul>
+  </div>
+</div>
+
+
+<br/>
+<br/>
+
+<div class="ShapeCarousel">
+  <div class="ShapeCarousel-timeOfTheDay">
+    <h2 class="ShapeCarousel-timeOfTheDay-title"></h2>
+    <div class="ShapeCarousel-timeOfTheDay-graphic">
+      <ul class="ShapeCarousel-timeOftheDay-list">
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--1"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--2"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--3"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--4"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--5"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--6"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--7"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--8"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--9"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--10"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--11"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--12"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--13"></li>
+        <li class="ShapeCarousel-timeOfTheDay-item ShapeCarousel-timeOfTheDay-item--14"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+```
+*/
+
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+
+/* Histogram */
+
+.ShapeCarousel {
+  position: relative;
+  width: 56px;
+  height: 32px;
+  border: 1px solid $cSecondaryLine;
+  border-radius: 2px;
+  background: $cWhite;
+  box-sizing: border-box;
+}
+
+.ShapeCarousel-histogram {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.ShapeCarousel-histogram-title {
+  width: 16px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: $cSecondaryLine;
+}
+
+
+.ShapeCarousel-histogram-list {
+  display: inline;
+  padding-left: 4px;
+  vertical-align: top;
+}
+
+.ShapeCarousel-histogram-item {
+  display: inline-block;
+  width: 2px;
+  margin-left: -3px;
+  background: $cHighlight;
+}
+
+@for $i from 1 through 14 {
+  .ShapeCarousel-histogram-item--#{$i} { 
+    height: random(9) + px;
+  }
+}
+
+/* Category */
+
+.ShapeCarousel-category {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  left: 6px;
+}
+
+.ShapeCarousel-category-title {
+  width: 16px;
+  height: 3px;
+  margin-bottom: 6px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-category-item {
+  height: 2px;
+  margin-bottom: 5px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-category-item:last-child {
+  margin-bottom: 0;
+}
+
+.ShapeCarousel-category-percent {
+  height: 2px;
+  background: $cHighlight;
+}
+
+@for $i from 1 through 2 {
+  .ShapeCarousel-category-percent--#{$i} { 
+    width: random(42) + px;
+  }
+}
+
+/* Formula */
+
+.ShapeCarousel-formula {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 40px;
+}
+
+.ShapeCarousel-formula-title {
+  width: 16px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-formula-info {
+  width: 16px;
+  height: 2px;
+  margin-bottom: 3px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-formula-number {
+  height: 7px;
+  background: $cSecondaryLine;
+}
+
+
+/* Time Series */
+
+.ShapeCarousel-timeSeries {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 40px;
+}
+
+.ShapeCarousel-timeSeries-header {
+  margin-bottom: 1px;
+}
+
+.ShapeCarousel-timeSeries-title {
+  @include inline-block();
+  width: 16px;
+  height: 3px;
+  margin-left: -2px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-timeSeries-play {
+  @include inline-block();
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left: 5px solid #979EA1;
+}
+
+.ShapeCarousel-timeSeries-list {
+  display: inline;
+  padding-left: 4px;
+  vertical-align: top;
+}
+
+.ShapeCarousel-timeSeries-item {
+  display: inline-block;
+  width: 2px;
+  margin-left: -3px;
+  background: $cSecondaryLine;
+}
+
+@for $i from 1 through 14 {
+  .ShapeCarousel-timeSeries-item--#{$i} { 
+    height: random(9) + px;
+  }
+}
+
+@for $i from 1 through 6 {
+  .ShapeCarousel-timeSeries-item--#{$i} { 
+    background: #F2CC8F;
+  }
+}
+
+
+/* Time Series */
+
+.ShapeCarousel-timeOfTheDay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+}
+
+.ShapeCarousel-timeOfTheDay-title {
+  width: 16px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: $cSecondaryLine;
+}
+
+.ShapeCarousel-timeOfTheDay-play {
+  @include inline-block();
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left: 5px solid #979EA1;
+}
+
+.ShapeCarousel-timeOfTheDay-graphic {
+  position: relative;
+  height: 8px;
+  padding-top: 3px;
+  overflow: hidden;
+}
+
+.ShapeCarousel-timeOfTheDay-graphic::before, 
+.ShapeCarousel-timeOfTheDay-graphic::after {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: rgba($cMainBg, 0.04);
+  content: '';
+}
+
+
+.ShapeCarousel-timeOfTheDay-graphic::before {
+  left: 0;
+  border-top-right-radius: 80%;
+}
+
+.ShapeCarousel-timeOfTheDay-graphic::after {
+  right: 0;
+  border-top-left-radius: 80%;
+}
+
+.ShapeCarousel-timeOfTheDay-list {
+  display: inline;
+  position: relative;
+  padding-left: 4px;
+  vertical-align: top;
+  z-index: 2;
+}
+
+.ShapeCarousel-timeOfTheDay-item {
+  display: inline-block;
+  width: 2px;
+  margin-left: -3px;
+  background: $cHighlight;
+}
+
+.ShapeCarousel-timeOfTheDay-item--1,
+.ShapeCarousel-timeOfTheDay-item--14 {
+  height: 8px;
+}
+
+.ShapeCarousel-timeOfTheDay-item--2,
+.ShapeCarousel-timeOfTheDay-item--13 {
+  height: 7px;
+}
+
+.ShapeCarousel-timeOfTheDay-item--3,
+.ShapeCarousel-timeOfTheDay-item--12 {
+  height: 5px;
+}
+
+.ShapeCarousel-timeOfTheDay-item--4,
+.ShapeCarousel-timeOfTheDay-item--11 {
+  height: 4px;
+}
+
+.ShapeCarousel-timeOfTheDay-item--5,
+.ShapeCarousel-timeOfTheDay-item--10 {
+  height: 3px;
+}
+
+.ShapeCarousel-timeOfTheDay-item--6,
+.ShapeCarousel-timeOfTheDay-item--7,
+.ShapeCarousel-timeOfTheDay-item--8,
+.ShapeCarousel-timeOfTheDay-item--9 {
+  height: 2px;
+}
+
+
+
+
+
