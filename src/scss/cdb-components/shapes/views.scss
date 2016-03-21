@@ -1,0 +1,161 @@
+/* SG
+# Shapes/Mode Carousel
+
+Description
+
+```
+<div class="ModeCarousel ModeCarousel--embed">
+  <p class="ModeCarousel-Embed-text ModeCarousel-Embed-text--01"></p>
+  <p class="ModeCarousel-Embed-text ModeCarousel-Embed-text--02"></p>
+  <div class="ModeCarousel-Map ModeCarousel-Map--embed"></div>
+  <p class="ModeCarousel-Embed-text"></p>
+</div>
+
+<br/>
+<br/>
+
+<div class="ModeCarousel ModeCarousel--desktop">
+  <ul class="ModeCarousel-Desktop-header">
+    <li class="ModeCarousel-Desktop-headerItems ModeCarousel-Desktop-headerItems--1"></li>
+    <li class="ModeCarousel-Desktop-headerItems ModeCarousel-Desktop-headerItems--2"></li>
+    <li class="ModeCarousel-Desktop-headerItems ModeCarousel-Desktop-headerItems--3"></li>
+  </ul>
+  <div class="ModeCarousel-Map ModeCarousel-Map--desktop"></div>
+</div>
+
+<br/>
+<br/>
+
+<div class="ModeCarousel ModeCarousel--mobile">
+  <div class="ModeCarousel-Mobile-header">
+    <div class="ModeCarousel-Mobile-camera"></div>
+    <div class="ModeCarousel-Mobile-speaker"></div>
+  </div>
+  <div class="ModeCarousel-Map ModeCarousel-Map--mobile"></div>
+  <div class="ModeCarousel-Mobile-microphone"></div>
+</div>
+
+```
+*/
+
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+
+.ModeCarousel-Map {
+  border-radius: 1px;
+  background: $cHighlight;
+}
+
+.ModeCarousel-Map--embed {
+  width: 27px;
+  height: 12px;
+  margin: 2px 0;
+}
+
+.ModeCarousel-Map--mobile {
+  height: 24px;
+  margin: 1px 0;
+}
+
+.ModeCarousel-Map--desktop {
+  height: 15px;
+  margin: 3px 5px;
+}
+
+.ModeCarousel {
+  position: relative;
+  border: 1px solid $cSecondaryLine;
+  border-radius: 2px;
+  background: $cWhite;
+  box-sizing: border-box;
+}
+
+.ModeCarousel--embed,
+.ModeCarousel--desktop {
+  width: 56px;
+  height: 32px;
+}
+
+.ModeCarousel--embed {
+  padding: 3px 4px;
+}
+
+.ModeCarousel--mobile {
+  width: 18px;
+  height: 34px;
+  padding: 2px 2px 3px;
+}
+
+.ModeCarousel-Embed-text {
+  height: 2px;
+  margin-top: 1px;
+  background: $cMainLine;
+}
+.ModeCarousel-Embed-text--01 {
+  width: 37px;
+}
+.ModeCarousel-Embed-text--02 {
+  width: 27px;
+}
+
+.ModeCarousel-Mobile-microphone {
+  width: 2px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: $cMainLine;
+}
+.ModeCarousel-Mobile-camera,
+.ModeCarousel-Mobile-speaker {
+  display: inline-block;
+  background: $cMainLine;
+  vertical-align: top;
+}
+.ModeCarousel-Mobile-header {
+  height: 1px;
+  text-align: center;
+}
+.ModeCarousel-Mobile-camera {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+}
+.ModeCarousel-Mobile-speaker {
+  width: 4px;
+  height: 1px;
+  margin-left: -2px;
+  border-radius: 50px;
+}
+
+.ModeCarousel-Desktop-header {
+  box-sizing: border-box;
+  height: 8px;
+  padding: 2px 4px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #DDD;
+}
+.ModeCarousel-Desktop-headerItems {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  vertical-align: top;
+  margin-left: -2px;
+}
+
+.ModeCarousel-Desktop-headerItems--1 {
+  background: $cError;
+}
+.ModeCarousel-Desktop-headerItems--2 {
+  background: $cAlert;
+}
+.ModeCarousel-Desktop-headerItems--3 {
+  background: #8FB83F;
+}
+
+
+
+
+
