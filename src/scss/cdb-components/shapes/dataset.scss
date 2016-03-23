@@ -83,10 +83,8 @@ Description
 
 .CDB-Shape-Dataset {
   padding-top: 1px;
-  padding-left: 10px;
   &.is-small {
     padding-top: 0;
-    padding-left: 7px;
   }
 }
 
@@ -101,6 +99,7 @@ Description
 
   &:first-child {
     position: relative;
+    margin-left: 0;
     box-shadow: 3px 0 0 $cWhite;
     z-index: 1;
   }
@@ -112,6 +111,7 @@ Description
     height: 6px;
     margin-left: -7px;
     &:first-child {
+      margin-left: 0;
       box-shadow: 2px 0 0 $cWhite;
     }
   }
