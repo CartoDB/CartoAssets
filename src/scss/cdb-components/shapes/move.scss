@@ -7,37 +7,37 @@ Description
 <h2>16px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-Move">
-      <div class="CDB-Shape-MoveItem is-first"></div>
-      <div class="CDB-Shape-MoveItem is-second"></div>
-      <div class="CDB-Shape-MoveItem is-third"></div>
+    <div class="CDB-Shape-move">
+      <div class="CDB-Shape-moveItem is-first"></div>
+      <div class="CDB-Shape-moveItem is-second"></div>
+      <div class="CDB-Shape-moveItem is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-Move">
-      <div class="CDB-Shape-MoveItem is-blue is-first"></div>
-      <div class="CDB-Shape-MoveItem is-blue is-second"></div>
-      <div class="CDB-Shape-MoveItem is-blue is-third"></div>
+    <div class="CDB-Shape-move">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-Move">
-      <div class="CDB-Shape-MoveItem is-grey is-first"></div>
-      <div class="CDB-Shape-MoveItem is-grey is-second"></div>
-      <div class="CDB-Shape-MoveItem is-grey is-third"></div>
+    <div class="CDB-Shape-move">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-Move">
-      <div class="CDB-Shape-MoveItem is-white is-first"></div>
-      <div class="CDB-Shape-MoveItem is-white is-second"></div>
-      <div class="CDB-Shape-MoveItem is-white is-third"></div>
+    <div class="CDB-Shape-move">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-third"></div>
     </div>
   </div>
 </div>
@@ -48,37 +48,37 @@ Description
 <h2>12px</h2>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-Move is-small">
-      <div class="CDB-Shape-MoveItem is-first"></div>
-      <div class="CDB-Shape-MoveItem is-second"></div>
-      <div class="CDB-Shape-MoveItem is-third"></div>
+    <div class="CDB-Shape-move is-small">
+      <div class="CDB-Shape-moveItem is-first"></div>
+      <div class="CDB-Shape-moveItem is-second"></div>
+      <div class="CDB-Shape-moveItem is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
-    <div class="CDB-Shape-Move is-small">
-      <div class="CDB-Shape-MoveItem is-blue is-first"></div>
-      <div class="CDB-Shape-MoveItem is-blue is-second"></div>
-      <div class="CDB-Shape-MoveItem is-blue is-third"></div>
+    <div class="CDB-Shape-move is-small">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--blue is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px;">
   <div class="CDB-Shape">
-    <div class="CDB-Shape-Move is-small">
-      <div class="CDB-Shape-MoveItem is-grey is-first"></div>
-      <div class="CDB-Shape-MoveItem is-grey is-second"></div>
-      <div class="CDB-Shape-MoveItem is-grey is-third"></div>
+    <div class="CDB-Shape-move is-small">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--grey is-third"></div>
     </div>
   </div>
 </div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
-    <div class="CDB-Shape-Move is-small">
-      <div class="CDB-Shape-MoveItem is-white is-first"></div>
-      <div class="CDB-Shape-MoveItem is-white is-second"></div>
-      <div class="CDB-Shape-MoveItem is-white is-third"></div>
+    <div class="CDB-Shape-move is-small">
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-first"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-second"></div>
+      <div class="CDB-Shape-moveItem CDB-Shape-MoveItem--white is-third"></div>
     </div>
   </div>
 </div>
@@ -87,14 +87,14 @@ Description
 
 @import '../../cdb-variables/colors';
 
-.CDB-Shape-Move {
+.CDB-Shape-move {
   padding: 1px 0 0;
 }
 
-.CDB-Shape-Move.is-small {
+.CDB-Shape-move.is-small {
   padding: 3px 0 0 1px;
 
-  .CDB-Shape-MoveItem {
+  .CDB-Shape-moveItem {
     height: 2px;
     margin-bottom: 2px;
 
@@ -110,7 +110,7 @@ Description
   }
 }
 
-.CDB-Shape-MoveItem {
+.CDB-Shape-moveItem {
   height: 3px;
   margin-bottom: 3px;
 
@@ -135,21 +135,21 @@ Description
   }
 }
 
-.CDB-Shape-MoveItem.is-blue {
+.CDB-Shape-moveItem--blue {
   &::before,
   &::after {
     background: $cBlue;
   }
 }
 
-.CDB-Shape-MoveItem.is-white {
+.CDB-Shape-moveItem--white {
   &::before,
   &::after {
     background: $cWhite;
   }
 }
 
-.CDB-Shape-MoveItem.is-grey {
+.CDB-Shape-moveItem--grey {
   &::before,
   &::after {
     background: $cHoverLine;
