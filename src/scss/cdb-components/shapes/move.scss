@@ -23,6 +23,15 @@ Description
     </div>
   </div>
 </div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-Move">
+      <div class="CDB-Shape-MoveItem is-grey is-first"></div>
+      <div class="CDB-Shape-MoveItem is-grey is-second"></div>
+      <div class="CDB-Shape-MoveItem is-grey is-third"></div>
+    </div>
+  </div>
+</div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
     <div class="CDB-Shape-Move">
@@ -55,6 +64,15 @@ Description
     </div>
   </div>
 </div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape">
+    <div class="CDB-Shape-Move is-small">
+      <div class="CDB-Shape-MoveItem is-grey is-first"></div>
+      <div class="CDB-Shape-MoveItem is-grey is-second"></div>
+      <div class="CDB-Shape-MoveItem is-grey is-third"></div>
+    </div>
+  </div>
+</div>
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
     <div class="CDB-Shape-Move is-small">
@@ -77,6 +95,7 @@ Description
   padding: 3px 0 0 1px;
 
   .CDB-Shape-MoveItem {
+    height: 2px;
     margin-bottom: 2px;
 
     &::before {
@@ -92,6 +111,7 @@ Description
 }
 
 .CDB-Shape-MoveItem {
+  height: 3px;
   margin-bottom: 3px;
 
   &:last-child {
@@ -126,5 +146,12 @@ Description
   &::before,
   &::after {
     background: $cWhite;
+  }
+}
+
+.CDB-Shape-MoveItem.is-grey {
+  &::before,
+  &::after {
+    background: $cHoverLine;
   }
 }
