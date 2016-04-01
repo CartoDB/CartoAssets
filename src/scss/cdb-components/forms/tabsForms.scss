@@ -1,0 +1,101 @@
+// Tabs Forms styles
+// ----------------------------------------------
+
+/* SG
+# Forms/TabsForms
+
+```
+<div class="CDB-TabsForms u-iBlock">
+  <ul class="CDB-TabsForms-inner">
+    <li class="CDB-TabsForms-item">
+      <button class="CDB-TabsForms-button">
+        <div class="CDB-Shape">
+          <ul class="CDB-Shape-paragraph is-left">
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+            </li>
+          </ul>
+        </div>
+      </button>
+    </li>
+    <li class="CDB-TabsForms-item">
+      <button class="CDB-TabsForms-button">
+        <div class="CDB-Shape">
+          <ul class="CDB-Shape-paragraph is-center">
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+            </li>
+          </ul>
+        </div>
+      </button>
+    </li>
+    <li class="CDB-TabsForms-item">
+      <button class="CDB-TabsForms-button">
+        <div class="CDB-Shape">
+          <ul class="CDB-Shape-paragraph is-right is-active">
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+            </li>
+            <li class="CDB-Shape-paragraphItem">
+              <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+            </li>
+          </ul>
+        </div>
+      </button>
+    </li>
+  </ul>
+</div>
+```
+*/
+
+@import '../../cdb-utilities/mixins';
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+
+.CDB-TabsForms {
+  border: 1px solid $cMainLine;
+  border-radius: 4px;
+}
+.CDB-TabsForms-inner {
+  @include display-flex();
+}
+.CDB-TabsForms-item {
+  border-left: 1px solid $cSecondaryLine;
+}
+.CDB-TabsForms-item:first-child {
+  border-left: 0;
+}
+.CDB-TabsForms-button {
+  padding: 7px 8px;
+}
+
+
+
+
+
+
