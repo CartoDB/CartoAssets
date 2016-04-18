@@ -13,6 +13,7 @@
 
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
+@import '../../cdb-utilities/helpers';
 
 .CDB-Textarea {
   width: 100%;
@@ -35,9 +36,10 @@
     border-color: $cSecondaryLine;
     background: $cThirdBackground;
   }
-}
-.CDB-Textarea.has-error {
-  border: 1px solid rgba($cError, 0.48);
-  background: rgba($cError, 0.04);
-  color: $cError;
+  &:has-error {
+    @include default-form-error-style();
   }
+}
+.CDB-FieldError .CDB-Textarea {
+  @include default-form-error-style();
+}
