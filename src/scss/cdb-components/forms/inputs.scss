@@ -13,6 +13,7 @@
 
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
+@import '../../cdb-utilities/helpers';
 
 .CDB-InputText {
   width: 100%;
@@ -34,8 +35,10 @@
     background: $cThirdBackground;
   }
   &.has-error {
-    border: 1px solid rgba($cError, 0.48);
-    background: rgba($cError, 0.04);
-    color: $cError;
+    @include default-form-error-style();
   }
+}
+
+.CDB-FieldError .CDB-InputText {
+  @include default-form-error-style();
 }

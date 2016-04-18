@@ -49,7 +49,7 @@
 }
 
 // Colors
-// Main Text Color is default color 
+// Main Text Color is default color
 // ----------------------------------------------
 
 .u-actionTextColor {
@@ -92,4 +92,11 @@
   .u-showMobile {
     display: block !important;
   }
+}
+
+/* helper mixins */
+@mixin default-form-error-style() {
+  border: 1px solid rgba($cError, 0.48);
+  background: rgba($cError, 0.04);
+  color: $cError;
 }
