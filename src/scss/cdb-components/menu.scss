@@ -63,6 +63,77 @@
     </ul>
   </nav>
 </div>
+
+<br/><br/>
+<br/><br/>
+
+<div style="height: 200px; padding: 20px;">
+  <nav class="CDB-NavMenu">
+    <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium js-menu">
+      <li class="CDB-NavMenu-Item">
+        <button class="CDB-NavMenu-Link u-upperCase">Data</button>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <button class="CDB-NavMenu-Link u-upperCase">Analyses</button>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <button class="CDB-NavMenu-Link u-upperCase">Style</button>
+      </li>
+      <li class="CDB-NavMenu-Item is-selected">
+        <button class="CDB-NavMenu-Link u-upperCase">Pop-up</button>
+      </li>
+      <li class="CDB-NavMenu-Item">
+        <button class="CDB-NavMenu-Link u-upperCase">Legend</button>
+      </li>
+    </ul>
+    <div class="Editor-content js-content">
+      <div>
+        <div class="TabPane">
+          <ul class="CDB-NavSubmenu CDB-Text CDB-Size-small is-semibold js-menu">
+            <li class="CDB-NavSubmenu-Item is-selected">
+              <button class="CDB-NavSubmenu-Link u-upperCase">Click</button>
+            </li>
+            <li class="CDB-NavSubmenu-Item">
+              <button class="CDB-NavSubmenu-Link u-upperCase">Hover</button>
+            </li>
+          </ul>
+          <div class="Editor-content js-content">
+            <div>
+              <div>
+                <div class="CDB-HeaderInfo">
+                  <div class="CDB-HeaderNumeration CDB-Text is-semibold u-rSpace--m">1</div>
+
+                  <div class="CDB-HeaderInfo-Inner CDB-Text">
+                    <div class="CDB-HeaderInfo-Title u-bSpace--m">
+                      <h2 class="CDB-Text CDB-HeaderInfo-TitleText CDB-Size-large">Style</h2>
+                    </div>
+
+                    <p class="CDB-Text u-upperCase CDB-FontSize-small u-altTextColor u-bSpace--m">None</p>
+
+                    <select class="CDB-SelectFake js-select">
+                      <option value="white" selected="selected">
+                        white
+                      </option>
+                      <option value="dark">
+                        dark
+                      </option>
+                      <option value="color">
+                        color
+                      </option>
+                      <option value="image">
+                        image
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
 ```
 */
 
@@ -99,11 +170,17 @@
   color: $cMainText;
 }
 
+// .CDB-NavSubmenu {
+//   position: absolute;
+//   right: 0;
+//   left: 0;
+//   padding-top: 14px;
+//   border-bottom: 1px solid $cSecondaryLine;
+// }
+
 .CDB-NavSubmenu {
-  position: absolute;
-  right: 0;
-  left: 0;
-  padding-top: 14px;
+  margin-top: -5px;
+  margin-bottom: 18px;
   border-bottom: 1px solid $cSecondaryLine;
 }
 
