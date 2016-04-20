@@ -100,9 +100,9 @@ Description
     margin-bottom: 2px;
 
     &::before {
+      left: 5px;
       width: 2px;
       height: 2px;
-      left: 5px;
     }
     &::after {
       width: 2px;
