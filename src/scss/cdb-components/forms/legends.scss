@@ -59,6 +59,27 @@
   <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
 </div>
 
+<br/>
+<br/>
+<br/>
+
+<div class="CDB-Text CDB-Fieldset">
+  <p class="CDB-Legend CDB-Legend--withcheck u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
+    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
+  </p>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+
+<div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+  <p class="CDB-Legend CDB-Legend--withcheck u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
+    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
+  </p>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
 ```
 */
 
@@ -67,6 +88,10 @@
 
 .CDB-Legend {
   width: $baseSize * 12;
+}
+
+.CDB-Legend--withcheck {
+  width: ($baseSize * 24);
 }
 
 .CDB-Fieldset {
