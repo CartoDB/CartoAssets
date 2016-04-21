@@ -64,7 +64,7 @@
 <br/>
 
 <div class="CDB-Text CDB-Fieldset">
-  <p class="CDB-Legend CDB-Legend--withcheck u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
     <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
     <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
     <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
@@ -73,7 +73,7 @@
 </div>
 
 <div class="u-tSpace-xl CDB-Text CDB-Fieldset">
-  <p class="CDB-Legend CDB-Legend--withcheck u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
     <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
     <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
     <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
@@ -90,7 +90,7 @@
   width: $baseSize * 12;
 }
 
-.CDB-Legend--withcheck {
+.CDB-Legend--big {
   width: ($baseSize * 24);
 }
 
