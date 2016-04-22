@@ -132,7 +132,7 @@
     }
   }
 }
-.CDB-OptionInput-item--noSeparator {
+.CDB-OptionInput-item--noSeparator::after {
   content: '';
 }
 .CDB-OptionInput-content {
