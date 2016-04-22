@@ -107,6 +107,9 @@
   @include align-items(center);
   margin: 0 $baseSize;
 }
+.CDB-OptionInput-container--noMargin {
+  margin: 0;
+}
 .CDB-OptionInput-item {
   @include display-flex();
   @include align-items(center);
@@ -128,6 +131,9 @@
       display: none;
     }
   }
+}
+.CDB-OptionInput-item--noSeparator {
+  content: '';
 }
 .CDB-OptionInput-content {
   @include display-flex();
