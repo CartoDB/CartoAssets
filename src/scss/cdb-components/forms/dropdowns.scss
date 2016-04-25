@@ -44,6 +44,68 @@
     </ul>
   </div>
 </div>
+
+
+  <div class="CDB-Box-Modal">
+    <div class="CDB-Box-ModalHeader">
+      <nav class="CDB-NavMenu">
+        <ul class="CDB-NavMenu-Inner CDB-NavMenu-Inner--no-margin CDB-NavMenu-Inner--is-dropdown CDB-Text is-semibold CDB-Size-medium">
+          <li class="CDB-NavMenu-Item">
+            <button class="CDB-NavMenu-Link">SOLID</button>
+          </li>
+          <li class="CDB-NavMenu-Item is-selected">
+            <button class="CDB-NavMenu-Link">BY VALUE</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="CDB-Box-ModalHeaderItem">
+        <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputTextPlain CDB-Text">
+        <button class="u-lSpace--xl">
+          <div class="CDB-Shape">
+            <div class="CDB-Shape-magnify is-blue is-small"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="CDB-Box-Modal">
+    <div class="CDB-Box-ModalHeader">
+      <nav class="CDB-NavMenu">
+        <ul class="CDB-NavMenu-Inner CDB-NavMenu-Inner--no-margin CDB-NavMenu-Inner--is-dropdown CDB-Text is-semibold CDB-Size-medium">
+          <li class="CDB-NavMenu-Item">
+            <button class="CDB-NavMenu-Link">SOLID</button>
+          </li>
+          <li class="CDB-NavMenu-Item is-selected">
+            <button class="CDB-NavMenu-Link">BY VALUE</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="CDB-Box-ModalHeaderItem">
+        <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputTextPlain CDB-Text">
+        <button class="u-lSpace--xl">
+          <div class="CDB-Shape">
+            <div class="CDB-Shape-close is-blue is-large"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+
+
 ```
 */
 

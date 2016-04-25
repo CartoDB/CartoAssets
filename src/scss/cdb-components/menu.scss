@@ -107,6 +107,12 @@
   margin-bottom: 18px;
   border-bottom: 1px solid $cMainLine;
 }
+.CDB-NavMenu-Inner--no-margin {
+  margin-bottom: 0;
+}
+.CDB-NavMenu-Inner--is-dropdown {
+  padding: $baseSize 0 0 $baseSize * 2;
+}
 
 .CDB-NavMenu-Link {
   display: block;
