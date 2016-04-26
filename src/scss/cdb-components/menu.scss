@@ -7,26 +7,26 @@
 
 ```
 <nav class="CDB-NavMenu">
-  <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">DATA</button>
+  <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">DATA</button>
     </li>
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">STYLE</button>
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">STYLE</button>
     </li>
-    <li class="CDB-NavMenu-Item is-selected">
-      <button class="CDB-NavMenu-Link">POP-UP</button>
+    <li class="CDB-NavMenu-item is-selected">
+      <button class="CDB-NavMenu-link">POP-UP</button>
       <ul class="CDB-NavSubmenu CDB-NavSubmenu--inside CDB-Size-small">
-        <li class="CDB-NavSubmenu-Item is-selected">
-          <button class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></button>
+        <li class="CDB-NavSubmenu-item is-selected">
+          <button class="CDB-NavSubmenu-link">CLICK <span class="CDB-NavSubmenu-status u-hintTextColor">NONE</span></button>
         </li>
-        <li class="CDB-NavSubmenu-Item">
-          <button class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status u-hintTextColor">NONE</span></button>
+        <li class="CDB-NavSubmenu-item">
+          <button class="CDB-NavSubmenu-link">HOVER <span class="CDB-NavSubmenu-status u-hintTextColor">NONE</span></button>
         </li>
       </ul>
     </li>
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">LEGEND</button>
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">LEGEND</button>
     </li>
   </ul>
   <div style="position: absolute; right: 0; top: 0; height: 24px; width: 46px; background: red;">
@@ -39,26 +39,26 @@
 
 <div style="background: #2E3C43; height: 100px; padding: 20px;">
   <nav class="CDB-NavMenu is-dark">
-    <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
-      <li class="CDB-NavMenu-Item CDB-Text">
-        <button class="CDB-NavMenu-Link">DATA</button>
+    <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
+      <li class="CDB-NavMenu-item CDB-Text">
+        <button class="CDB-NavMenu-link">DATA</button>
       </li>
-      <li class="CDB-NavMenu-Item">
-        <button class="CDB-NavMenu-Link">STYLE</button>
+      <li class="CDB-NavMenu-item">
+        <button class="CDB-NavMenu-link">STYLE</button>
       </li>
       <li class="CDB-NavMenu-item is-selected">
-        <button class="CDB-NavMenu-Link">POP-UP</button>
+        <button class="CDB-NavMenu-link">POP-UP</button>
         <ul class="CDB-NavSubmenu CDB-NavSubmenu--inside CDB-Size-small">
-          <li class="CDB-NavSubmenu-Item is-selected">
-            <button class="CDB-NavSubmenu-Link">CLICK <span class="CDB-NavSubmenu-Status">NONE</span></button>
+          <li class="CDB-NavSubmenu-item is-selected">
+            <button class="CDB-NavSubmenu-link">CLICK <span class="CDB-NavSubmenu-status">NONE</span></button>
           </li>
-          <li class="CDB-NavSubmenu-Item">
-            <button class="CDB-NavSubmenu-Link">HOVER <span class="CDB-NavSubmenu-Status">NONE</span></button>
+          <li class="CDB-NavSubmenu-item">
+            <button class="CDB-NavSubmenu-link">HOVER <span class="CDB-NavSubmenu-status">NONE</span></button>
           </li>
         </ul>
       </li>
-      <li class="CDB-NavMenu-Item">
-        <button class="CDB-NavMenu-Link">LEGEND</button>
+      <li class="CDB-NavMenu-item">
+        <button class="CDB-NavMenu-link">LEGEND</button>
       </li>
     </ul>
   </nav>
@@ -68,27 +68,27 @@
 <br/><br/>
 
 <nav class="CDB-NavMenu">
-  <ul class="CDB-NavMenu-Inner CDB-Text is-semibold CDB-Size-medium">
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">DATA</button>
+  <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">DATA</button>
     </li>
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">STYLE</button>
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">STYLE</button>
     </li>
-    <li class="CDB-NavMenu-Item is-selected">
-      <button class="CDB-NavMenu-Link">POP-UP</button>
+    <li class="CDB-NavMenu-item is-selected">
+      <button class="CDB-NavMenu-link">POP-UP</button>
     </li>
-    <li class="CDB-NavMenu-Item">
-      <button class="CDB-NavMenu-Link">LEGEND</button>
+    <li class="CDB-NavMenu-item">
+      <button class="CDB-NavMenu-link">LEGEND</button>
     </li>
   </ul>
 
   <ul class="CDB-NavSubmenu CDB-NavSubmenu--outside CDB-Text CDB-Size-small is-semibold js-menu">
-    <li class="CDB-NavSubmenu-Item is-selected">
-      <button class="CDB-NavSubmenu-Link u-upperCase">Click</button>
+    <li class="CDB-NavSubmenu-item is-selected">
+      <button class="CDB-NavSubmenu-link u-upperCase">Click</button>
     </li>
-    <li class="CDB-NavSubmenu-Item">
-      <button class="CDB-NavSubmenu-Link u-upperCase">Hover</button>
+    <li class="CDB-NavSubmenu-item">
+      <button class="CDB-NavSubmenu-link u-upperCase">Hover</button>
     </li>
   </ul>
 </nav>
@@ -102,7 +102,7 @@
   position: relative;
 }
 
-.CDB-NavMenu-Inner {
+.CDB-NavMenu-inner {
   position: relative;
   margin-bottom: 18px;
   border-bottom: 1px solid $cMainLine;
@@ -114,7 +114,7 @@
   padding: $baseSize 0 0 $baseSize * 2;
 }
 
-.CDB-NavMenu-Link {
+.CDB-NavMenu-link {
   display: block;
   margin-bottom: -1px;
   padding: 4px 0 11px;
@@ -122,14 +122,14 @@
   color: $cBlue;
 }
 
-.CDB-NavMenu-Item,
-.CDB-NavSubmenu-Item {
+.CDB-NavMenu-item,
+.CDB-NavSubmenu-item {
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
 }
 
-.CDB-NavMenu-Item.is-selected .CDB-NavMenu-Link {
+.CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
   border-bottom: 1px solid $cBlack;
   color: $cMainText;
 }
@@ -150,7 +150,7 @@
   margin-bottom: 18px;
 }
 
-.CDB-NavSubmenu-Link {
+.CDB-NavSubmenu-link {
   display: block;
   margin-bottom: -1px;
   padding-bottom: 12px;
@@ -158,38 +158,38 @@
   color: $cBlue;
 }
 
-.CDB-NavSubmenu-Item.is-selected .CDB-NavSubmenu-Link {
+.CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
   border-bottom: 1px solid $cMainLine;
   color: $cMainText;
 }
 
-.CDB-NavSubmenu-Status {
+.CDB-NavSubmenu-status {
   margin-left: 2px;
 }
 
 .CDB-Navmenu.is-dark {
 
-  .CDB-NavMenu-Inner,
+  .CDB-NavMenu-inner,
   .CDB-NavSubmenu {
     border-bottom: 1px solid $cSecondaryText;
   }
 
-  .CDB-NavMenu-Link,
-  .CDB-NavSubmenu-Link {
+  .CDB-NavMenu-link,
+  .CDB-NavSubmenu-link {
     color: $cAltText;
   }
 
-  .CDB-NavMenu-Item.is-selected .CDB-NavMenu-Link {
+  .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
     border-bottom: 1px solid $cMainLine;
     color: $cWhite;
   }
 
-  .CDB-NavSubmenu-Item.is-selected .CDB-NavSubmenu-Link {
+  .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
     border-bottom: 1px solid $cMainLine;
     color: $cWhite;
   }
 
-  .CDB-NavSubmenu-Status {
+  .CDB-NavSubmenu-status {
     color: $cSecondaryText;
   }
 }

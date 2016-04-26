@@ -6,8 +6,8 @@
 
 ```
 <div class="CDB-HeaderInfo is-block">
-  <div class="CDB-HeaderInfo-Title u-bSpace">
-    <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Name Map</h2>
+  <div class="CDB-HeaderInfo-title u-bSpace">
+    <h2 class="CDB-HeaderInfo-titleText CDB-Text CDB-Size-huge is-light">Name Map</h2>
     <div class="CDB-HeaderInfo-Actions">
       <a href="#">
           <div class="CDB-Shape">
@@ -21,12 +21,12 @@
     </div>
   </div>
   <ul class="CDB-HeaderInfo-List">
-    <li class="CDB-HeaderInfo-ListItem">
+    <li class="CDB-HeaderInfo-listItem">
       <button class="CDB-Tag is-public CDB-Text is-semibold CDB-Size-small u-iBlock">
         PUBLIC
       </button>
     </li>
-    <li class="CDB-HeaderInfo-ListItem">
+    <li class="CDB-HeaderInfo-listItem">
       <ul class="CDB-AvatarList u-iBlock">
         <li class="CDB-AvatarList-item">
           <img src="/src/img/avatar-40x40.png" alt="User Name" class="CDB-AvatarList-itemMedia" />
@@ -42,7 +42,7 @@
         </li>
       </ul>
     </li>
-    <li class="CDB-HeaderInfo-ListItem">
+    <li class="CDB-HeaderInfo-listItem">
       <p class="CDB-HeaderInfo-Text CDB-Text CDB-Size-medium u-iBlock u-altTextColor">Published 8 days ago</p>
     </li>
   </ul>
@@ -53,19 +53,19 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
   </button>
-  <div class="CDB-HeaderInfo-Inner">
-    <div class="CDB-HeaderInfo-Title u-bSpace">
-      <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
+  <div class="CDB-HeaderInfo-inner">
+    <div class="CDB-HeaderInfo-title u-bSpace">
+      <h2 class="CDB-HeaderInfo-titleText CDB-Text CDB-Size-huge is-light">Stadiums Affected Stadiums Affected Stadiums AffectedStadiums Affected Stadiums Affected Stadiums Affected Stadiums Affected </h2>
       <ul class="CDB-HeaderInfo-Actions">
-        <li class="CDB-HeaderInfo-ActionsItem">
+        <li class="CDB-HeaderInfo-actionsItem">
           <button class="CDB-Button CDB-Button--primary CDB-Button--icon">
             <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
           </button>
         </li>
-        <li class="CDB-HeaderInfo-ActionsItem">
+        <li class="CDB-HeaderInfo-actionsItem">
           <a href="#">
               <div class="CDB-Shape">
                 <div class="CDB-Shape-threePoints is-blue is-small">
@@ -93,13 +93,13 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
   </button>
-  <div class="CDB-HeaderInfo-Inner">
-    <div class="CDB-HeaderInfo-Title u-bSpace">
-      <h2 class="CDB-HeaderInfo-TitleText CDB-Text CDB-Size-huge is-light">Basemap</h2>
-      <div class="CDB-HeaderInfo-Actions">
+  <div class="CDB-HeaderInfo-inner">
+    <div class="CDB-HeaderInfo-title u-bSpace">
+      <h2 class="CDB-HeaderInfo-titleText CDB-Text CDB-Size-huge is-light">Basemap</h2>
+      <div class="CDB-HeaderInfo-actions">
         <a href="#">
             <div class="CDB-Shape">
               <div class="CDB-Shape-threePoints is-blue is-small">
@@ -120,10 +120,10 @@
 <br/>
 
 <div class="CDB-HeaderInfo">
-  <button class="u-rSpace--xl CDB-HeaderInfo-Back">
+  <button class="u-rSpace--xl CDB-HeaderInfo-back">
     <i class="CDB-IconFont CDB-IconFont-arrowPrev Size-large"></i>
   </button>
-  <div class="CDB-HeaderInfo-Inner">
+  <div class="CDB-HeaderInfo-inner">
     <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text u-bSpace--m">
     <div class="CDB-Shape u-iBlock">
       <ul class="CDB-Shape-Dataset is-small is-grey">
@@ -142,11 +142,11 @@
 <div class="CDB-HeaderInfo">
   <div class="CDB-HeaderNumeration CDB-Text is-semibold u-rSpace--m">1</div>
 
-  <div class="CDB-HeaderInfo-Inner CDB-Text">
-    <div class="CDB-HeaderInfo-Title u-bSpace--m">
-      <h2 class="CDB-Text CDB-HeaderInfo-TitleText CDB-Size-large">Type</h2>
+  <div class="CDB-HeaderInfo-inner CDB-Text">
+    <div class="CDB-HeaderInfo-title u-bSpace--m">
+      <h2 class="CDB-Text CDB-HeaderInfo-titleText CDB-Size-large">Type</h2>
       
-      <div class="CDB-HeaderInfo-Actions">
+      <div class="CDB-HeaderInfo-actions">
         <a href="#">
           <div class="CDB-Shape">
             <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
@@ -178,7 +178,7 @@
     display: block;
   }
 }
-.CDB-HeaderInfo-ListItem {
+.CDB-HeaderInfo-listItem {
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
@@ -188,17 +188,17 @@
   }
 }
 
-.CDB-HeaderInfo-Inner {
+.CDB-HeaderInfo-inner {
   @include flex(1);
 }
-.CDB-HeaderInfo-Back {
+.CDB-HeaderInfo-back {
   margin-top: 7px;
 }
-.CDB-HeaderInfo-Title {
+.CDB-HeaderInfo-title {
   @include display-flex();
   @include align-items(center);
 }
-.CDB-HeaderInfo-TitleText {
+.CDB-HeaderInfo-titleText {
   @include flex(1);
   width: 0;
   padding-right: 16px;
@@ -206,7 +206,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.CDB-HeaderInfo-ActionsItem {
+.CDB-HeaderInfo-actionsItem {
   display: inline-block;
   margin-left: 4px;
   vertical-align: middle;
