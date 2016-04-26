@@ -21,6 +21,15 @@
   box-shadow: 0  $baseSize  $baseSize * 2 0 rgba(0, 0, 0, 0.16);
 }
 
+.CDB-Box-modalHeader {
+  background: $cSecondaryBackground;
+}
+.CDB-Box-modalHeaderItem {
+  @include display-flex();
+  @include align-items(center);
+  padding: $baseSize + 4 $baseSize * 2;
+  border-bottom: 1px solid $cMainLine;
+}
 
 /* SG
 # Boxes/Loader

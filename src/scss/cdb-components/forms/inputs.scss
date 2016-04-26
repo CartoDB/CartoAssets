@@ -38,6 +38,14 @@
     @include default-form-error-style();
   }
 }
+.CDB-InputTextPlain {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+  box-sizing: border-box;
+}
 
 .CDB-FieldError .CDB-InputText {
   @include default-form-error-style();
