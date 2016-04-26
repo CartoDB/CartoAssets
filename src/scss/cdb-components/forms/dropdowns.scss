@@ -79,9 +79,9 @@
   <br/>
 
   <div class="CDB-Box-Modal">
-    <div class="CDB-Box-ModalHeader">
+    <div class="CDB-Box-modalHeader">
       <nav class="CDB-NavMenu">
-        <ul class="CDB-NavMenu-Inner CDB-NavMenu-Inner--no-margin CDB-NavMenu-Inner--is-dropdown CDB-Text is-semibold CDB-Size-medium">
+        <ul class="CDB-NavMenu-Inner CDB-NavMenu-inner--no-margin CDB-NavMenu-inner--is-dropdown CDB-Text is-semibold CDB-Size-medium">
           <li class="CDB-NavMenu-Item">
             <button class="CDB-NavMenu-Link">SOLID</button>
           </li>
@@ -90,7 +90,7 @@
           </li>
         </ul>
       </nav>
-      <div class="CDB-Box-ModalHeaderItem">
+      <div class="CDB-Box-modalHeaderItem">
         <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputTextPlain CDB-Text">
         <button class="u-lSpace--xl">
           <div class="CDB-Shape">
