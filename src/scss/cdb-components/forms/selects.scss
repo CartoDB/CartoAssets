@@ -52,6 +52,7 @@
   background: $cWhite;
   font-size: $sFontSize-medium;
   line-height: $sLineHeight-medium;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $cHoverLine;
