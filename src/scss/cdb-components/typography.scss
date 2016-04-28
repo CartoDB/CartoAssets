@@ -19,17 +19,26 @@
 */
 
 @import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
 
 .CDB-Text {
   font-family: 'Open Sans';
-  $sFontWeight-normal: 400;
+  font-weight: $sFontWeight-normal;
 
   &.is-semibold {
     font-weight: $sFontWeight-semibold;
   }
+  &.is-regular {
+    font-weight: $sFontWeight-normal;
+  }
   &.is-light {
     font-weight: $sFontWeight-lighter;
   }
+
+}
+
+.CDB-Text--info {
+  border-bottom: 1px dotted $cSecondaryText;
 }
 
 .CDB-Size-huge {

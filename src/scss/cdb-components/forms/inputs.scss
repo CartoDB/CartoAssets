@@ -17,6 +17,7 @@
 
 .CDB-InputText {
   width: 100%;
+  min-width: 40px;
   padding: 7px 8px 6px;
   border: 1px solid $cMainLine;
   border-radius: $baseSize / 2;
