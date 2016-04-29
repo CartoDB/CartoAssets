@@ -154,8 +154,8 @@
   @include display-flex();
 }
 
-.CDB-Fieldset .CDB-InputText, 
-.CDB-Fieldset .CDB-Fieldset-block, 
+.CDB-Fieldset .CDB-InputText,
+.CDB-Fieldset .CDB-Fieldset-block,
 .CDB-Fieldset-inner {
   @include flex(1);
 }
