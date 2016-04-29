@@ -17,6 +17,9 @@
 <button class="CDB-Tag is-private CDB-Text is-semibold CDB-Size-small u-iBlock">
   PRIVATE
 </button>
+<button class="CDB-Tag CDB-Text is-semibold CDB-Size-small u-iBlock">
+  TAG
+</button>
 ```
 */
 
@@ -27,7 +30,9 @@
 
 .CDB-Tag {
   padding: 0 3px;
+  border: 1px solid $cBlue;
   border-radius: 2px;
+  color: $cBlue;
 
   &.is-public {
     border: 1px solid $cPublic;
