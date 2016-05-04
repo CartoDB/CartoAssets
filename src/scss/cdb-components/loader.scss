@@ -54,8 +54,17 @@ This is the generic loader for widgets, maps, components, ...
   </div>
 </div>
 
-<div style="padding: 20px; background: #2E3C43;">
+<div style="padding: 20px; background: #F9F9F9;">
   <div class="CDB-LoaderIcon is-grey">
+    <div class="CDB-LoaderIcon-item">
+      <span class="CDB-LoaderIcon-itemClose"></span>
+      <span class="CDB-LoaderIcon-itemCircle"></span>
+    </div>
+  </div>
+</div>
+
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-LoaderIcon is-dark">
     <div class="CDB-LoaderIcon-item">
       <span class="CDB-LoaderIcon-itemClose"></span>
       <span class="CDB-LoaderIcon-itemCircle"></span>
@@ -85,7 +94,7 @@ This is the generic loader for widgets, maps, components, ...
   &.is-bg {
     border: 2px solid rgba($cWhite, 0.9);
   }
-  &.is-grey {
+  &.is-dark {
     border: 2px solid $cSecondaryText;
   }
 }
@@ -100,7 +109,7 @@ This is the generic loader for widgets, maps, components, ...
   border-radius: 50%;
   background: linear-gradient(to right, rgba($cWhite, 0.1) 10%, rgba($cWhite, 0) 42%);
 
-  &.is-grey {
+  &.is-dark {
     background: linear-gradient(to right, $cMainBg 10%, rgba($cWhite, 0) 42%);
   }
 }
@@ -131,12 +140,15 @@ This is the generic loader for widgets, maps, components, ...
   background: $cWhite;
 }
 
-.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemCircle,
-.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemClose {
+.CDB-LoaderIcon.is-dark .CDB-LoaderIcon-itemCircle,
+.CDB-LoaderIcon.is-dark .CDB-LoaderIcon-itemClose {
   background: $cMainBg;
 }
 
-
+.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemCircle,
+.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemClose {
+  background: $cThirdBackground;
+}
 
 @include keyframes(loader-icon) {
   0% {
