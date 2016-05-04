@@ -47,15 +47,31 @@ This is the generic loader for widgets, maps, components, ...
 ```
 <div style="padding: 20px;">
   <div class="CDB-LoaderIcon">
-    <div class="CDB-LoaderIcon-item"></div>
+    <div class="CDB-LoaderIcon-item">
+      <span class="CDB-LoaderIcon-itemClose"></span>
+      <span class="CDB-LoaderIcon-itemCircle"></span>
+    </div>
   </div>
 </div>
 
 <div style="padding: 20px; background: #2E3C43;">
   <div class="CDB-LoaderIcon is-grey">
-    <div class="CDB-LoaderIcon-item is-grey"></div>
+    <div class="CDB-LoaderIcon-item">
+      <span class="CDB-LoaderIcon-itemClose"></span>
+      <span class="CDB-LoaderIcon-itemCircle"></span>
+    </div>
   </div>
 </div>
+
+<div style="padding: 20px; background: #E27D61;">
+  <div class="CDB-LoaderIcon is-bg">
+    <div class="CDB-LoaderIcon-item">
+      <span class="CDB-LoaderIcon-itemClose" style="background: #E27D61"></span>
+      <span class="CDB-LoaderIcon-itemCircle" style="background: #E27D61"></span>
+    </div>
+  </div>
+</div>
+
 ```
 */
 
@@ -66,6 +82,9 @@ This is the generic loader for widgets, maps, components, ...
   height: $baseSize * 2;
   border: 2px solid $cMainLine;
   border-radius: 50%;
+  &.is-bg {
+    border: 2px solid rgba($cWhite, 0.9);
+  }
   &.is-grey {
     border: 2px solid $cSecondaryText;
   }
@@ -79,41 +98,44 @@ This is the generic loader for widgets, maps, components, ...
   width: $baseSize * 2;
   height: $baseSize * 2;
   border-radius: 50%;
-  background: linear-gradient(to right, $cWhite 10%, rgba($cWhite, 0) 42%);
+  background: linear-gradient(to right, rgba($cWhite, 0.1) 10%, rgba($cWhite, 0) 42%);
 
-  &::before,
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-  }
-
-  &::before {
-    width: 50%;
-    height: 50%;
-    border-radius: 100% 0 0;
-    background: $cMainLine;
-  }
-  &::after {
-    right: 0;
-    bottom: 0;
-    width: 75%;
-    height: 75%;
-    margin: auto;
-    border-radius: 50%;
-    background: $cWhite;
-  }
   &.is-grey {
     background: linear-gradient(to right, $cMainBg 10%, rgba($cWhite, 0) 42%);
-    &::before {
-      background: $cSecondaryText;
-    }
-    &::after {
-      background: $cMainBg;
-    }
   }
 }
+
+.CDB-LoaderIcon-itemCircle {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.CDB-LoaderIcon-itemClose {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 100% 0 0;
+}
+
+.CDB-LoaderIcon-itemCircle,
+.CDB-LoaderIcon-itemClose {
+  background: $cWhite;
+}
+
+.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemCircle,
+.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemClose {
+  background: $cMainBg;
+}
+
 
 
 @include keyframes(loader-icon) {
