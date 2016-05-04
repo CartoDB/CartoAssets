@@ -8,31 +8,58 @@ Layout Component:
 [CDB-Button][CDB-Button--primary | CDB-Button--secondary]
 
 ```
+<a href="#" class="CDB-Button CDB-Button--primary CDB-Button--big">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</a>
 
 <button class="CDB-Button CDB-Button--primary CDB-Button--big">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
 </button>
+
+<a href="#" class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</a>
 
 <button class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
 </button>
 
 
+<a href="#" class="CDB-Button CDB-Button--primary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</a>
+
 <button class="CDB-Button CDB-Button--primary">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
+
+<a href="#" class="CDB-Button CDB-Button--primary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</a>
 
 <button class="CDB-Button CDB-Button--primary is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
 
+<a href="#" class="CDB-Button CDB-Button--primary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</a>
+
 <button class="CDB-Button CDB-Button--primary CDB-Button--small">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
 
+<a href="#" class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</a>
+
 <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
+
+<a href="#" class="CDB-Button CDB-Button--primary CDB-Button--icon">
+  <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+</a>
 
 <button class="CDB-Button CDB-Button--primary CDB-Button--icon">
   <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
@@ -83,6 +110,7 @@ Layout Component:
 
 
 .CDB-Button {
+  display: inline-block;
   padding: $baseSize + 1 $baseSize + 12;
   border: 1px solid transparent;
   border-radius: $baseSize / 2;
@@ -129,6 +157,14 @@ Layout Component:
       background: $cBlue;
     }
   }
+}
+
+.CDB-Button--primary:link {
+  color: $cWhite;
+}
+
+.CDB-Button--primary:hover {
+  text-decoration: none;
 }
 
 
