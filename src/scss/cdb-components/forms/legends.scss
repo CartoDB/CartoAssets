@@ -64,30 +64,81 @@
 <br/>
 
 <div class="CDB-Text CDB-Fieldset">
-  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
-    <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
-    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
+  <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <div class="u-rSpace--m">
+      <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
+      <span class="u-iBlock CDB-Checkbox-face"></span>
+    </div>
     <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
-  </p>
+  </div>
   <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
 </div>
 
 <div class="u-tSpace-xl CDB-Text CDB-Fieldset">
-  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
-    <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
-    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
-    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
-  </p>
+  <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <div class="u-rSpace--m">
+      <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
+      <span class="u-iBlock CDB-Checkbox-face"></span>
+    </div>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL <span class="CDB-Text CDB-Size-small CDB-Text--info u-secondaryTextColor is-regular" title="tooltip with the info">?</span></label>
+  </div>
   <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
 </div>
+
+<div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+  <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <div class="u-rSpace--m">
+      <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
+      <span class="u-iBlock CDB-Checkbox-face"></span>
+    </div>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
+  </div>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+
+<div class="Edit-Form--nested">
+  <div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+    <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+      <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
+    </div>
+    <div class="CDB-Fieldset-inner">
+      <input type="range" min="100" max="500" step="50" value="300" class="CDB-Range u-rSpace">
+      <input type="text" name="text" size="2" value="16" class="CDB-InputText">
+    </div>
+  </div>
+  <div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+    <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+      <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
+    </div>
+    <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+  </div>
+</div>
+
+<div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+  <div class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <div class="u-rSpace--m">
+      <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
+      <span class="u-iblock CDB-Checkbox-face"></span>
+    </div>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
+  </div>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+
+
+
 ```
 */
 
 @import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
 @import '../../cdb-utilities/mixins';
 
 .CDB-Legend {
+  @include display-flex();
+  @include align-items(center);
   width: $baseSize * 12;
+  box-sizing: border-box;
 }
 
 .CDB-Legend--big {
@@ -98,7 +149,49 @@
   @include display-flex();
   @include align-items(center);
 }
+
+.CDB-Fieldset-inner {
+  @include display-flex();
+}
+
+.CDB-Fieldset .CDB-InputText,
+.CDB-Fieldset .CDB-Fieldset-block,
+.CDB-Fieldset-inner {
+  @include flex(1);
+}
+
 .CDB-Fieldset-block {
   width: 100%;
 }
+
+.Edit-Form--nested {
+  position: relative;
+}
+
+.Edit-Form--nested::before {
+  position: absolute;
+  top: -20px;
+  bottom: 12px;
+  left: 8px;
+  width: 1px;
+  background: $cSecondaryLine;
+  content: '';
+}
+.Edit-Form--nested .CDB-Legend {
+  position: relative;
+  padding-left: 24px;
+}
+.Edit-Form--nested .CDB-Legend::before {
+  position: absolute;
+  bottom: 3px;
+  left: 6px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid $cMainLine;
+  border-radius: 50%;
+  background: $cWhite;
+  content: '';
+  box-sizing: border-box;
+}
+
 
