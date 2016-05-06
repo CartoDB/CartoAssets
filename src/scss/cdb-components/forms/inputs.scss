@@ -24,15 +24,23 @@
   line-height: $sLineHeight-medium;
   box-sizing: border-box;
 
+  &.is-cursor {
+    cursor: pointer;
+  }
+  &.is-empty {
+    color: $cHintText;
+  }
   &:hover {
     border: 1px solid $cHoverLine;
   }
   &:focus {
     border: 1px solid $cBlue;
   }
-  &:disabled {
+  &:disabled,
+  &.is-disabled {
     border-color: $cSecondaryLine;
     background: $cThirdBackground;
+    cursor: default;
   }
   &.has-error {
     @include default-form-error-style();
