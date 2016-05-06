@@ -17,6 +17,28 @@
     </ul>
   </div>
 </div>
+
+<br/>
+<br/>
+<br/>
+
+
+<div class="CDB-Select" style="height: 250px;">
+  <div class="CDB-InputText CDB-Text">DejaVu Sans</div>
+  <div class="CDB-Box-Modal CDB-SelectItem">
+    <ul class="CDB-Text CDB-Size-medium">
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="CDB-InputText CDB-Text is-cursor is-disabled">DejaVu Sans</div>
+<br/>
+<div class="CDB-InputText CDB-Text is-cursor is-empty">DejaVu Sans</div>
+<br/>
 <select name="select" class="CDB-SelectFake CDB-Text">
   <option value="value1" selected>Choose an option</option>
   <option value="value2">Hide</option>
