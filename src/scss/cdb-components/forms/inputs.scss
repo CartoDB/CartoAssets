@@ -35,6 +35,7 @@
   }
   &:focus {
     border: 1px solid $cBlue;
+    outline: none;
   }
   &:disabled,
   &.is-disabled {
