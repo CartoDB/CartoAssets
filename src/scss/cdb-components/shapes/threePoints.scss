@@ -106,9 +106,11 @@ Description
 
 .CDB-Shape-threePoints {
   display: inline-block;
+  padding: 0 4px;
 }
 .CDB-Shape-threePoints.is-horizontal {
   transform: rotate(90deg);
+  padding: 4px 0;
 }
 
 .CDB-Shape-threePointsItem {
