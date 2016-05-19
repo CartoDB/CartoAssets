@@ -87,6 +87,15 @@
   text-transform: uppercase;
 }
 
+/* Flex */
+.u-flex {
+  @include display-flex();
+}
+.u-justifySpace {
+  @include justify-content(space-between);
+}
+
+
 /* Media queries*/
 @include media-query-mobile() {
   .u-showDesktop {
