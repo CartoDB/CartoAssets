@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="395px" viewBox="0 0 500 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="395px" viewBox="0 0 500 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_21_ArrowNext</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(0.000000, -2053.000000)" fill="#000000">
-            <path d="M458.222685,2238.32673 L290.407211,2070.51126 L307.879983,2053.03849 L493.168229,2238.32673 L494.006694,2238.32673 L494.006694,2239.1652 L500.003499,2245.162 L494.665503,2250.5 L500.003499,2255.838 L494.006694,2261.8348 L494.006694,2263.03697 L492.804529,2263.03697 L307.879983,2447.96151 L290.407211,2430.48874 L457.858984,2263.03697 L0,2263.03697 L0,2238.32673 L458.222685,2238.32673 Z" id="icon-font_21_ArrowNext" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(0.000000, -2053.000000)" fill="#000000">
+            <path d="M458.222685,2238.32673 L290.407211,2070.51126 L307.879983,2053.03849 L493.168229,2238.32673 L494.006694,2238.32673 L494.006694,2239.1652 L500.003499,2245.162 L494.665503,2250.5 L500.003499,2255.838 L494.006694,2261.8348 L494.006694,2263.03697 L492.804529,2263.03697 L307.879983,2447.96151 L290.407211,2430.48874 L457.858984,2263.03697 L0,2263.03697 L0,2238.32673 L458.222685,2238.32673 Z" id="icon-font_21_ArrowNext"></path>
         </g>
     </g>
 </svg>

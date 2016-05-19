@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="467px" viewBox="0 0 500 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="467px" viewBox="0 0 500 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_85_Bars</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-6000.000000, -8017.000000)" fill="#000000">
-            <path d="M6000,8217 L6100,8217 L6100,8483.66667 L6000,8483.66667 L6000,8217 Z M6133.33333,8250.33333 L6233.33333,8250.33333 L6233.33333,8483.66667 L6133.33333,8483.66667 L6133.33333,8250.33333 Z M6266.66667,8017 L6366.66667,8017 L6366.66667,8483.66667 L6266.66667,8483.66667 L6266.66667,8017 Z M6400,8117 L6500,8117 L6500,8483.66667 L6400,8483.66667 L6400,8117 Z" id="icon-font_85_Bars" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-6000.000000, -8017.000000)" fill="#000000">
+            <path d="M6000,8217 L6100,8217 L6100,8483.66667 L6000,8483.66667 L6000,8217 Z M6133.33333,8250.33333 L6233.33333,8250.33333 L6233.33333,8483.66667 L6133.33333,8483.66667 L6133.33333,8250.33333 Z M6266.66667,8017 L6366.66667,8017 L6366.66667,8483.66667 L6266.66667,8483.66667 L6266.66667,8017 Z M6400,8117 L6500,8117 L6500,8483.66667 L6400,8483.66667 L6400,8117 Z" id="icon-font_85_Bars"></path>
         </g>
     </g>
 </svg>

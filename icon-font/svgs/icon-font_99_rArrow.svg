@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="272px" height="500px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="272px" height="500px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_99_rArrow</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-5500.000000, -10000.000000)" fill="#000000">
-            <g id="icon-font_99_rArrow" sketch:type="MSLayerGroup" transform="translate(5500.000000, 10000.000000)">
-                <g id="icon_03_caretRight" sketch:type="MSShapeGroup">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-5500.000000, -10000.000000)" fill="#000000">
+            <g id="icon-font_99_rArrow" transform="translate(5500.000000, 10000.000000)">
+                <g id="icon_03_caretRight">
                     <g id="Page-1">
                         <g id="icons">
-                            <path d="M248.23301,281.69014 L272,249.999999 L248.23301,218.309858 L116.19418,42.2535212 L84.50485,0 L0,63.380282 L31.68932,105.633803 L139.61495,250.461632 L31.68932,394.366197 L0,436.619718 L84.50485,500 L116.19418,457.746479 L248.23301,281.69014 L248.23301,281.69014 L248.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                            <polygon id="icon_03_caretRight" points="248.23301 281.69014 272 249.999999 248.23301 218.309858 116.19418 42.2535212 84.50485 0 0 63.380282 31.68932 105.633803 139.61495 250.461632 31.68932 394.366197 0 436.619718 84.50485 500 116.19418 457.746479 248.23301 281.69014"></polygon>
                         </g>
                     </g>
                 </g>

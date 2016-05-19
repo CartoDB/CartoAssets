@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_78_Fullscreen</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-9000.000000, -7000.000000)" fill="#000000">
-            <path d="M9089.99306,7000 L9409.99306,7000 C9459.5,7000 9500,7040.5 9500,7090.00694 L9500,7410.00694 C9500,7459.5 9459.5,7500 9409.99306,7500 L9089.99306,7500 C9040.5,7500 9000,7459.5 9000,7410.00694 L9000,7090.00694 C9000,7040.5 9040.5,7000 9089.99306,7000 L9089.99306,7000 Z M9252.59722,7198.45833 L9300.34028,7246.18056 L9352.04167,7194.48611 L9404.11806,7246.88889 L9404,7094.78472 L9251.66667,7094.78472 L9304.09028,7146.95139 L9252.59722,7198.45833 L9252.59722,7198.45833 Z M9091.54167,7407.13889 L9243.875,7407.13889 L9191.45139,7354.97917 L9242.9375,7303.47222 L9195.20833,7255.74306 L9143.5,7307.44444 L9091.42361,7255.04167 L9091.54167,7407.13889 L9091.54167,7407.13889 Z" id="icon-font_78_Fullscreen" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-9000.000000, -7000.000000)" fill="#000000">
+            <path d="M9089.99306,7000 L9409.99306,7000 C9459.5,7000 9500,7040.5 9500,7090.00694 L9500,7410.00694 C9500,7459.5 9459.5,7500 9409.99306,7500 L9089.99306,7500 C9040.5,7500 9000,7459.5 9000,7410.00694 L9000,7090.00694 C9000,7040.5 9040.5,7000 9089.99306,7000 L9089.99306,7000 Z M9252.59722,7198.45833 L9300.34028,7246.18056 L9352.04167,7194.48611 L9404.11806,7246.88889 L9404,7094.78472 L9251.66667,7094.78472 L9304.09028,7146.95139 L9252.59722,7198.45833 L9252.59722,7198.45833 Z M9091.54167,7407.13889 L9243.875,7407.13889 L9191.45139,7354.97917 L9242.9375,7303.47222 L9195.20833,7255.74306 L9143.5,7307.44444 L9091.42361,7255.04167 L9091.54167,7407.13889 L9091.54167,7407.13889 Z" id="icon-font_78_Fullscreen"></path>
         </g>
     </g>
 </svg>

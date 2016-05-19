@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="272px" viewBox="0 0 500 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="272px" viewBox="0 0 500 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_100_caretDown</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-7000.000000, -10000.000000)" fill="#000000">
-            <g id="icon-font_100_caretDown" sketch:type="MSLayerGroup" transform="translate(7000.000000, 10000.000000)">
-                <path d="M218.30986,248.23301 L250,272 L281.69014,248.23301 L457.74648,116.194175 L500,84.5048545 L436.61972,0 L394.3662,31.6893205 L249.53837,139.614949 L105.6338,31.6893204 L63.38028,3.77763151e-08 L0,84.5048548 L42.25352,116.194175 L218.30986,248.23301 L218.30986,248.23301 Z" id="icon_02_caretDown" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-7000.000000, -10000.000000)" fill="#000000">
+            <g id="icon-font_100_caretDown" transform="translate(7000.000000, 10000.000000)">
+                <polygon id="icon_02_caretDown" points="218.30986 248.23301 250 272 281.69014 248.23301 457.74648 116.194175 500 84.5048545 436.61972 0 394.3662 31.6893205 249.53837 139.614949 105.6338 31.6893204 63.38028 3.77763151e-08 0 84.5048548 42.25352 116.194175"></polygon>
             </g>
         </g>
     </g>

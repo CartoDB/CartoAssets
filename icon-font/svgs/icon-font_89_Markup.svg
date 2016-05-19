@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="900px" height="500px" viewBox="0 0 900 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+<svg width="900px" height="500px" viewBox="0 0 900 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_89_Markup</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-1000.000000, -9000.000000)" fill="#000000">
-            <path d="M1262.125,9130.13461 L1195.8375,9077.4275 L1000,9262.26121 L1197.7,9447.10729 L1263.9875,9394.42492 L1121.725,9262.26121 L1262.125,9130.13461 Z M1702.3125,9077.4275 L1636.0125,9130.12224 L1778.275,9262.24884 L1637.875,9394.40018 L1704.175,9447.10729 L1900,9262.24884 L1702.3125,9077.4275 Z M1394.075,9500 L1470.6,9500 L1593.075,9000 L1516.55,9000 L1394.075,9500 Z" id="icon-font_89_Markup" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-1000.000000, -9000.000000)" fill="#000000">
+            <path d="M1262.125,9130.13461 L1195.8375,9077.4275 L1000,9262.26121 L1197.7,9447.10729 L1263.9875,9394.42492 L1121.725,9262.26121 L1262.125,9130.13461 Z M1702.3125,9077.4275 L1636.0125,9130.12224 L1778.275,9262.24884 L1637.875,9394.40018 L1704.175,9447.10729 L1900,9262.24884 L1702.3125,9077.4275 Z M1394.075,9500 L1470.6,9500 L1593.075,9000 L1516.55,9000 L1394.075,9500 Z" id="icon-font_89_Markup"></path>
         </g>
     </g>
 </svg>
