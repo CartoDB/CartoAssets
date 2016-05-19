@@ -29,6 +29,15 @@
   padding: $baseSize + 4 $baseSize * 2;
   border-bottom: 1px solid $cMainLine;
 }
+.CDB-Box-modalHeaderItem--block {
+  display: block;
+}
+.CDB-Box-modalHeaderItem--paddingHorizontal {
+  padding: 0 $baseSize * 2;
+}
+.CDB-Box-modalHeaderItem--paddingVertical {
+  padding: $baseSize + 4 0;
+}
 
 /* SG
 # Boxes/Loader
