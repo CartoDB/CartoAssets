@@ -20,6 +20,15 @@
     border-bottom: 0;
   }
 }
+.CDB-ListDecoration-itemPadding {
+  padding: 12px 16px;
+}
+.CDB-ListDecoration-itemPadding--horizontal {
+  padding: 0 16px;
+}
+.CDB-ListDecoration-itemPadding--vertical {
+  padding: 12px 0;
+}
 
 .CDB-ListDecoration-itemLink {
   display: block;
