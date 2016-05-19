@@ -15,10 +15,12 @@
 @import '../cdb-variables/colors';
 
 .CDB-Box-modal {
+  min-width: 160px;
   border: 1px solid $cMainLine;
   border-radius: 4px;
   background: $cWhite;
   box-shadow: 0  $baseSize  $baseSize * 2 0 rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
 }
 
 .CDB-Box-modalHeader {
