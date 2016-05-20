@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="319px" height="499px" viewBox="0 0 319 499" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="319px" height="499px" viewBox="0 0 319 499" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_88_Ray</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-91.000000, -9001.000000)" fill="#000000">
-            <polyline id="icon-font_88_Ray" points="410 9001 137.380541 9264.54023 230.773147 9264.42929 91 9500 389.771251 9209.1836 296.943693 9209.28067 410 9001"></polyline>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-91.000000, -9001.000000)" fill="#000000">
+            <path d="M410,9001 L137.380541,9264.54023 L230.773147,9264.42929 L91,9500 L389.771251,9209.1836 L296.943693,9209.28067 L410,9001" id="icon-font_88_Ray" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

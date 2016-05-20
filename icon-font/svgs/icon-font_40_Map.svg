@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_40_Map</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-1000.000000, -4000.000000)" fill="#000000">
-            <path d="M1142.32105,4008.24523 L1000,4055.54938 L1000,4500 L1142.32105,4452.69585 L1142.32105,4008.24523 Z M1500,4000 L1358.99725,4046.86653 L1358.99725,4491.3241 L1500,4444.45757 L1500,4000 Z M1167.10378,4451.40384 L1334.20755,4493.05372 L1334.20755,4048.6031 L1167.10378,4006.94628 L1167.10378,4451.40384 Z" id="icon-font_40_Map"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-1000.000000, -4000.000000)" fill="#000000">
+            <path d="M1142.32105,4008.24523 L1000,4055.54938 L1000,4500 L1142.32105,4452.69585 L1142.32105,4008.24523 Z M1500,4000 L1358.99725,4046.86653 L1358.99725,4491.3241 L1500,4444.45757 L1500,4000 Z M1167.10378,4451.40384 L1334.20755,4493.05372 L1334.20755,4048.6031 L1167.10378,4006.94628 L1167.10378,4451.40384 Z" id="icon-font_40_Map" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

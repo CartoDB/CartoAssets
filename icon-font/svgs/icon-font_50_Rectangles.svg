@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="432px" viewBox="0 0 500 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="432px" viewBox="0 0 500 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_50_Rectangles</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-1000.000000, -5035.000000)" fill="#000000">
-            <path d="M1000,5035 L1136.36364,5035 L1136.36364,5239.54545 L1000,5239.54545 L1000,5035 Z M1340.90909,5262.27273 L1500,5262.27273 L1500,5466.81818 L1340.90909,5466.81818 L1340.90909,5262.27273 Z M1159.09091,5035 L1500,5035 L1500,5239.54545 L1159.09091,5239.54545 L1159.09091,5035 Z M1000,5262.27273 L1318.18182,5262.27273 L1318.18182,5466.81818 L1000,5466.81818 L1000,5262.27273 Z" id="icon-font_50_Rectangles"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-1000.000000, -5035.000000)" fill="#000000">
+            <path d="M1000,5035 L1136.36364,5035 L1136.36364,5239.54545 L1000,5239.54545 L1000,5035 Z M1340.90909,5262.27273 L1500,5262.27273 L1500,5466.81818 L1340.90909,5466.81818 L1340.90909,5262.27273 Z M1159.09091,5035 L1500,5035 L1500,5239.54545 L1159.09091,5239.54545 L1159.09091,5035 Z M1000,5262.27273 L1318.18182,5262.27273 L1318.18182,5466.81818 L1000,5466.81818 L1000,5262.27273 Z" id="icon-font_50_Rectangles" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

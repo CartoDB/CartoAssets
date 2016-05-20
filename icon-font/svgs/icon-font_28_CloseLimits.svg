@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="400px" height="500px" viewBox="0 0 400 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="400px" height="500px" viewBox="0 0 400 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_28_CloseLimits</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-9050.000000, -2000.000000)" fill="#000000">
-            <path d="M9443.39225,2229.44645 L9272.6601,2011.9034 C9260.19053,1996.0322 9239.80947,1996.0322 9227.34641,2011.9034 L9056.60775,2229.44645 C9044.1512,2245.31765 9049.82925,2258.30633 9069.2401,2258.30633 L9158.98843,2258.30633 L9194.28089,2258.30633 L9194.28089,2462.35366 C9194.28089,2483.06609 9210.1625,2500 9229.57335,2500 L9270.42665,2500 C9289.8375,2500 9305.71911,2483.06609 9305.71911,2462.35366 L9305.71911,2258.30633 L9341.01157,2258.30633 L9430.7599,2258.30633 C9450.17075,2258.30633 9455.8488,2245.31765 9443.39225,2229.44645" id="icon-font_28_CloseLimits"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-9050.000000, -2000.000000)" fill="#000000">
+            <path d="M9443.39225,2229.44645 L9272.6601,2011.9034 C9260.19053,1996.0322 9239.80947,1996.0322 9227.34641,2011.9034 L9056.60775,2229.44645 C9044.1512,2245.31765 9049.82925,2258.30633 9069.2401,2258.30633 L9158.98843,2258.30633 L9194.28089,2258.30633 L9194.28089,2462.35366 C9194.28089,2483.06609 9210.1625,2500 9229.57335,2500 L9270.42665,2500 C9289.8375,2500 9305.71911,2483.06609 9305.71911,2462.35366 L9305.71911,2258.30633 L9341.01157,2258.30633 L9430.7599,2258.30633 C9450.17075,2258.30633 9455.8488,2245.31765 9443.39225,2229.44645" id="icon-font_28_CloseLimits" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

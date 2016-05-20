@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
     <title>icon-font_06_Rows</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-5000.000000, 0.000000)" fill="#000000">
-            <path d="M5000,0 L5500,0 L5500,100 L5000,100 L5000,0 Z M5000,200 L5500,200 L5500,300 L5000,300 L5000,200 Z M5000,400 L5500,400 L5500,500 L5000,500 L5000,400 Z" id="icon-font_06_Rows"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-5000.000000, 0.000000)" fill="#000000">
+            <path d="M5000,0 L5500,0 L5500,100 L5000,100 L5000,0 Z M5000,200 L5500,200 L5500,300 L5000,300 L5000,200 Z M5000,400 L5500,400 L5500,500 L5000,500 L5000,400 Z" id="icon-font_06_Rows" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
