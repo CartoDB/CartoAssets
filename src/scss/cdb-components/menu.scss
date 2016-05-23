@@ -37,8 +37,8 @@
 <br/><br/>
 <br/><br/>
 
-<div style="background: #2E3C43; height: 100px; padding: 20px;">
-  <nav class="CDB-NavMenu is-dark">
+<div class="is-editing" style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu">
     <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
       <li class="CDB-NavMenu-item CDB-Text">
         <button class="CDB-NavMenu-link">DATA</button>
@@ -92,6 +92,39 @@
     </li>
   </ul>
 </nav>
+
+
+<br/><br/>
+<br/><br/>
+
+<div class="is-editing" style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu">
+    <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
+      <li class="CDB-NavMenu-item">
+        <button class="CDB-NavMenu-link">DATA</button>
+      </li>
+      <li class="CDB-NavMenu-item">
+        <button class="CDB-NavMenu-link">STYLE</button>
+      </li>
+      <li class="CDB-NavMenu-item is-selected">
+        <button class="CDB-NavMenu-link">POP-UP</button>
+      </li>
+      <li class="CDB-NavMenu-item">
+        <button class="CDB-NavMenu-link">LEGEND</button>
+      </li>
+    </ul>
+
+    <ul class="CDB-NavSubmenu CDB-NavSubmenu--outside CDB-Text CDB-Size-small is-semibold js-menu">
+      <li class="CDB-NavSubmenu-item is-selected">
+        <button class="CDB-NavSubmenu-link u-upperCase">Click</button>
+      </li>
+      <li class="CDB-NavSubmenu-item">
+        <button class="CDB-NavSubmenu-link u-upperCase">Hover</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 ```
 */
 
@@ -167,7 +200,7 @@
   margin-left: 2px;
 }
 
-.CDB-Navmenu.is-dark {
+.is-editing .CDB-NavMenu {
 
   .CDB-NavMenu-inner,
   .CDB-NavSubmenu {
@@ -193,4 +226,6 @@
     color: $cSecondaryText;
   }
 }
+
+
 
