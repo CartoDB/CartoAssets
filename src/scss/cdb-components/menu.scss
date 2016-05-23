@@ -37,8 +37,8 @@
 <br/><br/>
 <br/><br/>
 
-<div class="is-editing" style="background: #2E3C43; height: 100px; padding: 20px;">
-  <nav class="CDB-NavMenu">
+<div style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu is-dark">
     <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
       <li class="CDB-NavMenu-item CDB-Text">
         <button class="CDB-NavMenu-link">DATA</button>
@@ -97,8 +97,8 @@
 <br/><br/>
 <br/><br/>
 
-<div class="is-editing" style="background: #2E3C43; height: 100px; padding: 20px;">
-  <nav class="CDB-NavMenu">
+<div style="background: #2E3C43; height: 100px; padding: 20px;">
+  <nav class="CDB-NavMenu is-dark">
     <ul class="CDB-NavMenu-inner CDB-Text is-semibold CDB-Size-medium">
       <li class="CDB-NavMenu-item">
         <button class="CDB-NavMenu-link">DATA</button>
@@ -200,7 +200,7 @@
   margin-left: 2px;
 }
 
-.is-editing .CDB-NavMenu {
+.CDB-NavMenu.is-dark {
 
   .CDB-NavMenu-inner,
   .CDB-NavSubmenu {
