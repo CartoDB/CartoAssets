@@ -23,6 +23,10 @@
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
 }
+.CDB-IconFont.is-disabled {
+  cursor: normal;
+  opacity: 0.24;
+}
 
 .CDB-IconFont--center {
   vertical-align: middle;
