@@ -97,6 +97,9 @@
 .u-justifySpace {
   @include justify-content(space-between);
 }
+.u-alignCenter {
+  @include align-items(center);
+}
 
 
 /* Media queries*/
