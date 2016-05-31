@@ -15,10 +15,12 @@
 <p class="CDB-Text CDB-Size-medium u-hintTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text is-semibold CDB-Size-small">Open Sans 10/14 Semibold</p>
 <p class="CDB-Text CDB-Size-small">Open Sans 10/14 Regular</p>
+<span class="CDB-Text CDB-Size-small is-help">?</span>
 ```
 */
 
 @import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
 
 .CDB-Text {
   font-family: 'Open Sans';
@@ -30,6 +32,10 @@
   &.is-light {
     font-weight: $sFontWeight-lighter;
   }
+}
+
+.is-help {
+  border-bottom: 1px dotted $cMainLine;
 }
 
 .CDB-Size-huge {
