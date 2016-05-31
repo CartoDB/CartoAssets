@@ -15,7 +15,7 @@
 <p class="CDB-Text CDB-Size-medium u-hintTextColor">Open Sans 12/16 Regular</p>
 <p class="CDB-Text is-semibold CDB-Size-small">Open Sans 10/14 Semibold</p>
 <p class="CDB-Text CDB-Size-small">Open Sans 10/14 Regular</p>
-<span class="CDB-Text CDB-Size-small is-underline">?</span>
+<span class="CDB-Text CDB-Size-small is-underlined">?</span>
 ```
 */
 
@@ -34,7 +34,7 @@
   }
 }
 
-.is-underline {
+.is-underlined {
   border-bottom: 1px dotted $cMainLine;
 }
 
