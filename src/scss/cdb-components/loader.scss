@@ -8,6 +8,7 @@ This is the generic loader for widgets, maps, components, ...
 
 ```
 <div class="CDB-Loader is-visible"></div>
+
 ```
 */
 
@@ -46,117 +47,73 @@ This is the generic loader for widgets, maps, components, ...
 
 ```
 <div style="padding: 20px;">
-  <div class="CDB-LoaderIcon">
-    <div class="CDB-LoaderIcon-item">
-      <span class="CDB-LoaderIcon-itemClose"></span>
-      <span class="CDB-LoaderIcon-itemCircle"></span>
-    </div>
+  <div class="CDB-LoaderIcon is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
   </div>
 </div>
 
 <div style="padding: 20px; background: #F9F9F9;">
-  <div class="CDB-LoaderIcon is-grey">
-    <div class="CDB-LoaderIcon-item">
-      <span class="CDB-LoaderIcon-itemClose"></span>
-      <span class="CDB-LoaderIcon-itemCircle"></span>
-    </div>
+  <div class="CDB-LoaderIcon is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
   </div>
 </div>
 
 <div style="padding: 20px; background: #2E3C43;">
-  <div class="CDB-LoaderIcon is-dark">
-    <div class="CDB-LoaderIcon-item">
-      <span class="CDB-LoaderIcon-itemClose"></span>
-      <span class="CDB-LoaderIcon-itemCircle"></span>
-    </div>
+  <div class="CDB-LoaderIcon">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
   </div>
 </div>
 
 <div style="padding: 20px; background: #E27D61;">
-  <div class="CDB-LoaderIcon is-bg">
-    <div class="CDB-LoaderIcon-item">
-      <span class="CDB-LoaderIcon-itemClose" style="background: #E27D61"></span>
-      <span class="CDB-LoaderIcon-itemCircle" style="background: #E27D61"></span>
-    </div>
+  <div class="CDB-LoaderIcon">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
   </div>
 </div>
 
 ```
 */
 
-.CDB-LoaderIcon {
-  box-sizing: border-box;
-  position: relative;
-  width: $baseSize * 2;
-  height: $baseSize * 2;
-  border: 2px solid $cMainLine;
-  border-radius: 50%;
-  &.is-bg {
-    border: 2px solid rgba($cWhite, 0.9);
-  }
-  &.is-dark {
-    border: 2px solid $cSecondaryText;
-  }
+.CDB-LoaderIcon-spinner {
+  animation: rotate 2s linear infinite;
+  width: 20px;
+  height: 20px;
+}
+.CDB-LoaderIcon-path {
+  stroke: rgba(255, 255, 255, 0.48);
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-width: 4px;
+}
+.CDB-LoaderIcon.is-dark .CDB-LoaderIcon-path {
+  stroke: rgba(0, 0, 0, 0.24);
 }
 
-.CDB-LoaderIcon-item {
-  @include css3-prefix(animation, loader-icon 1.4s linear infinite);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: $baseSize * 2;
-  height: $baseSize * 2;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgba($cWhite, 0.1) 10%, rgba($cWhite, 0) 42%);
-
-  &.is-dark {
-    background: linear-gradient(to right, $cMainBg 10%, rgba($cWhite, 0) 42%);
-  }
-}
-
-.CDB-LoaderIcon-itemCircle {
-  display: inline-block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 75%;
-  height: 75%;
-  margin: auto;
-  border-radius: 50%;
-}
-
-.CDB-LoaderIcon-itemClose {
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  border-radius: 100% 0 0;
-}
-
-.CDB-LoaderIcon-itemCircle,
-.CDB-LoaderIcon-itemClose {
-  background: $cWhite;
-}
-
-.CDB-LoaderIcon.is-dark .CDB-LoaderIcon-itemCircle,
-.CDB-LoaderIcon.is-dark .CDB-LoaderIcon-itemClose {
-  background: $cMainBg;
-}
-
-.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemCircle,
-.CDB-LoaderIcon.is-grey .CDB-LoaderIcon-itemClose {
-  background: $cThirdBackground;
-}
-
-@include keyframes(loader-icon) {
-  0% {
-    transform: rotate(0deg);
-  }
+@keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
 }
 
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
 
