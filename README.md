@@ -4,6 +4,7 @@
 
 ### Installation
 As easy as:
+- ```npm install --global grunt-cli``` [Grunt installation](http://gruntjs.com/getting-started)
 - ```npm install --global gulp-cli``` [Gulp installation](https://github.com/gulpjs/gulp)
 - ```npm install -g markdown-styleguide-generator``` [StyleGenerator installation](https://www.npmjs.com/package/markdown-styleguide-generator#install)
 - ```npm install```
