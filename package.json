@@ -29,6 +29,7 @@
     "node": ">= 0.8.0"
   },
   "devDependencies": {
+    "grunt": "~0.4.5",
     "jquery": "~2.2.0",
     "highlight.js": "~9.1.0",
     "markdown-styleguide-generator": "~2.0.4",
@@ -47,9 +48,6 @@
     "gulp-sketch": "0.0.7",
     "grunt-shell": "1.1.2",
     "load-grunt-tasks": "*"
-  },
-  "peerDependencies": {
-    "grunt": "~0.4.5"
   },
   "keywords": [
     "library",
