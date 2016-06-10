@@ -52,10 +52,20 @@ This is the generic loader for widgets, maps, components, ...
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
   </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--big is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
 </div>
 
 <div style="padding: 20px; background: #F9F9F9;">
   <div class="CDB-LoaderIcon is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--big is-dark">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
@@ -68,10 +78,20 @@ This is the generic loader for widgets, maps, components, ...
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
   </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--big">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
 </div>
 
 <div style="padding: 20px; background: #E27D61;">
   <div class="CDB-LoaderIcon">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--big">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
@@ -83,15 +103,26 @@ This is the generic loader for widgets, maps, components, ...
 
 .CDB-LoaderIcon-spinner {
   animation: rotate 2s linear infinite;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
+
+.CDB-LoaderIcon--big .CDB-LoaderIcon-spinner {
+  width: 40px;
+  height: 40px;
+}
+
 .CDB-LoaderIcon-path {
   stroke: rgba(255, 255, 255, 0.48);
   stroke-linecap: round;
   animation: dash 1.5s ease-in-out infinite;
   stroke-width: 4px;
 }
+
+.CDB-LoaderIcon--big .CDB-LoaderIcon-path {
+  stroke-width: 2px;
+}
+
 .CDB-LoaderIcon.is-dark .CDB-LoaderIcon-path {
   stroke: rgba(0, 0, 0, 0.24);
 }
