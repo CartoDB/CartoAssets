@@ -180,14 +180,14 @@ All available icons in CartoDB.
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-hide Size-large"></i>
-    <h4 class="Text Size-small">hide</h4>
+    <i class="CDB-IconFont CDB-IconFont-lArrowLight Size-large"></i>
+    <h4 class="Text Size-small">lArrowLight</h4>
   </div>
 
 
   <div class="box">
-    <i class="CDB-IconFont CDB-IconFont-lArrowLight Size-large"></i>
-    <h4 class="Text Size-small">lArrowLight</h4>
+    <i class="CDB-IconFont CDB-IconFont-hide Size-large"></i>
+    <h4 class="Text Size-small">hide</h4>
   </div>
 
 
@@ -832,12 +832,12 @@ All available icons in CartoDB.
 }
 
 
-.CDB-IconFont-hide::before {
+.CDB-IconFont-lArrowLight::before {
   content: '\E018';
 }
 
 
-.CDB-IconFont-lArrowLight::before {
+.CDB-IconFont-hide::before {
   content: '\E019';
 }
 
