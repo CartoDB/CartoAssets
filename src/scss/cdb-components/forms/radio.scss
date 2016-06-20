@@ -23,6 +23,8 @@
 
 @import '../../cdb-variables/sizes';
 @import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
 
 .CDB-Radio {
   position: absolute;
@@ -59,6 +61,7 @@
 }
 
 .CDB-Radio:checked + .CDB-Radio-face {
+  @include transition(background, 300ms);
   border: 1px solid $cBlue;
   background: $cBlue;
 
