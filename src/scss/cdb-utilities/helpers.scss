@@ -100,8 +100,14 @@
 .u-justifySpace {
   @include justify-content(space-between);
 }
+.u-alignTop {
+  @include align-items(flex-start);
+}
 .u-alignCenter {
   @include align-items(center);
+}
+.u-alignBottom {
+  @include align-items(flex-end);
 }
 
 
