@@ -100,13 +100,13 @@
 .u-justifySpace {
   @include justify-content(space-between);
 }
-.u-alignTop {
+.u-alignStart {
   @include align-items(flex-start);
 }
 .u-alignCenter {
   @include align-items(center);
 }
-.u-alignBottom {
+.u-alignEnd {
   @include align-items(flex-end);
 }
 
