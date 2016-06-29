@@ -56,6 +56,10 @@
 .CDB-Size-small {
   font-size: $sFontSize-small;
   line-height: $sLineHeight-small;
+
+}
+
+.CDB-Size-small.u-whiteTextColor {
   -webkit-font-smoothing: initial;
 }
 
