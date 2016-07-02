@@ -309,7 +309,8 @@ Layout Component:
 */
 
 
-.CDB-Button--secondary {
+.CDB-Button--secondary,
+.CDB-Button--error {
   border: 1px solid $cBlue;
   color: $cBlue;
 
