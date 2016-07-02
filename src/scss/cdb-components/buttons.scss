@@ -221,7 +221,8 @@ Layout Component:
 }
 
 
-.CDB-Button--error {
+.CDB-Button--error,
+.CDB-Button--negative {
   background: $cError;
   color: $cWhite;
 
@@ -309,8 +310,7 @@ Layout Component:
 */
 
 
-.CDB-Button--secondary,
-.CDB-Button--negative {
+.CDB-Button--secondary{
   border: 1px solid $cBlue;
   color: $cBlue;
 
