@@ -107,6 +107,11 @@ This is the generic loader for widgets, maps, components, ...
   height: 16px;
 }
 
+.CDB-LoaderIcon--small .CDB-LoaderIcon-spinner {
+  width: 14px;
+  height: 14px;
+}
+
 .CDB-LoaderIcon--big .CDB-LoaderIcon-spinner {
   width: 40px;
   height: 40px;
@@ -147,4 +152,3 @@ This is the generic loader for widgets, maps, components, ...
     stroke-dashoffset: -124;
   }
 }
-
