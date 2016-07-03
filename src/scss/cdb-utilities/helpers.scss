@@ -100,6 +100,9 @@
 .u-justifySpace {
   @include justify-content(space-between);
 }
+.u-justifyCenter {
+  @include justify-content(center);
+}
 .u-alignStart {
   @include align-items(flex-start);
 }
