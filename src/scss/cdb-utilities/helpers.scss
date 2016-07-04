@@ -103,6 +103,12 @@
 .u-justifyCenter {
   @include justify-content(center);
 }
+.u-justifyStart {
+  @include justify-content(flex-start);
+}
+.u-justifyEnd {
+  @include justify-content(flex-end);
+}
 .u-alignStart {
   @include align-items(flex-start);
 }
