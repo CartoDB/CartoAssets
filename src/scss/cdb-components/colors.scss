@@ -6,23 +6,17 @@
 
 
 ```
-<div class="box Color-MainDark"></div>
-<div class="box Color-SecondaryDark"></div>
-<div class="box Color-Blue"></div>
-<div class="box Color-White"></div>
-<div class="box Color-SecondaryBackground"></div>
-<div class="box Color-ThirdBackground"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-MainDark"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-SecondaryDark"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-Blue"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-White"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-SecondaryBackground"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-ThirdBackground"></div>
 ``` 
 */
 
 @import '../cdb-variables/colors';
 
-.box {
-  display: inline-block;
-  width: 120px;
-  height: 64px;
-  margin: 0 24px 24px 0;
-}
 
 .Color-Blue {
   background: $cBlue;
