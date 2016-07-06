@@ -81,3 +81,23 @@ Description
     border: 1px solid $cError;
   }
 }
+
+
+.CDB-Shape-CircleItem--fill {
+  &.is-blue {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+  }
+  &.is-white {
+    border: 1px solid $cWhite;
+    background: $cWhite;
+  }
+  &.is-green {
+    border: 1px solid $cHighlight;
+    background: $cHighlight;
+  }
+  &.is-red {
+    border: 1px solid $cError;
+    background: $cError;
+  }
+}
