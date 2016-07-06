@@ -128,8 +128,9 @@
 
 .CDB-Tag.CDB-Tag--opaque {
   padding: $baseSize / 4 $halfBaseSize;
+  border: 0;
   border-radius: $baseSize / 4;
-  background: $cThirdBackground;
+  background: rgba(0, 0, 0, 0.04);
   text-transform: uppercase;
 }
 
