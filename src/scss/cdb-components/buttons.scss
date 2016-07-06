@@ -293,6 +293,14 @@ Layout Component:
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
   </button>
 
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--white">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--white is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
   <button class="CDB-Button CDB-Button--secondary is-disabled">
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
   </button>
@@ -310,7 +318,7 @@ Layout Component:
 */
 
 
-.CDB-Button--secondary{
+.CDB-Button--secondary {
   border: 1px solid $cBlue;
   color: $cBlue;
 
@@ -324,10 +332,35 @@ Layout Component:
 
   &.is-disabled {
     &:hover {
-      background: $cWhite;
+      background: transparent;
     }
     &:active {
-      background: $cWhite;
+      background: transparent;
+    }
+  }
+}
+
+
+.CDB-Button--white {
+  border: 1px solid $cWhite;
+  color: $cWhite;
+
+  &:hover {
+    background: rgba($cWhite, 0.08);
+  }
+  &:active {
+    background: rgba($cMainBg, 0.08);
+    color: $cWhite;
+  }
+
+  &.is-disabled {
+    @include opacity(0.24);
+    &:hover {
+      background: transparent;
+    }
+    &:active {
+      background: transparent;
+      color: $cWhite;
     }
   }
 }
