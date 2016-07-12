@@ -32,6 +32,9 @@
   &.is-light {
     font-weight: $sFontWeight-lighter;
   }
+  &.is-disabled {
+    opacity: 0.24;
+  }
 }
 
 .is-underlined {
