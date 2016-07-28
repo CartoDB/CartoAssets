@@ -1,0 +1,115 @@
+/* SG
+# Shapes/Magnify
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify is-blue"></div>
+  </div>
+</div>
+<div style="background: #2E3C43; padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify is-white"></div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify is-small"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify is-blue is-small"></div>
+  </div>
+</div>
+<div style="background: #2E3C43; padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-magnify is-white is-small"></div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-magnify {
+  display: block;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid $cMainBg;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    right: 2px;
+    bottom: -1px;
+    width: 1px;
+    height: 7px;
+    transform: rotate(314deg);
+    background: $cMainBg;
+    content: '';
+  }
+}
+
+.CDB-Shape-magnify.is-blue {
+  &::before {
+    border: 1px solid $cBlue;
+  }
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-magnify.is-white {
+  &::before {
+    border: 1px solid $cWhite;
+  }
+  &::after {
+    background: $cWhite;
+  }
+}
+
+.CDB-Shape-magnify.is-small {
+  &::before {
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+    width: 1px;
+    height: 5px;
+    transform: rotate(314deg);
+    content: '';
+  }
+}

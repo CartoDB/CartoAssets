@@ -1,0 +1,61 @@
+// Input styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Inputs
+
+```
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled CDB-Text">
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/helpers';
+
+.CDB-InputText {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid $cMainLine;
+  border-radius: $baseSize / 2;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+  box-sizing: border-box;
+
+  &.is-cursor {
+    cursor: pointer;
+  }
+  &.is-empty {
+    color: $cHintText;
+  }
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+    outline: none;
+  }
+  &:disabled,
+  &.is-disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+    cursor: default;
+  }
+  &.has-error {
+    @include default-form-error-style();
+  }
+}
+.CDB-InputTextPlain {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+  box-sizing: border-box;
+}
+
+.CDB-FieldError .CDB-InputText {
+  @include default-form-error-style();
+}

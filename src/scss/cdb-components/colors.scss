@@ -1,0 +1,129 @@
+// Colors styles
+// ----------------------------------------------
+
+/* SG
+# Colors/structure
+
+
+```
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-MainDark"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-SecondaryDark"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-Blue"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-White"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-SecondaryBackground"></div>
+<div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-ThirdBackground"></div>
+``` 
+*/
+
+@import '../cdb-variables/colors';
+
+
+.Color-Blue {
+  background: $cBlue;
+}
+.Color-White {
+  border: 1px solid #E5E5E5;
+  background: $cWhite;
+}
+.Color-Dark {
+  background: $cBlack;
+}
+
+.Color-MainDark {
+  background: $cMainBg;
+}
+.Color-SecondaryDark {
+  background: $cSecondaryDark;
+}
+.Color-SecondaryBackground {
+  background: $cSecondaryBackground;
+}
+.Color-ThirdBackground {
+  background: $cThirdBackground;
+}
+
+
+/* SG
+# Colors/line
+
+
+```
+<div class="box Color-Blue"></div>
+<div class="box Color-HoverLine"></div>
+<div class="box Color-MainLine"></div>
+<div class="box Color-SecondaryLine"></div>
+```
+*/
+
+
+.Color-HoverLine {
+  background: $cHoverLine;
+}
+.Color-MainLine {
+  background: $cMainLine;
+}
+.Color-SecondaryLine {
+  background: $cSecondaryLine;
+}
+
+
+/* SG
+# Colors/typography
+
+
+```
+<div class="box Color-MainDark"></div>
+<div class="box Color-Type02"></div>
+<div class="box Color-Type03"></div>
+<div class="box Color-Type04"></div>
+<div class="box Color-White"></div>
+<div class="box Color-Blue"></div>
+```
+*/
+
+
+.Color-Type02 {
+  background: $cSecondaryText;
+}
+.Color-Type03 {
+  background: $cAltText;
+}
+.Color-Type04 {
+  background: $cHintText;
+}
+
+
+/* SG
+# Colors/other
+
+
+```
+<div class="box Color-Higlight"></div>
+<div class="box Color-Alert"></div>
+<div class="box Color-Public"></div>
+<div class="box Color-Link"></div>
+<div class="box Color-Password"></div>
+<div class="box Color-Error"></div>
+```
+*/
+
+.Color-Higlight {
+  background: $cHighlight;
+}
+.Color-Alert {
+  background: $cAlert;
+}
+.Color-Public {
+  background: $cPublic;
+}
+.Color-Link {
+  background: $cLink;
+}
+.Color-Password {
+  background: $cPassword;
+}
+.Color-Error {
+  background: $cError;
+}
+
+

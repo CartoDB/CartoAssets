@@ -1,0 +1,153 @@
+/* SG
+# Shapes/Three Points
+
+Description
+
+```
+<h2>24px</h2>
+<div style="padding: 20px;">
+  <button class="CDB-Shape CDB-Shape--medium" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-horizontal is-medium">
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px;">
+  <button class="CDB-Shape CDB-Shape--medium" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-horizontal is-blue is-medium">
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <button class="CDB-Shape CDB-Shape--medium" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-threePoints is-horizontal is-white is-medium">
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+      <div class="CDB-Shape-threePointsItem is-round"></div>
+    </div>
+  </button>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-blue">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-threePoints is-white">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-threePoints is-blue is-small">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <button class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-threePoints is-white is-small">
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+      <div class="CDB-Shape-threePointsItem"></div>
+    </div>
+  </button>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-threePoints {
+  display: inline-block;
+  padding: 0 4px;
+}
+.CDB-Shape-threePoints.is-horizontal {
+  transform: rotate(90deg);
+  padding: 4px 0;
+}
+
+.CDB-Shape-threePointsItem {
+  width: 2px;
+  height: 2px;
+  margin-bottom: 5px;
+  background: $cMainBg;
+}
+.CDB-Shape-threePointsItem.is-round {
+  border-radius: 50%;
+}
+.CDB-Shape-threePointsItem:last-child {
+  margin-bottom: 0;
+}
+
+.CDB-Shape-threePoints.is-small {
+  padding-top: 2px;
+}
+.CDB-Shape-threePoints.is-small .CDB-Shape-threePointsItem {
+  width: 2px;
+  height: 2px;
+  margin-bottom: 3px;
+}
+
+.CDB-Shape-threePoints.is-medium {
+  padding-top: 2px;
+}
+.CDB-Shape-threePoints.is-medium .CDB-Shape-threePointsItem {
+  width: 4px;
+  height: 4px;
+  margin-bottom: 3px;
+}
+
+.CDB-Shape-threePoints.is-blue .CDB-Shape-threePointsItem {
+  background: $cBlue;
+}
+
+.CDB-Shape-threePoints.is-white .CDB-Shape-threePointsItem {
+  background: $cWhite;
+}

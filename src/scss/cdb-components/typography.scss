@@ -1,0 +1,77 @@
+// Typography styles
+// ----------------------------------------------
+
+/* SG
+# Typography
+
+```
+<p class="CDB-Text CDB-Size-huge">Open Sans 26/34 Regular</p>
+<p class="CDB-Text CDB-Size-huge is-light">Open Sans 26/34 Light</p>
+<p class="CDB-Text CDB-Size-large">Open Sans 16/22 Regular</p>
+<p class="CDB-Text is-semibold CDB-Size-medium">Open Sans 12/16 Semibold</p>
+<p class="CDB-Text is-semibold u-upperCase CDB-Size-medium">Open Sans 12/16 Semibold Uppercase</p>
+<p class="CDB-Text CDB-Size-medium u-secondaryTextColor">Open Sans 12/16 Regular</p>
+<p class="CDB-Text CDB-Size-medium u-altTextColor">Open Sans 12/16 Regular</p>
+<p class="CDB-Text CDB-Size-medium u-hintTextColor">Open Sans 12/16 Regular</p>
+<p class="CDB-Text is-semibold CDB-Size-small">Open Sans 10/14 Semibold</p>
+<p class="CDB-Text CDB-Size-small">Open Sans 10/14 Regular</p>
+<span class="CDB-Text CDB-Size-small is-underlined">?</span>
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-Text {
+  font-family: 'Open Sans';
+  $sFontWeight-normal: 400;
+
+  &.is-semibold {
+    font-weight: $sFontWeight-semibold;
+  }
+  &.is-light {
+    font-weight: $sFontWeight-lighter;
+  }
+}
+
+.is-underlined {
+  border-bottom: 1px dotted $cMainLine;
+}
+
+.CDB-Size-huge {
+  font-size: $sFontSize-huge;
+  line-height: $sLineHeight-huge;
+}
+
+.CDB-Size-large {
+  font-size: $sFontSize-large;
+  line-height: $sLineHeight-large;
+}
+
+.CDB-Size-medium {
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+}
+
+.CDB-Size-small {
+  font-size: $sFontSize-small;
+  line-height: $sLineHeight-small;
+
+}
+
+.CDB-Size-small.u-whiteTextColor {
+  -webkit-font-smoothing: initial;
+}
+
+.CDB-FontSize-small {
+  font-size: $sFontSize-small;
+}
+
+.CDB-FontSize-medium {
+  font-size: $sFontSize-medium;
+}
+
+.CDB-IconFont.is-disabled {
+  opacity: 0.24;
+}
+

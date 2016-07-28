@@ -1,0 +1,98 @@
+// Select styles
+// ----------------------------------------------
+
+
+/* SG
+# Forms/Selects
+
+```
+<div class="CDB-Select" style="height: 250px;">
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+  <div class="CDB-Box-Modal CDB-SelectItem">
+    <ul class="CDB-Text CDB-Size-medium">
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
+    </ul>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+
+<div class="CDB-Select" style="height: 250px;">
+  <div class="CDB-InputText CDB-Text">DejaVu Sans</div>
+  <div class="CDB-Box-Modal CDB-SelectItem">
+    <ul class="CDB-Text CDB-Size-medium">
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Hide</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Rename</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Change source dataset…</a></li>
+      <li class="CDB-ListDecoration-Item"><a href="#" class="CDB-ListDecoration-ItemLink">Delete this layer…</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="CDB-InputText CDB-Text is-cursor is-disabled">DejaVu Sans</div>
+<br/>
+<div class="CDB-InputText CDB-Text is-cursor is-empty">DejaVu Sans</div>
+<br/>
+<select name="select" class="CDB-SelectFake CDB-Text">
+  <option value="value1" selected>Choose an option</option>
+  <option value="value2">Hide</option>
+  <option value="value3">Rename</option>
+  <option value="value4">Change source dataset…</option>
+  <option value="value5">Delete this layer…</option>
+</select>
+
+
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/helpers';
+
+.CDB-Select {
+  position: relative;
+}
+
+.CDB-SelectItem {
+  position: absolute;
+  top: 40px;
+}
+
+.CDB-SelectFake {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 7px 8px 6px;
+  border: 1px solid $cMainLine;
+  border-radius: $baseSize / 2;
+  background: $cWhite;
+  font-size: $sFontSize-medium;
+  line-height: $sLineHeight-medium;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid $cHoverLine;
+  }
+  &:focus {
+    border: 1px solid $cBlue;
+    outline: none;
+  }
+  &:disabled {
+    border-color: $cSecondaryLine;
+    background: $cThirdBackground;
+  }
+  &.has-error {
+    @include default-form-error-style();
+  }
+}
+
+.CDB-FieldError .CDB-Select,
+.CDB-FieldError .CDB-SelectFake {
+  @include default-form-error-style();
+}

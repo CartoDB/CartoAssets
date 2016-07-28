@@ -1,0 +1,366 @@
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Primary
+
+Layout Component:
+[CDB-Button][CDB-Button--primary | CDB-Button--secondary]
+
+```
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--big">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+
+<button class="CDB-Button CDB-Button--primary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--primary CDB-Button--icon">
+  <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<button class="CDB-Button CDB-Button--alert CDB-Button--big">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--alert CDB-Button--big is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+
+<button class="CDB-Button CDB-Button--alert">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--alert is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--alert CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--alert CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--alert CDB-Button--icon">
+  <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+</button>
+
+
+<br/>
+<br/>
+<br/>
+
+<button class="CDB-Button CDB-Button--error CDB-Button--big">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--error CDB-Button--big is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+
+<button class="CDB-Button CDB-Button--error">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--error is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--error CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--error CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--error CDB-Button--icon">
+  <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--big">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--primary CDB-Button--icon">
+    <i class="CDB-IconFont CDB-IconFont-ray CDB-Size-small"></i>
+  </button>
+
+</div>
+
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Button {
+  @include transition(background, 300ms);
+  padding: $baseSize + 1 $baseSize + 12;
+  border: 1px solid transparent;
+  border-radius: $baseSize / 2;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  .CDB-Button-Text {
+    display: block;
+  }
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.24;
+  }
+}
+
+.CDB-Button--small {
+  padding: $baseSize / 2 $baseSize + 4;
+}
+
+.CDB-Button--big {
+  padding: $baseSize + 4 $baseSize + 12;
+}
+
+.CDB-Button--icon {
+  padding: 7px 9px;
+}
+
+.CDB-Button--primary {
+  background: $cBlue;
+  color: $cWhite;
+
+  &:hover {
+    background: darken($cBlue, 8%);
+  }
+  &:active {
+    background: darken($cBlue, 16%);
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cBlue;
+    }
+    &:active {
+      background: $cBlue;
+    }
+  }
+}
+
+.CDB-Button--alert {
+  background: $cAlert;
+  color: $cWhite;
+
+  &:hover {
+    background: darken($cAlert, 8%);
+  }
+  &:active {
+    background: darken($cAlert, 16%);
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cAlert;
+    }
+    &:active {
+      background: $cAlert;
+    }
+  }
+}
+
+
+.CDB-Button--error,
+.CDB-Button--negative {
+  background: $cError;
+  color: $cWhite;
+
+  &:hover {
+    background: darken($cError, 8%);
+  }
+  &:active {
+    background: darken($cError, 16%);
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: $cError;
+    }
+    &:active {
+      background: $cError;
+    }
+  }
+}
+
+
+
+// Buttons styles
+// ----------------------------------------------
+
+/* SG
+# Buttons/Secondary
+
+```
+<button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--big is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+</button>
+
+<br/>
+<br/>
+<br/>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--big is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--white">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--white is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
+    <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
+  </button>
+</div>
+
+```
+*/
+
+
+.CDB-Button--secondary {
+  border: 1px solid $cBlue;
+  color: $cBlue;
+
+  &:hover {
+    background: rgba($cBlue, 0.08);
+  }
+  &:active {
+    background: $cBlue;
+    color: $cWhite;
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: transparent;
+    }
+    &:active {
+      background: transparent;
+    }
+  }
+}
+
+
+.CDB-Button--white {
+  border: 1px solid $cWhite;
+  color: $cWhite;
+
+  &:hover {
+    background: rgba($cWhite, 0.08);
+  }
+  &:active {
+    background: rgba($cMainBg, 0.08);
+    color: $cWhite;
+  }
+
+  &.is-disabled {
+    @include opacity(0.24);
+    &:hover {
+      background: transparent;
+    }
+    &:active {
+      background: transparent;
+      color: $cWhite;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+// Helper classes
+// ----------------------------------------------
+
+@import './mixins';
+@import '../cdb-variables/colors';
+
+/* Margins */
+.u-tSpace {
+  margin-top: 4px;
+}
+.u-tSpace--m {
+  margin-top: 8px;
+}
+.u-tSpace-xl {
+  margin-top: 12px;
+}
+.u-rSpace--s {
+  margin-right: 2px;
+}
+.u-rSpace {
+  margin-right: 4px;
+}
+.u-rSpace--m {
+  margin-right: 8px;
+}
+.u-rSpace--xl {
+  margin-right: 12px;
+}
+.u-bSpace {
+  margin-bottom: 4px;
+}
+.u-bSpace--m {
+  margin-bottom: 8px;
+}
+.u-bSpace--xl {
+  margin-bottom: 12px;
+}
+.u-lSpace {
+  margin-left: 4px;
+}
+.u-lSpace--xl {
+  margin-left: 12px;
+}
+
+.u-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// Colors
+// Main Text Color is default color
+// ----------------------------------------------
+
+.u-actionTextColor {
+  color: $cBlue;
+}
+.u-mainTextColor {
+  color: $cMainText;
+}
+.u-secondaryTextColor {
+  color: $cSecondaryText;
+}
+.u-altTextColor {
+  color: $cAltText;
+}
+.u-hintTextColor {
+  color: $cHintText;
+}
+.u-alertTextColor {
+  color: $cAlert;
+}
+.u-whiteTextColor {
+  color: $cWhite;
+}
+.u-errorTextColor {
+  color: $cError;
+}
+
+/* Displays */
+.u-iBlock {
+  @include inline-block();
+}
+.u-showDesktop {
+  display: block !important;
+}
+.u-showMobile {
+  display: none !important;
+}
+
+/* Decoration */
+.u-upperCase {
+  text-transform: uppercase;
+}
+
+/* Flex */
+.u-flex {
+  @include display-flex();
+}
+.u-justifySpace {
+  @include justify-content(space-between);
+}
+.u-justifyCenter {
+  @include justify-content(center);
+}
+.u-justifyStart {
+  @include justify-content(flex-start);
+}
+.u-justifyEnd {
+  @include justify-content(flex-end);
+}
+.u-alignStart {
+  @include align-items(flex-start);
+}
+.u-alignCenter {
+  @include align-items(center);
+}
+.u-alignEnd {
+  @include align-items(flex-end);
+}
+
+
+/* Media queries*/
+@include media-query-mobile() {
+  .u-showDesktop {
+    display: none !important;
+  }
+  .u-showMobile {
+    display: block !important;
+  }
+}
+
+/* helper mixins */
+@mixin default-form-error-style() {
+  border: 1px solid rgba($cError, 0.48);
+  background: rgba($cError, 0.04);
+  color: $cError;
+}

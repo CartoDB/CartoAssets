@@ -1,0 +1,148 @@
+// Info Tooltip
+// ----------------------------------------------
+
+/* SG
+# Info Tooltip
+
+
+```
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--up is-black">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--up is-error">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--down is-black">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--down is-error">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--left is-black">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--left is-error">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--right is-black">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+<div style="position: relative; height: 100px;">
+  <div class="CDB-InfoTooltip CDB-InfoTooltip--right is-error">
+    <p class="CDB-Text CDB-Size-medium CDB-InfoTooltip-text">627K Transactions</p>
+  </div>
+</div>
+
+
+
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/colors';
+@import '../cdb-variables/sizes';
+
+
+.CDB-InfoTooltip {
+  display: inline-block;
+  position: absolute;
+  padding: $baseSize;
+  border-radius: $halfBaseSize;
+  background: rgba($cMainBg, 0.8);
+}
+.CDB-InfoTooltip::after {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  content: '';
+}
+
+.is-black {
+  &.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+    border-bottom-color: rgba($cMainBg, 0.8);
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+    border-top-color: rgba($cMainBg, 0.8);
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+    border-right-color: rgba($cMainBg, 0.8);
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+    border-left-color: rgba($cMainBg, 0.8);
+  }
+}
+
+.is-error {
+  &.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+    border-bottom-color: $cError;
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+    border-top-color: $cError;
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+    border-right-color: $cError;
+  }
+  &.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+    border-left-color: $cError;
+  }
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+  top: -$baseSize;
+  left: calc(50% - #{$halfBaseSize});
+  border-top-width: $halfBaseSize;
+  border-top-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+  bottom: -$baseSize;
+  left: calc(50% - #{$halfBaseSize});
+  border-top-width: $halfBaseSize;
+  border-top-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+  top: calc(50% - #{$halfBaseSize});
+  left: -$baseSize;
+  border-right-width: $halfBaseSize;
+  border-right-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+  top: calc(50% - #{$halfBaseSize});
+  right: -$baseSize;
+  border-right-width: $halfBaseSize;
+  border-right-style: solid;
+}
+
+.CDB-InfoTooltip.is-error {
+  background: $cError;
+}
+
+.CDB-InfoTooltip-text {
+  color: $cWhite;
+}

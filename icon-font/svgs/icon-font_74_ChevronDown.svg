@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="308px" viewBox="0 0 500 308" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-font_74_ChevronDown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-5000.000000, -7096.000000)" fill="#000000">
+            <path d="M5108.8967,7114.68674 C5083.97883,7089.76887 5043.59546,7089.77395 5018.68461,7114.68479 C4993.76829,7139.60111 4993.77465,7179.98496 5018.68657,7204.89688 L5199.10294,7385.31326 C5212.95497,7399.16529 5231.58635,7405.3153 5249.68212,7403.76625 C5267.7779,7405.3153 5286.40928,7399.16529 5300.26131,7385.31326 L5480.67768,7204.89688 C5505.5896,7179.98496 5505.59595,7139.60111 5480.67963,7114.68479 C5455.76879,7089.77395 5415.38541,7089.76887 5390.46754,7114.68674 L5249.68212,7255.47216 L5108.8967,7114.68674 Z" id="icon-font_74_ChevronDown" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

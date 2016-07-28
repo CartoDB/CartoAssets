@@ -1,0 +1,161 @@
+/* SG
+# Shapes/Move
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-rectsHandle">
+      <div class="CDB-Shape-rectsHandleItem is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-rectsHandle">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-rectsHandle">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-rectsHandle">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-third"></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-rectsHandle is-small">
+      <div class="CDB-Shape-rectsHandleItem is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-rectsHandle is-small">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--blue is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape">
+    <div class="CDB-Shape-rectsHandle is-small">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--grey is-third"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-rectsHandle is-small">
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-first"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-second"></div>
+      <div class="CDB-Shape-rectsHandleItem CDB-Shape-rectsHandleItem--white is-third"></div>
+    </div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-rectsHandle {
+  position: relative;
+  padding: 1px 0 0;
+}
+
+.CDB-Shape-rectsHandle.is-small {
+  padding: 3px 0 0 1px;
+
+  .CDB-Shape-rectsHandleItem {
+    height: 2px;
+    margin-bottom: 2px;
+
+    &::before {
+      left: 5px;
+      width: 2px;
+      height: 2px;
+    }
+    &::after {
+      width: 2px;
+      height: 2px;
+    }
+  }
+}
+
+.CDB-Shape-rectsHandleItem {
+  height: 3px;
+  margin-bottom: 3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    display: block;
+    position: absolute;
+    left: 4px;
+    width: 3px;
+    height: 3px;
+    background: $cMainBg;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    left: 9px;
+    width: 3px;
+    height: 3px;
+    background: $cMainBg;
+    content: '';
+  }
+}
+
+.CDB-Shape-rectsHandleItem--blue {
+  &::before,
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-rectsHandleItem--white {
+  &::before,
+  &::after {
+    background: $cWhite;
+  }
+}
+
+.CDB-Shape-rectsHandleItem--grey {
+  &::before,
+  &::after {
+    background: $cHoverLine;
+  }
+}

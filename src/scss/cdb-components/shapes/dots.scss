@@ -1,0 +1,28 @@
+// Shape styles
+// ----------------------------------------------
+
+/* SG
+# Shapes/Dots
+
+You may resize and change the colors of the icons with the `glyph-`-classes. Available sizes and colors listed:
+
+```
+<button class="CDB-Shape-dot CDB-Widget-dot--navigation is-selected" data-page="3"></button>
+<button class="CDB-Shape-dot CDB-Widget-dot--navigation" data-page="3"></button>
+```
+*/
+
+@import '../../cdb-variables/colors';
+@import '../../cdb-variables/sizes';
+
+.CDB-Shape-dot {
+  display: inline-block;
+  width: $baseSize;
+  height: $baseSize;
+  border-radius: 50%;
+  background: $cSecondaryLine;
+
+  &.is-selected {
+    background: $cSecondaryText;
+  }
+}

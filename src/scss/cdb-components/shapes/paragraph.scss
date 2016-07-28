@@ -1,0 +1,112 @@
+/* SG
+# Shapes/Paragrapgh
+
+Description
+
+```
+<h2>16px</h2>
+<br/>
+<br/>
+<div class="CDB-Shape">
+  <ul class="CDB-Shape-paragraph is-right">
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+    </li>
+  </ul>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="CDB-Shape">
+  <ul class="CDB-Shape-paragraph is-center">
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+    </li>
+  </ul>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="CDB-Shape">
+  <ul class="CDB-Shape-paragraph is-active">
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--01"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--02"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--03"></span>
+    </li>
+    <li class="CDB-Shape-paragraphItem">
+      <span class="CDB-Shape-paragraphBar CDB-Shape-paragraphBar--04"></span>
+    </li>
+  </ul>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-paragraph {
+  padding-top: 3px;
+  text-align: left;
+}
+.CDB-Shape-paragraph.is-center {
+  text-align: center;
+}
+.CDB-Shape-paragraph.is-right {
+  text-align: right;
+}
+.CDB-Shape-paragraphItem {
+  height: 1px;
+  margin-bottom: 2px;
+}
+.CDB-Shape-paragraphItem:last-child {
+  margin-bottom: 0;
+}
+
+.CDB-Shape-paragraphBar {
+  display: inline-block;
+  height: 1px;
+  margin-bottom: 2px;
+  background: $cSecondaryLine;
+  vertical-align: top;
+}
+
+.CDB-Shape-paragraph.is-active .CDB-Shape-paragraphBar {
+  background: $cBlue;
+}
+
+.CDB-Shape-paragraphBar--01 {
+  width: 12px;
+}
+.CDB-Shape-paragraphBar--02 {
+  width: 6px;
+}
+.CDB-Shape-paragraphBar--03 {
+  width: 8px;
+}
+.CDB-Shape-paragraphBar--04 {
+  width: 4px;
+}

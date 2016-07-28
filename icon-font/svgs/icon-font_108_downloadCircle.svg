@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-font_108_downloadCircle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-3000.000000, -11000.000000)" fill="#000000">
+            <path d="M3250,11500 C3388.07119,11500 3500,11388.0712 3500,11250 C3500,11111.9288 3388.07119,11000 3250,11000 C3111.92881,11000 3000,11111.9288 3000,11250 C3000,11388.0712 3111.92881,11500 3250,11500 Z M3281.25,11281.25 L3281.25,11125 L3218.75,11125 L3218.75,11281.25 L3281.25,11281.25 Z M3359.375,11218.75 L3281.25,11281.25 L3218.75,11281.25 L3140.625,11218.75 L3093.75,11265.625 L3248.95833,11390.625 L3406.25,11265.625 L3359.375,11218.75 Z" id="icon-font_108_downloadCircle"></path>
+        </g>
+    </g>
+</svg>

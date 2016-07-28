@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="501px" height="376px" viewBox="0 0 501 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-font_65_Alarm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-6000.000000, -6062.000000)" fill="#000000">
+            <g id="icon-font_65_Alarm" sketch:type="MSLayerGroup" transform="translate(6000.000000, 6062.000000)">
+                <path d="M423.467826,0 L396.625,24.9488843 C485.339423,117.126714 485.270181,257.62155 396.663468,350.486046 L424.121778,376 C526.838478,276.783838 526.630752,98.872829 423.467826,0" id="Fill-818" sketch:type="MSShapeGroup"></path>
+                <path d="M376.710307,62.6666667 L354.875,87.6204111 C397.466877,145.335471 397.491119,230.408203 355.081051,288.55971 L376.734548,313.333333 C431.05919,241.305549 431.125854,134.08481 376.710307,62.6666667" id="Fill-819" sketch:type="MSShapeGroup"></path>
+                <path d="M104.375,24.9488843 L77.5324231,0 C-25.6295468,98.872829 -25.8372709,276.783838 76.8707832,376 L104.328839,350.486046 C15.722947,257.62155 15.6460121,117.126714 104.375,24.9488843" id="Fill-820" sketch:type="MSShapeGroup"></path>
+                <path d="M124.288901,62.6666667 C69.8713795,134.08481 69.9441058,241.305549 124.264659,313.333333 L145.931063,288.55971 C103.519456,230.408203 103.525517,145.335471 146.125,87.6204111 L124.288901,62.6666667" id="Fill-821" sketch:type="MSShapeGroup"></path>
+                <path d="M250.496391,104.444444 C204.377394,104.444444 167,141.859536 167,187.992777 C167,234.126018 204.377394,271.555556 250.496391,271.555556 C296.608169,271.555556 334,234.126018 334,187.992777 C334,141.859536 296.608169,104.444444 250.496391,104.444444" id="Fill-822" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

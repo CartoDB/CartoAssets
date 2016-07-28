@@ -1,0 +1,136 @@
+// Typography styles
+// ----------------------------------------------
+
+/* SG
+# Tags / Privacy
+
+```
+<button class="CDB-Tag is-public CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PUBLIC
+</button>
+<button class="CDB-Tag is-link CDB-Text is-semibold CDB-Size-small u-iBlock">
+  LINK
+</button>
+<button class="CDB-Tag is-password CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PASSWORD
+</button>
+<button class="CDB-Tag is-private CDB-Text is-semibold CDB-Size-small u-iBlock">
+  PRIVATE
+</button>
+<button class="CDB-Tag CDB-Text is-semibold CDB-Size-small u-iBlock">
+  TAG
+</button>
+```
+*/
+
+@import '../cdb-utilities/mixins';
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+
+.CDB-Tag {
+  padding: 0 3px;
+  border: 1px solid $cBlue;
+  border-radius: 2px;
+  color: $cBlue;
+
+  &.is-public {
+    border: 1px solid $cPublic;
+    color: $cPublic;
+  }
+  &.is-link {
+    border: 1px solid $cLink;
+    color: $cLink;
+  }
+  &.is-password {
+    border: 1px solid $cPassword;
+    color: $cPassword;
+  }
+  &.is-private {
+    border: 1px solid $cError;
+    color: $cError;
+  }
+}
+
+/* SG
+# Tags / Metadata
+
+```
+<ul class="CDB-ListTag CDB-Text CDB-Size-medium u-secondaryTextColor">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLink">
+      trees
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLink">
+      table_merge
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--withLink">
+      word
+      <div class="CDB-Shape u-lSpace">
+        <div class="CDB-Shape-close is-blue is-large"></div>
+      </div>
+    </button>
+  </li>
+</ul>
+
+```
+*/
+
+.CDB-ListTag {
+  @include display-flex();
+}
+
+.CDB-ListTag-item {
+  margin-right: $baseSize;
+}
+
+.CDB-Tag.CDB-Tag--withLink {
+  @include display-flex();
+  padding: $halfBaseSize $halfBaseSize $halfBaseSize $baseSize;
+  border-radius: $halfBaseSize;
+  background: rgba($cBlue, 0.16);
+}
+
+/* SG
+# Tags / Data Type
+
+```
+<ul class="CDB-ListTag">
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
+      Number
+    </button>
+  </li>
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
+      Text
+    </button>
+  </li>
+  <li class="CDB-ListTag-item">
+    <button class="CDB-Tag CDB-Tag--opaque CDB-Text CDB-Size-small u-altTextColor">
+      String
+    </button>
+  </li>
+</ul>
+
+```
+*/
+
+.CDB-Tag.CDB-Tag--opaque {
+  padding: $baseSize / 4 $halfBaseSize;
+  border: 0;
+  border-radius: $baseSize / 4;
+  background: rgba(0, 0, 0, 0.04);
+  text-transform: uppercase;
+}
+

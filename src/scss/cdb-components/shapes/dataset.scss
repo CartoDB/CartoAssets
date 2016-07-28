@@ -1,0 +1,146 @@
+/* SG
+# Shapes/Dataset
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-blue">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-grey">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-white">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-small">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-small is-blue">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-small is-grey">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <ul class="CDB-Shape-Dataset is-small is-white">
+      <li class="CDB-Shape-DatasetItem"></li>
+      <li class="CDB-Shape-DatasetItem"></li>
+    </ul>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+@import '../../cdb-variables/sizes';
+
+.CDB-Shape-Dataset {
+  padding-top: 1px;
+  &.is-small {
+    padding-top: 0;
+  }
+}
+
+.CDB-Shape-DatasetItem {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: -10px;
+  border: 1px solid $cMainBg;
+  border-radius: 50%;
+  background: $cWhite;
+
+  &:first-child {
+    position: relative;
+    margin-left: 0;
+    box-shadow: 3px 0 0 $cWhite;
+    z-index: 1;
+  }
+}
+
+.CDB-Shape-Dataset.is-small {
+  .CDB-Shape-DatasetItem {
+    width: 6px;
+    height: 6px;
+    margin-left: -7px;
+    &:first-child {
+      margin-left: 0;
+      box-shadow: 2px 0 0 $cWhite;
+    }
+  }
+}
+
+.CDB-Shape-Dataset.is-blue {
+  .CDB-Shape-DatasetItem {
+    border: 1px solid $cBlue;
+  }
+}
+
+.CDB-Shape-Dataset.is-grey {
+  .CDB-Shape-DatasetItem {
+    border: 1px solid $cHoverLine;
+  }
+}
+
+.CDB-Shape-Dataset.is-white {
+  .CDB-Shape-DatasetItem {
+    border: 1px solid $cHoverLine;
+    background: $cMainBg;
+    &:first-child {
+      box-shadow: 3px 0 $cMainBg;
+    }
+  }
+}
+
+.CDB-Shape-Dataset.is-white.is-small {
+  .CDB-Shape-DatasetItem:first-child {
+    box-shadow: 2px 0 $cMainBg;
+  }
+}

@@ -1,0 +1,85 @@
+/* SG
+# Shapes/Arrow
+
+Description
+
+```
+<div style="padding: 20px;">
+  <div class="CDB-Shape-Arrow"></div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape-Arrow is-blue"></div>
+</div>
+<div style="padding: 20px; background: #2E3C43">
+  <div class="CDB-Shape-Arrow is-white"></div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-Arrow {
+  position: relative;
+  width: 1px;
+  height: 8px;
+  background: $cMainBg;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 5px;
+    height: 1px;
+    transform: rotate(45deg);
+    background: $cMainBg;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: 5px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background: $cMainBg;
+    content: '';
+  }
+  &.is-up {
+    top: 6px;
+    right: 9px;
+    transform: rotate(45deg);
+  }
+
+  &.is-down {
+    top: 13px;
+    left: 46px;
+    transform: rotate(-135deg);
+  }
+}
+
+.CDB-Shape-Arrow.is-blue {
+  background: $cBlue;
+
+  &::before {
+    background: $cBlue;
+  }
+
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-Arrow.is-white {
+  background: $cWhite;
+
+  &::before {
+    background: $cWhite;
+  }
+
+  &::after {
+    background: $cWhite;
+  }
+}

@@ -1,0 +1,143 @@
+// Sliders styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Sliders
+
+```
+<input type="range" min="100" max="500" step="50" value="300" class="CDB-Range"/>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+
+.CDB-Range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 100%;
+  margin: -4px 0 0;
+  padding: 0 6px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.CDB-Range::-webkit-slider-runnable-track {
+  height: $baseSize / 4;
+  margin: $baseSize 0;
+  border-radius: $baseSize / 2;
+  background: $cMainLine;
+}
+
+.CDB-Range::-webkit-slider-thumb {
+  position: relative;
+  width: $baseSize / 2;
+  height: 100%;
+  border-radius: $baseSize / 2;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -3000px;
+    height: $baseSize / 4;
+    border-radius: $baseSize / 2;
+    background: $cBlue;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    left: -6px;
+    width: $baseSize + 4;
+    height: $baseSize + 4;
+    border: 1px solid $cBlue;
+    border-radius: 50%;
+    background: $cWhite;
+    content: '';
+    z-index: 1;
+  }
+
+  &:focus,
+  &:hover {
+    &::after {
+      cursor: pointer;
+    }
+  }
+
+  &:disabled {
+    &::before,
+    &::after {
+      opacity: 0.2;
+    }
+  }
+}
+
+.CDB-Range::-moz-range-track {
+  height: $baseSize / 4;
+  margin: $baseSize 0;
+  border: 0;
+  border-radius: $baseSize / 2;
+  outline: none;
+  background: $cMainLine;
+}
+
+.CDB-Range::-moz-range-thumb {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  width: $baseSize + 4;
+  height: $baseSize + 4;
+  border: 1px solid $cBlue;
+  border-radius: 50%;
+  background: $cWhite;
+  content: '';
+  z-index: 1;
+}
+
+.CDB-Range::-moz-range-progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -3000px;
+  height: $baseSize / 4;
+  border-radius: $baseSize / 2;
+  background: $cBlue;
+  content: '';
+}
+
+.CDB-Range::-ms-track {
+  height: $baseSize / 4;
+  margin: $baseSize 0;
+  border: transparent;
+  border-radius: $baseSize / 2;
+  background: $cMainLine;
+  color: transparent;
+}
+
+.CDB-Range::-ms-thumb {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  width: $baseSize + 4;
+  height: $baseSize + 4;
+  border: 1px solid $cBlue;
+  border-radius: 50%;
+  background: $cWhite;
+  content: '';
+  z-index: 1;
+}

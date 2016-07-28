@@ -1,0 +1,76 @@
+// Radio Button styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Toggle
+
+
+```
+<div class="Toggle">
+  <div class="CDB-Text CDB-Size-small is-semibold u-rSpace--xl">
+    <label class="u-iBlock">TOOLS</label>
+    <input class="CDB-Toggle u-iBlock" type="checkbox" name="analysis">
+    <span class="u-iBlock CDB-ToggleFace"></span>
+    <label class="u-iBlock">SQL</label>
+  </div>
+</div>
+
+<br/>
+
+<div class="Toggle">
+  <div class="CDB-Text CDB-Size-small is-semibold is-disabled u-rSpace--xl">
+    <label class="u-iBlock">TOOLS</label>
+    <input class="CDB-Toggle u-iBlock" type="checkbox" name="analysis" disabled >
+    <span class="u-iBlock CDB-ToggleFace"></span>
+    <label class="u-iBlock">SQL</label>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+.CDB-Toggle {
+  position: absolute;
+  width: $baseSize * 4;
+  height: $baseSize * 2;
+  opacity: 0;
+  z-index: 1;
+
+  + .CDB-ToggleFace {
+    @include transition(background, 300ms);
+    position: relative;
+    width: $baseSize * 4;
+    height: $baseSize * 2;
+    margin: 0 2px;
+    border-radius: 50px;
+    background: $cHintText;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: $baseSize + 4;
+      height: $baseSize + 4;
+      border-radius: 50%;
+      background: $cWhite;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.48);
+      content: '';
+    }
+  }
+
+  &:checked + .CDB-ToggleFace {
+    background: $cHighlight;
+
+    &::before {
+      right: 2px;
+      left: auto;
+    }
+  }
+}
+
+.Toggle .is-disabled {
+  opacity: 0.24;
+}

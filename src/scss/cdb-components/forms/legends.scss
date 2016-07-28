@@ -1,0 +1,104 @@
+// Legends styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Labels
+
+```
+<div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Radio" type="radio" name="veritas" value="01">
+  <span class="u-iBlock CDB-Radio-face"></span>
+  <label class="u-iBlock u-lSpace">True</label>
+</div>
+<div class="u-iBlock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Radio" type="radio" name="veritas" value="02" checked>
+  <span class="u-iBlock CDB-Radio-face"></span>
+  <label class="u-iBlock u-lSpace">False</label>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<div class="u-iblock CDB-Text CDB-Size-medium u-rSpace--xl">
+  <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
+  <span class="u-iBlock CDB-Checkbox-face"></span>
+  <label class="u-iBlock u-lSpace">Sport</label>
+</div>
+<label class="u-iblock CDB-Text CDB-Size-medium">
+  <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
+  <span class="u-iBlock CDB-Checkbox-face"></span>
+  <label class="u-iBlock u-lSpace">Travel</label>
+</label>
+
+<br/>
+<br/>
+<br/>
+
+<div class="CDB-Fieldset">
+  <p class="CDB-Legend CDB-Text is-semibold CDB-Size-small u-rSpace--m">RADIO</p>
+  <ul class="CDB-Size-medium CDB-Text CDB-Fieldset-block">
+    <li class="u-rSpace--xl u-iblock">
+      <div class="u-iblock CDB-Size-medium">
+        <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Sport">
+        <span class="u-iBlock CDB-Checkbox-face"></span>
+        <label class="u-iBlock u-lSpace">Sport</label>
+      </div>
+    </li>
+    <li class="u-iblock">
+      <label class="u-iblock CDB-Size-medium">
+        <input class="CDB-Checkbox" type="checkbox" name="hobbies" value="Travel">
+        <span class="u-iBlock CDB-Checkbox-face"></span>
+        <label class="u-iBlock u-lSpace">Travel</label>
+      </label>
+    </li>
+  </ul>
+</div>
+<div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+  <p class="CDB-Legend CDB-Text is-semibold CDB-Size-small u-rSpace--m">RADIO</p>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<div class="CDB-Text CDB-Fieldset">
+  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <input class="CDB-Checkbox" type="checkbox" name="field" value="Sport">
+    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">SPORT</label>
+  </p>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+
+<div class="u-tSpace-xl CDB-Text CDB-Fieldset">
+  <p class="CDB-Legend CDB-Legend--big u-ellipsis CDB-Text is-semibold CDB-Size-small u-rSpace--m">
+    <input class="CDB-Checkbox" type="checkbox" name="field" value="Travel">
+    <span class="u-iBlock CDB-Checkbox-face u-rSpace--m"></span>
+    <label class="CDB-Text is-semibold CDB-Size-small u-rSpace--m">TRAVEL</label>
+  </p>
+  <input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText">
+</div>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-utilities/mixins';
+
+.CDB-Legend {
+  width: $baseSize * 12;
+}
+
+.CDB-Legend--big {
+  width: ($baseSize * 24);
+}
+
+.CDB-Fieldset {
+  @include display-flex();
+  @include align-items(center);
+}
+.CDB-Fieldset-block {
+  width: 100%;
+}
+

@@ -1,0 +1,131 @@
+/* SG
+# Shapes/Add
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-add"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-add is-blue"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-add is-white"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-add is-small"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-add is-blue is-small"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-add is-white is-small"></div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+.CDB-Shape--medium {
+  width: 24px;
+  height: 24px;
+}
+.CDB-Shape:hover {
+  cursor: pointer;
+}
+
+
+.CDB-Shape-add {
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 7px;
+    left: 0;
+    height: 1px;
+    background: $cMainBg;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    left: 7px;
+    width: 1px;
+    background: $cMainBg;
+    content: '';
+  }
+}
+
+.CDB-Shape-add.is-small {
+
+  &::before {
+    display: block;
+    position: absolute;
+    right: 3px;
+    bottom: 7px;
+    left: 4px;
+    height: 1px;
+    background: $cMainBg;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 3px;
+    left: 8px;
+    width: 1px;
+    background: $cMainBg;
+    content: '';
+  }
+}
+
+
+
+.CDB-Shape-add.is-blue {
+  &::before,
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-add.is-white {
+  &::before,
+  &::after {
+    background: $cWhite;
+  }
+}
+
+
+

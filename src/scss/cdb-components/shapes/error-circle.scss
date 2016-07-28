@@ -1,0 +1,103 @@
+/* SG
+# Shapes/Error circle
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem">
+      <div class="CDB-Shape-close is-medium"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-blue">
+      <div class="CDB-Shape-close is-medium is-blue"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-CircleItem is-white">
+      <div class="CDB-Shape-close is-medium is-white"></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-small">
+      <div class="CDB-Shape-close is-small"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-blue is-small">
+      <div class="CDB-Shape-close is-small is-blue"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-CircleItem is-white is-small">
+      <div class="CDB-Shape-close is-small is-white"></div>
+    </div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-CircleItem {
+  width: 13px;
+  height: 13px;
+  border: 1px solid $cMainBg;
+  border-radius: 50%;
+
+  &.is-small {
+    width: 9px;
+    height: 9px;
+    margin: 0 auto;
+  }
+  &.is-blue {
+    border: 1px solid $cBlue;
+  }
+  &.is-white {
+    border: 1px solid $cWhite;
+  }
+  &.is-green {
+    border: 1px solid $cHighlight;
+  }
+  &.is-red {
+    border: 1px solid $cError;
+  }
+}
+
+
+.CDB-Shape-CircleItem--fill {
+  &.is-blue {
+    border: 1px solid $cBlue;
+    background: $cBlue;
+  }
+  &.is-white {
+    border: 1px solid $cWhite;
+    background: $cWhite;
+  }
+  &.is-green {
+    border: 1px solid $cHighlight;
+    background: $cHighlight;
+  }
+  &.is-red {
+    border: 1px solid $cError;
+    background: $cError;
+  }
+}

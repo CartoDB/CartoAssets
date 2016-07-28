@@ -1,0 +1,147 @@
+/* SG
+# Shapes/Toogle Arrows
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-blue"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-ArrowToogle is-white"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-small"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-blue is-small"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-ArrowToogle is-white is-small"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-down"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-blue is-down"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-ArrowToogle is-white is-down"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-small is-down"></div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-ArrowToogle is-blue is-small is-down"></div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-ArrowToogle is-white is-small is-down"></div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-ArrowToogle {
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background: $cMainBg;
+    content: '';
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    width: 10px;
+    height: 1px;
+    transform: rotate(45deg);
+    background: $cMainBg;
+    content: '';
+  }
+}
+
+.CDB-ArrowToogle.is-down {
+  transform: rotate(180deg);
+}
+
+.CDB-ArrowToogle.is-small {
+  &::before {
+    left: 2px;
+    width: 8px;
+  }
+  &::after {
+    right: 1px;
+    width: 8px;
+  }
+}
+
+.CDB-ArrowToogle.is-blue {
+  &::before {
+    background: $cBlue;
+  }
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-ArrowToogle.is-white {
+  &::before {
+    background: $cWhite;
+  }
+  &::after {
+    background: $cWhite;
+  }
+}

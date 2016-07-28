@@ -1,0 +1,53 @@
+// Typography styles
+// ----------------------------------------------
+
+/* SG
+# Avatars/List
+
+```
+<ul class="CDB-AvatarList">
+  <li class="CDB-AvatarList-item">
+    <img src="/src/img/avatar-40x40.png" alt="User Name" class="CDB-AvatarList-itemMedia" />
+  </li>
+  <li class="CDB-AvatarList-item">
+    <img src="/src/img/avatar-40x40.png" alt="User Name" class="CDB-AvatarList-itemMedia" />
+  </li>
+  <li class="CDB-AvatarList-item">
+    <img src="/src/img/avatar-40x40.png" alt="User Name" class="CDB-AvatarList-itemMedia" />
+  </li>
+  <li class="CDB-AvatarList-itemMore">
+    <button class="CDB-Text is-semibold CDB-Size-small u-secondaryTextColor">+ 16</button>
+  </li>
+</ul>
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+
+.CDB-AvatarList {
+  padding-left: 12px;
+}
+
+.CDB-AvatarList-item {
+  display: inline-block;
+  margin-left: -12px;
+  border: 2px solid $cWhite;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.CDB-AvatarList-itemMore {
+  display: inline-block;
+  margin-left: -12px;
+  padding: 2px 6px;
+  border-left: 2px solid $cWhite;
+  border-radius: 50px;
+  background: $cSecondaryLine;
+}
+
+.CDB-AvatarList-itemMedia {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}

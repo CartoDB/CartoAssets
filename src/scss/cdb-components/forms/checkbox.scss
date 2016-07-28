@@ -1,0 +1,103 @@
+// CheckBoxes styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Checkbox
+
+```
+<div class="u-iBlock">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bike" checked>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Bus">
+  <span class="u-iBlock CDB-Checkbox-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
+  <span class="u-iBlock CDB-Checkbox-face"></span>
+</div>
+```
+*/
+
+@import '../../cdb-variables/sizes';
+@import '../../cdb-variables/colors';
+@import '../../cdb-utilities/mixins';
+
+
+.CDB-Checkbox {
+  position: absolute;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  opacity: 0;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.CDB-Checkbox-face {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid $cMainLine;
+  border-radius: 3px;
+  background: $cWhite;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 2px;
+    border-radius: 1px;
+    background: $cSecondaryLine;
+    content: '';
+  }
+
+  &::before {
+    right: $baseSize / 2;
+    height: $baseSize;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: $baseSize / 2;
+    height: $baseSize - 2;
+    transform: rotate(-45deg);
+  }
+}
+
+.CDB-Checkbox:checked + .CDB-Checkbox-face {
+  @include transition(background, 300ms);
+  border: 1px solid $cBlue;
+  background: $cBlue;
+
+  &::before,
+  &::after {
+    background: $cWhite;
+  }
+}
+
+.CDB-Checkbox:disabled + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
+
+  &::before,
+  &::after {
+    background: $cWhite;
+  }
+}
+
+.CDB-Checkbox:disabled:hover + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+}
+
+.CDB-Checkbox:checked:hover + .CDB-Checkbox-face,
+.CDB-Checkbox:focus + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
+}
+
+.CDB-Checkbox:hover + .CDB-Checkbox-face {
+  border: 1px solid $cHoverLine;
+}

@@ -1,0 +1,63 @@
+/* SG
+# Shapes/Hamburguer
+
+Description
+
+```
+<div style="padding: 20px">
+  <div class="CDB-Shape-hamburguer">
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+  </div>
+</div>
+
+<div style="padding: 20px;">
+  <div class="CDB-Shape-hamburguer is-blue">
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+  </div>
+</div>
+
+<div style="background: #2E3C43; padding: 20px;">
+  <div class="CDB-Shape-hamburguer is-white">
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+    <div class="CDB-Shape-hamburguerItem"></div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+@import '../../cdb-variables/sizes';
+
+.CDB-Shape-hamburguer {
+  width: $baseSize * 2;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.CDB-Shape-hamburguerItem {
+  height: $baseSize / 4;
+  margin-bottom: $baseSize / 4;
+  background: $cMainBg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.CDB-Shape-hamburguer.is-blue {
+  .CDB-Shape-hamburguerItem {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-hamburguer.is-white {
+  .CDB-Shape-hamburguerItem {
+    background: $cWhite;
+  }
+}

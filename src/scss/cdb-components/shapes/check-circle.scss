@@ -1,0 +1,156 @@
+/* SG
+# Shapes/Check circle
+
+Description
+
+```
+<h2>16px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem">
+      <div class="CDB-Shape-tick is-medium"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-blue">
+      <div class="CDB-Shape-tick is-medium is-blue"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-CircleItem is-white">
+      <div class="CDB-Shape-tick is-medium is-white"></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h2>12px</h2>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-small">
+      <div class="CDB-Shape-tick is-small"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .02);">
+    <div class="CDB-Shape-CircleItem is-blue is-small">
+      <div class="CDB-Shape-tick is-small is-blue"></div>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px; background: #2E3C43;">
+  <div class="CDB-Shape" style="background: rgba(0, 0, 0, .08);">
+    <div class="CDB-Shape-CircleItem is-white is-small">
+      <div class="CDB-Shape-tick is-small is-white"></div>
+    </div>
+  </div>
+</div>
+```
+*/
+
+@import '../../cdb-variables/colors';
+
+.CDB-Shape-CircleItem {
+  width: 14px;
+  height: 14px;
+  border: 1px solid $cMainBg;
+  border-radius: 50%;
+
+  &.is-small {
+    width: 12px;
+    height: 12px;
+    transform: translateY(2px);
+  }
+  &.is-blue {
+    border: 1px solid $cBlue;
+  }
+  &.is-white {
+    border: 1px solid $cWhite;
+  }
+}
+
+.CDB-Shape-tick {
+  display: block;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 1px;
+    transform: rotate(-45deg);
+    background: $cMainBg;
+    content: '';
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    width: 1px;
+    transform: rotate(45deg);
+    background: $cMainBg;
+    content: '';
+  }
+
+  &.is-medium {
+    &::before {
+      top: 5px;
+      left: 4px;
+      height: 4px;
+    }
+    &::after {
+      top: 3px;
+      right: 5px;
+      height: 6px;
+    }
+  }
+
+  &.is-small {
+    &::before {
+      top: 4px;
+      left: 2px;
+      height: 3px;
+    }
+    &::after {
+      top: 2px;
+      right: 3px;
+      height: 5px;
+    }
+  }
+}
+
+.CDB-Shape-tick.is-blue {
+  &::before {
+    background: $cBlue;
+  }
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Shape-tick.is-white {
+  &::before {
+    background: $cWhite;
+  }
+  &::after {
+    background: $cWhite;
+  }
+}
+
+.CDB-Shape-tick.is-green {
+  &::before {
+    background: $cHighlight;
+  }
+  &::after {
+    background: $cHighlight;
+  }
+}
+
+
+
