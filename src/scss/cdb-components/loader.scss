@@ -57,10 +57,20 @@ This is the generic loader for widgets, maps, components, ...
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
   </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--medium is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
 </div>
 
 <div style="padding: 20px; background: #F9F9F9;">
   <div class="CDB-LoaderIcon is-dark">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--medium is-dark">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
@@ -78,6 +88,11 @@ This is the generic loader for widgets, maps, components, ...
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
   </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--medium">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
   <div class="CDB-LoaderIcon CDB-LoaderIcon--big">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
@@ -87,6 +102,11 @@ This is the generic loader for widgets, maps, components, ...
 
 <div style="padding: 20px; background: #E27D61;">
   <div class="CDB-LoaderIcon">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
+  <div class="CDB-LoaderIcon CDB-LoaderIcon--medium">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
     </svg>
@@ -110,6 +130,11 @@ This is the generic loader for widgets, maps, components, ...
 .CDB-LoaderIcon--small .CDB-LoaderIcon-spinner {
   width: 14px;
   height: 14px;
+}
+
+.CDB-LoaderIcon--medium .CDB-LoaderIcon-spinner {
+  width: 24px;
+  height: 24px;
 }
 
 .CDB-LoaderIcon--big .CDB-LoaderIcon-spinner {

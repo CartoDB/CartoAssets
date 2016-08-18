@@ -1,0 +1,92 @@
+// Modals styles
+// ----------------------------------------------
+
+/* SG
+# Modals/Mod Error Creating Table
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <svg width="24px" height="24px" viewBox="521 436 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Smiley-red" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(521.000000, 436.000000)">
+                <path d="M12,13.797 C9.069,13.797 6.478,15.286 5.07,17.781 C4.934,18.022 5.019,18.327 5.26,18.463 C5.338,18.507 5.422,18.527 5.505,18.527 C5.679,18.527 5.849,18.435 5.941,18.273 C7.169,16.096 9.434,14.796 12,14.796 C14.658,14.796 16.943,16.087 18.114,18.249 C18.245,18.492 18.55,18.582 18.792,18.45 C19.035,18.319 19.125,18.015 18.993,17.772 C17.645,15.283 15.031,13.797 12,13.797 L12,13.797 Z" id="Shape" fill="#F15743"></path>
+                <path d="M7.25,10.5 C8.353,10.5 9.25,9.603 9.25,8.5 C9.25,7.397 8.353,6.5 7.25,6.5 C6.147,6.5 5.25,7.397 5.25,8.5 C5.25,9.603 6.147,10.5 7.25,10.5 L7.25,10.5 Z M7.25,7.5 C7.801,7.5 8.25,7.948 8.25,8.5 C8.25,9.052 7.801,9.5 7.25,9.5 C6.699,9.5 6.25,9.052 6.25,8.5 C6.25,7.948 6.699,7.5 7.25,7.5 L7.25,7.5 Z" id="Shape" fill="#F15743"></path>
+                <path d="M16.25,10.5 C17.353,10.5 18.25,9.603 18.25,8.5 C18.25,7.397 17.353,6.5 16.25,6.5 C15.147,6.5 14.25,7.397 14.25,8.5 C14.25,9.603 15.147,10.5 16.25,10.5 L16.25,10.5 Z M16.25,7.5 C16.801,7.5 17.25,7.948 17.25,8.5 C17.25,9.052 16.801,9.5 16.25,9.5 C15.699,9.5 15.25,9.052 15.25,8.5 C15.25,7.948 15.699,7.5 16.25,7.5 L16.25,7.5 Z" id="Shape" fill="#F15743"></path>
+                <path d="M12,0 C5.383,0 0,5.383 0,12 C0,18.617 5.383,24 12,24 C18.617,24 24,18.617 24,12 C24,5.383 18.617,0 12,0 L12,0 Z M12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 L12,23 Z" id="Shape" fill="#F15743"></path>
+            </g>
+        </svg>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-errorTextColor u-bSpace--m">We couldn’t fetch your data</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">Don’t panic, follow these steps</p>
+        <ul class="Modal-listActions u-flex u-alignCenter">
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--primary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">GO BACK</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+  </div>
+```
+*/
+
+@import '../cdb-variables/sizes';
+@import '../cdb-variables/colors';
+@import '../cdb-utilities/mixins';
+
+
+.Modal-listActions {
+  margin-top: $baseSize * 4;
+}
+
+.Modal-listActionsitem,
+.Modal-icon {
+  margin-right: $baseSize * 2;
+}
+
+.Modal-listActionsitem:last-child {
+  margin-right: 0;
+}
+
+.Modal-icon {
+  margin-top: 6px;
+  line-height: 34px; /* align-items: baseline doesnt work correctly in ff */
+}
+
+
+/* SG
+# Modals/Loading
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <div class="CDB-LoaderIcon CDB-LoaderIcon--medium is-dark">
+          <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+            <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m">Export untitled map</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">This map, and the connect data, will be exported as a .carto file</p>
+        <ul class="Modal-listActions u-flex u-alignCenter">
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Cancel</span>
+            </button>
+          </li>
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Download</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+  </div>
+```
+*/
+
+
