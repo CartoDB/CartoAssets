@@ -90,3 +90,127 @@
 */
 
 
+/* SG
+# Modals/Success
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Check-Circle---Flattened-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M12,24 C18.627417,24 24,18.627417 24,12 C24,5.372583 18.627417,0 12,0 C5.372583,0 0,5.372583 0,12 C0,18.627417 5.372583,24 12,24 L12,24 L12,24 L12,24 L12,24 L12,24 L12,24 L12,24 L12,24 Z" id="Path" fill="#9DE0AD"></path>
+            <polyline id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17.25 8.25 10.2341129 15.75 6.75 12.0542755"></polyline>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m">Export untitled map</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">This map, and the connect data, will be exported as a .carto file</p>
+        <ul class="Modal-listActions u-flex u-alignCenter">
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Cancel</span>
+            </button>
+          </li>
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--primary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Download</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+  </div>
+```
+*/
+
+
+/* SG
+# Modals/Delete Layer Warn
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <svg width="24px" height="25px" viewBox="521 436 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M524.5,440 L540.5,440 L540.5,460 L524.5,460 L524.5,440 Z M528.5,437 L536.5,437 L536.5,440 L528.5,440 L528.5,437 Z M522,440 L544,440 L522,440 Z M528.5,443.5 L528.5,455.5 L528.5,443.5 Z M532.5,443.5 L532.5,455.5 L532.5,443.5 Z M536.5,443.5 L536.5,455.5 L536.5,443.5 Z" id="Shape" stroke="#F19243" stroke-width="1" fill="none"></path>
+        </svg>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m u-alertTextColor">You are about to delete layer gpc_000a11a_eng</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">{{name}} map will be affected and the widgets related to the layer, are you sure you want to delete it?</p>
+        <ul class="Modal-listText">
+          <li class="Modal-listTextItem">
+            <p class="CDB-Text CDB-Size-medium">Deleting this layer will affect to <span class="CDB-Text is-semibold">4 Widgets, 3 Analysis</span> and <span class="CDB-Text is-semibold">2 Layers</span></p>
+          </li>
+          <li class="Modal-listTextItem">
+            <p class="CDB-Text CDB-Size-medium">Before deleting your map, you can <a href="#">export as .CARTO file</a></p>
+          </li>
+        </ul>
+        <ul class="Modal-listActions u-flex u-alignCenter">
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Cancel</span>
+            </button>
+          </li>
+          <li class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--primary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Ok, Delete It</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+  </div>
+```
+*/
+
+.Modal-listTextItem {
+  margin-top: 32px;
+}
+
+
+
+/* SG
+# Modals/Loading
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <div class="CDB-LoaderIcon CDB-LoaderIcon--medium is-dark">
+          <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+            <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m">Locking Dataset</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">Your dataset is being locked, this may take a few seconds.</p>
+      </div>
+  </div>
+```
+*/
+
+
+/* SG
+# Modals/Marker
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        <svg width="13px" height="20px" viewBox="526 438 13 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Location-pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(526.000000, 438.000000)">
+            <path d="M6.5,0 C2.9160625,0 0,2.99083333 0,6.66666667 C0,10.2041667 5.9093125,19.4225 6.1611875,19.8125 C6.2359375,19.93 6.3635,20 6.5,20 C6.6365,20 6.7640625,19.93 6.8388125,19.8125 C7.0906875,19.4225 13,10.2041667 13,6.66666667 C13,2.99083333 10.0839375,0 6.5,0 L6.5,0 Z M6.5,18.8166667 C5.227625,16.7766667 0.8125,9.49666667 0.8125,6.66666667 C0.8125,3.45 3.36375,0.833333333 6.5,0.833333333 C9.63625,0.833333333 12.1875,3.45 12.1875,6.66666667 C12.1875,9.49583333 7.772375,16.7766667 6.5,18.8166667 L6.5,18.8166667 Z" id="Shape" fill="#000000"></path>
+            <path d="M6.5,3.75 C4.931875,3.75 3.65625,5.05833333 3.65625,6.66666667 C3.65625,8.275 4.931875,9.58333333 6.5,9.58333333 C8.068125,9.58333333 9.34375,8.275 9.34375,6.66666667 C9.34375,5.05833333 8.068125,3.75 6.5,3.75 L6.5,3.75 Z M6.5,8.75 C5.380375,8.75 4.46875,7.815 4.46875,6.66666667 C4.46875,5.51833333 5.380375,4.58333333 6.5,4.58333333 C7.619625,4.58333333 8.53125,5.51833333 8.53125,6.66666667 C8.53125,7.815 7.619625,8.75 6.5,8.75 L6.5,8.75 Z" id="Shape" fill="#000000"></path>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m">Select a marker image</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">Upload your icons or just use our nice selection.</p>
+      </div>
+  </div>
+```
+*/
+
