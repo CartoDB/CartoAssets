@@ -536,3 +536,110 @@
 */
 
 
+
+/* SG
+# Modals/Mod Add points
+
+
+```
+  <div class="u-flex">
+      <div class="Modal-icon">
+        pending icon
+      </div>
+      <div>
+        <h2 class=" CDB-Text CDB-Size-huge is-light u-bSpace--m">Start by adding points, lines or polygons</h2>
+        <p class="CDB-Text CDB-Size-medium u-altTextColor">Select the geometry type that you want to have in “Untitled Dataset 1”</p>
+        <ul class="Modal-listText">
+          <li class="Modal-listTextItem u-flex u-alignCenter">
+            <div class="u-iBlock u-rSpace--xl">
+              <input class="CDB-Radio" type="radio" name="gender" value="01">
+              <span class="u-iBlock CDB-Radio-face"></span>
+            </div>
+            <div class="u-flex u-alignCenter">
+              <div class="Modal-addItem u-flex u-alignCenter u-justifyCenter u-rSpace--xl">
+                <svg width="16px" height="16px" viewBox="525 410 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="lines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(525.000000, 410.000000)">
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="0" y="12" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="12" y="0" width="4" height="4" rx="1"></rect>
+                    <path d="M3.5,12.5 L12.5,3.5" id="Line" stroke="#2E3C43" stroke-linecap="square"></path>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <h3 class="CDB-Text CDB-Size-large u-bSpace--m">Add Lines</h3>
+                <p class="CDB-Text CDB-Size-medium u-altTextColor">Create a layer as a combination of one or more layers. </p>
+              </div>
+            </div>
+          </li>
+          <li class="Modal-listTextItem u-flex u-alignCenter">
+            <div class="u-iBlock u-rSpace--xl">
+              <input class="CDB-Radio" type="radio" name="gender" value="02">
+              <span class="u-iBlock CDB-Radio-face"></span>
+            </div>
+            <div class="u-flex u-alignCenter">
+              <div class="Modal-addItem u-flex u-alignCenter u-justifyCenter u-rSpace--xl">
+                <svg width="16px" height="16px" viewBox="520 417 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="points" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(520.000000, 417.000000)">
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="0" y="0" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="12" y="12" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="0" y="12" width="4" height="4" rx="1"></rect>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <h3 class="CDB-Text CDB-Size-large u-bSpace--m">Add Points</h3>
+                <p class="CDB-Text CDB-Size-medium u-altTextColor">Specially if you are thinking on POI’s and concreet places</p>
+              </div>
+            </div>
+          </li>
+          <li class="Modal-listTextItem u-flex u-alignCenter">
+            <div class="u-iBlock u-rSpace--xl">
+              <input class="CDB-Radio" type="radio" name="gender" value="03">
+              <span class="u-iBlock CDB-Radio-face"></span>
+            </div>
+            <div class="u-flex u-alignCenter">
+              <div class="Modal-addItem u-flex u-alignCenter u-justifyCenter u-rSpace--xl">
+                <svg width="16px" height="16px" viewBox="525 440 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="polygon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(525.000000, 440.000000)">
+                    <rect id="@bounds" x="0" y="0" width="16" height="16"></rect>
+                    <rect id="Rectangle-2665" fill="#2E3C43" x="3" y="14" width="10" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-2665-Copy" fill="#2E3C43" x="3" y="1" width="10" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-2665-Copy-2" fill="#2E3C43" x="1" y="3" width="1" height="10" rx="0.5"></rect>
+                    <rect id="Rectangle-2665-Copy-3" fill="#2E3C43" x="14" y="3" width="1" height="10" rx="0.5"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="0" y="12" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="0" y="0" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="12" y="0" width="4" height="4" rx="1"></rect>
+                    <rect id="Rectangle-1511" fill="#2E3C43" x="12" y="12" width="4" height="4" rx="1"></rect>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <h3 class="CDB-Text CDB-Size-large u-bSpace--m">Add Polygons</h3>
+                <p class="CDB-Text CDB-Size-medium u-altTextColor">Perfect for roads, rivers or tracks</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="Modal-listActions u-flex u-alignCenter">
+          <div class="Modal-listActionsitem">
+            <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
+              <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium u-upperCase">Skip</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+```
+*/
+
+.Modal-addItem {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $cMainLine;
+  border-radius: $halfBaseSize;
+}
+
+
+
