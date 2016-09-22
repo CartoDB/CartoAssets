@@ -120,9 +120,11 @@
   box-sizing: content-box;
 
   &::after {
-    padding: 0 $baseSize - 2;
-    color: $cHintText;
-    content: '·';
+    margin: 0 $baseSize - 2;
+    background-color: $cHintText;
+    content: '';
+    width: 1px;
+    height: 1px;
   }
   &:last-child {
     width: 100%;
