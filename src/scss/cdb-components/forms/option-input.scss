@@ -41,6 +41,25 @@
 
 <br/>
 
+<div class="CDB-OptionInput is-active CDB-Text">
+  <ul class="CDB-OptionInput-container">
+    <li class="CDB-OptionInput-item">
+      <button type="button" class="CDB-OptionInput-content">8...12</button>
+    </li>
+    <li class="CDB-OptionInput-item">
+      <button type="button" class="CDB-OptionInput-content">solid</button>
+    </li>
+
+    <li class="CDB-OptionInput-item is-active">
+      <button type="button" class="CDB-ColorBarContainer CDB-OptionInput-content">
+        <span class="CDB-ColorBar" style="background-color: #FFFFC0;"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<br/>
+
 <button type="button" class="CDB-OptionInput">
   <div class="CDB-OptionInput-container">
     <span class="CDB-ColorBar CDB-ColorBar-gradient" style="background: linear-gradient(90deg, #FFFECA, #9FDAB3, #36B6C5, #207EBA, #203196);"></span>
@@ -121,8 +140,8 @@
 
   &::after {
     width: 1px;
-    height: 1px;
-    margin: 0 $baseSize - 2;
+    height: 100%;
+    margin-right: $baseSize;
     background-color: $cSecondaryLine;
     content: '';
   }
@@ -141,6 +160,8 @@
   @include display-flex();
   @include align-items(center);
   height: 100%;
+  margin-left: -$baseSize;
+  padding: 0 $baseSize + 2;
   color: $cMainBg;
   box-sizing: content-box;
   white-space: nowrap;
@@ -148,6 +169,9 @@
   &:hover {
     text-decoration: none;
   }
+}
+.CDB-OptionInput-item:first-child .CDB-OptionInput-content {
+  border-bottom-left-radius: 4px;
 }
 .CDB-OptionInput-item.is-active > .CDB-OptionInput-content {
   border-bottom: 1px solid $cMainBg;
