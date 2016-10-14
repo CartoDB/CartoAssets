@@ -47,6 +47,12 @@ This is the generic loader for widgets, maps, components, ...
 
 ```
 <div style="padding: 20px;">
+  <div class="CDB-LoaderIcon is-blue">
+    <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+    </svg>
+  </div>
+
   <div class="CDB-LoaderIcon is-dark">
     <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
       <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
@@ -130,6 +136,9 @@ This is the generic loader for widgets, maps, components, ...
 
 .CDB-LoaderIcon.is-dark .CDB-LoaderIcon-path {
   stroke: rgba(0, 0, 0, 0.24);
+}
+.CDB-LoaderIcon.is-blue .CDB-LoaderIcon-path {
+  stroke: $cBlue;
 }
 
 @keyframes rotate {
