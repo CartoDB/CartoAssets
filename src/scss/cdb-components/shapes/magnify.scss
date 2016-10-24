@@ -97,16 +97,16 @@ Description
 .CDB-Shape-magnify.is-small {
   &::before {
     top: 3px;
-    left: 3px;
-    width: 6px;
-    height: 6px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
   }
 
   &::after {
     display: block;
     position: absolute;
     right: 4px;
-    bottom: 2px;
+    bottom: 3px;
     width: 1px;
     height: 5px;
     transform: rotate(314deg);
