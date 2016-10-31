@@ -30,6 +30,13 @@
   &.is-empty {
     color: $cHintText;
   }
+  &.is-null {
+    color: $cHintText;
+    font-style: italic;
+  }
+  &.is-number {
+    color: darken($cHighlight, 16%);
+  }
   &:hover {
     border: 1px solid $cHoverLine;
   }
