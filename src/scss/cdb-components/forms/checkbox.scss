@@ -53,9 +53,8 @@
     bottom: 3px;
     width: 2px;
     border-radius: 1px;
-    background: $cSecondaryLine;
+    background: $cWhite;
     content: '';
-    opacity: 0;
   }
 
   &::before {
@@ -79,40 +78,14 @@
   &::before,
   &::after {
     background: $cWhite;
-    opacity: 1;
   }
 }
 
 .CDB-Checkbox:checked:hover + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
   &::before,
   &::after {
     background: $cWhite;
-  }
-}
-
-.CDB-Checkbox:disabled + .CDB-Checkbox-face {
-  border: 1px solid $cSecondaryLine;
-  background: $cThirdBackground;
-}
-
-.CDB-Checkbox:disabled:hover + .CDB-Checkbox-face {
-  border: 1px solid $cSecondaryLine;
-  &::before,
-  &::after {
-    opacity: 0;
-  }
-}
-
-.CDB-Checkbox:checked:hover + .CDB-Checkbox-face,
-.CDB-Checkbox:focus + .CDB-Checkbox-face {
-  border: 1px solid $cBlue;
-}
-
-.CDB-Checkbox:focus + .CDB-Checkbox-face {
-  &::before,
-  &::after {
-    background: $cBlue;
-    opacity: 1;
   }
 }
 
@@ -121,6 +94,22 @@
   &::before,
   &::after {
     background: $cHoverLine;
-    opacity: 1;
   }
 }
+.CDB-Checkbox:active + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
+  &::before,
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Checkbox:disabled + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
+  &::before,
+  &::after {
+    opacity: 0;
+  }
+}
+
