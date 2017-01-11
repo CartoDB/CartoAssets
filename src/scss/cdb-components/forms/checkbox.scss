@@ -14,7 +14,7 @@
   <span class="u-iBlock CDB-Checkbox-face"></span>
 </div>
 <div class="u-iBlock">
-  <input class="CDB-Checkbox" type="checkbox" name="vehicle" value="Car" disabled>
+  <input class="CDB-Checkbox" type="checkbox" name="vehicle2" value="Car" disabled>
   <span class="u-iBlock CDB-Checkbox-face"></span>
 </div>
 ```
@@ -43,6 +43,8 @@
   background: $cWhite;
   cursor: pointer;
   box-sizing: border-box;
+  z-index: 2;
+  pointer-events: none;
 
   &::before,
   &::after {
@@ -51,7 +53,7 @@
     bottom: 3px;
     width: 2px;
     border-radius: 1px;
-    background: $cSecondaryLine;
+    background: $cWhite;
     content: '';
   }
 
@@ -79,25 +81,35 @@
   }
 }
 
-.CDB-Checkbox:disabled + .CDB-Checkbox-face {
-  border: 1px solid $cSecondaryLine;
-  background: $cThirdBackground;
-
+.CDB-Checkbox:checked:hover + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
   &::before,
   &::after {
     background: $cWhite;
   }
 }
 
-.CDB-Checkbox:disabled:hover + .CDB-Checkbox-face {
-  border: 1px solid $cSecondaryLine;
-}
-
-.CDB-Checkbox:checked:hover + .CDB-Checkbox-face,
-.CDB-Checkbox:focus + .CDB-Checkbox-face {
-  border: 1px solid $cBlue;
-}
-
 .CDB-Checkbox:hover + .CDB-Checkbox-face {
   border: 1px solid $cHoverLine;
+  &::before,
+  &::after {
+    background: $cHoverLine;
+  }
 }
+.CDB-Checkbox:active + .CDB-Checkbox-face {
+  border: 1px solid $cBlue;
+  &::before,
+  &::after {
+    background: $cBlue;
+  }
+}
+
+.CDB-Checkbox:disabled + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
+  &::before,
+  &::after {
+    opacity: 0;
+  }
+}
+

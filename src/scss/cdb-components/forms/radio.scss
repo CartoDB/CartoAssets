@@ -55,7 +55,7 @@
     margin-top: -3px;
     margin-left: -3px;
     border-radius: 50%;
-    background: $cSecondaryLine;
+    background: $cWhite;
     content: '';
   }
 }
@@ -75,7 +75,7 @@
   background: $cThirdBackground;
 
   &::before {
-    background: $cWhite;
+    opacity: 0;
   }
 }
 
@@ -85,9 +85,28 @@
 
 .CDB-Radio:hover + .CDB-Radio-face {
   border: 1px solid $cHoverLine;
+  &::before {
+    background: $cHoverLine;
+  }
 }
 
 .CDB-Radio:focus + .CDB-Radio-face,
 .CDB-Radio:checked:hover + .CDB-Radio-face {
   border: 1px solid $cBlue;
 }
+
+.CDB-Radio:checked:hover + .CDB-Radio-face {
+  &::before {
+    background: $cWhite;
+  }
+}
+
+.CDB-Radio:active + .CDB-Radio-face {
+  &::before {
+    background: $cBlue;
+  }
+}
+
+
+
+
