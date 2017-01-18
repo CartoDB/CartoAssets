@@ -52,7 +52,7 @@
     cursor: default;
   }
   &.has-icon {
-    padding-right: 40px;
+    padding-right: $mainSize * 4;
   }
   &.has-error {
     @include default-form-error-style();
