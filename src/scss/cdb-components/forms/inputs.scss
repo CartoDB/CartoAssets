@@ -51,6 +51,9 @@
     background: $cThirdBackground;
     cursor: default;
   }
+  &.has-icon {
+    padding-right: $mainSize * 4;
+  }
   &.has-error {
     @include default-form-error-style();
   }
