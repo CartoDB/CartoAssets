@@ -32,7 +32,8 @@
     outline-color: transparent;
     outline-style: none;
   }
-  &:disabled {
+  &:disabled,
+  &.is-disabled {
     border-color: $cSecondaryLine;
     background: $cThirdBackground;
   }
