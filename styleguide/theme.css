@@ -71,6 +71,11 @@
     box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.43);
 }
 
+.styleguide-list {
+    list-style: disc;
+    list-style-position: inside;
+}
+
 #styleguide-menu .submenu {
     display: none;
     background: rgba(0, 0, 0, 0.05);
