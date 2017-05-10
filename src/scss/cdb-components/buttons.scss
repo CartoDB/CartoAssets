@@ -198,6 +198,8 @@ Layout Component:
     @include transition(all 600ms);
   }
   &.is-loading {
+    cursor: default;
+
     .CDB-Button-loader {
       animation-name: showIn;
       animation-duration: 600ms;
@@ -243,6 +245,15 @@ Layout Component:
   }
   &:active {
     background: darken($cBlue, 16%);
+  }
+
+  &.is-loading {
+    &:hover {
+      background: $cBlue;
+    }
+    &:active {
+      background: $cBlue;
+    }
   }
 
   &.is-disabled {
@@ -414,6 +425,20 @@ Layout Component:
       background: transparent;
     }
   }
+
+  &.is-loading {
+    cursor: default;
+
+    &:hover {
+      background: $cWhite;
+      color: $cBlue;
+    }
+    &:active {
+      background: $cWhite;
+      color: $cBlue;
+    }
+  }
+
 }
 
 
