@@ -9,13 +9,8 @@ Layout Component:
 
 ```
 
-<button class="CDB-Button CDB-Button--loading CDB-Button--primary CDB-Button--big">
+<button class="CDB-Button CDB-Button--primary CDB-Button--big">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon is-white">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
 </button>
 
 <button class="CDB-Button CDB-Button--primary CDB-Button--big is-disabled">
@@ -23,26 +18,16 @@ Layout Component:
 </button>
 
 
-<button class="CDB-Button CDB-Button--loading CDB-Button--primary">
+<button class="CDB-Button CDB-Button--primary">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon is-white">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
 </button>
 
 <button class="CDB-Button CDB-Button--primary is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
 
-<button class="CDB-Button CDB-Button--loading CDB-Button--primary CDB-Button--small">
+<button class="CDB-Button CDB-Button--primary CDB-Button--small">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon CDB-LoaderIcon--small is-white">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
 </button>
 
 <button class="CDB-Button CDB-Button--primary CDB-Button--small is-disabled">
@@ -166,13 +151,11 @@ Layout Component:
 
 .CDB-Button {
   @include transition(background, 300ms);
-  position: relative;
-  padding: $baseSize $baseSize + 12;
+  padding: $baseSize + 1 $baseSize + 12;
   border: 1px solid transparent;
   border-radius: $baseSize / 2;
   cursor: pointer;
   box-sizing: border-box;
-
 
   .CDB-Button-Text {
     display: block;
@@ -183,53 +166,12 @@ Layout Component:
   }
 }
 
-.CDB-Button--loading {
-
-  .CDB-Button-loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transform-origin: 50%;
-    opacity: 0;
-    z-index: 10;
-  }
-  .CDB-Button-Text {
-    @include transition(all 600ms);
-  }
-  &.is-loading {
-    cursor: default;
-
-    .CDB-Button-loader {
-      animation-name: showIn;
-      animation-duration: 600ms;
-      animation-fill-mode: forwards;
-    }
-    .CDB-Button-Text {
-      opacity: 0;
-    }
-  }
-}
-
-@keyframes showIn {
-  0% {
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-}
-
-
 .CDB-Button--small {
   padding: $baseSize / 2 $baseSize + 4;
-  border-radius: 3px;
 }
 
 .CDB-Button--big {
-  padding: $baseSize + 3 $baseSize + 12;
+  padding: $baseSize + 4 $baseSize + 12;
 }
 
 .CDB-Button--icon {
@@ -245,15 +187,6 @@ Layout Component:
   }
   &:active {
     background: darken($cBlue, 16%);
-  }
-
-  &.is-loading {
-    &:hover {
-      background: $cBlue;
-    }
-    &:active {
-      background: $cBlue;
-    }
   }
 
   &.is-disabled {
@@ -319,44 +252,24 @@ Layout Component:
 # Buttons/Secondary
 
 ```
-
-<button class="CDB-Button CDB-Button--loading CDB-Button--secondary CDB-Button--big">
+<button class="CDB-Button CDB-Button--secondary CDB-Button--big">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon is-blue">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
 </button>
-
 
 <button class="CDB-Button CDB-Button--secondary CDB-Button--big is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
 </button>
 
-
-<button class="CDB-Button CDB-Button--loading CDB-Button--secondary">
+<button class="CDB-Button CDB-Button--secondary">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon is-blue">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
 </button>
-
 
 <button class="CDB-Button CDB-Button--secondary is-disabled">
   <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
 </button>
 
-
-<button class="CDB-Button CDB-Button--loading CDB-Button--secondary CDB-Button--small">
-  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-  <div class="CDB-Button-loader CDB-LoaderIcon CDB-LoaderIcon--small is-blue">
-    <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-      <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-    </svg>
-  </div>
+<button class="CDB-Button CDB-Button--secondary CDB-Button--small">
+  <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-small">SAVE</span>
 </button>
 
 <button class="CDB-Button CDB-Button--secondary CDB-Button--small is-disabled">
@@ -368,13 +281,8 @@ Layout Component:
 <br/>
 
 <div style="background: #2E3C43; padding: 20px;">
-  <button class="CDB-Button CDB-Button--loading CDB-Button--secondary CDB-Button--big">
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--big">
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-    <div class="CDB-Button-loader CDB-LoaderIcon is-blue">
-      <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-        <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-      </svg>
-    </div>
   </button>
 
   <button class="CDB-Button CDB-Button--secondary CDB-Button--big is-disabled">
@@ -385,13 +293,8 @@ Layout Component:
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
   </button>
 
-  <button class="CDB-Button CDB-Button--loading CDB-Button--secondary CDB-Button--white">
+  <button class="CDB-Button CDB-Button--secondary CDB-Button--white">
     <span class="CDB-Button-Text CDB-Text is-semibold CDB-Size-medium">SAVE</span>
-    <div class="CDB-Button-loader CDB-LoaderIcon is-white">
-      <svg class="CDB-LoaderIcon-spinner" viewbox="0 0 50 50">
-        <circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"/>
-      </svg>
-    </div>
   </button>
 
   <button class="CDB-Button CDB-Button--secondary CDB-Button--white is-disabled">
@@ -435,20 +338,6 @@ Layout Component:
       background: transparent;
     }
   }
-
-  &.is-loading {
-    cursor: default;
-
-    &:hover {
-      background: none;
-      color: $cBlue;
-    }
-    &:active {
-      background: none;
-      color: $cBlue;
-    }
-  }
-
 }
 
 
@@ -474,18 +363,4 @@ Layout Component:
       color: $cWhite;
     }
   }
-
-  &.is-loading {
-    cursor: default;
-
-    &:hover {
-      background: none;
-      color: $cWhite;
-    }
-    &:active {
-      background: none;
-      color: $cWhite;
-    }
-  }
-
 }

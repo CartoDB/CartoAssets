@@ -1,8 +1,5 @@
 <head>
   <link href='../css/cartostyles.css' type='text/css' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
 </head>
 
 {{> theme}}
@@ -47,11 +44,6 @@
         // Show section in Styleguide
         j('#styleguide .section[data-section="' + j('#styleguide-menu a').first().data('section') + '"]').show();
       }
-
-     $('.CDB-Button--loading').click(function(){
-        $(this).toggleClass("is-loading");
-     })
-
     });
 </script>
 
@@ -124,6 +116,3 @@
 		</div>
 	{{/each}}
 </div>
-
-
-
