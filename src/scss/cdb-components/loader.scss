@@ -104,6 +104,10 @@ This is the generic loader for widgets, maps, components, ...
 
 ```
 */
+.CDB-LoaderIcon {
+  width: 16px;
+  height: 16px;
+}
 
 .CDB-LoaderIcon-spinner {
   animation: rotate 2s linear infinite;
@@ -111,6 +115,7 @@ This is the generic loader for widgets, maps, components, ...
   height: 16px;
 }
 
+.CDB-LoaderIcon--small,
 .CDB-LoaderIcon--small .CDB-LoaderIcon-spinner {
   width: 14px;
   height: 14px;
