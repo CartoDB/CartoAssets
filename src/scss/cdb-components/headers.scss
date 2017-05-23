@@ -145,7 +145,7 @@
   <div class="CDB-HeaderInfo-inner CDB-Text">
     <div class="CDB-HeaderInfo-title u-bSpace--m">
       <h2 class="CDB-Text CDB-HeaderInfo-titleText CDB-Size-large">Type</h2>
-      
+
       <div class="CDB-HeaderInfo-actions">
         <a href="#">
           <div class="CDB-Shape">
@@ -165,10 +165,6 @@
 <br/>
 ```
 */
-
-@import '../cdb-utilities/mixins';
-@import '../cdb-variables/sizes';
-@import '../cdb-variables/colors';
 
 .CDB-HeaderInfo {
   @include display-flex();

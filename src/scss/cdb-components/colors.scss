@@ -12,11 +12,8 @@
 <div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-White"></div>
 <div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-SecondaryBackground"></div>
 <div style="display: inline-block; width: 120px; height: 64px; margin: 0 24px 24px 0;" class="box Color-ThirdBackground"></div>
-``` 
+```
 */
-
-@import '../cdb-variables/colors';
-
 
 .Color-Blue {
   background: $cBlue;
@@ -125,5 +122,3 @@
 .Color-Error {
   background: $cError;
 }
-
-

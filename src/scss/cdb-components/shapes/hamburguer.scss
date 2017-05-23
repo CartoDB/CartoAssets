@@ -30,9 +30,6 @@ Description
 ```
 */
 
-@import '../../cdb-variables/colors';
-@import '../../cdb-variables/sizes';
-
 .CDB-Shape-hamburguer {
   width: $baseSize * 2;
   &:hover {

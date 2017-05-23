@@ -7,7 +7,7 @@ module.exports = {
     files: [{
       expand: true,
       src: [
-        'src/scss/**/*.scss'
+        'src/scss/entry.scss'
       ],
       dest: '.tmp',
       ext: '.css'

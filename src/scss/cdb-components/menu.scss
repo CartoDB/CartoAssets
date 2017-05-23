@@ -128,9 +128,6 @@
 ```
 */
 
-@import '../cdb-variables/colors';
-@import '../cdb-variables/sizes';
-
 .CDB-NavMenu {
   position: relative;
   z-index: 2;
@@ -227,6 +224,3 @@
     color: $cSecondaryText;
   }
 }
-
-
-

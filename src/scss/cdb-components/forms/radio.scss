@@ -21,11 +21,6 @@
 ```
 */
 
-@import '../../cdb-variables/sizes';
-@import '../../cdb-variables/colors';
-@import '../../cdb-utilities/mixins';
-
-
 .CDB-Radio {
   position: absolute;
   width: $baseSize * 2;
@@ -106,7 +101,3 @@
     background: $cBlue;
   }
 }
-
-
-
-

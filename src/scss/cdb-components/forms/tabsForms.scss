@@ -72,11 +72,6 @@
 ```
 */
 
-@import '../../cdb-utilities/mixins';
-@import '../../cdb-variables/sizes';
-@import '../../cdb-variables/colors';
-
-
 .CDB-TabsForms {
   border: 1px solid $cMainLine;
   border-radius: 4px;
@@ -93,9 +88,3 @@
 .CDB-TabsForms-button {
   padding: 7px 8px;
 }
-
-
-
-
-
-

@@ -12,10 +12,6 @@ This is the generic loader for widgets, maps, components, ...
 ```
 */
 
-@import '../cdb-utilities/mixins';
-@import '../cdb-variables/colors';
-@import '../cdb-variables/sizes';
-
 .CDB-Loader {
   position: absolute;
   top: 0;

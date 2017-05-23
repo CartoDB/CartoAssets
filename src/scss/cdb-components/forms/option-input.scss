@@ -98,10 +98,6 @@
 ```
 */
 
-@import '../../cdb-variables/sizes';
-@import '../../cdb-variables/colors';
-@import '../../cdb-utilities/mixins';
-
 .CDB-OptionInput {
   width: 100%;
   height: $baseSize * 4;

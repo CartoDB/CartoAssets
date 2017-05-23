@@ -1,8 +1,6 @@
 // Default classes
 // ----------------------------------------------
 
-@import '../cdb-variables/colors';
-
 body {
   color: $cMainText;
 }
@@ -15,4 +13,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-

@@ -33,7 +33,7 @@
     "jquery": "~2.2.0",
     "highlight.js": "~9.1.0",
     "markdown-styleguide-generator": "~2.0.4",
-    "grunt-sass": "1.1.0",
+    "grunt-sass": "2.0.0",
     "grunt-contrib-clean": "0.7.0",
     "grunt-contrib-concat": "0.5.1",
     "grunt-contrib-cssmin": "0.14.0",

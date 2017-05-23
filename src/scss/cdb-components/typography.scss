@@ -19,9 +19,6 @@
 ```
 */
 
-@import '../cdb-variables/sizes';
-@import '../cdb-variables/colors';
-
 .CDB-Text {
   font-family: 'Open Sans';
   $sFontWeight-normal: 400;
@@ -74,4 +71,3 @@
 .CDB-IconFont.is-disabled {
   opacity: 0.24;
 }
-

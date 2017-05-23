@@ -28,10 +28,6 @@
 ```
 */
 
-@import '../../cdb-variables/sizes';
-@import '../../cdb-variables/colors';
-@import '../../cdb-utilities/mixins';
-
 .CDB-Toggle {
   position: absolute;
   width: $baseSize * 4;

@@ -12,9 +12,6 @@ You may resize and change the colors of the icons with the `glyph-`-classes. Ava
 ```
 */
 
-@import '../../cdb-variables/colors';
-@import '../../cdb-variables/sizes';
-
 .CDB-Shape-dot {
   display: inline-block;
   width: $baseSize;

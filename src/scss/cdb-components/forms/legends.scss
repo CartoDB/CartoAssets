@@ -83,9 +83,6 @@
 ```
 */
 
-@import '../../cdb-variables/sizes';
-@import '../../cdb-utilities/mixins';
-
 .CDB-Legend {
   width: $baseSize * 12;
 }
@@ -101,4 +98,3 @@
 .CDB-Fieldset-block {
   width: 100%;
 }
-

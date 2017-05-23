@@ -159,11 +159,6 @@ Layout Component:
 ```
 */
 
-@import '../cdb-utilities/mixins';
-@import '../cdb-variables/sizes';
-@import '../cdb-variables/colors';
-
-
 .CDB-Button {
   @include transition(background, 300ms);
   position: relative;

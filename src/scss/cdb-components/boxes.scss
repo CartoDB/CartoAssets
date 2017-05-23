@@ -10,10 +10,6 @@
 ```
 */
 
-@import '../cdb-utilities/mixins';
-@import '../cdb-variables/sizes';
-@import '../cdb-variables/colors';
-
 .CDB-Box-modal {
   min-width: 160px;
   border: 1px solid $cMainLine;
