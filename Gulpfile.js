@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var rename = require("gulp-rename");
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 
@@ -25,4 +26,11 @@ gulp.task('default', function () {
   }))
 
   .pipe(gulp.dest('src/fonts/'));
+
+  gulp
+    .src('./node_modules/perfect-scrollbar/src/css/*')
+    .pipe(rename(function (path) {
+      path.basename = '_' + path.basename;
+    }))
+    .pipe(gulp.dest('./src/scss/vendor/perfect-scrollbar'));
 });
