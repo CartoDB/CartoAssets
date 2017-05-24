@@ -47,7 +47,8 @@
     "gulp-install": "0.2.0",
     "gulp-sketch": "0.0.7",
     "grunt-shell": "1.1.2",
-    "load-grunt-tasks": "*"
+    "load-grunt-tasks": "*",
+    "perfect-scrollbar": "git://github.com/CartoDB/perfect-scrollbar.git#master"
   },
   "keywords": [
     "library",
