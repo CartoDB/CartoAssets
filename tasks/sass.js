@@ -2,10 +2,7 @@ module.exports = {
   dist: {
     options: {
       sourceMap: false,
-      outputStyle: 'compressed',
-      includePaths: [
-        'node_modules/perfect-scrollbar/src/css'
-      ]
+      outputStyle: 'compressed'
     },
     files: [{
       expand: true,
