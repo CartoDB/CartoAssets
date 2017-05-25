@@ -1,0 +1,15 @@
+// Default classes
+// ----------------------------------------------
+
+body {
+  color: $cMainText;
+}
+
+a {
+  color: $cBlue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

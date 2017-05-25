@@ -1,17 +1,12 @@
 {
   "name": "cartoassets",
-  "description": "Share frontend assets between different CartoDB repositories",
-  "version": "0.1.34",
+  "description": "Share frontend assets between different CARTO repositories",
+  "version": "0.2.00",
   "homepage": "https://github.com/cartodb/CartoAssets",
   "author": {
-    "name": "CartoDB",
-    "email": "contact@cartodb.com"
+    "name": "CARTO",
+    "email": "frontend@carto.com"
   },
-  "contributors": [
-    "Javier Álvarez <jmedina@cartodb.com>",
-    "Emilio García <emilio@cartodb.com>",
-    "Javier Arce <javierarce@cartodb.com>"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/cartodb/CartoAssets.git"
@@ -33,7 +28,7 @@
     "jquery": "~2.2.0",
     "highlight.js": "~9.1.0",
     "markdown-styleguide-generator": "~2.0.4",
-    "grunt-sass": "1.1.0",
+    "grunt-sass": "2.0.0",
     "grunt-contrib-clean": "0.7.0",
     "grunt-contrib-concat": "0.5.1",
     "grunt-contrib-cssmin": "0.14.0",
@@ -45,13 +40,15 @@
     "gulp-iconfont": "1.0.0",
     "gulp-iconfont-css": "0.0.9",
     "gulp-install": "0.2.0",
+    "gulp-rename": "1.2.2",
     "gulp-sketch": "0.0.7",
     "grunt-shell": "1.1.2",
-    "load-grunt-tasks": "*"
+    "load-grunt-tasks": "*",
+    "perfect-scrollbar": "git://github.com/CartoDB/perfect-scrollbar.git#master"
   },
   "keywords": [
     "library",
-    "CartoDB",
+    "CARTO",
     "share",
     "assets",
     "styleguide",
