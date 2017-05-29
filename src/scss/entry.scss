@@ -6,6 +6,8 @@
 @import 'cdb-variables/colors';
 @import 'cdb-utilities/mixins';
 
+@import 'cdb-icon-font';
+
 @import 'cdb-utilities/vendor/reset';
 @import 'cdb-utilities/vendor/normalize';
 @import 'cdb-utilities/defaults';
@@ -52,5 +54,3 @@
 @import 'cdb-components/tags';
 @import 'cdb-components/tooltips';
 @import 'cdb-components/typography';
-
-@import 'cdb-icon-font';
