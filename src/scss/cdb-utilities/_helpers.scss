@@ -92,7 +92,7 @@
 
 /* Flex */
 .u-flex {
-  @include display-flex();
+  @include display-flex(true);
 }
 .u-justifySpace {
   @include justify-content(space-between);
@@ -125,11 +125,4 @@
   .u-showMobile {
     display: block !important;
   }
-}
-
-/* helper mixins */
-@mixin default-form-error-style() {
-  border: 1px solid rgba($cError, 0.48);
-  background: rgba($cError, 0.04);
-  color: $cError;
 }
