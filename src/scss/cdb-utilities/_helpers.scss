@@ -92,7 +92,7 @@
 
 /* Flex */
 .u-flex {
-  @include display-flex();
+  @include display-flex(true);
 }
 .u-justifySpace {
   @include justify-content(space-between);
