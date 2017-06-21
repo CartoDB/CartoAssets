@@ -1,0 +1,23 @@
+// Layer selector and letters
+// ----------------------------------------------
+
+/* SG
+# Layer selector and letters
+
+
+```
+  <span class="CDB-SelectorLayer-letter CDB-Text CDB-Size-small u-whiteTextColor u-rSpace u-upperCase" style="background-color: #E65176">b0</span>
+```
+*/
+
+.CDB-SelectorLayer {
+  position: relative;
+}
+.CDB-SelectorLayer.is-disabled {
+  background-color: $cThirdBackground;
+}
+.CDB-SelectorLayer-letter {
+  height: 14px;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
