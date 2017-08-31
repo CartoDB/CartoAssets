@@ -55,5 +55,8 @@
     "shared components",
     "editor",
     "deep-insights"
-  ]
+  ],
+  "scripts": {
+    "build": "gulp"
+  }
 }
