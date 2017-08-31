@@ -16,12 +16,14 @@ If you want to edit, add or remove any icon in our CartoDB font, you should foll
 
 ### When you're done with changes
 
+- Select the new icon and make it exportable to SVG.
+  - ![image](https://user-images.githubusercontent.com/1078228/29913202-c1ae5214-8e34-11e7-8ec7-23f92d695ff2.png)
 - Select all the icons, and export them to `app/assets/fonts/icon-font/svgs` folder (option should be visible in the bottom corner in your Sketch app):
   - ![screen shot 2015-01-16 at 11 40 36](https://cloud.githubusercontent.com/assets/978461/5774986/93dc90e8-9d74-11e4-8064-a478e55d392b.png)
   - Take into account that ```svgs``` folder is ignored.
 - Open your terminal app and go to the CartoDB root folder.
 - Install your node dependencies: `npm install`
-- Now we will generate the new icon fonts + stylesheet. Just run: `./node_modules/.bin/gulp`
+- Now we will generate the new icon fonts + stylesheet. Just run: `npm run build`
 - Check that your `icon-font.css.scss` and the `cartoIcon` fonts have been edited:
   - ![screen shot 2015-01-16 at 11 02 53](https://cloud.githubusercontent.com/assets/978461/5775004/acf10faa-9d74-11e4-893c-790da626d894.png)
 
