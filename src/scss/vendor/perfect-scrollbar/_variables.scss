@@ -1,17 +1,17 @@
 // Colors
-$ps-border-radius: 6px !default;
+$ps-border-radius: 0 !default;
 
-$ps-rail-default-opacity: 0 !default;
-$ps-rail-container-hover-opacity: 0.6 !default;
-$ps-rail-hover-opacity: 0.9 !default;
+$ps-rail-default-opacity: 1 !default;
+$ps-rail-container-hover-opacity: 1 !default;
+$ps-rail-hover-opacity: 1 !default;
 
-$ps-bar-bg: transparent !default;
-$ps-bar-container-hover-bg: #aaa !default;
+$ps-bar-bg: #eee !default;
+$ps-bar-container-hover-bg: #999 !default;
 $ps-bar-hover-bg: #999 !default;
 $ps-rail-hover-bg: #eee !default;
 
 // Sizes
-$ps-scrollbar-x-rail-bottom: 0px !default;
+$ps-scrollbar-x-rail-bottom: 0 !default;
 $ps-scrollbar-x-rail-height: 15px !default;
 $ps-scrollbar-x-bottom: 2px !default;
 $ps-scrollbar-x-height: 6px !default;
