@@ -2,7 +2,8 @@
   display: none;
   position: absolute; /* please don't change 'position' */
   opacity: map_get($theme, rail-default-opacity);
-  transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out,
+              border-radius .2s ease-in-out;
 }
 
 @mixin scrollbar-rail-hover($theme) {
@@ -26,6 +27,8 @@
   &.ps-in-scrolling {
     &.ps-x > .ps-scrollbar-x-rail {
       @include scrollbar-rail-hover($theme);
+      height: map_get($theme, scrollbar-x-rail-hover-height);
+
       > .ps-scrollbar-x {
         @include scrollbar-hover($theme);
         height: map_get($theme, scrollbar-x-hover-height);
@@ -33,6 +36,8 @@
     }
     &.ps-y > .ps-scrollbar-y-rail {
       @include scrollbar-rail-hover($theme);
+      width: map_get($theme, scrollbar-y-rail-hover-width);
+
       > .ps-scrollbar-y {
         @include scrollbar-hover($theme);
         width: map_get($theme, scrollbar-y-hover-width);
@@ -78,6 +83,8 @@
     }
     &:hover,
     &:active {
+      height: map_get($theme, scrollbar-x-rail-hover-height);
+
       > .ps-scrollbar-x {
         height: map_get($theme, scrollbar-x-hover-height);
       }
@@ -96,6 +103,8 @@
     }
     &:hover,
     &:active {
+      width: map_get($theme, scrollbar-y-rail-hover-width);
+
       > .ps-scrollbar-y {
         width: map_get($theme, scrollbar-y-hover-width);
       }
