@@ -5,22 +5,26 @@ $ps-rail-default-opacity: 1 !default;
 $ps-rail-container-hover-opacity: 1 !default;
 $ps-rail-hover-opacity: 1 !default;
 
-$ps-bar-bg: #eee !default;
-$ps-bar-container-hover-bg: #aaa !default;
+$ps-bar-bg: #aaa !default;
 $ps-bar-hover-bg: #aaa !default;
-$ps-rail-hover-bg: #eee !default;
+
+$ps-bar-x-rail-bg: linear-gradient(180deg, transparent 50%, #eee 50%) !default;
+$ps-bar-x-rail-hover-bg: linear-gradient(180deg, transparent 50%, #eee 50%) !default;
+
+$ps-bar-y-rail-bg: linear-gradient(90deg, transparent 50%, #eee 50%) !default;
+$ps-bar-y-rail-hover-bg: linear-gradient(90deg, transparent 50%, #eee 50%) !default;
 
 // Sizes
 $ps-scrollbar-x-rail-bottom: 0 !default;
-$ps-scrollbar-x-rail-height: 4px !default;
-$ps-scrollbar-x-rail-hover-height: 8px !default;
+$ps-scrollbar-x-rail-height: 8px !default;
+$ps-scrollbar-x-rail-hover-height: 16px !default;
 $ps-scrollbar-x-bottom: 0 !default;
 $ps-scrollbar-x-height: 4px !default;
 $ps-scrollbar-x-hover-height: 8px !default;
 
 $ps-scrollbar-y-rail-right: 0 !default;
-$ps-scrollbar-y-rail-width: 4px !default;
-$ps-scrollbar-y-rail-hover-width: 8px !default;
+$ps-scrollbar-y-rail-width: 8px !default;
+$ps-scrollbar-y-rail-hover-width: 16px !default;
 $ps-scrollbar-y-right: 0 !default;
 $ps-scrollbar-y-width: 4px !default;
 $ps-scrollbar-y-hover-width: 8px !default;

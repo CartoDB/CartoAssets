@@ -2,31 +2,29 @@
   display: none;
   position: absolute; /* please don't change 'position' */
   opacity: map_get($theme, rail-default-opacity);
-  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out,
-              border-radius .2s ease-in-out;
+  transition: height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
 }
 
 @mixin scrollbar-rail-hover($theme) {
-  background-color: map_get($theme, rail-hover-bg);
   opacity: map_get($theme, rail-hover-opacity);
 }
 
 @mixin scrollbar-default($theme) {
   position: absolute; /* please don't change 'position' */
-  background-color: map_get($theme, bar-container-hover-bg);
+  background: map_get($theme, bar-bg);
   border-radius: map_get($theme, border-radius);
-  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out,
-              border-radius .2s ease-in-out;
+  transition: height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
 }
 
 @mixin scrollbar-hover($theme) {
-  background-color: map_get($theme, bar-hover-bg);
+  background: map_get($theme, bar-hover-bg);
 }
 
 @mixin in-scrolling($theme) {
   &.ps-in-scrolling {
     &.ps-x > .ps-scrollbar-x-rail {
       @include scrollbar-rail-hover($theme);
+      background: map_get($theme, bar-x-rail-hover-bg);
       height: map_get($theme, scrollbar-x-rail-hover-height);
 
       > .ps-scrollbar-x {
@@ -36,6 +34,7 @@
     }
     &.ps-y > .ps-scrollbar-y-rail {
       @include scrollbar-rail-hover($theme);
+      background: map_get($theme, bar-y-rail-hover-bg);
       width: map_get($theme, scrollbar-y-rail-hover-width);
 
       > .ps-scrollbar-y {
@@ -62,10 +61,15 @@
     overflow: auto !important;
   }
 
-  &.ps-active-x > .ps-scrollbar-x-rail,
+  &.ps-active-x > .ps-scrollbar-x-rail {
+    display: block;
+    background: map_get($theme, bar-x-rail-bg);
+    cursor: default !important;
+  }
+
   &.ps-active-y > .ps-scrollbar-y-rail {
     display: block;
-    background-color: map_get($theme, bar-bg);
+    background: map_get($theme, bar-y-rail-bg);
     cursor: default !important;
   }
 
@@ -121,6 +125,7 @@
 
     > .ps-scrollbar-x-rail:hover {
       @include scrollbar-rail-hover($theme);
+      background: map_get($theme, bar-x-rail-hover-bg);
 
       > .ps-scrollbar-x {
         @include scrollbar-hover($theme);
@@ -129,6 +134,7 @@
 
     > .ps-scrollbar-y-rail:hover {
       @include scrollbar-rail-hover($theme);
+      background: map_get($theme, bar-y-rail-hover-bg);
 
       > .ps-scrollbar-y {
         @include scrollbar-hover($theme);
