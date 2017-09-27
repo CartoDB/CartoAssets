@@ -61,6 +61,7 @@
   &.ps-active-y > .ps-scrollbar-y-rail {
     display: block;
     background-color: map_get($theme, bar-bg);
+    cursor: default !important;
   }
 
   @include in-scrolling($theme);
