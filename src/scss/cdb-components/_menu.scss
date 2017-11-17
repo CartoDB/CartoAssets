@@ -169,7 +169,7 @@
 .CDB-NavMenu-item.is-disabled .CDB-NavMenu-link {
   pointer-events: none;
   color: $cHintText;
-  cursor: disabled;
+  cursor: default;
 }
 
 .CDB-NavSubmenu {
