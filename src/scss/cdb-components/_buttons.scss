@@ -162,11 +162,10 @@ Layout Component:
 .CDB-Button {
   @include transition(background, 300ms);
   position: relative;
+  box-sizing: border-box;
   padding: $baseSize $baseSize + 12;
-  border: 1px solid transparent;
   border-radius: $baseSize / 2;
   cursor: pointer;
-  box-sizing: border-box;
 
 
   .CDB-Button-Text {
@@ -235,9 +234,7 @@ Layout Component:
   background: $cBlue;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cBlue, 8%);
-  }
+  &:hover,
   &:active {
     background: darken($cBlue, 16%);
   }
@@ -265,9 +262,7 @@ Layout Component:
   background: $cAlert;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cAlert, 8%);
-  }
+  &:hover,
   &:active {
     background: darken($cAlert, 16%);
   }
@@ -288,9 +283,7 @@ Layout Component:
   background: $cError;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cError, 8%);
-  }
+  &:hover,
   &:active {
     background: darken($cError, 16%);
   }
@@ -411,12 +404,14 @@ Layout Component:
 
 
 .CDB-Button--secondary {
-  border: 1px solid $cBlue;
+  box-shadow: inset 0 0 0 1px $cBlue;
   color: $cBlue;
 
   &:hover {
     background: rgba($cBlue, 0.08);
+    box-shadow: inset 0 0 0 2px darken($cBlue, 16%);
   }
+
   &:active {
     background: $cBlue;
     color: $cWhite;
@@ -425,7 +420,9 @@ Layout Component:
   &.is-disabled {
     &:hover {
       background: transparent;
+      box-shadow: inset 0 0 0 1px $cBlue;
     }
+
     &:active {
       background: transparent;
     }
@@ -453,12 +450,14 @@ Layout Component:
 
 
 .CDB-Button--white {
-  border: 1px solid $cWhite;
+  box-shadow: inset 0 0 0 1px $cWhite;
   color: $cWhite;
 
   &:hover {
     background: rgba($cWhite, 0.08);
+    box-shadow: inset 0 0 0 2px darken($cWhite, 16%);
   }
+
   &:active {
     background: rgba($cMainBg, 0.08);
     color: $cWhite;
@@ -466,9 +465,12 @@ Layout Component:
 
   &.is-disabled {
     @include opacity(0.24);
+
     &:hover {
       background: transparent;
+      box-shadow: inset 0 0 0 1px $cWhite;
     }
+
     &:active {
       background: transparent;
       color: $cWhite;
