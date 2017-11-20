@@ -158,7 +158,7 @@
   color: $cBlue;
 
   &:hover {
-    border-bottom: 2px solid darken($cBlue, 8%);
+    border-bottom: 2px solid $cBlueHover;
   }
 }
 
@@ -206,7 +206,7 @@
   color: $cBlue;
 
   &:hover {
-    border-bottom: 2px solid darken($cBlue, 8%);
+    border-bottom: 2px solid $cBlueHover;
   }
 }
 
