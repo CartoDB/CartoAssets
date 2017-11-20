@@ -160,7 +160,7 @@ Layout Component:
 */
 
 .CDB-Button {
-  @include transition(background, 300ms);
+  transition: background, 300ms;
   position: relative;
   box-sizing: border-box;
   padding: $baseSize $baseSize + 12;
@@ -190,7 +190,7 @@ Layout Component:
   }
 
   .CDB-Button-Text {
-    @include transition(all 600ms);
+    transition: all 600ms;
   }
 
   &.is-loading {
@@ -453,7 +453,7 @@ Layout Component:
   }
 
   &.is-disabled {
-    @include opacity(0.24);
+    opacity: 0.24;
 
     &:hover {
       background: transparent;
