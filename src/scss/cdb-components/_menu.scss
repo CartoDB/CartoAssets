@@ -137,13 +137,16 @@
   position: relative;
   margin-bottom: 18px;
   border-bottom: 1px solid $cMainLine;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+
+  &--is-dropdown {
+    padding: $baseSize 0 0 $baseSize * 2;
+  }
 }
-.CDB-NavMenu-inner--no-margin {
-  margin-bottom: 0;
-}
-.CDB-NavMenu-inner--is-dropdown {
-  padding: $baseSize 0 0 $baseSize * 2;
-}
+
 
 .CDB-NavMenu-link {
   display: block;
@@ -179,18 +182,18 @@
 
 .CDB-NavSubmenu {
   border-bottom: 2px solid $cSecondaryLine;
-}
 
-.CDB-NavSubmenu--inside {
-  position: absolute;
-  right: 0;
-  left: 0;
-  padding-top: 14px;
-}
+  &--inside {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding-top: 14px;
+  }
 
-.CDB-NavSubmenu--outside {
-  margin-top: -5px;
-  margin-bottom: 18px;
+  &--outside {
+    margin-top: -5px;
+    margin-bottom: 18px;
+  }
 }
 
 .CDB-NavSubmenu-link {
@@ -206,6 +209,7 @@
     border-bottom: 2px solid darken($cBlue, 8%);
   }
 }
+
 
 .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
   border-bottom: 2px solid $cMainLine;
