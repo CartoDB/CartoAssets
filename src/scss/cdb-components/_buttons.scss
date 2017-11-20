@@ -239,7 +239,7 @@ Layout Component:
 
   &:hover,
   &:active {
-    background: darken($cBlue, 16%);
+    background: darken($cBlue, 8%);
   }
 
   &.is-loading {
@@ -263,7 +263,7 @@ Layout Component:
 
   &:hover,
   &:active {
-    background: darken($cAlert, 16%);
+    background: darken($cAlert, 8%);
   }
 
   &.is-disabled {
@@ -282,7 +282,7 @@ Layout Component:
 
   &:hover,
   &:active {
-    background: darken($cError, 16%);
+    background: darken($cError, 8%);
   }
 
   &.is-disabled {
@@ -404,7 +404,7 @@ Layout Component:
 
   &:hover {
     background: rgba($cBlue, 0.08);
-    box-shadow: inset 0 0 0 2px darken($cBlue, 16%);
+    box-shadow: inset 0 0 0 2px darken($cBlue, 8%);
   }
 
   &:active {
@@ -444,7 +444,7 @@ Layout Component:
 
   &:hover {
     background: rgba($cWhite, 0.08);
-    box-shadow: inset 0 0 0 2px darken($cWhite, 16%);
+    box-shadow: inset 0 0 0 2px darken($cWhite, 8%);
   }
 
   &:active {
