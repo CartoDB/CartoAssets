@@ -85,7 +85,8 @@
 }
 
 .CDB-Checkbox:hover + .CDB-Checkbox-face {
-  border: 1px solid $cHoverLine;
+  border: 1px solid $cBlueHover;
+
   &::before,
   &::after {
     background: $cHoverLine;
