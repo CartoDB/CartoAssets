@@ -79,7 +79,8 @@
 }
 
 .CDB-Radio:hover + .CDB-Radio-face {
-  border: 1px solid $cHoverLine;
+  border: 1px solid $cBlueHover;
+
   &::before {
     background: $cHoverLine;
   }
