@@ -149,9 +149,14 @@
   display: block;
   margin-bottom: -1px;
   padding: 4px 0 11px;
-  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-in;
+  border-bottom: 2px solid transparent;
   border-radius: 0;
   color: $cBlue;
+
+  &:hover {
+    border-bottom: 2px solid darken($cBlue, 8%);
+  }
 }
 
 .CDB-NavMenu-item,
@@ -162,7 +167,7 @@
 }
 
 .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
-  border-bottom: 1px solid $cBlack;
+  border-bottom: 2px solid $cMainText;
   color: $cMainText;
 }
 
@@ -173,7 +178,7 @@
 }
 
 .CDB-NavSubmenu {
-  border-bottom: 1px solid $cSecondaryLine;
+  border-bottom: 2px solid $cSecondaryLine;
 }
 
 .CDB-NavSubmenu--inside {
@@ -192,13 +197,18 @@
   display: block;
   margin-bottom: -1px;
   padding-bottom: 12px;
-  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-in;
+  border-bottom: 2px solid transparent;
   border-radius: 0;
   color: $cBlue;
+
+  &:hover {
+    border-bottom: 2px solid darken($cBlue, 8%);
+  }
 }
 
 .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
-  border-bottom: 1px solid $cMainLine;
+  border-bottom: 2px solid $cMainLine;
   color: $cMainText;
 }
 
@@ -207,7 +217,6 @@
 }
 
 .CDB-NavMenu.is-dark {
-
   .CDB-NavMenu-inner,
   .CDB-NavSubmenu {
     border-bottom: 1px solid $cSecondaryText;
@@ -215,16 +224,21 @@
 
   .CDB-NavMenu-link,
   .CDB-NavSubmenu-link {
+    margin-bottom: -1px;
     color: $cAltText;
+
+    &:hover {
+      border-bottom: 2px solid darken($cMainLine, 8%);
+    }
   }
 
   .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
-    border-bottom: 1px solid $cMainLine;
+    border-bottom: 2px solid $cMainLine;
     color: $cWhite;
   }
 
   .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
-    border-bottom: 1px solid $cMainLine;
+    border-bottom: 2px solid $cMainLine;
     color: $cWhite;
   }
 
