@@ -113,6 +113,7 @@
   position: relative;
   height: 250px;
 }
+
 .CDB-Dropdown {
   @include display-flex();
   @include flex-direction(row);
@@ -120,13 +121,15 @@
   top: 40px;
   max-height: 200px;
 }
+
 .CDB-Dropdown-calculations {
+  box-sizing: border-box;
   padding: $sMargin-element;
   border-right: 1px solid $cMainLine;
   border-radius: 4px 0 0 4px;
   background-color: $cSecondaryBackground;
-  box-sizing: border-box;
 }
+
 .CDB-Dropdown-calculationsElement {
   margin-bottom: $sLineHeight-medium;
   color: $cMainBg;
@@ -136,12 +139,14 @@
     margin-bottom: 0;
   }
 }
+
 .CDB-Dropdown-options {
   width: $baseSize * 20;
   border-radius: 0 4px 4px 0;
   background-color: $cWhite;
   vertical-align: top;
 }
+
 .CDB-Dropdown-optionsElement {
   @include text-overflow();
   padding: 12px 10px;
@@ -151,20 +156,23 @@
   &:last-child {
     border-bottom: 0;
   }
+
   &:hover {
     background-color: rgba($cBlue, 0.08);
     color: $cMainBg;
     cursor: pointer;
   }
-}
-.CDB-Dropdown-optionsElement.is-selected {
-  color: $cMainBg;
-}
-.CDB-Dropdown-optionsElement.is-disabled {
-  color: $cHintText;
 
-  &:hover {
-    background-color: transparent;
-    cursor: default;
+  &.is-selected {
+    color: $cMainBg;
+  }
+
+  &.is-disabled {
+    color: $cHintText;
+
+    &:hover {
+      background-color: transparent;
+      cursor: default;
+    }
   }
 }
