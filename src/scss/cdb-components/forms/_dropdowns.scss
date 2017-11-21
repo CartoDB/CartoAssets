@@ -115,8 +115,8 @@
 }
 
 .CDB-Dropdown {
-  @include display-flex();
-  @include flex-direction(row);
+  display: flex;
+  flex-direction: row;
   position: absolute;
   top: 40px;
   max-height: 200px;
