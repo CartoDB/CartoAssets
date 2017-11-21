@@ -152,7 +152,7 @@
     border-bottom: 0;
   }
   &:hover {
-    background-color: rgba(157, 224, 173, 0.2);
+    background-color: rgba($cBlue, 0.08);
     color: $cMainBg;
     cursor: pointer;
   }
