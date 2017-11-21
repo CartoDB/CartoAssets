@@ -201,6 +201,12 @@
   color: $cMainText;
 }
 
+.CDB-NavSubmenu-item.is-disabled .CDB-NavSubmenu-link {
+  pointer-events: none;
+  color: $cHintText;
+  cursor: default;
+}
+
 .CDB-NavSubmenu-status {
   margin-left: 2px;
 }
