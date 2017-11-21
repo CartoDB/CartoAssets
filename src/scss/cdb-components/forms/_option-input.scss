@@ -142,7 +142,7 @@
   }
 }
 
-.CDB-OptionInput-container:not(.CDB-OptionInput-container--noBorder) .CDB-OptionInput-item {
+.CDB-OptionInput-container--border .CDB-OptionInput-item {
   padding: 0 $baseSize;
   border: 1px solid $cMainLine;
 
