@@ -143,7 +143,10 @@
   }
 
   &--is-dropdown {
-    padding: $baseSize 0 0 $baseSize * 2;
+    padding-top: $baseSize;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: $baseSize * 2;
   }
 }
 
