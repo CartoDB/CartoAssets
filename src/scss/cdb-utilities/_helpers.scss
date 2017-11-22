@@ -51,6 +51,10 @@
 
 .u-actionTextColor {
   color: $cBlue;
+
+  &:hover {
+    color: $cBlueHover;
+  }
 }
 .u-mainTextColor {
   color: $cMainText;
