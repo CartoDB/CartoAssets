@@ -147,15 +147,24 @@
   border: 1px solid $cMainLine;
 
   &.is-active,
-  &:hover,
   &:focus {
-    border: 1px solid $cBlue;
+    border: 1px solid $cBlackHover;
+  }
+
+  &:hover {
+    border: 1px solid $cBlueHover;
   }
 
   &:first-child {
     margin-right: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+
+    &:hover {
+      + .CDB-OptionInput-item::after {
+        content: none;
+      }
+    }
   }
 
   &:last-child {
@@ -167,13 +176,23 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
+    &.is-active::after,
+    &:focus::after,
     &:hover::after {
       position: absolute;
-      left: 0;
+      left: -1px;
       width: 1px;
-      height: 100%;
-      background-color: $cBlue;
+      height: calc(100% + 2px);
       content: '';
+    }
+
+    &.is-active::after,
+    &:focus::after {
+      background-color: $cBlackHover;
+    }
+
+    &:hover::after {
+      background-color: $cBlueHover;
     }
   }
 }
@@ -190,10 +209,4 @@
   &:hover {
     text-decoration: none;
   }
-}
-.CDB-OptionInput-item:first-child .CDB-OptionInput-content {
-  border-bottom-left-radius: 4px;
-}
-.CDB-OptionInput-item.is-active > .CDB-OptionInput-content {
-  border-bottom: 1px solid $cMainBg;
 }
