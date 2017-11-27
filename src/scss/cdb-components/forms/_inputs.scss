@@ -38,12 +38,9 @@
     font-style: italic;
   }
 
-  &:hover {
-    border: 1px solid $cBlueHover;
-  }
-
+  &:hover,
   &:focus {
-    border: 1px solid $cBlue;
+    border: 1px solid $cBlueHover;
     outline: none;
   }
 
