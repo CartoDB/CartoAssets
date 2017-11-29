@@ -24,36 +24,45 @@
   &.is-cursor {
     cursor: pointer;
   }
+
   &.is-empty {
     color: $cHintText;
   }
+
   &.is-number {
     color: darken($cHighlight, 16%);
   }
+
   &.is-null {
     color: $cHintText;
     font-style: italic;
   }
+
   &:hover {
-    border: 1px solid $cHoverLine;
+    border: 1px solid $cBlueHover;
   }
+
   &:focus {
-    border: 1px solid $cBlue;
+    border: 1px solid $cBlackHover;
     outline: none;
   }
+
   &:disabled,
   &.is-disabled {
     border-color: $cSecondaryLine;
     background: $cThirdBackground;
     cursor: default;
   }
+
   &.has-icon {
     padding-right: $baseSize * 4;
   }
+
   &.has-error {
     @include default-form-error-style();
   }
 }
+
 .CDB-InputTextPlain {
   width: 100%;
   border: 0;

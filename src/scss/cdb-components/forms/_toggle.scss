@@ -35,12 +35,22 @@
   opacity: 0;
   z-index: 1;
 
+  &:hover {
+    + .CDB-ToggleFace {
+      background: $cHintTextHover;
+    }
+
+    &:checked + .CDB-ToggleFace {
+      background: $cHighlightHover;
+    }
+  }
+
   + .CDB-ToggleFace {
-    @include transition(background, 300ms);
     position: relative;
     width: $baseSize * 4;
     height: $baseSize * 2;
     margin: 0 2px;
+    transition: background 300ms;
     border-radius: 50px;
     background: $cHintText;
 
@@ -69,4 +79,5 @@
 
 .Toggle .is-disabled {
   opacity: 0.24;
+  pointer-events: none;
 }

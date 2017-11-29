@@ -160,10 +160,9 @@ Layout Component:
 */
 
 .CDB-Button {
-  @include transition(background, 300ms);
   position: relative;
   padding: $baseSize $baseSize + 12;
-  border: 1px solid transparent;
+  transition: background, 300ms;
   border-radius: $baseSize / 2;
   cursor: pointer;
   box-sizing: border-box;
@@ -172,14 +171,14 @@ Layout Component:
   .CDB-Button-Text {
     display: block;
   }
+
   &.is-disabled {
-    cursor: default;
     opacity: 0.24;
+    cursor: default;
   }
 }
 
 .CDB-Button--loading {
-
   .CDB-Button-loader {
     position: absolute;
     top: 50%;
@@ -189,9 +188,11 @@ Layout Component:
     opacity: 0;
     z-index: 10;
   }
+
   .CDB-Button-Text {
-    @include transition(all 600ms);
+    transition: all 600ms;
   }
+
   &.is-loading {
     cursor: default;
 
@@ -200,6 +201,7 @@ Layout Component:
       animation-duration: 600ms;
       animation-fill-mode: forwards;
     }
+
     .CDB-Button-Text {
       opacity: 0;
     }
@@ -235,26 +237,20 @@ Layout Component:
   background: $cBlue;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cBlue, 8%);
-  }
+  &:hover,
   &:active {
-    background: darken($cBlue, 16%);
+    background: $cBlueHover;
   }
 
   &.is-loading {
-    &:hover {
-      background: $cBlue;
-    }
+    &:hover,
     &:active {
       background: $cBlue;
     }
   }
 
   &.is-disabled {
-    &:hover {
-      background: $cBlue;
-    }
+    &:hover,
     &:active {
       background: $cBlue;
     }
@@ -265,17 +261,13 @@ Layout Component:
   background: $cAlert;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cAlert, 8%);
-  }
+  &:hover,
   &:active {
-    background: darken($cAlert, 16%);
+    background: darken($cAlert, 8%);
   }
 
   &.is-disabled {
-    &:hover {
-      background: $cAlert;
-    }
+    &:hover,
     &:active {
       background: $cAlert;
     }
@@ -288,17 +280,13 @@ Layout Component:
   background: $cError;
   color: $cWhite;
 
-  &:hover {
-    background: darken($cError, 8%);
-  }
+  &:hover,
   &:active {
-    background: darken($cError, 16%);
+    background: darken($cError, 8%);
   }
 
   &.is-disabled {
-    &:hover {
-      background: $cError;
-    }
+    &:hover,
     &:active {
       background: $cError;
     }
@@ -411,12 +399,14 @@ Layout Component:
 
 
 .CDB-Button--secondary {
-  border: 1px solid $cBlue;
   color: $cBlue;
+  box-shadow: inset 0 0 0 1px $cBlue;
 
   &:hover {
     background: rgba($cBlue, 0.08);
+    box-shadow: inset 0 0 0 2px $cBlueHover;
   }
+
   &:active {
     background: $cBlue;
     color: $cWhite;
@@ -425,7 +415,9 @@ Layout Component:
   &.is-disabled {
     &:hover {
       background: transparent;
+      box-shadow: inset 0 0 0 1px $cBlue;
     }
+
     &:active {
       background: transparent;
     }
@@ -434,41 +426,40 @@ Layout Component:
   &.is-loading {
     cursor: default;
 
-    &:hover {
-      background: none;
-      color: $cBlue;
-    }
+    &:hover,
     &:active {
       background: none;
       color: $cBlue;
     }
   }
 
+  &--background {
+    background-color: $cWhite;
+  }
 }
-
-
-.CDB-Button--secondary--background {
-  background-color: $cWhite;
-}
-
 
 .CDB-Button--white {
-  border: 1px solid $cWhite;
   color: $cWhite;
+  box-shadow: inset 0 0 0 1px $cWhite;
 
   &:hover {
     background: rgba($cWhite, 0.08);
+    box-shadow: inset 0 0 0 2px darken($cWhite, 8%);
   }
+
   &:active {
     background: rgba($cMainBg, 0.08);
     color: $cWhite;
   }
 
   &.is-disabled {
-    @include opacity(0.24);
+    opacity: 0.24;
+
     &:hover {
       background: transparent;
+      box-shadow: inset 0 0 0 1px $cWhite;
     }
+
     &:active {
       background: transparent;
       color: $cWhite;
@@ -478,14 +469,10 @@ Layout Component:
   &.is-loading {
     cursor: default;
 
-    &:hover {
-      background: none;
-      color: $cWhite;
-    }
+    &:hover,
     &:active {
       background: none;
       color: $cWhite;
     }
   }
-
 }
