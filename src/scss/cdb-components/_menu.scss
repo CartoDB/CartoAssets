@@ -239,6 +239,12 @@
     }
   }
 
+  .CDB-NavSubmenu-item.is-disabled .CDB-NavMenu-link {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.24;
+  }
+
   .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
     border-bottom: 2px solid $cMainLine;
     color: $cWhite;
