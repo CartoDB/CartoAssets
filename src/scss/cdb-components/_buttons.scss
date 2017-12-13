@@ -298,9 +298,9 @@ Layout Component:
 }
 
 .CDB-Button--dashed {
+  padding: 13px 0;
   border: 1px dashed $cHintText;
   color: $cBlue;
-  padding: 13px 0;
 
   &:hover {
     border-color: $cBlue;
