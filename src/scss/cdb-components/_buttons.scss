@@ -229,6 +229,10 @@ Layout Component:
   padding: $baseSize + 3 $baseSize + 12;
 }
 
+.CDB-Button--wide {
+  width: 100%;
+}
+
 .CDB-Button--icon {
   padding: 7px 9px;
 }
@@ -290,6 +294,16 @@ Layout Component:
     &:active {
       background: $cError;
     }
+  }
+}
+
+.CDB-Button--dashed {
+  border: 1px dashed $cHintText;
+  color: $cBlue;
+  padding: 13px 0;
+
+  &:hover {
+    border-color: $cBlue;
   }
 }
 
