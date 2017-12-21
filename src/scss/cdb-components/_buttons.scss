@@ -305,6 +305,12 @@ Layout Component:
   &:hover {
     border-color: $cBlue;
   }
+
+  &.is-disabled {
+    &:hover {
+      border-color: $cHintText;
+    }
+  }
 }
 
 
