@@ -11,9 +11,18 @@
     "type": "git",
     "url": "git://github.com/cartodb/CartoAssets.git"
   },
-  "license":  "MIT",
+  "license": "MIT",
   "devDependencies": {
-    "perfect-scrollbar": "git://github.com/CartoDB/perfect-scrollbar.git#master"
+    "perfect-scrollbar": "git://github.com/CartoDB/perfect-scrollbar.git#master",
+    "postcss": "^5.2.8",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0",
+    "postcss-reporter": "^3.0.0"
+  },
+  "scripts": {
+    "build": "postcss -c postcss.config.js"
   },
   "keywords": [
     "library",
