@@ -1,5 +1,5 @@
 .CDB-Text {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   $sFontWeight-normal: 400;
 
   &.is-semibold {

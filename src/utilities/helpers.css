@@ -162,9 +162,9 @@
   align-items: flex-end;
 }
 
+/* Media queries */
 
-/* Media queries*/
-@include media-query-mobile() {
+@media only screen and (max-width: 600px) {
   .u-showDesktop {
     display: none !important;
   }
@@ -172,11 +172,4 @@
   .u-showMobile {
     display: block !important;
   }
-}
-
-/* helper mixins */
-@mixin default-form-error-style() {
-  border: 1px solid rgba(var(--color-error), 0.48);
-  background: rgba(var(--color-error), 0.04);
-  color: var(--color-error);
 }

@@ -3,6 +3,17 @@
 
   &.is-small {
     padding-top: 0;
+
+    .CDB-Shape-DatasetItem {
+      width: 6px;
+      height: 6px;
+      margin-left: -7px;
+
+      &:first-child {
+        margin-left: 0;
+        box-shadow: 2px 0 0 white;
+      }
+    }
   }
 }
 
@@ -20,19 +31,6 @@
     z-index: 1;
     margin-left: 0;
     box-shadow: 3px 0 0 white;
-  }
-}
-
-.CDB-Shape-Dataset.is-small {
-  .CDB-Shape-DatasetItem {
-    width: 6px;
-    height: 6px;
-    margin-left: -7px;
-
-    &:first-child {
-      margin-left: 0;
-      box-shadow: 2px 0 0 white;
-    }
   }
 }
 

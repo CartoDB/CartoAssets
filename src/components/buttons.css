@@ -6,7 +6,6 @@
   border-radius: 4px;
   cursor: pointer;
 
-
   .CDB-Button-Text {
     display: block;
   }
@@ -58,7 +57,6 @@
     opacity: 1;
   }
 }
-
 
 .CDB-Button--small {
   padding: 4px 12px;
@@ -118,7 +116,6 @@
   }
 }
 
-
 .CDB-Button--error,
 .CDB-Button--negative {
   background: var(--color-error);
@@ -152,7 +149,6 @@
     }
   }
 }
-
 
 .CDB-Button--secondary {
   box-shadow: inset 0 0 0 1px var(--color-blue);

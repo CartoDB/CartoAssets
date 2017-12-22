@@ -51,8 +51,10 @@
   }
 }
 
-.CDB-Radio:disabled:hover + .CDB-Radio-face {
-  border: 1px solid var(--color-line-hover);
+.CDB-Radio:active + .CDB-Radio-face {
+  &::before {
+    background: var(--color-blue);
+  }
 }
 
 .CDB-Radio:hover + .CDB-Radio-face {
@@ -68,14 +70,12 @@
   border: 1px solid var(--color-blue);
 }
 
+.CDB-Radio:disabled:hover + .CDB-Radio-face {
+  border: 1px solid var(--color-line-hover);
+}
+
 .CDB-Radio:checked:hover + .CDB-Radio-face {
   &::before {
     background: white;
-  }
-}
-
-.CDB-Radio:active + .CDB-Radio-face {
-  &::before {
-    background: var(--color-blue);
   }
 }

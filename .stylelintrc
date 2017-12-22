@@ -3,12 +3,16 @@
     "stylelint-config-standard",
     "stylelint-config-property-sort-order-smacss"
   ],
+  "ignoreFiles": [
+    "src/vendor/reset.css",
+  ],
   "rules": {
     "selector-pseudo-element-colon-notation": "double",
     "color-hex-case": "upper",
     "declaration-empty-line-before": null,
     "block-no-empty": true,
     "shorthand-property-no-redundant-values": true,
-    "custom-property-empty-line-before": null
+    "custom-property-empty-line-before": null,
+    "no-descending-specificity": null
   }
 }

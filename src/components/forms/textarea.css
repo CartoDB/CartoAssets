@@ -23,7 +23,7 @@
     background: var(--color-softgray);
   }
 
-  &:has-error {
+  &.has-error {
     border: 1px solid color(var(--color-error) alpha(0.48));
     background: color(var(--color-error) alpha(0.04));
     color: var(--color-error);

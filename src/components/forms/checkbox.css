@@ -54,15 +54,6 @@
   }
 }
 
-.CDB-Checkbox:checked:hover + .CDB-Checkbox-face {
-  border: 1px solid var(--color-blue);
-
-  &::before,
-  &::after {
-    background: white;
-  }
-}
-
 .CDB-Checkbox:hover + .CDB-Checkbox-face {
   border: 1px solid var(--color-blue-hover);
 
@@ -88,5 +79,14 @@
   &::before,
   &::after {
     opacity: 0;
+  }
+}
+
+.CDB-Checkbox:checked:hover + .CDB-Checkbox-face {
+  border: 1px solid var(--color-blue);
+
+  &::before,
+  &::after {
+    background: white;
   }
 }
