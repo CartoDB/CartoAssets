@@ -26,6 +26,7 @@
   },
   "scripts": {
     "build": "postcss -c postcss.config.js",
+    "test": "npm run lint",
     "lint": "stylelint './src/**/*.css'"
   },
   "keywords": [
