@@ -16,7 +16,7 @@
   padding: 2px 6px;
   border-left: 2px solid white;
   border-radius: 50px;
-  background: var(--color-line-secondary);
+  background: var(--color-line-hover);
 }
 
 .CDB-AvatarList-itemMedia {

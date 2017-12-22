@@ -24,7 +24,7 @@
   display: inline-block;
   height: 1px;
   margin-bottom: 2px;
-  background: var(--color-line-secondary);
+  background: var(--color-line-hover);
   vertical-align: top;
 }
 

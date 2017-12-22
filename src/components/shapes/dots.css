@@ -3,7 +3,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-line-secondary);
+  background: var(--color-line-hover);
 
   &.is-selected {
     background: var(--color-text-secondary);

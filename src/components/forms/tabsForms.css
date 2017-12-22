@@ -8,7 +8,7 @@
 }
 
 .CDB-TabsForms-item {
-  border-left: 1px solid var(--color-line-secondary);
+  border-left: 1px solid var(--color-line-hover);
 }
 
 .CDB-TabsForms-item:first-child {

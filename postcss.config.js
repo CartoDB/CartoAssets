@@ -4,8 +4,6 @@ const POSTCSS = {
   'use': [
     'postcss-import',
     'postcss-cssnext'
-    // 'postcss-browser-reporter',
-    // 'postcss-reporter'
   ],
   'postcss-import': {
     path: ['src']

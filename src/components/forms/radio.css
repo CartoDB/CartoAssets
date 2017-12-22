@@ -43,7 +43,7 @@
 }
 
 .CDB-Radio:disabled + .CDB-Radio-face {
-  border: 1px solid var(--color-line-secondary);
+  border: 1px solid var(--color-line-hover);
   background: var(--color-softgray);
 
   &::before {
@@ -52,7 +52,7 @@
 }
 
 .CDB-Radio:disabled:hover + .CDB-Radio-face {
-  border: 1px solid var(--color-line-secondary);
+  border: 1px solid var(--color-line-hover);
 }
 
 .CDB-Radio:hover + .CDB-Radio-face {

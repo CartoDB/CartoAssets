@@ -29,7 +29,7 @@
   }
 
   &:disabled {
-    border-color: var(--color-line-secondary);
+    border-color: var(--color-line-hover);
     background: var(--color-softgray);
   }
 

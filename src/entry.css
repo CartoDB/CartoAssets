@@ -1,9 +1,7 @@
 @import 'variables/sizes';
 @import 'variables/colors';
 
-@import 'vendor/reset';
-@import "normalize.css";
-/*@import 'utilities/defaults';
+@import 'utilities/defaults';
 @import 'utilities/fonts';
 @import 'utilities/helpers';
 
@@ -46,4 +44,3 @@
 @import 'components/tooltips';
 @import 'components/typography';
 @import 'components/layer-selector';
-*/

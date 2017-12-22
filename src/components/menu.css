@@ -54,7 +54,7 @@
 }
 
 .CDB-NavSubmenu {
-  border-bottom: 2px solid var(--color-line-secondary);
+  border-bottom: 2px solid var(--color-line-hover);
 
   &--inside {
     position: absolute;

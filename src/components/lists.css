@@ -1,5 +1,5 @@
 .CDB-ListDecoration-item {
-  border-bottom: 1px solid var(--color-line-secondary);
+  border-bottom: 1px solid var(--color-line-hover);
 
   &:last-child {
     border-bottom: 0;

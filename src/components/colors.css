@@ -36,7 +36,7 @@
 }
 
 .Color-SecondaryLine {
-  background: var(--color-line-secondary);
+  background: var(--color-line-hover);
 }
 
 .Color-Type02 {
