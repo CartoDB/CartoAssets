@@ -1,0 +1,28 @@
+.CDB-Shape-hamburguer {
+  width: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.CDB-Shape-hamburguerItem {
+  height: 2px;
+  margin-bottom: 2px;
+  background: var(--color-black);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.CDB-Shape-hamburguer.is-blue {
+  .CDB-Shape-hamburguerItem {
+    background: var(--color-blue);
+  }
+}
+
+.CDB-Shape-hamburguer.is-white {
+  .CDB-Shape-hamburguerItem {
+    background: white;
+  }
+}

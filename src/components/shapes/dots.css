@@ -1,0 +1,11 @@
+.CDB-Shape-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-line-secondary);
+
+  &.is-selected {
+    background: var(--color-text-secondary);
+  }
+}

@@ -1,0 +1,34 @@
+.CDB-Shape-dash {
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    right: 2px;
+    bottom: 7px;
+    left: 2px;
+    height: 1px;
+    background: var(--color-black);
+    content: '';
+  }
+}
+
+.CDB-Shape-dash.is-small {
+  &::before {
+    right: 3px;
+    left: 3px;
+  }
+}
+
+.CDB-Shape-dash.is-blue {
+  &::before {
+    background: var(--color-blue);
+  }
+}
+
+.CDB-Shape-dash.is-white {
+  &::before {
+    background: white;
+  }
+}

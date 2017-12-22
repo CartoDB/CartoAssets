@@ -1,0 +1,79 @@
+.CDB-Shape {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.CDB-Shape--medium {
+  width: 24px;
+  height: 24px;
+}
+
+.CDB-Shape-add {
+  position: relative;
+  height: 100%;
+
+  &::before {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 7px;
+    left: 0;
+    height: 1px;
+    background: var(--color-black);
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    left: 7px;
+    width: 1px;
+    background: var(--color-black);
+    content: '';
+  }
+}
+
+.CDB-Shape-add.is-small {
+  &::before {
+    display: block;
+    position: absolute;
+    right: 3px;
+    bottom: 7px;
+    left: 4px;
+    height: 1px;
+    background: var(--color-black);
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 3px;
+    left: 8px;
+    width: 1px;
+    background: var(--color-black);
+    content: '';
+  }
+}
+
+.CDB-Shape-add.is-blue {
+  &::before,
+  &::after {
+    background: var(--color-blue);
+  }
+}
+
+.CDB-Shape-add.is-white {
+  &::before,
+  &::after {
+    background: white;
+  }
+}
