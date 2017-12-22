@@ -1,0 +1,13 @@
+.CDB-SelectorLayer {
+  position: relative;
+}
+
+.CDB-SelectorLayer.is-disabled {
+  background-color: var(--color-softgray);
+}
+
+.CDB-SelectorLayer-letter {
+  height: 14px;
+  padding: 1px 5px;
+  border-radius: 2px;
+}

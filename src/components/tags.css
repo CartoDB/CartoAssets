@@ -1,0 +1,49 @@
+.CDB-Tag {
+  padding: 0 3px;
+  border: 1px solid var(--color-blue);
+  border-radius: 2px;
+  color: var(--color-blue);
+
+  &.is-public {
+    border: 1px solid var(--color-public);
+    color: var(--color-public);
+  }
+
+  &.is-link {
+    border: 1px solid var(--color-share);
+    color: var(--color-share);
+  }
+
+  &.is-password {
+    border: 1px solid var(--color-password);
+    color: var(--color-password);
+  }
+
+  &.is-private {
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+  }
+}
+
+.CDB-ListTag {
+  display: flex;
+}
+
+.CDB-ListTag-item {
+  margin-right: 8px;
+}
+
+.CDB-Tag.CDB-Tag--withLink {
+  display: flex;
+  padding: 4px 4px 4px 8px;
+  border-radius: 4px;
+  background: color(var(--color-blue) alpha(16%));
+}
+
+.CDB-Tag.CDB-Tag--opaque {
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.04);
+  text-transform: uppercase;
+}

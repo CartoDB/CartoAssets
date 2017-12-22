@@ -1,0 +1,60 @@
+.CDB-HeaderInfo {
+  display: flex;
+  align-items: flex-start;
+
+  &.is-block {
+    display: block;
+  }
+}
+
+.CDB-HeaderInfo-listItem {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.CDB-HeaderInfo-inner {
+  flex: 1;
+}
+
+.CDB-HeaderInfo-back {
+  margin-top: 7px;
+}
+
+.CDB-HeaderInfo-title {
+  display: flex;
+  align-items: center;
+}
+
+.CDB-HeaderInfo-titleText {
+  flex: 1;
+  width: 0;
+  padding-right: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.CDB-HeaderInfo-actionsItem {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.CDB-HeaderNumeration {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--color-text-alt);
+  font-size: var(--font-size-small);
+  line-height: 23px;
+  text-align: center;
+  box-sizing: border-box;
+}

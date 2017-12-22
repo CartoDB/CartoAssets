@@ -1,0 +1,233 @@
+.CDB-Button {
+  position: relative;
+  padding: 8px 20px;
+  transition: background 300ms;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+
+  .CDB-Button-Text {
+    display: block;
+  }
+
+  &.is-disabled {
+    opacity: 0.24;
+    cursor: default;
+  }
+}
+
+.CDB-Button--loading {
+  .CDB-Button-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: 50%;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .CDB-Button-Text {
+    transition: all 600ms;
+  }
+
+  &.is-loading {
+    cursor: default;
+
+    .CDB-Button-loader {
+      animation-name: showIn;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+    }
+
+    .CDB-Button-Text {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes showIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+
+.CDB-Button--small {
+  padding: 4px 12px;
+  border-radius: 3px;
+}
+
+.CDB-Button--big {
+  padding: 11px 20px;
+}
+
+.CDB-Button--wide {
+  width: 100%;
+}
+
+.CDB-Button--icon {
+  padding: 7px 9px;
+}
+
+.CDB-Button--primary {
+  background: var(--color-blue);
+  color: white;
+
+  &:hover,
+  &:active {
+    background: var(--color-blue-hover);
+  }
+
+  &.is-loading {
+    &:hover,
+    &:active {
+      background: var(--color-blue);
+    }
+  }
+
+  &.is-disabled {
+    &:hover,
+    &:active {
+      background: var(--color-blue);
+    }
+  }
+}
+
+.CDB-Button--alert {
+  background: var(--color-alert);
+  color: white;
+
+  &:hover,
+  &:active {
+    background: color(var(--color-alert) shade(8%));
+  }
+
+  &.is-disabled {
+    &:hover,
+    &:active {
+      background: var(--color-alert);
+    }
+  }
+}
+
+
+.CDB-Button--error,
+.CDB-Button--negative {
+  background: var(--color-error);
+  color: white;
+
+  &:hover,
+  &:active {
+    background: color(var(--color-error) shade(8%));
+  }
+
+  &.is-disabled {
+    &:hover,
+    &:active {
+      background: var(--color-error);
+    }
+  }
+}
+
+.CDB-Button--dashed {
+  padding: 13px 0;
+  border: 1px dashed var(--color-text-alt);
+  color: var(--color-blue);
+
+  &:hover {
+    border-color: var(--color-blue);
+  }
+
+  &.is-disabled {
+    &:hover {
+      border-color: var(--color-text-alt);
+    }
+  }
+}
+
+
+.CDB-Button--secondary {
+  color: var(--color-blue);
+  box-shadow: inset 0 0 0 1px var(--color-blue);
+
+  &:hover {
+    background: rgba(var(--color-blue), 0.08);
+    box-shadow: inset 0 0 0 2px var(--color-blue-hover);
+  }
+
+  &:active {
+    background: var(--color-blue);
+    color: white;
+  }
+
+  &.is-disabled {
+    &:hover {
+      background: transparent;
+      box-shadow: inset 0 0 0 1px var(--color-blue);
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+
+  &.is-loading {
+    cursor: default;
+
+    &:hover,
+    &:active {
+      background: none;
+      color: var(--color-blue);
+    }
+  }
+
+  &--background {
+    background-color: white;
+  }
+}
+
+.CDB-Button--white {
+  color: white;
+  box-shadow: inset 0 0 0 1px white;
+
+  &:hover {
+    background: rgba(white, 0.08);
+    box-shadow: inset 0 0 0 2px color(white shade(8%));
+  }
+
+  &:active {
+    background: color(var(--color-text-primary) alpha(0.8%));
+    color: white;
+  }
+
+  &.is-disabled {
+    opacity: 0.24;
+
+    &:hover {
+      background: transparent;
+      box-shadow: inset 0 0 0 1px white;
+    }
+
+    &:active {
+      background: transparent;
+      color: white;
+    }
+  }
+
+  &.is-loading {
+    cursor: default;
+
+    &:hover,
+    &:active {
+      background: none;
+      color: white;
+    }
+  }
+}
