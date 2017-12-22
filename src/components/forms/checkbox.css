@@ -1,0 +1,91 @@
+.CDB-Checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.CDB-Checkbox-face {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 2;
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 2px;
+    border-radius: 1px;
+    background: white;
+    content: '';
+  }
+
+  &::before {
+    right: 4px;
+    height: 8px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: 4px;
+    height: 6px;
+    transform: rotate(-45deg);
+  }
+}
+
+.CDB-Checkbox:checked + .CDB-Checkbox-face {
+  transition: background 300ms;
+  border: 1px solid var(--color-blue);
+  background: var(--color-blue);
+
+  &::before,
+  &::after {
+    background: white;
+  }
+}
+
+.CDB-Checkbox:checked:hover + .CDB-Checkbox-face {
+  border: 1px solid var(--color-blue);
+
+  &::before,
+  &::after {
+    background: white;
+  }
+}
+
+.CDB-Checkbox:hover + .CDB-Checkbox-face {
+  border: 1px solid var(--color-blue-hover);
+
+  &::before,
+  &::after {
+    background: var(--color-line-hover);
+  }
+}
+.CDB-Checkbox:active + .CDB-Checkbox-face {
+  border: 1px solid var(--color-blue);
+
+  &::before,
+  &::after {
+    background: var(--color-blue);
+  }
+}
+
+.CDB-Checkbox:disabled + .CDB-Checkbox-face {
+  border: 1px solid var(--color-line-hover);
+  background: var(--color-softgray);
+
+  &::before,
+  &::after {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,77 @@
+// Input styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Inputs
+
+```
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" class="CDB-InputText has-error CDB-Text">
+<input type="text" name="text" placeholder="DejaVu Sans" disabled class="CDB-InputText is-disabled CDB-Text">
+```
+*/
+
+.CDB-InputText {
+  width: 100%;
+  min-height: 32px;
+  padding: 7px 8px;
+  border: 1px solid var(--color-line);
+  border-radius: $baseSize / 2;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  box-sizing: border-box;
+
+  &.is-cursor {
+    cursor: pointer;
+  }
+
+  &.is-empty {
+    color: var(--color-text-alt);
+  }
+
+  &.is-number {
+    color: darken($cHighlight, 16%);
+  }
+
+  &.is-null {
+    color: var(--color-text-alt);
+    font-style: italic;
+  }
+
+  &:hover {
+    border: 1px solid var(--color-blue-hover);
+  }
+
+  &:focus {
+    border: 1px solid $cBlackHover;
+    outline: none;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    border-color: var(--color-line-secondary);
+    background: var(--color-softgray);
+    cursor: default;
+  }
+
+  &.has-icon {
+    padding-right: $baseSize * 4;
+  }
+
+  &.has-error {
+    @include default-form-error-style();
+  }
+}
+
+.CDB-InputTextPlain {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  box-sizing: border-box;
+}
+
+.CDB-FieldError .CDB-InputText {
+  @include default-form-error-style();
+}

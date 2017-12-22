@@ -1,6 +1,5 @@
 @import 'variables/sizes';
 @import 'variables/colors';
-@import 'utilities/mixins';
 
 @import 'vendor/reset';
 @import 'vendor/normalize';

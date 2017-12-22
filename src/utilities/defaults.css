@@ -1,0 +1,16 @@
+/**
+ * Base styles
+ */
+
+body {
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

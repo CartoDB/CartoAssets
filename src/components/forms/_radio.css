@@ -1,0 +1,104 @@
+
+// Radios styles
+// ----------------------------------------------
+
+/* SG
+# Forms/Radio
+
+```
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="01" checked>
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="02">
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
+<div class="u-iBlock">
+  <input class="CDB-Radio" type="radio" name="gender" value="03" disabled>
+  <span class="u-iBlock CDB-Radio-face"></span>
+</div>
+```
+*/
+
+.CDB-Radio {
+  position: absolute;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  opacity: 0;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.CDB-Radio-face {
+  position: relative;
+  width: $baseSize * 2;
+  height: $baseSize * 2;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  background: white;
+  text-indent: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $baseSize - 2;
+    height: $baseSize - 2;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background: white;
+    content: '';
+  }
+}
+
+.CDB-Radio:checked + .CDB-Radio-face {
+  transition: background 300ms;
+  border: 1px solid var(--color-blue);
+  background: var(--color-blue);
+
+  &::before {
+    background: white;
+  }
+}
+
+.CDB-Radio:disabled + .CDB-Radio-face {
+  border: 1px solid var(--color-line-secondary);
+  background: var(--color-softgray);
+
+  &::before {
+    opacity: 0;
+  }
+}
+
+.CDB-Radio:disabled:hover + .CDB-Radio-face {
+  border: 1px solid var(--color-line-secondary);
+}
+
+.CDB-Radio:hover + .CDB-Radio-face {
+  border: 1px solid var(--color-blue-hover);
+
+  &::before {
+    background: var(--color-line-hover);
+  }
+}
+
+.CDB-Radio:focus + .CDB-Radio-face,
+.CDB-Radio:checked:hover + .CDB-Radio-face {
+  border: 1px solid var(--color-blue);
+}
+
+.CDB-Radio:checked:hover + .CDB-Radio-face {
+  &::before {
+    background: white;
+  }
+}
+
+.CDB-Radio:active + .CDB-Radio-face {
+  &::before {
+    background: var(--color-blue);
+  }
+}

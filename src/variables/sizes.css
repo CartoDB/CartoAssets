@@ -1,31 +1,23 @@
-// Sizes variables
-// ----------------------------------------------
+:root {
+  --layout-desktop: 352px;
+  --layout-mobile: 280px;
 
-// Widths
-$desktopLayout: 352px;
-$mobileLayout: 280px;
+  --unit: 8px;
 
-//Base
-$baseSize: 8px;
-$halfBaseSize: $baseSize / 2;
+  --margin-section: 24px;
+  --margin-element: 14px;
 
-// Margins
-$sMargin-section: 24px; // To separate main section
-$sMargin-element: 14px; // To separate elements inside a group
+  --font-size-small: 10px;
+  --font-size-medium: 12px;
+  --font-size-large: 16px;
+  --font-size-huge: 26px;
 
-// Font sizes
-$sFontSize-small: 10px;
-$sFontSize-medium: 12px;
-$sFontSize-large: 16px;
-$sFontSize-huge: 26px;
+  --font-weight-lighter: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
 
-// Font weights
-$sFontWeight-lighter: 300;
-$sFontWeight-normal: 400;
-$sFontWeight-semibold: 600;
-
-// Line heights
-$sLineHeight-small: 14px;
-$sLineHeight-medium: 16px;
-$sLineHeight-large: 22px;
-$sLineHeight-huge: 34px;
+  --line-height-small: 14px;
+  --line-height-medium: 16px;
+  --line-height-large: 22px;
+  --line-height-huge: 34px;
+}

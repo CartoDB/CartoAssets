@@ -1,0 +1,181 @@
+/* MARGINS */
+
+.u-tSpace--s {
+  margin-top: 2px;
+}
+
+.u-tSpace {
+  margin-top: 4px;
+}
+
+.u-tSpace--m {
+  margin-top: 8px;
+}
+
+.u-tSpace-xl {
+  margin-top: 12px;
+}
+
+.u-rSpace--s {
+  margin-right: 2px;
+}
+
+.u-rSpace {
+  margin-right: 4px;
+}
+
+.u-rSpace--m {
+  margin-right: 8px;
+}
+
+.u-rSpace--xl {
+  margin-right: 12px;
+}
+
+.u-bSpace--s {
+  margin-bottom: 2px;
+}
+
+.u-bSpace {
+  margin-bottom: 4px;
+}
+
+.u-bSpace--m {
+  margin-bottom: 8px;
+}
+
+.u-bSpace--xl {
+  margin-bottom: 12px;
+}
+
+.u-lSpace--s {
+  margin-left: 2px;
+}
+
+.u-lSpace {
+  margin-left: 4px;
+}
+
+.u-lSpace--m {
+  margin-left: 8px;
+}
+
+.u-lSpace--xl {
+  margin-left: 12px;
+}
+
+/* -- COLORS */
+.u-actionTextColor {
+  color: var(--color-blue);
+
+  &:hover {
+    color: var(--color-blue-hover);
+  }
+}
+
+.u-mainTextColor {
+  color: var(--color-text-primary);
+}
+
+.u-secondaryTextColor {
+  color: var(--color-text-secondary);
+}
+
+.u-altTextColor {
+  color: var(--color-text-alt);
+}
+
+.u-hintTextColor {
+  color: var(--color-text-alt);
+}
+
+.u-alertTextColor {
+  color: var(--color-alert);
+}
+
+.u-whiteTextColor {
+  color: white;
+}
+
+.u-errorTextColor {
+  color: var(--color-error);
+}
+
+/* -- DISPLAYS */
+
+.u-iBlock {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.u-showDesktop {
+  display: block !important;
+}
+
+.u-showMobile {
+  display: none !important;
+}
+
+/* -- DECORATION */
+
+.u-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.u-upperCase {
+  text-transform: uppercase;
+}
+
+/* -- FLEX */
+
+.u-flex {
+  display: flex;
+}
+
+.u-justifySpace {
+  justify-content: space-between;
+}
+
+.u-justifyCenter {
+  justify-content: center;
+}
+
+.u-justifyStart {
+  justify-content: flex-start;
+}
+
+.u-justifyEnd {
+  justify-content: flex-end;
+}
+
+.u-alignStart {
+  align-items: flex-start;
+}
+
+.u-alignCenter {
+  align-items: center;
+}
+
+.u-alignEnd {
+  align-items: flex-end;
+}
+
+
+/* Media queries*/
+@include media-query-mobile() {
+  .u-showDesktop {
+    display: none !important;
+  }
+  .u-showMobile {
+    display: block !important;
+  }
+}
+
+/* helper mixins */
+@mixin default-form-error-style() {
+  border: 1px solid rgba(var(--color-error), 0.48);
+  background: rgba(var(--color-error), 0.04);
+  color: var(--color-error);
+}

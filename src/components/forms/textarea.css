@@ -1,0 +1,38 @@
+.CDB-Textarea {
+  width: 100%;
+  padding: 7px 8px 6px;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid var(--color-line-hover);
+  }
+
+  &:focus {
+    border: 1px solid var(--color-blue);
+    outline-color: transparent;
+    outline-style: none;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    border-color: var(--color-line-secondary);
+    background: var(--color-softgray);
+  }
+
+  &:has-error {
+    border: 1px solid color(var(--color-error) alpha(0.48));
+    background: color(var(--color-error) alpha(0.04));
+    color: var(--color-error);
+  }
+}
+
+.CDB-FieldError .CDB-Textarea,
+.CDB-Textarea.has-error {
+  border: 1px solid color(var(--color-error) alpha(0.48));
+    background: color(var(--color-error) alpha(0.04));
+    color: var(--color-error);
+}
