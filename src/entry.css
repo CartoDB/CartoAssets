@@ -1,0 +1,51 @@
+@import 'variables/sizes';
+@import 'variables/colors';
+@import 'utilities/mixins';
+
+@import 'vendor/reset';
+@import 'vendor/normalize';
+@import 'utilities/defaults';
+@import 'utilities/fonts';
+@import 'utilities/helpers';
+
+@import 'vendor/perfect-scrollbar/main';
+
+@import 'components/forms/checkbox';
+@import 'components/forms/dropdowns';
+@import 'components/forms/inputs';
+@import 'components/forms/legends';
+@import 'components/forms/option-input';
+@import 'components/forms/radio';
+@import 'components/forms/selects';
+@import 'components/forms/tabsForms';
+@import 'components/forms/textarea';
+@import 'components/forms/toggle';
+
+@import 'components/shapes/add';
+@import 'components/shapes/arrow';
+@import 'components/shapes/check-circle';
+@import 'components/shapes/close';
+@import 'components/shapes/dash';
+@import 'components/shapes/dataset';
+@import 'components/shapes/dots';
+@import 'components/shapes/error-circle';
+@import 'components/shapes/hamburguer';
+@import 'components/shapes/magnify';
+@import 'components/shapes/move';
+@import 'components/shapes/paragraph';
+@import 'components/shapes/threePoints';
+@import 'components/shapes/toogle-arrow';
+@import 'components/shapes/type';
+
+@import 'components/avatars';
+@import 'components/boxes';
+@import 'components/buttons';
+@import 'components/colors';
+@import 'components/headers';
+@import 'components/lists';
+@import 'components/loader';
+@import 'components/menu';
+@import 'components/tags';
+@import 'components/tooltips';
+@import 'components/typography';
+@import 'components/layer-selector';
