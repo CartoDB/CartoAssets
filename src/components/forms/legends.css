@@ -1,0 +1,16 @@
+.CDB-Legend {
+  width: 96px;
+}
+
+.CDB-Legend--big {
+  width: 192px;
+}
+
+.CDB-Fieldset {
+  display: flex;
+  align-items: ceter;
+}
+
+.CDB-Fieldset-block {
+  width: 100%;
+}

@@ -1,8 +1,20 @@
-.CDB-Textarea {
+.CDB-Select {
+  position: relative;
+}
+
+.CDB-SelectItem {
+  position: absolute;
+  top: 40px;
+}
+
+.CDB-SelectFake {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   padding: 7px 8px 6px;
   border: 1px solid var(--color-line);
   border-radius: 4px;
+  background: white;
   font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
   box-sizing: border-box;
@@ -13,25 +25,23 @@
 
   &:focus {
     border: 1px solid var(--color-blue);
-    outline-color: transparent;
-    outline-style: none;
+    outline: none;
   }
 
-  &:disabled,
-  &.is-disabled {
+  &:disabled {
     border-color: var(--color-line-secondary);
     background: var(--color-softgray);
   }
 
-  &:has-error {
+  &.has-error {
     border: 1px solid color(var(--color-error) alpha(0.48));
     background: color(var(--color-error) alpha(0.04));
     color: var(--color-error);
   }
 }
 
-.CDB-FieldError .CDB-Textarea,
-.CDB-Textarea.has-error {
+.CDB-FieldError .CDB-Select,
+.CDB-FieldError .CDB-SelectFake {
   border: 1px solid color(var(--color-error) alpha(0.48));
   background: color(var(--color-error) alpha(0.04));
   color: var(--color-error);

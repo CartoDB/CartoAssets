@@ -1,0 +1,20 @@
+.CDB-TabsForms {
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+}
+
+.CDB-TabsForms-inner {
+  display: flex;
+}
+
+.CDB-TabsForms-item {
+  border-left: 1px solid var(--color-line-secondary);
+}
+
+.CDB-TabsForms-item:first-child {
+  border-left: 0;
+}
+
+.CDB-TabsForms-button {
+  padding: 7px 8px;
+}

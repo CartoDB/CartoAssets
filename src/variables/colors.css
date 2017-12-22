@@ -2,6 +2,7 @@
   --color-blue: #1785FB;
   --color-blue-hover: color(var(--color-blue) l(-10%) s(-10%));
   --color-softgray: #F9F9F9;
+  --color-black: #2E3C43;
 
   --color-highlight: #9DE0AD;
   --color-alert: #FFFFC0;
@@ -10,7 +11,7 @@
   --color-password: #FB7B23;
   --color-error: #F15743;
 
-  --color-text-primary: #2E3C43;
+  --color-text-primary: var(--color-black);
   --color-text-secondary: #747D82;
   --color-text-alt: #BABEC0;
   --color-text-alt-hover: color(var(--color-text-alt) l(-10%) s(-10%));
