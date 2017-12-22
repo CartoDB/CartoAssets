@@ -2,12 +2,10 @@
 @import 'variables/colors';
 
 @import 'vendor/reset';
-@import 'vendor/normalize';
-@import 'utilities/defaults';
+@import "normalize.css";
+/*@import 'utilities/defaults';
 @import 'utilities/fonts';
 @import 'utilities/helpers';
-
-@import 'vendor/perfect-scrollbar/main';
 
 @import 'components/forms/checkbox';
 @import 'components/forms/dropdowns';
@@ -48,3 +46,4 @@
 @import 'components/tooltips';
 @import 'components/typography';
 @import 'components/layer-selector';
+*/
