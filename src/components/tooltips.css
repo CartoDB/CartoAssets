@@ -1,0 +1,88 @@
+.CDB-InfoTooltip {
+  display: inline-block;
+  position: absolute;
+  padding: 8px;
+  border-radius: 4px;
+  background: color(var(--color-black) alpha(8%));
+}
+
+.CDB-InfoTooltip::after {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  content: '';
+}
+
+.is-black {
+  &.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+    border-bottom-color: color(var(--color-black) alpha(8%));
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+    border-top-color: color(var(--color-black) alpha(8%));
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+    border-right-color: color(var(--color-black) alpha(8%));
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+    border-left-color: color(var(--color-black) alpha(8%));
+  }
+}
+
+.is-error {
+  &.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+    border-bottom-color: var(--color-error);
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+    border-top-color: var(--color-error);
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+    border-right-color: var(--color-error);
+  }
+
+  &.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+    border-left-color: var(--color-error);
+  }
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--up::after {
+  top: -8px;
+  left: calc(50% - 4px);
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--down::after {
+  bottom: -8px;
+  left: calc(50% - 4px);
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--left::after {
+  top: calc(50% - 4px);
+  left: -8px;
+  border-right-width: 4px;
+  border-right-style: solid;
+}
+
+.CDB-InfoTooltip.CDB-InfoTooltip--right::after {
+  top: calc(50% - 4px);
+  right: -8px;
+  border-right-width: 4px;
+  border-right-style: solid;
+}
+
+.CDB-InfoTooltip.is-error {
+  background: var(--color-error);
+}
+
+.CDB-InfoTooltip-text {
+  color: white;
+}

@@ -1,38 +1,30 @@
-// Menu styles
-// ----------------------------------------------
-
-/* SG
-# Boxes/Dropdown
-
-
-```
-  <div class="CDB-Box-modal">&nbsp;</div>
-```
-*/
-
 .CDB-Box-modal {
   min-width: 160px;
   border: 1px solid var(--color-line);
   border-radius: 4px;
   background: white;
-  box-shadow: 0  $baseSize  $baseSize * 2 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
   box-sizing: border-box;
 }
 
 .CDB-Box-modalHeader {
-  background: $cSecondaryBackground;
+  background: var(--color-bg-secondary);
 }
+
 .CDB-Box-modalHeaderItem {
-  @include display-flex();
-  padding: $baseSize + 4 $baseSize * 2;
+  display: flex;
+  padding: 12px 16px;
   border-bottom: 1px solid var(--color-line);
 }
+
 .CDB-Box-modalHeaderItem--block {
   display: block;
 }
+
 .CDB-Box-modalHeaderItem--paddingHorizontal {
-  padding: 0 $baseSize * 2;
+  padding: 0 16px;
 }
+
 .CDB-Box-modalHeaderItem--paddingVertical {
-  padding: $baseSize + 4 0;
+  padding: 12px 0;
 }

@@ -1,0 +1,49 @@
+.CDB-Shape-paragraph {
+  padding-top: 3px;
+  text-align: left;
+}
+
+.CDB-Shape-paragraph.is-center {
+  text-align: center;
+}
+
+.CDB-Shape-paragraph.is-right {
+  text-align: right;
+}
+
+.CDB-Shape-paragraphItem {
+  height: 1px;
+  margin-bottom: 2px;
+}
+
+.CDB-Shape-paragraphItem:last-child {
+  margin-bottom: 0;
+}
+
+.CDB-Shape-paragraphBar {
+  display: inline-block;
+  height: 1px;
+  margin-bottom: 2px;
+  background: var(--color-line-secondary);
+  vertical-align: top;
+}
+
+.CDB-Shape-paragraph.is-active .CDB-Shape-paragraphBar {
+  background: var(--color-blue);
+}
+
+.CDB-Shape-paragraphBar--01 {
+  width: 12px;
+}
+
+.CDB-Shape-paragraphBar--02 {
+  width: 6px;
+}
+
+.CDB-Shape-paragraphBar--03 {
+  width: 8px;
+}
+
+.CDB-Shape-paragraphBar--04 {
+  width: 4px;
+}

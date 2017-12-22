@@ -1,0 +1,76 @@
+.Color-Blue {
+  background: var(--color-blue);
+}
+
+.Color-White {
+  border: 1px solid #E5E5E5;
+  background: white;
+}
+
+.Color-Dark {
+  background: #000;
+}
+
+.Color-MainDark {
+  background: var(--color-black);
+}
+
+.Color-SecondaryDark {
+  background: #282C2F;
+}
+
+.Color-SecondaryBackground {
+  background: var(--color-bg-secondary);
+}
+
+.Color-ThirdBackground {
+  background: var(--color-softgray);
+}
+
+.Color-HoverLine {
+  background: var(--color-line-hover);
+}
+
+.Color-MainLine {
+  background: var(--color-line);
+}
+
+.Color-SecondaryLine {
+  background: var(--color-line-secondary);
+}
+
+.Color-Type02 {
+  background: var(--color-text-secondary);
+}
+
+.Color-Type03 {
+  background: var(--color-text-alt);
+}
+
+.Color-Type04 {
+  background: var(--color-text-alt);
+}
+
+.Color-Higlight {
+  background: var(--color-highlight);
+}
+
+.Color-Alert {
+  background: var(--color-alert);
+}
+
+.Color-Public {
+  background: var(--color-public);
+}
+
+.Color-Link {
+  background: var(--color-share);
+}
+
+.Color-Password {
+  background: var(--color-password);
+}
+
+.Color-Error {
+  background: var(--color-error);
+}
