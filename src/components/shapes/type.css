@@ -53,6 +53,7 @@
 }
 
 .CDB-Type--polygon::before {
+  content: '';
   display: block;
   position: absolute;
   top: 1px;
@@ -60,10 +61,10 @@
   bottom: 1px;
   left: 1px;
   border: 1px solid var(--color-line-hover);
-  content: '';
 }
 
 .CDB-Type--line::before {
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -73,5 +74,4 @@
   width: 1px;
   transform: rotate(45deg);
   background: var(--color-line-hover);
-  content: '';
 }

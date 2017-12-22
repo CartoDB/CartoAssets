@@ -1,10 +1,10 @@
 .CDB-Button {
   position: relative;
+  box-sizing: border-box;
   padding: 8px 20px;
   transition: background 300ms;
   border-radius: 4px;
   cursor: pointer;
-  box-sizing: border-box;
 
 
   .CDB-Button-Text {
@@ -20,12 +20,12 @@
 .CDB-Button--loading {
   .CDB-Button-loader {
     position: absolute;
+    z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transform-origin: 50%;
     opacity: 0;
-    z-index: 10;
   }
 
   .CDB-Button-Text {
@@ -52,6 +52,7 @@
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -154,8 +155,8 @@
 
 
 .CDB-Button--secondary {
-  color: var(--color-blue);
   box-shadow: inset 0 0 0 1px var(--color-blue);
+  color: var(--color-blue);
 
   &:hover {
     background: rgba(var(--color-blue), 0.08);
@@ -194,8 +195,8 @@
 }
 
 .CDB-Button--white {
-  color: white;
   box-shadow: inset 0 0 0 1px white;
+  color: white;
 
   &:hover {
     background: rgba(white, 0.08);

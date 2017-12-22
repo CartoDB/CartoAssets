@@ -37,12 +37,12 @@
 }
 
 .CDB-Dropdown-optionsElement {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding: 12px 10px;
+  overflow: hidden;
   border-bottom: 1px solid var(--color-line);
   color: var(--color-blue);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   &:last-child {
     border-bottom: 0;

@@ -4,8 +4,8 @@
 }
 
 .CDB-Shape-threePoints.is-horizontal {
-  transform: rotate(90deg);
   padding: 4px 0;
+  transform: rotate(90deg);
 }
 
 .CDB-Shape-threePointsItem {

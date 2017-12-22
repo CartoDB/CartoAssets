@@ -1,14 +1,15 @@
 .CDB-Radio {
   position: absolute;
+  z-index: 1;
   width: 16px;
   height: 16px;
   opacity: 0;
   vertical-align: middle;
-  z-index: 1;
 }
 
 .CDB-Radio-face {
   position: relative;
+  box-sizing: border-box;
   width: 16px;
   height: 16px;
   border: 1px solid var(--color-line);
@@ -16,9 +17,9 @@
   background: white;
   text-indent: 20px;
   cursor: pointer;
-  box-sizing: border-box;
 
   &::before {
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,7 +29,6 @@
     margin-left: -3px;
     border-radius: 50%;
     background: white;
-    content: '';
   }
 }
 

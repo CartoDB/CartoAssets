@@ -1,10 +1,8 @@
 @import 'variables/sizes';
 @import 'variables/colors';
-
 @import 'utilities/defaults';
 @import 'utilities/fonts';
 @import 'utilities/helpers';
-
 @import 'components/forms/checkbox';
 @import 'components/forms/dropdowns';
 @import 'components/forms/inputs';
@@ -15,7 +13,6 @@
 @import 'components/forms/tabsForms';
 @import 'components/forms/textarea';
 @import 'components/forms/toggle';
-
 @import 'components/shapes/add';
 @import 'components/shapes/arrow';
 @import 'components/shapes/check-circle';
@@ -31,7 +28,6 @@
 @import 'components/shapes/threePoints';
 @import 'components/shapes/toogle-arrow';
 @import 'components/shapes/type';
-
 @import 'components/avatars';
 @import 'components/boxes';
 @import 'components/buttons';

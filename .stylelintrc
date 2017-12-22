@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-property-sort-order-smacss"
+  ],
+  "rules": {
+    "selector-pseudo-element-colon-notation": "double",
+    "color-hex-case": "upper",
+    "declaration-empty-line-before": null,
+    "block-no-empty": true,
+    "shorthand-property-no-redundant-values": true,
+    "custom-property-empty-line-before": null
+  }
+}

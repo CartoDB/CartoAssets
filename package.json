@@ -20,10 +20,13 @@
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.0.0",
-    "postcss-reporter": "^3.0.0"
+    "postcss-reporter": "^3.0.0",
+    "stylelint-config-property-sort-order-smacss": "^2.0.0",
+    "stylelint-config-standard": "^18.0.0"
   },
   "scripts": {
-    "build": "postcss -c postcss.config.js"
+    "build": "postcss -c postcss.config.js",
+    "lint": "stylelint './src/**/*.css'"
   },
   "keywords": [
     "library",

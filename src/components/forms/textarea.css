@@ -1,11 +1,11 @@
 .CDB-Textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 7px 8px 6px;
   border: 1px solid var(--color-line);
   border-radius: 4px;
   font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
-  box-sizing: border-box;
 
   &:hover {
     border: 1px solid var(--color-line-hover);

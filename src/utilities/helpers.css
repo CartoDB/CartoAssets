@@ -119,9 +119,9 @@
 /* -- DECORATION */
 
 .u-ellipsis {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .u-upperCase {
@@ -168,6 +168,7 @@
   .u-showDesktop {
     display: none !important;
   }
+
   .u-showMobile {
     display: block !important;
   }

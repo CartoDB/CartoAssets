@@ -78,11 +78,11 @@
     &.is-active::after,
     &:focus::after,
     &:hover::after {
+      content: '';
       position: absolute;
       left: -1px;
       width: 1px;
       height: calc(100% + 2px);
-      content: '';
     }
 
     &:hover::after {

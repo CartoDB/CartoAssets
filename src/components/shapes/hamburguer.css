@@ -1,5 +1,6 @@
 .CDB-Shape-hamburguer {
   width: 16px;
+
   &:hover {
     cursor: pointer;
   }

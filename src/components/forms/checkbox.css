@@ -1,33 +1,33 @@
 .CDB-Checkbox {
   position: absolute;
+  z-index: 1;
   width: 16px;
   height: 16px;
   opacity: 0;
   vertical-align: middle;
-  z-index: 1;
 }
 
 .CDB-Checkbox-face {
   position: relative;
+  z-index: 2;
+  box-sizing: border-box;
   width: 16px;
   height: 16px;
   border: 1px solid var(--color-line);
   border-radius: 3px;
   background: white;
   cursor: pointer;
-  box-sizing: border-box;
-  z-index: 2;
   pointer-events: none;
 
   &::before,
   &::after {
+    content: '';
     display: block;
     position: absolute;
     bottom: 3px;
     width: 2px;
     border-radius: 1px;
     background: white;
-    content: '';
   }
 
   &::before {
@@ -71,6 +71,7 @@
     background: var(--color-line-hover);
   }
 }
+
 .CDB-Checkbox:active + .CDB-Checkbox-face {
   border: 1px solid var(--color-blue);
 

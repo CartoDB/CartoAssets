@@ -17,9 +17,9 @@
 
   &:first-child {
     position: relative;
+    z-index: 1;
     margin-left: 0;
     box-shadow: 3px 0 0 white;
-    z-index: 1;
   }
 }
 
@@ -52,6 +52,7 @@
   .CDB-Shape-DatasetItem {
     border: 1px solid var(--color-line-hover);
     background: var(--color-black);
+
     &:first-child {
       box-shadow: 3px 0 var(--color-black);
     }

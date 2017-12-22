@@ -18,6 +18,7 @@
   height: 100%;
 
   &::before {
+    content: '';
     display: block;
     position: absolute;
     right: 1px;
@@ -25,10 +26,10 @@
     left: 0;
     height: 1px;
     background: var(--color-black);
-    content: '';
   }
 
   &::after {
+    content: '';
     display: block;
     position: absolute;
     top: 1;
@@ -36,12 +37,12 @@
     left: 7px;
     width: 1px;
     background: var(--color-black);
-    content: '';
   }
 }
 
 .CDB-Shape-add.is-small {
   &::before {
+    content: '';
     display: block;
     position: absolute;
     right: 3px;
@@ -49,10 +50,10 @@
     left: 4px;
     height: 1px;
     background: var(--color-black);
-    content: '';
   }
 
   &::after {
+    content: '';
     display: block;
     position: absolute;
     top: 4px;
@@ -60,7 +61,6 @@
     left: 8px;
     width: 1px;
     background: var(--color-black);
-    content: '';
   }
 }
 

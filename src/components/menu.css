@@ -48,9 +48,9 @@
 }
 
 .CDB-NavMenu-item.is-disabled .CDB-NavMenu-link {
-  pointer-events: none;
   color: var(--color-text-alt);
   cursor: default;
+  pointer-events: none;
 }
 
 .CDB-NavSubmenu {
@@ -110,9 +110,9 @@
   }
 
   .CDB-NavSubmenu-item.is-disabled .CDB-NavMenu-link {
-    pointer-events: none;
-    cursor: default;
     opacity: 0.24;
+    cursor: default;
+    pointer-events: none;
   }
 
   .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {

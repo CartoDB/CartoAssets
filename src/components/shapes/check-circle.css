@@ -25,21 +25,21 @@
   height: 100%;
 
   &::before {
+    content: '';
     display: block;
     position: absolute;
     width: 1px;
     transform: rotate(-45deg);
     background: var(--color-black);
-    content: '';
   }
 
   &::after {
+    content: '';
     display: block;
     position: absolute;
     width: 1px;
     transform: rotate(45deg);
     background: var(--color-black);
-    content: '';
   }
 
   &.is-medium {
@@ -95,6 +95,7 @@
   &::before {
     background: var(--color-highlight);
   }
+
   &::after {
     background: var(--color-highlight);
   }

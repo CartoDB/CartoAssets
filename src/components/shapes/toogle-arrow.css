@@ -3,6 +3,7 @@
   height: 100%;
 
   &::before {
+    content: '';
     display: block;
     position: absolute;
     top: 8px;
@@ -11,10 +12,10 @@
     height: 1px;
     transform: rotate(-45deg);
     background: var(--color-black);
-    content: '';
   }
 
   &::after {
+    content: '';
     display: block;
     position: absolute;
     top: 8px;
@@ -23,7 +24,6 @@
     height: 1px;
     transform: rotate(45deg);
     background: var(--color-black);
-    content: '';
   }
 }
 
@@ -36,6 +36,7 @@
     left: 2px;
     width: 8px;
   }
+
   &::after {
     right: 1px;
     width: 8px;
@@ -46,6 +47,7 @@
   &::before {
     background: var(--color-blue);
   }
+
   &::after {
     background: var(--color-blue);
   }
@@ -55,6 +57,7 @@
   &::before {
     background: white;
   }
+
   &::after {
     background: white;
   }
