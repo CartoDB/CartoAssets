@@ -214,9 +214,17 @@
 }
 
 
-.CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
-  border-bottom: 2px solid $cMainLine;
-  color: $cMainText;
+.CDB-NavSubmenu-item {
+  &.is-selected .CDB-NavSubmenu-link {
+    border-bottom: 2px solid $cMainLine;
+    color: $cMainText;
+  }
+
+  &.is-disabled .CDB-NavSubmenu-link {
+    pointer-events: none;
+    color: $cHintText;
+    cursor: default;
+  }
 }
 
 .CDB-NavSubmenu-status {
