@@ -184,7 +184,7 @@
 }
 
 .CDB-NavSubmenu {
-  border-bottom: 2px solid $cSecondaryLine;
+  border-bottom: 1px solid $cSecondaryLine;
 
   &--inside {
     position: absolute;
@@ -216,7 +216,7 @@
 
 .CDB-NavSubmenu-item {
   &.is-selected .CDB-NavSubmenu-link {
-    border-bottom: 2px solid $cMainLine;
+    border-bottom: 2px solid $cMainText;
     color: $cMainText;
   }
 
