@@ -159,6 +159,7 @@
   border-bottom: 2px solid transparent;
   border-radius: 0;
   color: $cBlue;
+  touch-action: manipulation;
 
   &:hover {
     border-bottom: 2px solid $cBlueHover;
@@ -207,6 +208,7 @@
   border-bottom: 2px solid transparent;
   border-radius: 0;
   color: $cBlue;
+  touch-action: manipulation;
 
   &:hover {
     border-bottom: 2px solid $cBlueHover;
