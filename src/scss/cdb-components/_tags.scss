@@ -45,6 +45,10 @@
     border: 1px solid $cError;
     color: $cError;
   }
+  &.is-gray {
+    border: 1px solid $cGray;
+    color: $cGray;
+  }
 }
 
 /* SG
