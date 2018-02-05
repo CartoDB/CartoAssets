@@ -126,6 +126,17 @@ Description
   }
 }
 
+.CDB-ArrowToogle.is-mini {
+  &::before {
+    left: 3px;
+    width: 6px;
+  }
+  &::after {
+    right: 3px;
+    width: 6px;
+  }
+}
+
 .CDB-ArrowToogle.is-blue {
   &::before {
     background: $cBlue;
