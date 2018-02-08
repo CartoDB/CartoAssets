@@ -111,3 +111,14 @@
     opacity: 0;
   }
 }
+
+.CDB-Checkbox:checked:disabled + .CDB-Checkbox-face {
+  border: 1px solid $cSecondaryLine;
+  background: $cThirdBackground;
+
+  &::before,
+  &::after {
+    background: $cAltText;
+    opacity: 1;
+  }
+}
