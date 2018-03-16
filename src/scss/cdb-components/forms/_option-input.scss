@@ -179,6 +179,7 @@
     &:focus::after,
     &:hover::after {
       position: absolute;
+      top: -1px;
       left: -1px;
       width: 1px;
       height: $baseSize * 4;
