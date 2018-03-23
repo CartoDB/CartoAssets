@@ -126,6 +126,8 @@ This is the generic loader for widgets, maps, components, ...
 .CDB-LoaderIcon-path {
   stroke: rgba(255, 255, 255, 0.88);
   stroke-linecap: round;
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
   animation: dash 1.5s ease-in-out infinite;
   stroke-width: 4px;
 }
@@ -137,11 +139,16 @@ This is the generic loader for widgets, maps, components, ...
 .CDB-LoaderIcon.is-dark .CDB-LoaderIcon-path {
   stroke: rgba(0, 0, 0, 0.24);
 }
+
 .CDB-LoaderIcon.is-blue .CDB-LoaderIcon-path {
   stroke: $cBlue;
 }
 
 @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
   100% {
     transform: rotate(360deg);
   }
