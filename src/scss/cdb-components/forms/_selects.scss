@@ -77,10 +77,10 @@
   box-sizing: border-box;
 
   &:hover {
-    border: 1px solid $cHoverLine;
+    border: 1px solid $cBlueHover;
   }
   &:focus {
-    border: 1px solid $cBlue;
+    border: 1px solid $cBlackHover;
     outline: none;
   }
   &:disabled {
@@ -89,6 +89,10 @@
   }
   &.has-error {
     @include default-form-error-style();
+  }
+
+  &.is-cursor {
+    cursor: pointer;
   }
 }
 
