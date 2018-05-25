@@ -178,6 +178,10 @@ Layout Component:
   }
 }
 
+.CDB-Button--noPadding {
+  padding: 0;
+}
+
 .CDB-Button--loading {
   .CDB-Button-loader {
     position: absolute;
