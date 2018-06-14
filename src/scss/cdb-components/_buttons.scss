@@ -175,6 +175,10 @@ Layout Component:
   &.is-disabled {
     opacity: 0.24;
     cursor: default;
+
+    &:active {
+      pointer-events: none;
+    }
   }
 }
 
