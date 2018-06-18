@@ -129,6 +129,13 @@
   @include align-items(flex-end);
 }
 
+/* Clearfix */
+.u-clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
 
 /* Media queries*/
 @include media-query-mobile() {
