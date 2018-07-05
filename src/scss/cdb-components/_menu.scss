@@ -242,7 +242,8 @@
   .CDB-NavMenu-link,
   .CDB-NavSubmenu-link {
     margin-bottom: -1px;
-    color: $cAltText;
+    transition: none;
+    color: $cWhite;
 
     &:hover {
       border-bottom: 2px solid darken($cMainLine, 8%);
@@ -256,13 +257,13 @@
   }
 
   .CDB-NavMenu-item.is-selected .CDB-NavMenu-link {
-    border-bottom: 2px solid $cMainLine;
-    color: $cWhite;
+    border-bottom: 2px solid $cAltText;
+    color: $cAltText;
   }
 
   .CDB-NavSubmenu-item.is-selected .CDB-NavSubmenu-link {
-    border-bottom: 2px solid $cMainLine;
-    color: $cWhite;
+    border-bottom: 2px solid $cAltText;
+    color: $cAltText;
   }
 
   .CDB-NavSubmenu-status {
