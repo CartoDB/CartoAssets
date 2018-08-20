@@ -1,6 +1,7 @@
 // Fonts
 // --------------------------------------------------
 
+// Open Sans
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -27,4 +28,33 @@
   src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/OpenSans-Semibold.woff') format('woff'),
   url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+// Montserrat
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Montserrat-Semibold.eot');
+  src: url('../fonts/Montserrat-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Semibold.woff') format('woff'),
+  url('../fonts/Montserrat-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Bold.woff') format('woff'),
+  url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
