@@ -132,7 +132,7 @@
     cursor: pointer;
   }
 
-  &:first-child {
+  &:not(:only-child):first-child {
     width: auto;
     margin-right: $baseSize;
   }
